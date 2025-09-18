@@ -9,9 +9,9 @@ class ArcadeXMenuDelegate extends WatchUi.MenuInputDelegate {
     }
 
     function onMenuItem(item as Symbol) as Void {
-        if (item == :item_1) {
+        if (item == :one) {
             System.println("item 1");
-        } else if (item == :item_2) {
+        } else if (item == :two) {
             System.println("item 2");
         }
     }

@@ -1,0 +1,94 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 3; @symbol_classdef = [ArcadeXBehaviorDelegate,3,6,29]; @symbol_extends<0> = [WatchUi,3,38,45]; @symbol_extends<1> = [BehaviorDelegate,3,46,62]; ]
+class ArcadeXBehaviorDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; ]
+    function initialize() as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_5_26_7_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 6 8 ]
+        symbol [ BehaviorDelegate %tmp.2 6 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 6 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_5_26_7_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 9; @symbol_functiondef = [onMenu,9,13,19]; ]
+    function onMenu() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_9_22_20_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 10 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_9_22_20_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_9_22_20_4_stop" ]
+        %menu.1 = local;
+        symbol [ menu %menu.1 10 12 16 ];
+        symbol [ WatchUi %tmp.3 10 23 30 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ Menu %tmp.4 10 31 35 ];
+        %tmp.4 = getv function ? %tmp.3 :Menu;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %menu.1 %tmp.1;
+        symbol [ menu %menu.1 10 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 11 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_9_22_20_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_9_22_20_4_stop" ]
+        %delegate.2 = local;
+        symbol [ delegate %delegate.2 11 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 13 8 ]
+        %tmp.5 = lgetv %menu.1;
+        symbol [ menu %tmp.5 13 8 12 ];
+        symbol [ setTitle %tmp.6 13 13 21 ];
+        %tmp.6 = getv function %tmp.5 :setTitle;
+        %tmp.7 = "ArcadeX";
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 14 8 ]
+        %tmp.8 = lgetv %menu.1;
+        symbol [ menu %tmp.8 14 8 12 ];
+        symbol [ addItem %tmp.9 14 13 20 ];
+        %tmp.9 = getv function %tmp.8 :addItem;
+        %tmp.10 = "2048";
+        %tmp.12 = const :one;
+        symbol [ one %tmp.12 14 30 33 const ];
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.12);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 15 8 ]
+        %tmp.13 = lgetv %menu.1;
+        symbol [ menu %tmp.13 15 8 12 ];
+        symbol [ addItem %tmp.14 15 13 20 ];
+        %tmp.14 = getv function %tmp.13 :addItem;
+        %tmp.15 = "Maze";
+        %tmp.17 = const :two;
+        symbol [ two %tmp.17 15 30 33 const ];
+        invoke %tmp.13 %tmp.14(%tmp.15, %tmp.17);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 17 8 ]
+        symbol [ ArcadeXMenuDelegate %tmp.21 17 23 42 ];
+        %tmp.21 = getv ? :ArcadeXMenuDelegate;
+        %tmp.18 = newc %tmp.21 ();
+        lputv %delegate.2 %tmp.18;
+        symbol [ delegate %delegate.2 17 8 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 18 8 ]
+        symbol [ WatchUi %tmp.22 18 8 15 ];
+        %tmp.22 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.23 18 16 24 ];
+        %tmp.23 = getv function %tmp.22 :pushView;
+        %tmp.24 = lgetv %menu.1;
+        symbol [ menu %tmp.24 18 25 29 ];
+        %tmp.25 = lgetv %delegate.2;
+        symbol [ delegate %tmp.25 18 31 39 ];
+        symbol [ WatchUi %tmp.26 18 41 48 ];
+        %tmp.26 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.27 18 49 64 ];
+        %tmp.27 = getv %tmp.26 :SLIDE_IMMEDIATE;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25, %tmp.27);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc" 19 8 ]
+        %tmp.28 = true;
+        ret %tmp.28;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXBehaviorDelegate_mc_9_22_20_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXBehaviorDelegate.mc"; @line = 1; ]
+<init> {
+}

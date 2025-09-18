@@ -1,7 +1,7 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
-class ArcadeXView extends WatchUi.View {
+class ArcadeXView extends WatchUi.Menu2 {
 
     function initialize() {
         View.initialize();

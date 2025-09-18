@@ -8,17 +8,15 @@ class ArcadeXApp extends Application.AppBase {
         AppBase.initialize();
     }
 
-    // onStart() is called on application start up
+    // Run once at launch
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+        return [ new ArcadeXView(), new ArcadeXMenuDelegate() ];
+    }
+
     function onStart(state as Dictionary?) as Void {
     }
 
-    // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
-    }
-
-    // Return the initial view of your application here
-    function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new ArcadeXView(), new ArcadeXDelegate() ];
     }
 
 }

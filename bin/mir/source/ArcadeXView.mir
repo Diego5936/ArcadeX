@@ -2,8 +2,8 @@
 import Toybox.Graphics;
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 4; @symbol_classdef = [ArcadeXView,4,6,17]; @symbol_extends<0> = [WatchUi,4,26,33]; @symbol_extends<1> = [View,4,34,38]; ]
-class ArcadeXView extends WatchUi.View {
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 4; @symbol_classdef = [ArcadeXView,4,6,17]; @symbol_extends<0> = [WatchUi,4,26,33]; @symbol_extends<1> = [Menu2,4,34,39]; ]
+class ArcadeXView extends WatchUi.Menu2 {
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 4; ]
     <init> {
     }
