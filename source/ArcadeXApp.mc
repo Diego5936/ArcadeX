@@ -10,7 +10,7 @@ class ArcadeXApp extends Application.AppBase {
 
     // Run once at launch
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new ArcadeXView(), new ArcadeXMenuDelegate() ];
+        return [ new ArcadeXView()];
     }
 
     function onStart(state as Dictionary?) as Void {

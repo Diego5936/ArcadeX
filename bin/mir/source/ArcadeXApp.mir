@@ -28,18 +28,13 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXApp_mc_7
     function getInitialView() as [Views] or [Views, InputDelegates] {
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXApp_mc_12_68_14_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXApp.mc" 13 8 ]
-        %tmp.1 = newa 2;
+        %tmp.1 = newa 1;
         symbol [ ArcadeXView %tmp.5 13 21 32 ];
         %tmp.5 = getv ? :ArcadeXView;
         %tmp.2 = newc %tmp.5 ();
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
-        symbol [ ArcadeXMenuDelegate %tmp.11 13 40 59 ];
-        %tmp.11 = getv ? :ArcadeXMenuDelegate;
-        %tmp.8 = newc %tmp.11 ();
-        %tmp.12 = dup %tmp.7;
-        %tmp.13 = aputv %tmp.12 1 %tmp.8;
-        ret %tmp.13;
+        ret %tmp.7;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXApp_mc_12_68_14_4_stop:
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXApp.mc"; @line = 16; @symbol_functiondef = [onStart,16,13,20]; @symbol_param<0> = [state,16,21,26]; @symbol_param<0>_type<0> = [Dictionary,16,30,40]; ]
