@@ -1,6 +1,8 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
+import Toybox.Lang;
 
+import Game2048;
 import Layout;
 
 class Game2048View extends WatchUi.View {
@@ -26,23 +28,22 @@ class Game2048View extends WatchUi.View {
         var tileHeight = (Layout.workingHeight(dc) - (4* spacing)) / 4;
         System.println("tileWidth = " + tileWidth);
 
-        var grid = [
-            [0, 0, 2, 0],
-            [0, 0, 0, 0],
-            [0, 4, 0, 16],
-            [512, 1024, 8, 2048]
-        ];
+        var grid = Game2048.getStartingGrid();
 
         for (var row = 0; row < 4; row++) {
-            for (var col = 0; col < 4; col++) {
+            var curRow = grid[row] as Array;
+
+            for (var col = 0; col < 4; col++) {     
+                var curTile = curRow[col];
+
                 // Draw Tile
-                var tileColor = setTileColor(grid[row][col]);
+                var tileColor = setTileColor(curTile);
                 dc.setColor(tileColor, Graphics.COLOR_BLACK);
                 dc.fillRectangle(x, y, tileWidth, tileHeight);
                 // Draw Number
                 dc.setColor(Graphics.COLOR_BLACK, tileColor);
-                var fontSize = grid[row][col] > 512 ? Graphics.FONT_SYSTEM_TINY : Graphics.FONT_SYSTEM_SMALL;
-                dc.drawText(x + (tileWidth/2), y + (tileHeight/6), fontSize, grid[row][col], Graphics.TEXT_JUSTIFY_CENTER);
+                var fontSize = curTile > 512 ? Graphics.FONT_SYSTEM_TINY : Graphics.FONT_SYSTEM_SMALL;
+                dc.drawText(x + (tileWidth/2), y + (tileHeight/6), fontSize, curTile, Graphics.TEXT_JUSTIFY_CENTER);
 
                 x += tileWidth + spacing;
             }
@@ -75,7 +76,7 @@ class Game2048View extends WatchUi.View {
             case 512:
                 return Graphics.COLOR_GREEN;
             case 1024:
-                return Graphics.COLOR_DK_GREEN;
+                return Graphics.COLOR_DK_GREEN; 
             case 2048:
                 return Graphics.COLOR_PINK;
             default:

@@ -7,9 +7,24 @@ class Game2048Delegate extends WatchUi.InputDelegate {
         InputDelegate.initialize();
     }
 
-    // Return to main screen
-    function onBack() as Boolean {
-        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+    function onFlick(flickEvent as WatchUi.FlickEvent) {
+        var direction = flickEvent.getDirection();
+
+        // Get view counterpart
+        var viewPair = WatchUi.getCurrentView();
+        var view = viewPair[0] as Game2048View;
+
+        switch (direction) {
+            case 0: // UP
+                
+                break;
+            case 90: // RIGHT
+            case 180: // DOWN
+            case 270: // LEFT
+            default:
+                break;
+        }
+
         return true;
     }
 }
