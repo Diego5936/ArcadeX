@@ -35,6 +35,42 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_m
         ret %tmp.5;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_9_41_11_4_stop:
     }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 15; @position = 8; @symbol_vardef = [workingBuffer,15,8,21]; ]
+    var workingBuffer = 65;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 17; @symbol_functiondef = [workingWidth,17,13,25]; @symbol_param<0> = [dc,17,26,28]; @symbol_param<0>_type<0> = [Dc,17,32,34]; @symbol_return<0> = [Number,17,39,45]; ]
+    function workingWidth(dc as Dc) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_17_46_19_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 18 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 18 15 17 ];
+        symbol [ getWidth %tmp.2 18 18 26 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ workingBuffer %tmp.5 18 32 45 ];
+        %tmp.5 = getv ? :workingBuffer;
+        %tmp.6 = 2;
+        %tmp.7 = mul %tmp.5 %tmp.6;
+        %tmp.8 = sub %tmp.3 %tmp.7;
+        ret %tmp.8;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_17_46_19_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 21; @symbol_functiondef = [workingHeight,21,13,26]; @symbol_param<0> = [dc,21,27,29]; @symbol_param<0>_type<0> = [Dc,21,33,35]; @symbol_return<0> = [Number,21,40,46]; ]
+    function workingHeight(dc as Dc) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_21_47_23_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 22 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 22 15 17 ];
+        symbol [ getHeight %tmp.2 22 18 27 ];
+        %tmp.2 = getv function %tmp.1 :getHeight;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ workingBuffer %tmp.5 22 33 46 ];
+        %tmp.5 = getv ? :workingBuffer;
+        %tmp.6 = 2;
+        %tmp.7 = mul %tmp.5 %tmp.6;
+        %tmp.8 = sub %tmp.3 %tmp.7;
+        ret %tmp.8;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_21_47_23_4_stop:
+    }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 1; ]
 <init> {
