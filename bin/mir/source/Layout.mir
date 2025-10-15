@@ -38,7 +38,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_Layout_mc_9_41_
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\Layout.mc"; @line = 13; @position = 10; @symbol_constdef = [TITLE_OFFSET_Y,13,10,24]; ]
     const TITLE_OFFSET_Y = -30;
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\Layout.mc"; @line = 14; @position = 10; @symbol_constdef = [BUTTON_OFFSET_Y,14,10,25]; ]
-    const BUTTON_OFFSET_Y = 40;
+    const BUTTON_OFFSET_Y = 50;
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\Layout.mc"; @line = 16; @symbol_functiondef = [buttonRect,16,13,23]; @symbol_param<0> = [dc,16,24,26]; @symbol_param<0>_type<0> = [Dc,16,30,32]; @symbol_return<0> = [Dictionary,16,37,47]; ]
     function buttonRect(dc as Dc) as Dictionary {
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_Layout_mc_16_48_23_4_start:

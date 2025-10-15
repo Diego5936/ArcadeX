@@ -11,7 +11,7 @@ module Layout {
     }
 
     const TITLE_OFFSET_Y = -30;
-    const BUTTON_OFFSET_Y = 40;
+    const BUTTON_OFFSET_Y = 50;
 
     function buttonRect(dc as Dc) as Dictionary {
         return {

@@ -1,10 +1,12 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
-import Toybox.System;
 import Toybox.Lang;
+
 import Layout;
 
 class ArcadeXView extends WatchUi.View {
+
+    var bx, by, bw, bh;
 
     function initialize() {
         View.initialize();
@@ -26,37 +28,26 @@ class ArcadeXView extends WatchUi.View {
                     Graphics.FONT_LARGE, "ArcadeX", Graphics.TEXT_JUSTIFY_CENTER);
 
         // Button
-        var bx = Layout.centerX(dc) - 80;
-        var by = Layout.centerY(dc) + Layout.BUTTON_OFFSET_Y - 20;
-        var bw = 160;
-        var bh = 40;
-
+        bw = 190;
+        bh = 60;
+        bx = Layout.centerX(dc) - (bw / 2);
+        by = Layout.centerY(dc) + Layout.BUTTON_OFFSET_Y;
+        
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.fillRectangle(bx, by, bw, bh);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
         dc.drawRectangle(bx, by, bw, bh);
         
-        dc.drawText(Layout.centerX(dc), by + bh/2 - 5,
-                Graphics.FONT_SMALL, "Start 2048", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(Layout.centerX(dc), by + 10,
+                Graphics.FONT_TINY, "Start 2048", Graphics.TEXT_JUSTIFY_CENTER);
+
+        System.println("Drew everything.");
     }
 
-    function onTap(position) as Boolean {
-        var screen = System.getDeviceSettings();
-        var w = screen[:displayWidth];
-        var h = screen[:displayHeight];
-
-        var btn = {
-            :x => w/2 - 80,
-            :y => h/2 + Layout.BUTTON_OFFSET_Y - 20,
-            :w => 160,
-            :h => 40
+    function getButtonRect() as Dictionary {
+        return {
+            :x => bx, :y => by, :w => bw, :h => bh
         };
-
-        if (position[:x] >= btn[:x] and position[:x] <= btn[:x] + btn[:w] and
-            position[:y] >= btn[:y] and position[:y] <= btn[:y] + btn[:h]) {
-            WatchUi.pushView(new Game2048View(), new Game2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
-            return true;
-        }
-
-        return false;
     }
 }
