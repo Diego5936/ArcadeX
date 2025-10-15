@@ -36,7 +36,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_m
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_9_41_11_4_stop:
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 15; @position = 8; @symbol_vardef = [workingBuffer,15,8,21]; ]
-    var workingBuffer = 65;
+    var workingBuffer = 40;
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 17; @symbol_functiondef = [workingWidth,17,13,25]; @symbol_param<0> = [dc,17,26,28]; @symbol_param<0>_type<0> = [Dc,17,32,34]; @symbol_return<0> = [Number,17,39,45]; ]
     function workingWidth(dc as Dc) as Number {
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_17_46_19_4_start:

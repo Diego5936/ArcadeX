@@ -29,16 +29,20 @@ class Game2048View extends WatchUi.View {
         var grid = [
             [0, 0, 2, 0],
             [0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0]
+            [0, 4, 0, 16],
+            [512, 1024, 8, 2048]
         ];
 
         for (var row = 0; row < 4; row++) {
             for (var col = 0; col < 4; col++) {
                 // Draw Tile
-                dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+                var tileColor = setTileColor(grid[row][col]);
+                dc.setColor(tileColor, Graphics.COLOR_BLACK);
                 dc.fillRectangle(x, y, tileWidth, tileHeight);
-                drawTileNumber(dc, grid, x, y, row, col);
+                // Draw Number
+                dc.setColor(Graphics.COLOR_BLACK, tileColor);
+                var fontSize = grid[row][col] > 512 ? Graphics.FONT_SYSTEM_TINY : Graphics.FONT_SYSTEM_SMALL;
+                dc.drawText(x + (tileWidth/2), y + (tileHeight/6), fontSize, grid[row][col], Graphics.TEXT_JUSTIFY_CENTER);
 
                 x += tileWidth + spacing;
             }
@@ -48,8 +52,34 @@ class Game2048View extends WatchUi.View {
         }
     }
 
-    function drawTileNumber(dc as Dc, grid, x, y, row, col) as Void {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_YELLOW);
-        dc.drawText(x, y, Graphics.FONT_TINY, grid[row][col], Graphics.TEXT_JUSTIFY_CENTER);
+    function setTileColor(tileNumber) as Graphics.ColorType{
+        switch(tileNumber) {
+            case 0:
+                return Graphics.COLOR_BLACK;
+            case 2:
+                return Graphics.COLOR_WHITE;
+            case 4:
+                return Graphics.COLOR_YELLOW;
+            case 8:
+                return Graphics.COLOR_ORANGE;
+            case 16:
+                return Graphics.COLOR_RED;
+            case 32:
+                return Graphics.COLOR_WHITE;
+            case 64:
+                return Graphics.COLOR_BLUE;
+            case 128:
+                return Graphics.COLOR_DK_BLUE;
+            case 256:
+                return Graphics.COLOR_PURPLE;
+            case 512:
+                return Graphics.COLOR_GREEN;
+            case 1024:
+                return Graphics.COLOR_DK_GREEN;
+            case 2048:
+                return Graphics.COLOR_PINK;
+            default:
+                return Graphics.COLOR_BLACK;
+        }
     }
 }
