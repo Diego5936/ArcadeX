@@ -1,0 +1,41 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 4; @symbol_moduledef = [Layout,4,7,13]; ]
+module Layout {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 5; @symbol_functiondef = [centerX,5,13,20]; @symbol_param<0> = [dc,5,21,23]; @symbol_param<0>_type<0> = [Dc,5,27,29]; @symbol_return<0> = [Number,5,34,40]; ]
+    function centerX(dc as Dc) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_5_41_7_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 6 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 6 15 17 ];
+        symbol [ getWidth %tmp.2 6 18 26 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        ret %tmp.5;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_5_41_7_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 9; @symbol_functiondef = [centerY,9,13,20]; @symbol_param<0> = [dc,9,21,23]; @symbol_param<0>_type<0> = [Dc,9,27,29]; @symbol_return<0> = [Number,9,34,40]; ]
+    function centerY(dc as Dc) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_9_41_11_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 10 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 10 15 17 ];
+        symbol [ getHeight %tmp.2 10 18 27 ];
+        %tmp.2 = getv function %tmp.1 :getHeight;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        ret %tmp.5;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_9_41_11_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,330 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 5; @symbol_importdef<0> = [Layout,5,7,13]; ]
+import Layout;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 7; @symbol_classdef = [Menu2048View,7,6,18]; @symbol_extends<0> = [WatchUi,7,27,34]; @symbol_extends<1> = [View,7,35,39]; ]
+class Menu2048View extends WatchUi.View {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 7; ]
+    <init> {
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 9 8 ]
+        %tmp.1 = newd 4;
+        %tmp.3 = const :x;
+        symbol [ x %tmp.3 9 33 34 const ];
+        %tmp.4 = 0;
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.8 = const :y;
+        symbol [ y %tmp.8 9 42 43 const ];
+        %tmp.9 = 0;
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
+        %tmp.13 = const :w;
+        symbol [ w %tmp.13 9 51 52 const ];
+        %tmp.14 = 0;
+        %tmp.15 = dup %tmp.11;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.18 = const :h;
+        symbol [ h %tmp.18 9 60 61 const ];
+        %tmp.19 = 0;
+        %tmp.20 = dup %tmp.16;
+        %tmp.21 = aputv %tmp.20 %tmp.18 %tmp.19;
+        putv self :newGB %tmp.21;
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 9; @position = 8; @symbol_vardef = [newGB,9,8,13]; @symbol_type<0> = [Dictionary,9,17,27]; ]
+    var newGB as Dictionary;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
+    function initialize() as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_11_26_13_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 12 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_11_26_13_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 15; @symbol_functiondef = [onUpdate,15,13,21]; @symbol_param<0> = [dc,15,22,24]; @symbol_param<0>_type<0> = [Dc,15,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_15_40_38_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 17 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 17 8 10 ];
+        symbol [ setColor %tmp.2 17 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 17 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 17 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 17 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.6 17 51 64 ];
+        %tmp.6 = getv %tmp.5 :COLOR_LT_GRAY;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 18 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 18 8 10 ];
+        symbol [ clear %tmp.8 18 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 21 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 21 8 10 ];
+        symbol [ setColor %tmp.10 21 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 21 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 21 29 40 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        symbol [ Graphics %tmp.13 21 42 50 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.14 21 51 64 ];
+        %tmp.14 = getv %tmp.13 :COLOR_LT_GRAY;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 22 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 22 8 10 ];
+        symbol [ drawText %tmp.16 22 11 19 ];
+        %tmp.16 = getv function %tmp.15 :drawText;
+        symbol [ Layout %tmp.17 22 20 26 ];
+        %tmp.17 = getm $.Layout;
+        symbol [ centerX %tmp.18 22 27 34 ];
+        %tmp.18 = getv function %tmp.17 :centerX;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 22 35 37 ];
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        symbol [ Layout %tmp.21 22 40 46 ];
+        %tmp.21 = getm $.Layout;
+        symbol [ centerY %tmp.22 22 47 54 ];
+        %tmp.22 = getv function %tmp.21 :centerY;
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 22 55 57 ];
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = 30;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        symbol [ Graphics %tmp.27 23 20 28 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.28 23 29 39 ];
+        %tmp.28 = getv %tmp.27 :FONT_LARGE;
+        %tmp.29 = "!!2048!!";
+        symbol [ Graphics %tmp.30 23 53 61 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.31 23 62 81 ];
+        %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.15 %tmp.16(%tmp.20, %tmp.26, %tmp.28, %tmp.29, %tmp.31);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 26 8 ]
+        symbol [ newGB %tmp.32 26 8 13 ];
+        %tmp.32 = getv self :newGB;
+        %tmp.33 = 190;
+        %tmp.35 = const :w;
+        symbol [ w %tmp.35 26 15 16 const ];
+        aputv %tmp.32 %tmp.35 %tmp.33;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 27 8 ]
+        symbol [ newGB %tmp.36 27 8 13 ];
+        %tmp.36 = getv self :newGB;
+        %tmp.37 = 60;
+        %tmp.39 = const :h;
+        symbol [ h %tmp.39 27 15 16 const ];
+        aputv %tmp.36 %tmp.39 %tmp.37;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 28 8 ]
+        symbol [ newGB %tmp.40 28 8 13 ];
+        %tmp.40 = getv self :newGB;
+        symbol [ Layout %tmp.41 28 20 26 ];
+        %tmp.41 = getm $.Layout;
+        symbol [ centerX %tmp.42 28 27 34 ];
+        %tmp.42 = getv function %tmp.41 :centerX;
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 28 35 37 ];
+        %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
+        symbol [ newGB %tmp.46 28 42 47 ];
+        %tmp.46 = getv ? :newGB;
+        %tmp.48 = const :w;
+        symbol [ w %tmp.48 28 49 50 const ];
+        %tmp.49 = agetv %tmp.46 %tmp.48;
+        %tmp.50 = 2;
+        %tmp.51 = div %tmp.49 %tmp.50;
+        %tmp.52 = sub %tmp.44 %tmp.51;
+        %tmp.54 = const :x;
+        symbol [ x %tmp.54 28 15 16 const ];
+        aputv %tmp.40 %tmp.54 %tmp.52;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 29 8 ]
+        symbol [ newGB %tmp.55 29 8 13 ];
+        %tmp.55 = getv self :newGB;
+        symbol [ Layout %tmp.56 29 20 26 ];
+        %tmp.56 = getm $.Layout;
+        symbol [ centerY %tmp.57 29 27 34 ];
+        %tmp.57 = getv function %tmp.56 :centerY;
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 29 35 37 ];
+        %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);
+        %tmp.60 = 50;
+        %tmp.61 = add %tmp.59 %tmp.60;
+        %tmp.63 = const :y;
+        symbol [ y %tmp.63 29 15 16 const ];
+        aputv %tmp.55 %tmp.63 %tmp.61;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 31 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 31 8 10 ];
+        symbol [ setColor %tmp.65 31 11 19 ];
+        %tmp.65 = getv function %tmp.64 :setColor;
+        symbol [ Graphics %tmp.66 31 20 28 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.67 31 29 41 ];
+        %tmp.67 = getv %tmp.66 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.68 31 43 51 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.69 31 52 64 ];
+        %tmp.69 = getv %tmp.68 :COLOR_YELLOW;
+        invoke %tmp.64 %tmp.65(%tmp.67, %tmp.69);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 32 8 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 32 8 10 ];
+        symbol [ fillRectangle %tmp.71 32 11 24 ];
+        %tmp.71 = getv function %tmp.70 :fillRectangle;
+        symbol [ newGB %tmp.73 32 25 30 ];
+        %tmp.73 = getv ? :newGB;
+        %tmp.75 = const :x;
+        symbol [ x %tmp.75 32 32 33 const ];
+        %tmp.76 = agetv %tmp.73 %tmp.75;
+        symbol [ newGB %tmp.78 32 36 41 ];
+        %tmp.78 = getv ? :newGB;
+        %tmp.80 = const :y;
+        symbol [ y %tmp.80 32 43 44 const ];
+        %tmp.81 = agetv %tmp.78 %tmp.80;
+        symbol [ newGB %tmp.83 32 47 52 ];
+        %tmp.83 = getv ? :newGB;
+        %tmp.85 = const :w;
+        symbol [ w %tmp.85 32 54 55 const ];
+        %tmp.86 = agetv %tmp.83 %tmp.85;
+        symbol [ newGB %tmp.88 32 58 63 ];
+        %tmp.88 = getv ? :newGB;
+        %tmp.90 = const :h;
+        symbol [ h %tmp.90 32 65 66 const ];
+        %tmp.91 = agetv %tmp.88 %tmp.90;
+        invoke %tmp.70 %tmp.71(%tmp.76, %tmp.81, %tmp.86, %tmp.91);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 33 8 ]
+        %tmp.92 = lgetv %dc;
+        symbol [ dc %tmp.92 33 8 10 ];
+        symbol [ setColor %tmp.93 33 11 19 ];
+        %tmp.93 = getv function %tmp.92 :setColor;
+        symbol [ Graphics %tmp.94 33 20 28 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.95 33 29 40 ];
+        %tmp.95 = getv %tmp.94 :COLOR_BLACK;
+        symbol [ Graphics %tmp.96 33 42 50 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.97 33 51 63 ];
+        %tmp.97 = getv %tmp.96 :COLOR_YELLOW;
+        invoke %tmp.92 %tmp.93(%tmp.95, %tmp.97);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 34 8 ]
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 34 8 10 ];
+        symbol [ drawRectangle %tmp.99 34 11 24 ];
+        %tmp.99 = getv function %tmp.98 :drawRectangle;
+        symbol [ newGB %tmp.101 34 25 30 ];
+        %tmp.101 = getv ? :newGB;
+        %tmp.103 = const :x;
+        symbol [ x %tmp.103 34 32 33 const ];
+        %tmp.104 = agetv %tmp.101 %tmp.103;
+        symbol [ newGB %tmp.106 34 36 41 ];
+        %tmp.106 = getv ? :newGB;
+        %tmp.108 = const :y;
+        symbol [ y %tmp.108 34 43 44 const ];
+        %tmp.109 = agetv %tmp.106 %tmp.108;
+        symbol [ newGB %tmp.111 34 47 52 ];
+        %tmp.111 = getv ? :newGB;
+        %tmp.113 = const :w;
+        symbol [ w %tmp.113 34 54 55 const ];
+        %tmp.114 = agetv %tmp.111 %tmp.113;
+        symbol [ newGB %tmp.116 34 58 63 ];
+        %tmp.116 = getv ? :newGB;
+        %tmp.118 = const :h;
+        symbol [ h %tmp.118 34 65 66 const ];
+        %tmp.119 = agetv %tmp.116 %tmp.118;
+        invoke %tmp.98 %tmp.99(%tmp.104, %tmp.109, %tmp.114, %tmp.119);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 36 8 ]
+        %tmp.120 = lgetv %dc;
+        symbol [ dc %tmp.120 36 8 10 ];
+        symbol [ drawText %tmp.121 36 11 19 ];
+        %tmp.121 = getv function %tmp.120 :drawText;
+        symbol [ Layout %tmp.122 36 20 26 ];
+        %tmp.122 = getm $.Layout;
+        symbol [ centerX %tmp.123 36 27 34 ];
+        %tmp.123 = getv function %tmp.122 :centerX;
+        %tmp.124 = lgetv %dc;
+        symbol [ dc %tmp.124 36 35 37 ];
+        %tmp.125 = invoke %tmp.122 %tmp.123(%tmp.124);
+        symbol [ newGB %tmp.127 36 40 45 ];
+        %tmp.127 = getv ? :newGB;
+        %tmp.129 = const :y;
+        symbol [ y %tmp.129 36 47 48 const ];
+        %tmp.130 = agetv %tmp.127 %tmp.129;
+        %tmp.131 = 10;
+        %tmp.132 = add %tmp.130 %tmp.131;
+        symbol [ Graphics %tmp.133 37 16 24 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.134 37 25 34 ];
+        %tmp.134 = getv %tmp.133 :FONT_TINY;
+        %tmp.135 = "New Game";
+        symbol [ Graphics %tmp.136 37 48 56 ];
+        %tmp.136 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.137 37 57 76 ];
+        %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.120 %tmp.121(%tmp.125, %tmp.132, %tmp.134, %tmp.135, %tmp.137);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_15_40_38_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 40; @symbol_functiondef = [getNewGameButton,40,13,29]; @symbol_return<0> = [Dictionary,40,35,45]; ]
+    function getNewGameButton() as Dictionary {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_40_46_44_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 41 8 ]
+        %tmp.1 = newd 4;
+        %tmp.3 = const :x;
+        symbol [ x %tmp.3 42 13 14 const ];
+        symbol [ newGB %tmp.5 42 18 23 ];
+        %tmp.5 = getv ? :newGB;
+        %tmp.7 = const :x;
+        symbol [ x %tmp.7 42 25 26 const ];
+        %tmp.8 = agetv %tmp.5 %tmp.7;
+        %tmp.9 = dup %tmp.1;
+        %tmp.10 = aputv %tmp.9 %tmp.3 %tmp.8;
+        %tmp.12 = const :y;
+        symbol [ y %tmp.12 42 30 31 const ];
+        symbol [ newGB %tmp.14 42 35 40 ];
+        %tmp.14 = getv ? :newGB;
+        %tmp.16 = const :y;
+        symbol [ y %tmp.16 42 42 43 const ];
+        %tmp.17 = agetv %tmp.14 %tmp.16;
+        %tmp.18 = dup %tmp.10;
+        %tmp.19 = aputv %tmp.18 %tmp.12 %tmp.17;
+        %tmp.21 = const :w;
+        symbol [ w %tmp.21 42 47 48 const ];
+        symbol [ newGB %tmp.23 42 52 57 ];
+        %tmp.23 = getv ? :newGB;
+        %tmp.25 = const :w;
+        symbol [ w %tmp.25 42 59 60 const ];
+        %tmp.26 = agetv %tmp.23 %tmp.25;
+        %tmp.27 = dup %tmp.19;
+        %tmp.28 = aputv %tmp.27 %tmp.21 %tmp.26;
+        %tmp.30 = const :h;
+        symbol [ h %tmp.30 42 64 65 const ];
+        symbol [ newGB %tmp.32 42 69 74 ];
+        %tmp.32 = getv ? :newGB;
+        %tmp.34 = const :h;
+        symbol [ h %tmp.34 42 76 77 const ];
+        %tmp.35 = agetv %tmp.32 %tmp.34;
+        %tmp.36 = dup %tmp.28;
+        %tmp.37 = aputv %tmp.36 %tmp.30 %tmp.35;
+        ret %tmp.37;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_40_46_44_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 1; ]
+<init> {
+}

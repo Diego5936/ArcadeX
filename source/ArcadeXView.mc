@@ -6,16 +6,12 @@ import Layout;
 
 class ArcadeXView extends WatchUi.View {
 
-    var bx, by, bw, bh;
+    var game2048B as Dictionary = { :x => 0, :y => 0, :w => 0, :h => 0 }; // 2048 Button
 
     function initialize() {
         View.initialize();
     }
 
-    // Load your resources here
-    function onLayout(dc as Dc) as Void { }
-
-    // Update the view
     function onUpdate(dc as Dc) as Void {
         // Background
         // setColor(foreground = text and shapes, background)
@@ -24,30 +20,28 @@ class ArcadeXView extends WatchUi.View {
 
         // Title
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) + Layout.TITLE_OFFSET_Y, 
+        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) - 30, 
                     Graphics.FONT_LARGE, "ArcadeX", Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Button
-        bw = 190;
-        bh = 60;
-        bx = Layout.centerX(dc) - (bw / 2);
-        by = Layout.centerY(dc) + Layout.BUTTON_OFFSET_Y;
-        
+        // 2048 Button
+        game2048B[:w] = 190;
+        game2048B[:h] = 60;
+        game2048B[:x] = Layout.centerX(dc) - (game2048B[:w] / 2);
+        game2048B[:y] = Layout.centerY(dc) + 50;
+        // rect
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-        dc.fillRectangle(bx, by, bw, bh);
+        dc.fillRectangle(game2048B[:x], game2048B[:y], game2048B[:w], game2048B[:h]);
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
-        dc.drawRectangle(bx, by, bw, bh);
-        
+        dc.drawRectangle(game2048B[:x], game2048B[:y], game2048B[:w], game2048B[:h]);
+        // title
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(Layout.centerX(dc), by + 10,
-                Graphics.FONT_TINY, "Start 2048", Graphics.TEXT_JUSTIFY_CENTER);
-
-        System.println("Drew everything.");
+        dc.drawText(Layout.centerX(dc), game2048B[:y] + 10,
+                Graphics.FONT_TINY, "2048", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
-    function getButtonRect() as Dictionary {
+    function get2048Button() as Dictionary {
         return {
-            :x => bx, :y => by, :w => bw, :h => bh
+            :x => game2048B[:x], :y => game2048B[:y], :w => game2048B[:w], :h => game2048B[:h]
         };
     }
 }

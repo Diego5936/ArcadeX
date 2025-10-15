@@ -1,0 +1,46 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 4; @symbol_classdef = [Game2048Delegate,4,6,22]; @symbol_extends<0> = [WatchUi,4,31,38]; @symbol_extends<1> = [InputDelegate,4,39,52]; ]
+class Game2048Delegate extends WatchUi.InputDelegate {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_6_26_8_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 7 8 ]
+        symbol [ InputDelegate %tmp.2 7 8 21 ];
+        %tmp.2 = getv ? :InputDelegate;
+        symbol [ initialize %tmp.3 7 22 32 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 11; @symbol_functiondef = [onBack,11,13,19]; @symbol_return<0> = [Boolean,11,25,32]; ]
+    function onBack() as Boolean {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_11_33_14_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 12 8 ]
+        symbol [ WatchUi %tmp.1 12 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 12 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 12 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.4 12 32 47 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 13 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_11_33_14_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 1; ]
+<init> {
+}
