@@ -26,7 +26,6 @@ class Game2048View extends WatchUi.View {
         var y = margin + 10;
         var tileWidth = (Layout.workingWidth(dc) - (4 * spacing)) / 4;
         var tileHeight = (Layout.workingHeight(dc) - (4* spacing)) / 4;
-        System.println("tileWidth = " + tileWidth);
 
         var grid = Game2048.getStartingGrid();
 

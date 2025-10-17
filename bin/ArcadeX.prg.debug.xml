@@ -80,119 +80,122 @@
 <entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\helper\\Layout.mc" id="23" lineNum="6" parent="globals/Layout" pc="268436749" symbol="centerX"/>
 <entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\helper\\Layout.mc" id="24" lineNum="17" parent="globals/Layout" pc="268436760" symbol="workingWidth"/>
 <entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\helper\\Layout.mc" id="24" lineNum="18" parent="globals/Layout" pc="268436770" symbol="workingWidth"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="10" parent="globals/Game2048Delegate" pc="268436787" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="11" parent="globals/Game2048Delegate" pc="268436790" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="14" parent="globals/Game2048Delegate" pc="268436799" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="15" parent="globals/Game2048Delegate" pc="268436811" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="17" parent="globals/Game2048Delegate" pc="268436817" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="18" parent="globals/Game2048Delegate" pc="268436819" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="21" parent="globals/Game2048Delegate" pc="268436834" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="22" parent="globals/Game2048Delegate" pc="268436850" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="23" parent="globals/Game2048Delegate" pc="268436867" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="24" parent="globals/Game2048Delegate" pc="268436884" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="20" parent="globals/Game2048Delegate" pc="268436887" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="25" parent="globals/Game2048Delegate" pc="268436890" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="28" parent="globals/Game2048Delegate" pc="268436894" symbol="onFlick"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="6" parent="globals/Game2048Delegate" pc="268436896" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="7" parent="globals/Game2048Delegate" pc="268436898" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="27" lineNum="7" parent="globals/ArcadeXDelegate" pc="268436911" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="27" lineNum="8" parent="globals/ArcadeXDelegate" pc="268436913" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="11" parent="globals/ArcadeXDelegate" pc="268436926" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="12" parent="globals/ArcadeXDelegate" pc="268436929" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="13" parent="globals/ArcadeXDelegate" pc="268436938" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="14" parent="globals/ArcadeXDelegate" pc="268436944" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="18" parent="globals/ArcadeXDelegate" pc="268436951" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="19" parent="globals/ArcadeXDelegate" pc="268436963" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="21" parent="globals/ArcadeXDelegate" pc="268436969" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="22" parent="globals/ArcadeXDelegate" pc="268436975" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="24" parent="globals/ArcadeXDelegate" pc="268436985" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="27" parent="globals/ArcadeXDelegate" pc="268437067" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="28" parent="globals/ArcadeXDelegate" pc="268437072" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="29" parent="globals/ArcadeXDelegate" pc="268437122" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="33" parent="globals/ArcadeXDelegate" pc="268437130" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="36" parent="globals/ArcadeXDelegate" pc="268437148" symbol="onTap"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="18" parent="globals/Game2048View" pc="268437150" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="20" parent="globals/Game2048View" pc="268437153" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="21" parent="globals/Game2048View" pc="268437173" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="23" parent="globals/Game2048View" pc="268437181" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="24" parent="globals/Game2048View" pc="268437192" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="25" parent="globals/Game2048View" pc="268437196" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="26" parent="globals/Game2048View" pc="268437200" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="27" parent="globals/Game2048View" pc="268437207" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="28" parent="globals/Game2048View" pc="268437232" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="29" parent="globals/Game2048View" pc="268437257" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="31" parent="globals/Game2048View" pc="268437278" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="33" parent="globals/Game2048View" pc="268437290" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="34" parent="globals/Game2048View" pc="268437301" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="36" parent="globals/Game2048View" pc="268437308" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="37" parent="globals/Game2048View" pc="268437319" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="40" parent="globals/Game2048View" pc="268437326" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="41" parent="globals/Game2048View" pc="268437338" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="42" parent="globals/Game2048View" pc="268437351" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="44" parent="globals/Game2048View" pc="268437369" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="45" parent="globals/Game2048View" pc="268437382" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="46" parent="globals/Game2048View" pc="268437400" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="48" parent="globals/Game2048View" pc="268437432" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="51" parent="globals/Game2048View" pc="268437452" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="29" lineNum="52" parent="globals/Game2048View" pc="268437456" symbol="drawGrid"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="10" parent="globals/Game2048View" pc="268437477" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="11" parent="globals/Game2048View" pc="268437479" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="31" lineNum="14" parent="globals/Game2048View" pc="268437492" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="31" lineNum="15" parent="globals/Game2048View" pc="268437494" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="56" parent="globals/Game2048View" pc="268437506" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="57" parent="globals/Game2048View" pc="268437508" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="58" parent="globals/Game2048View" pc="268437510" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="60" parent="globals/Game2048View" pc="268437525" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="62" parent="globals/Game2048View" pc="268437541" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="64" parent="globals/Game2048View" pc="268437557" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="66" parent="globals/Game2048View" pc="268437573" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="68" parent="globals/Game2048View" pc="268437589" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="70" parent="globals/Game2048View" pc="268437605" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="72" parent="globals/Game2048View" pc="268437621" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="74" parent="globals/Game2048View" pc="268437638" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="76" parent="globals/Game2048View" pc="268437655" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="78" parent="globals/Game2048View" pc="268437672" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="80" parent="globals/Game2048View" pc="268437689" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="82" parent="globals/Game2048View" pc="268437706" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="59" parent="globals/Game2048View" pc="268437709" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="61" parent="globals/Game2048View" pc="268437711" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="63" parent="globals/Game2048View" pc="268437717" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="65" parent="globals/Game2048View" pc="268437723" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="67" parent="globals/Game2048View" pc="268437729" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="69" parent="globals/Game2048View" pc="268437735" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="71" parent="globals/Game2048View" pc="268437741" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="73" parent="globals/Game2048View" pc="268437746" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="75" parent="globals/Game2048View" pc="268437750" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="77" parent="globals/Game2048View" pc="268437756" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="79" parent="globals/Game2048View" pc="268437761" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="81" parent="globals/Game2048View" pc="268437766" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="83" parent="globals/Game2048View" pc="268437772" symbol="setTileColor"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="33" lineNum="40" parent="globals/Menu2048View" pc="268437776" symbol="getNewGameButton"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="33" lineNum="41" parent="globals/Menu2048View" pc="268437778" symbol="getNewGameButton"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="34" lineNum="11" parent="globals/Menu2048View" pc="268437852" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="34" lineNum="12" parent="globals/Menu2048View" pc="268437854" symbol="initialize"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="15" parent="globals/Menu2048View" pc="268437867" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="17" parent="globals/Menu2048View" pc="268437869" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="18" parent="globals/Menu2048View" pc="268437885" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="21" parent="globals/Menu2048View" pc="268437893" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="22" parent="globals/Menu2048View" pc="268437909" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="26" parent="globals/Menu2048View" pc="268437959" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="27" parent="globals/Menu2048View" pc="268437973" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="28" parent="globals/Menu2048View" pc="268437986" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="29" parent="globals/Menu2048View" pc="268438026" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="31" parent="globals/Menu2048View" pc="268438054" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="32" parent="globals/Menu2048View" pc="268438074" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="33" parent="globals/Menu2048View" pc="268438128" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="34" parent="globals/Menu2048View" pc="268438144" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="36" parent="globals/Menu2048View" pc="268438198" symbol="onUpdate"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="13" parent="globals/Rez/Layouts" pc="268438246" symbol="MainLayout"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="14" parent="globals/Rez/Layouts" pc="268438257" symbol="MainLayout"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="16" parent="globals/Rez/Layouts" pc="268438357" symbol="MainLayout"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="37" lineNum="21" parent="globals/Rez/Menus/MainMenu" pc="268438367" symbol="&lt;init&gt;"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="22" parent="globals/Rez/Menus/MainMenu" pc="268438379" symbol="initialize"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268438381" symbol="initialize"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="24" parent="globals/Rez/Menus/MainMenu" pc="268438393" symbol="initialize"/>
-<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268438438" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="40" parent="globals/Game2048Delegate" pc="268436787" symbol="onBack"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="41" parent="globals/Game2048Delegate" pc="268436789" symbol="onBack"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="25" lineNum="42" parent="globals/Game2048Delegate" pc="268436803" symbol="onBack"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="11" parent="globals/Game2048Delegate" pc="268436805" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="12" parent="globals/Game2048Delegate" pc="268436808" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="15" parent="globals/Game2048Delegate" pc="268436817" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="16" parent="globals/Game2048Delegate" pc="268436829" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="19" parent="globals/Game2048Delegate" pc="268436835" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="20" parent="globals/Game2048Delegate" pc="268436843" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="21" parent="globals/Game2048Delegate" pc="268436861" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="25" parent="globals/Game2048Delegate" pc="268436866" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="26" parent="globals/Game2048Delegate" pc="268436873" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="29" parent="globals/Game2048Delegate" pc="268436894" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="30" parent="globals/Game2048Delegate" pc="268436902" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="33" parent="globals/Game2048Delegate" pc="268436923" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="34" parent="globals/Game2048Delegate" pc="268436931" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="26" lineNum="37" parent="globals/Game2048Delegate" pc="268436952" symbol="onSwipe"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="27" lineNum="6" parent="globals/Game2048Delegate" pc="268436954" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048Delegate.mc" id="27" lineNum="7" parent="globals/Game2048Delegate" pc="268436956" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="7" parent="globals/ArcadeXDelegate" pc="268436969" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="28" lineNum="8" parent="globals/ArcadeXDelegate" pc="268436971" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="11" parent="globals/ArcadeXDelegate" pc="268436984" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="12" parent="globals/ArcadeXDelegate" pc="268436987" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="13" parent="globals/ArcadeXDelegate" pc="268436996" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="14" parent="globals/ArcadeXDelegate" pc="268437002" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="18" parent="globals/ArcadeXDelegate" pc="268437009" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="19" parent="globals/ArcadeXDelegate" pc="268437021" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="21" parent="globals/ArcadeXDelegate" pc="268437027" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="22" parent="globals/ArcadeXDelegate" pc="268437033" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="24" parent="globals/ArcadeXDelegate" pc="268437043" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="27" parent="globals/ArcadeXDelegate" pc="268437125" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="28" parent="globals/ArcadeXDelegate" pc="268437130" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="29" parent="globals/ArcadeXDelegate" pc="268437180" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="33" parent="globals/ArcadeXDelegate" pc="268437188" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\ArcadeXDelegate.mc" id="29" lineNum="36" parent="globals/ArcadeXDelegate" pc="268437206" symbol="onTap"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="18" parent="globals/Game2048View" pc="268437208" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="20" parent="globals/Game2048View" pc="268437211" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="21" parent="globals/Game2048View" pc="268437231" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="23" parent="globals/Game2048View" pc="268437239" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="24" parent="globals/Game2048View" pc="268437250" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="25" parent="globals/Game2048View" pc="268437254" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="26" parent="globals/Game2048View" pc="268437258" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="27" parent="globals/Game2048View" pc="268437265" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="28" parent="globals/Game2048View" pc="268437290" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="30" parent="globals/Game2048View" pc="268437315" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="32" parent="globals/Game2048View" pc="268437327" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="33" parent="globals/Game2048View" pc="268437338" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="35" parent="globals/Game2048View" pc="268437345" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="36" parent="globals/Game2048View" pc="268437356" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="39" parent="globals/Game2048View" pc="268437363" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="40" parent="globals/Game2048View" pc="268437375" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="41" parent="globals/Game2048View" pc="268437388" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="43" parent="globals/Game2048View" pc="268437406" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="44" parent="globals/Game2048View" pc="268437419" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="45" parent="globals/Game2048View" pc="268437437" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="47" parent="globals/Game2048View" pc="268437469" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="50" parent="globals/Game2048View" pc="268437489" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="30" lineNum="51" parent="globals/Game2048View" pc="268437493" symbol="drawGrid"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="31" lineNum="10" parent="globals/Game2048View" pc="268437514" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="31" lineNum="11" parent="globals/Game2048View" pc="268437516" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="14" parent="globals/Game2048View" pc="268437529" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="32" lineNum="15" parent="globals/Game2048View" pc="268437531" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="55" parent="globals/Game2048View" pc="268437543" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="56" parent="globals/Game2048View" pc="268437545" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="57" parent="globals/Game2048View" pc="268437547" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="59" parent="globals/Game2048View" pc="268437562" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="61" parent="globals/Game2048View" pc="268437578" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="63" parent="globals/Game2048View" pc="268437594" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="65" parent="globals/Game2048View" pc="268437610" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="67" parent="globals/Game2048View" pc="268437626" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="69" parent="globals/Game2048View" pc="268437642" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="71" parent="globals/Game2048View" pc="268437658" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="73" parent="globals/Game2048View" pc="268437675" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="75" parent="globals/Game2048View" pc="268437692" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="77" parent="globals/Game2048View" pc="268437709" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="79" parent="globals/Game2048View" pc="268437726" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="81" parent="globals/Game2048View" pc="268437743" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="58" parent="globals/Game2048View" pc="268437746" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="60" parent="globals/Game2048View" pc="268437748" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="62" parent="globals/Game2048View" pc="268437754" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="64" parent="globals/Game2048View" pc="268437760" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="66" parent="globals/Game2048View" pc="268437766" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="68" parent="globals/Game2048View" pc="268437772" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="70" parent="globals/Game2048View" pc="268437778" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="72" parent="globals/Game2048View" pc="268437783" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="74" parent="globals/Game2048View" pc="268437787" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="76" parent="globals/Game2048View" pc="268437793" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="78" parent="globals/Game2048View" pc="268437798" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="80" parent="globals/Game2048View" pc="268437803" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Game2048View.mc" id="33" lineNum="82" parent="globals/Game2048View" pc="268437809" symbol="setTileColor"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="34" lineNum="40" parent="globals/Menu2048View" pc="268437813" symbol="getNewGameButton"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="34" lineNum="41" parent="globals/Menu2048View" pc="268437815" symbol="getNewGameButton"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="11" parent="globals/Menu2048View" pc="268437889" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="35" lineNum="12" parent="globals/Menu2048View" pc="268437891" symbol="initialize"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="15" parent="globals/Menu2048View" pc="268437904" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="17" parent="globals/Menu2048View" pc="268437906" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="18" parent="globals/Menu2048View" pc="268437922" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="21" parent="globals/Menu2048View" pc="268437930" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="22" parent="globals/Menu2048View" pc="268437946" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="26" parent="globals/Menu2048View" pc="268437996" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="27" parent="globals/Menu2048View" pc="268438010" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="28" parent="globals/Menu2048View" pc="268438023" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="29" parent="globals/Menu2048View" pc="268438063" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="31" parent="globals/Menu2048View" pc="268438091" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="32" parent="globals/Menu2048View" pc="268438111" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="33" parent="globals/Menu2048View" pc="268438165" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="34" parent="globals/Menu2048View" pc="268438181" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\source\\game2048\\Menu2048View.mc" id="36" lineNum="36" parent="globals/Menu2048View" pc="268438235" symbol="onUpdate"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="37" lineNum="13" parent="globals/Rez/Layouts" pc="268438283" symbol="MainLayout"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="37" lineNum="14" parent="globals/Rez/Layouts" pc="268438294" symbol="MainLayout"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="37" lineNum="16" parent="globals/Rez/Layouts" pc="268438394" symbol="MainLayout"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="21" parent="globals/Rez/Menus/MainMenu" pc="268438404" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="39" lineNum="22" parent="globals/Rez/Menus/MainMenu" pc="268438416" symbol="initialize"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="39" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268438418" symbol="initialize"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="39" lineNum="24" parent="globals/Rez/Menus/MainMenu" pc="268438430" symbol="initialize"/>
+<entry filename="c:\\Users\\Owner\\OneDrive\\Documents\\PROJECTS\\Garmin\\ArcadeX\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="39" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268438475" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -209,6 +212,7 @@
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="19" method="true" symbol="getStartingGrid"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8389081" method="true" symbol="onBack"/>
 <entry id="16" object="true" symbol="Menu2048Delegate"/>
 <entry id="4" module="true" symbol="globals/Rez"/>
 <entry id="31" method="true" symbol="getNewGameButton"/>
@@ -249,7 +253,6 @@
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry field="true" id="38" symbol="Menu2048"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry id="8391827" method="true" symbol="onFlick"/>
 <entry id="8388641" module="true" symbol="Math"/>
 <entry field="true" id="39" symbol="MenuMaze"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
@@ -266,6 +269,7 @@
 <entry field="true" id="8390078" symbol="x"/>
 <entry id="40" symbol="w"/>
 <entry id="41" symbol="h"/>
+<entry id="8389101" method="true" symbol="onSwipe"/>
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435903" name="clickEvent" stackId="1" startPc="268435680"/>
@@ -292,37 +296,37 @@
 <entry arg="true" endPc="268436738" name="dc" stackId="1" startPc="268436712"/>
 <entry arg="true" endPc="268436759" name="dc" stackId="1" startPc="268436739"/>
 <entry arg="true" endPc="268436786" name="dc" stackId="1" startPc="268436760"/>
-<entry arg="true" endPc="268436895" name="flickEvent" stackId="1" startPc="268436787"/>
-<entry endPc="268436895" name="direction" stackId="2" startPc="268436790"/>
-<entry endPc="268436895" name="viewPair" stackId="3" startPc="268436790"/>
-<entry endPc="268436895" name="view" stackId="4" startPc="268436790"/>
-<entry arg="true" endPc="268437149" name="clickEvent" stackId="1" startPc="268436926"/>
-<entry endPc="268437149" name="position" stackId="2" startPc="268436929"/>
-<entry endPc="268437149" name="x" stackId="3" startPc="268436929"/>
-<entry endPc="268437149" name="y" stackId="4" startPc="268436929"/>
-<entry endPc="268437149" name="viewPair" stackId="5" startPc="268436929"/>
-<entry endPc="268437149" name="view" stackId="6" startPc="268436929"/>
-<entry endPc="268437126" name="rect" stackId="7" startPc="268436975"/>
-<entry endPc="268437126" name="tap2048" stackId="8" startPc="268436975"/>
-<entry arg="true" endPc="268437476" name="dc" stackId="1" startPc="268437150"/>
-<entry endPc="268437475" name="margin" stackId="2" startPc="268437153"/>
-<entry endPc="268437475" name="spacing" stackId="3" startPc="268437153"/>
-<entry endPc="268437475" name="x" stackId="4" startPc="268437153"/>
-<entry endPc="268437475" name="y" stackId="5" startPc="268437153"/>
-<entry endPc="268437475" name="tileWidth" stackId="6" startPc="268437153"/>
-<entry endPc="268437475" name="tileHeight" stackId="7" startPc="268437153"/>
-<entry endPc="268437475" name="grid" stackId="8" startPc="268437153"/>
-<entry endPc="268437475" name="row" stackId="9" startPc="268437301"/>
-<entry endPc="268437465" name="curRow" stackId="10" startPc="268437301"/>
-<entry endPc="268437451" name="col" stackId="11" startPc="268437319"/>
-<entry endPc="268437441" name="curTile" stackId="12" startPc="268437319"/>
-<entry endPc="268437441" name="tileColor" stackId="13" startPc="268437319"/>
-<entry endPc="268437441" name="fontSize" stackId="14" startPc="268437319"/>
-<entry arg="true" endPc="268437505" name="dc" stackId="1" startPc="268437492"/>
-<entry arg="true" endPc="268437775" name="tileNumber" stackId="1" startPc="268437506"/>
-<entry arg="true" endPc="268438245" name="dc" stackId="1" startPc="268437867"/>
-<entry arg="true" endPc="268438366" name="dc" stackId="1" startPc="268438246"/>
-<entry endPc="268438366" name="rez_cmp_local_text_Title" stackId="2" startPc="268438257"/>
+<entry arg="true" endPc="268436953" name="swipeEvent" stackId="1" startPc="268436805"/>
+<entry endPc="268436953" name="direction" stackId="2" startPc="268436808"/>
+<entry endPc="268436953" name="viewPair" stackId="3" startPc="268436808"/>
+<entry endPc="268436953" name="view" stackId="4" startPc="268436808"/>
+<entry arg="true" endPc="268437207" name="clickEvent" stackId="1" startPc="268436984"/>
+<entry endPc="268437207" name="position" stackId="2" startPc="268436987"/>
+<entry endPc="268437207" name="x" stackId="3" startPc="268436987"/>
+<entry endPc="268437207" name="y" stackId="4" startPc="268436987"/>
+<entry endPc="268437207" name="viewPair" stackId="5" startPc="268436987"/>
+<entry endPc="268437207" name="view" stackId="6" startPc="268436987"/>
+<entry endPc="268437184" name="rect" stackId="7" startPc="268437033"/>
+<entry endPc="268437184" name="tap2048" stackId="8" startPc="268437033"/>
+<entry arg="true" endPc="268437513" name="dc" stackId="1" startPc="268437208"/>
+<entry endPc="268437512" name="margin" stackId="2" startPc="268437211"/>
+<entry endPc="268437512" name="spacing" stackId="3" startPc="268437211"/>
+<entry endPc="268437512" name="x" stackId="4" startPc="268437211"/>
+<entry endPc="268437512" name="y" stackId="5" startPc="268437211"/>
+<entry endPc="268437512" name="tileWidth" stackId="6" startPc="268437211"/>
+<entry endPc="268437512" name="tileHeight" stackId="7" startPc="268437211"/>
+<entry endPc="268437512" name="grid" stackId="8" startPc="268437211"/>
+<entry endPc="268437512" name="row" stackId="9" startPc="268437338"/>
+<entry endPc="268437502" name="curRow" stackId="10" startPc="268437338"/>
+<entry endPc="268437488" name="col" stackId="11" startPc="268437356"/>
+<entry endPc="268437478" name="curTile" stackId="12" startPc="268437356"/>
+<entry endPc="268437478" name="tileColor" stackId="13" startPc="268437356"/>
+<entry endPc="268437478" name="fontSize" stackId="14" startPc="268437356"/>
+<entry arg="true" endPc="268437542" name="dc" stackId="1" startPc="268437529"/>
+<entry arg="true" endPc="268437812" name="tileNumber" stackId="1" startPc="268437543"/>
+<entry arg="true" endPc="268438282" name="dc" stackId="1" startPc="268437904"/>
+<entry arg="true" endPc="268438403" name="dc" stackId="1" startPc="268438283"/>
+<entry endPc="268438403" name="rez_cmp_local_text_Title" stackId="2" startPc="268438294"/>
 </localVars>
 <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B4257-00"/>
 <annotations>
@@ -340,15 +344,15 @@
 <dataEntry label="globals/ArcadeXView" offset="383" parentId="globals" symbolId="ArcadeXView" type="class"/>
 <dataEntry label="globals/Layout" offset="454" parentId="globals" symbolId="Layout" type="module"/>
 <dataEntry label="globals/Game2048Delegate" offset="525" parentId="globals" symbolId="Game2048Delegate" type="class"/>
-<dataEntry label="globals/Rez" offset="578" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/ArcadeXDelegate" offset="640" parentId="globals" symbolId="ArcadeXDelegate" type="class"/>
-<dataEntry label="globals/Game2048View" offset="693" parentId="globals" symbolId="Game2048View" type="class"/>
-<dataEntry label="globals/Menu2048View" offset="764" parentId="globals" symbolId="Menu2048View" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="835" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="870" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="905" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="940" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/Menus/MainMenu" offset="1002" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry label="globals/Rez" offset="587" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/ArcadeXDelegate" offset="649" parentId="globals" symbolId="ArcadeXDelegate" type="class"/>
+<dataEntry label="globals/Game2048View" offset="702" parentId="globals" symbolId="Game2048View" type="class"/>
+<dataEntry label="globals/Menu2048View" offset="773" parentId="globals" symbolId="Menu2048View" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="844" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="879" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="914" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="949" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="1011" parentId="Menus" symbolId="MainMenu" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="Menu2048Delegate" startPc="268435460">
@@ -438,11 +442,14 @@
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436895" name="onFlick" parent="Game2048Delegate" startPc="268436787">
-<param id="flickEvent"/>
+<functionEntry accessMode="public" endPc="268436804" name="onBack" parent="Game2048Delegate" startPc="268436787">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436910" name="initialize" parent="Game2048Delegate" startPc="268436896">
+<functionEntry accessMode="public" endPc="268436953" name="onSwipe" parent="Game2048Delegate" startPc="268436805">
+<param id="swipeEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436968" name="initialize" parent="Game2048Delegate" startPc="268436954">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -457,46 +464,46 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436925" name="initialize" parent="ArcadeXDelegate" startPc="268436911">
+<functionEntry accessMode="public" endPc="268436983" name="initialize" parent="ArcadeXDelegate" startPc="268436969">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437149" name="onTap" parent="ArcadeXDelegate" startPc="268436926">
+<functionEntry accessMode="public" endPc="268437207" name="onTap" parent="ArcadeXDelegate" startPc="268436984">
 <param id="clickEvent"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437476" name="drawGrid" parent="Game2048View" startPc="268437150">
+<functionEntry accessMode="public" endPc="268437513" name="drawGrid" parent="Game2048View" startPc="268437208">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437491" name="initialize" parent="Game2048View" startPc="268437477">
+<functionEntry accessMode="public" endPc="268437528" name="initialize" parent="Game2048View" startPc="268437514">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437505" name="onUpdate" parent="Game2048View" startPc="268437492">
+<functionEntry accessMode="public" endPc="268437542" name="onUpdate" parent="Game2048View" startPc="268437529">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437775" name="setTileColor" parent="Game2048View" startPc="268437506">
+<functionEntry accessMode="public" endPc="268437812" name="setTileColor" parent="Game2048View" startPc="268437543">
 <param id="tileNumber"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437851" name="getNewGameButton" parent="Menu2048View" startPc="268437776">
+<functionEntry accessMode="public" endPc="268437888" name="getNewGameButton" parent="Menu2048View" startPc="268437813">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437866" name="initialize" parent="Menu2048View" startPc="268437852">
+<functionEntry accessMode="public" endPc="268437903" name="initialize" parent="Menu2048View" startPc="268437889">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438245" name="onUpdate" parent="Menu2048View" startPc="268437867">
+<functionEntry accessMode="public" endPc="268438282" name="onUpdate" parent="Menu2048View" startPc="268437904">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438366" name="MainLayout" parent="Layouts" startPc="268438246">
+<functionEntry accessMode="public" endPc="268438403" name="MainLayout" parent="Layouts" startPc="268438283">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438378" name="&lt;init&gt;" parent="MainMenu" startPc="268438367">
+<functionEntry accessMode="public" endPc="268438415" name="&lt;init&gt;" parent="MainMenu" startPc="268438404">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438483" name="initialize" parent="MainMenu" startPc="268438379">
+<functionEntry accessMode="public" endPc="268438520" name="initialize" parent="MainMenu" startPc="268438416">
 <documentation/>
 </functionEntry>
 </functions>
