@@ -9,6 +9,7 @@ class Game2048View extends WatchUi.View {
 
     function initialize() {
         View.initialize();
+        Game2048.setStartingGrid();
     }
 
     function onUpdate(dc as Dc) as Void {   
@@ -27,7 +28,7 @@ class Game2048View extends WatchUi.View {
         var tileWidth = (Layout.workingWidth(dc) - (4 * spacing)) / 4;
         var tileHeight = (Layout.workingHeight(dc) - (4* spacing)) / 4;
 
-        var grid = Game2048.getStartingGrid();
+        var grid = Game2048.grid as Array;
 
         for (var row = 0; row < 4; row++) {
             var curRow = grid[row] as Array;

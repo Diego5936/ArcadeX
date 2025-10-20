@@ -1,24 +1,22 @@
 import Toybox.WatchUi;
 import Toybox.Lang;
 
+import Game2048;
+
 class Game2048Delegate extends WatchUi.InputDelegate {
 
     function initialize() {
         InputDelegate.initialize();
-
     }
 
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
         var direction = swipeEvent.getDirection();
 
-        // Get view counterpart
-        var viewPair = WatchUi.getCurrentView();
-        var view = viewPair[0] as Game2048View;
-
         // RIGHT
-        // It will only 
         if (direction == SWIPE_RIGHT) { 
+            Game2048.slideRight();
             System.println("RIGHT");
+            WatchUi.requestUpdate();
             return true; // Consume event, avoid default back
             /* It will only truly consume the event
             if the swipe is from the center of the watch to the right
