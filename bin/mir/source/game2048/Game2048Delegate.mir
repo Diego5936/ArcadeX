@@ -13,150 +13,162 @@ class Game2048Delegate extends WatchUi.InputDelegate {
     static
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
     function initialize() as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_8_26_10_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 9 8 ]
-        symbol [ InputDelegate %tmp.2 9 8 21 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_7_26_9_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 8 8 ]
+        symbol [ InputDelegate %tmp.2 8 8 21 ];
         %tmp.2 = getv ? :InputDelegate;
-        symbol [ initialize %tmp.3 9 22 32 ];
+        symbol [ initialize %tmp.3 8 22 32 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_8_26_10_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_7_26_9_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 12; @symbol_functiondef = [onSwipe,12,13,20]; @symbol_param<0> = [swipeEvent,12,21,31]; @symbol_param<0>_type<0> = [WatchUi,12,35,42]; @symbol_param<0>_type<1> = [SwipeEvent,12,43,53]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 11; @symbol_functiondef = [onSwipe,11,13,20]; @symbol_param<0> = [swipeEvent,11,21,31]; @symbol_param<0>_type<0> = [WatchUi,11,35,42]; @symbol_param<0>_type<1> = [SwipeEvent,11,43,53]; ]
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_12_55_40_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 13 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_12_55_40_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_12_55_40_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_11_55_39_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 12 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_11_55_39_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_11_55_39_4_stop" ]
         %direction.1 = local;
-        symbol [ direction %direction.1 13 12 21 ];
+        symbol [ direction %direction.1 12 12 21 ];
         %tmp.1 = lgetv %swipeEvent;
-        symbol [ swipeEvent %tmp.1 13 24 34 ];
-        symbol [ getDirection %tmp.2 13 35 47 ];
+        symbol [ swipeEvent %tmp.1 12 24 34 ];
+        symbol [ getDirection %tmp.2 12 35 47 ];
         %tmp.2 = getv function %tmp.1 :getDirection;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %direction.1 %tmp.3;
-        symbol [ direction %direction.1 13 12 21 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 16 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_8_24_8_if_stmt:
+        symbol [ direction %direction.1 12 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 14 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_8_22_8_if_stmt:
         %tmp.4 = lgetv %direction.1;
-        symbol [ direction %tmp.4 16 12 21 ];
-        symbol [ SWIPE_RIGHT %tmp.6 16 25 36 ];
+        symbol [ direction %tmp.4 14 12 21 ];
+        symbol [ SWIPE_RIGHT %tmp.6 14 25 36 ];
         %tmp.6 = getv ? :SWIPE_RIGHT;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_8_24_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_8_24_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_38_24_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 17 12 ]
-        symbol [ Game2048 %tmp.8 17 12 20 ];
+        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_8_22_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_8_22_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_38_22_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 15 12 ]
+        symbol [ Game2048 %tmp.8 15 12 20 ];
         %tmp.8 = getm $.Game2048;
-        symbol [ slideRight %tmp.9 17 21 31 ];
-        %tmp.9 = getv function %tmp.8 :slideRight;
-        invoke %tmp.8 %tmp.9();
+        symbol [ slideHorizontally %tmp.9 15 21 38 ];
+        %tmp.9 = getv function %tmp.8 :slideHorizontally;
+        %tmp.10 = "right";
+        invoke %tmp.8 %tmp.9(%tmp.10);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 16 12 ]
+        symbol [ Game2048 %tmp.11 16 12 20 ];
+        %tmp.11 = getm $.Game2048;
+        symbol [ spawnNewTile %tmp.12 16 21 33 ];
+        %tmp.12 = getv function %tmp.11 :spawnNewTile;
+        invoke %tmp.11 %tmp.12();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 17 12 ]
+        symbol [ WatchUi %tmp.13 17 12 19 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.14 17 20 33 ];
+        %tmp.14 = getv function %tmp.13 :requestUpdate;
+        invoke %tmp.13 %tmp.14();
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 18 12 ]
-        symbol [ System %tmp.11 18 12 18 ];
-        %tmp.11 = getv ? :System;
-        symbol [ println %tmp.12 18 19 26 ];
-        %tmp.12 = getv function %tmp.11 :println;
-        %tmp.13 = "RIGHT";
-        invoke %tmp.11 %tmp.12(%tmp.13);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 19 12 ]
-        symbol [ WatchUi %tmp.14 19 12 19 ];
-        %tmp.14 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.15 19 20 33 ];
-        %tmp.15 = getv function %tmp.14 :requestUpdate;
-        invoke %tmp.14 %tmp.15();
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 20 12 ]
-        %tmp.16 = true;
-        ret %tmp.16;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_38_24_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_8_24_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_16_8_24_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 27 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_8_37_8_if_stmt:
-        %tmp.17 = lgetv %direction.1;
-        symbol [ direction %tmp.17 27 12 21 ];
-        symbol [ SWIPE_UP %tmp.19 27 25 33 ];
-        %tmp.19 = getv ? :SWIPE_UP;
-        %tmp.20 = eq %tmp.17 %tmp.19;
-        bf %tmp.20 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_8_37_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_8_37_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_35_29_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 28 12 ]
-        symbol [ System %tmp.22 28 12 18 ];
-        %tmp.22 = getv ? :System;
-        symbol [ println %tmp.23 28 19 26 ];
-        %tmp.23 = getv function %tmp.22 :println;
-        %tmp.24 = "UP";
-        invoke %tmp.22 %tmp.23(%tmp.24);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_35_29_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_8_37_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_8_37_8_if_false:
+        %tmp.15 = true;
+        ret %tmp.15;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_38_22_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_8_22_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_14_8_22_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 24 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_8_33_8_if_stmt:
+        %tmp.16 = lgetv %direction.1;
+        symbol [ direction %tmp.16 24 12 21 ];
+        symbol [ SWIPE_UP %tmp.18 24 25 33 ];
+        %tmp.18 = getv ? :SWIPE_UP;
+        %tmp.19 = eq %tmp.16 %tmp.18;
+        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_8_33_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_8_33_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_35_27_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 25 12 ]
+        symbol [ Game2048 %tmp.20 25 12 20 ];
+        %tmp.20 = getm $.Game2048;
+        symbol [ slideVertically %tmp.21 25 21 36 ];
+        %tmp.21 = getv function %tmp.20 :slideVertically;
+        %tmp.22 = "up";
+        invoke %tmp.20 %tmp.21(%tmp.22);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_35_27_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_8_33_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_8_33_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 28 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_13_33_8_if_stmt:
+        %tmp.23 = lgetv %direction.1;
+        symbol [ direction %tmp.23 28 17 26 ];
+        symbol [ SWIPE_DOWN %tmp.25 28 30 40 ];
+        %tmp.25 = getv ? :SWIPE_DOWN;
+        %tmp.26 = eq %tmp.23 %tmp.25;
+        bf %tmp.26 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_13_33_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_13_33_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_42_30_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 29 12 ]
+        symbol [ Game2048 %tmp.27 29 12 20 ];
+        %tmp.27 = getm $.Game2048;
+        symbol [ slideVertically %tmp.28 29 21 36 ];
+        %tmp.28 = getv function %tmp.27 :slideVertically;
+        %tmp.29 = "down";
+        invoke %tmp.27 %tmp.28(%tmp.29);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_42_30_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_13_33_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_13_33_8_if_false:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 31 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_37_8_if_stmt:
-        %tmp.25 = lgetv %direction.1;
-        symbol [ direction %tmp.25 31 17 26 ];
-        symbol [ SWIPE_DOWN %tmp.27 31 30 40 ];
-        %tmp.27 = getv ? :SWIPE_DOWN;
-        %tmp.28 = eq %tmp.25 %tmp.27;
-        bf %tmp.28 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_37_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_37_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_33_8_if_stmt:
+        %tmp.30 = lgetv %direction.1;
+        symbol [ direction %tmp.30 31 17 26 ];
+        symbol [ SWIPE_LEFT %tmp.32 31 30 40 ];
+        %tmp.32 = getv ? :SWIPE_LEFT;
+        %tmp.33 = eq %tmp.30 %tmp.32;
+        bf %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_33_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_33_8_if_true:
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_42_33_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 32 12 ]
-        symbol [ System %tmp.30 32 12 18 ];
-        %tmp.30 = getv ? :System;
-        symbol [ println %tmp.31 32 19 26 ];
-        %tmp.31 = getv function %tmp.30 :println;
-        %tmp.32 = "DOWN";
-        invoke %tmp.30 %tmp.31(%tmp.32);
+        symbol [ Game2048 %tmp.34 32 12 20 ];
+        %tmp.34 = getm $.Game2048;
+        symbol [ slideHorizontally %tmp.35 32 21 38 ];
+        %tmp.35 = getv function %tmp.34 :slideHorizontally;
+        %tmp.36 = "left";
+        invoke %tmp.34 %tmp.35(%tmp.36);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_42_33_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_37_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_37_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 35 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_13_37_8_if_stmt:
-        %tmp.33 = lgetv %direction.1;
-        symbol [ direction %tmp.33 35 17 26 ];
-        symbol [ SWIPE_LEFT %tmp.35 35 30 40 ];
-        %tmp.35 = getv ? :SWIPE_LEFT;
-        %tmp.36 = eq %tmp.33 %tmp.35;
-        bf %tmp.36 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_13_37_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_13_37_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_42_37_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 36 12 ]
-        symbol [ System %tmp.38 36 12 18 ];
-        %tmp.38 = getv ? :System;
-        symbol [ println %tmp.39 36 19 26 ];
-        %tmp.39 = getv function %tmp.38 :println;
-        %tmp.40 = "LEFT";
-        invoke %tmp.38 %tmp.39(%tmp.40);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_42_37_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_13_37_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_35_13_37_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_37_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_27_8_37_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 39 8 ]
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_33_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_31_13_33_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_28_13_33_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_24_8_33_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 35 8 ]
+        symbol [ Game2048 %tmp.37 35 8 16 ];
+        %tmp.37 = getm $.Game2048;
+        symbol [ spawnNewTile %tmp.38 35 17 29 ];
+        %tmp.38 = getv function %tmp.37 :spawnNewTile;
+        invoke %tmp.37 %tmp.38();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 36 8 ]
+        symbol [ WatchUi %tmp.39 36 8 15 ];
+        %tmp.39 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.40 36 16 29 ];
+        %tmp.40 = getv function %tmp.39 :requestUpdate;
+        invoke %tmp.39 %tmp.40();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 38 8 ]
         %tmp.41 = true;
         ret %tmp.41;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_12_55_40_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_11_55_39_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 42; @symbol_functiondef = [onBack,42,13,19]; @symbol_return<0> = [Boolean,42,25,32]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 41; @symbol_functiondef = [onBack,41,13,19]; @symbol_return<0> = [Boolean,41,25,32]; ]
     function onBack() as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_42_33_45_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 43 8 ]
-        symbol [ WatchUi %tmp.1 43 8 15 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_41_33_44_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 42 8 ]
+        symbol [ WatchUi %tmp.1 42 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.2 43 16 23 ];
+        symbol [ popView %tmp.2 42 16 23 ];
         %tmp.2 = getv function %tmp.1 :popView;
-        symbol [ WatchUi %tmp.3 43 24 31 ];
+        symbol [ WatchUi %tmp.3 42 24 31 ];
         %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.4 43 32 47 ];
+        symbol [ SLIDE_IMMEDIATE %tmp.4 42 32 47 ];
         %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 44 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc" 43 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_42_33_45_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048Delegate_mc_41_33_44_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048Delegate.mc"; @line = 1; ]

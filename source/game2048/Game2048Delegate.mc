@@ -4,7 +4,6 @@ import Toybox.Lang;
 import Game2048;
 
 class Game2048Delegate extends WatchUi.InputDelegate {
-
     function initialize() {
         InputDelegate.initialize();
     }
@@ -12,29 +11,29 @@ class Game2048Delegate extends WatchUi.InputDelegate {
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
         var direction = swipeEvent.getDirection();
 
-        // RIGHT
         if (direction == SWIPE_RIGHT) { 
-            Game2048.slideRight();
-            System.println("RIGHT");
+            Game2048.slideHorizontally("right");
+            Game2048.spawnNewTile();
             WatchUi.requestUpdate();
-            return true; // Consume event, avoid default back
+            return true; // Consume event, avoid default back when sliding right
             /* It will only truly consume the event
             if the swipe is from the center of the watch to the right
             if the swipe starts all the way on the left it will default */
         }
 
-        // UP
         if (direction == SWIPE_UP) { 
-            System.println("UP");
+            Game2048.slideVertically("up");
+            
         } 
-        // DOWN
         else if (direction == SWIPE_DOWN) { 
-            System.println("DOWN");
+            Game2048.slideVertically("down");
         } 
-        // LEFT
         else if (direction == SWIPE_LEFT) {
-            System.println("LEFT");
+            Game2048.slideHorizontally("left");
         }
+
+        Game2048.spawnNewTile();
+        WatchUi.requestUpdate();
 
         return true;
     }
