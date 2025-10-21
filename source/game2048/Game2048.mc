@@ -29,6 +29,8 @@ module Game2048 {
         }
     }
 
+    // --- GAME LOGIC ---
+
     // Adds a new tile after action
     // Odds: 90% '2', 10% '4'
     function spawnNewTile() {
@@ -46,24 +48,6 @@ module Game2048 {
 
         var curRow = (grid as Array)[row] as Array;
         curRow[col] = tileVal;
-    }
-
-    // Returns an array of the empty tiles in the global grid
-    function getEmptyTiles() as Array {
-        var emptyTiles = [];
-
-        for (var row = 0; row < 4; row++) {
-            // Super strict type inference
-            var curRow = (grid as Array)[row] as Array;
-
-            for (var col = 0; col < 4; col++) {
-                if (curRow[col] == 0) {
-                    emptyTiles.add([row, col]);
-                }
-            }
-        }
-
-        return emptyTiles;
     }
 
     // Slides left or right
@@ -169,5 +153,53 @@ module Game2048 {
                 curRow[col] = merged[r];
             }
         }
+    }
+
+    // --- HELPER FUNCTIONS ---
+
+    // Returns an array of the empty tiles in the global grid
+    function getEmptyTiles() as Array {
+        var emptyTiles = [];
+
+        for (var row = 0; row < 4; row++) {
+            // Super strict type inference
+            var curRow = (grid as Array)[row] as Array;
+
+            for (var col = 0; col < 4; col++) {
+                if (curRow[col] == 0) {
+                    emptyTiles.add([row, col]);
+                }
+            }
+        }
+
+        return emptyTiles;
+    }
+
+    // Clones grid for future comparison
+    function cloneGrid(original as Array) as Array {
+        var copy = [];
+        for (var r = 0; r < 4; r++) {
+            var rowCopy = [];
+            var curRow = original[r] as Array;
+            for (var c = 0; c < 4; c++) {
+                rowCopy.add(curRow[c]);
+            }
+            copy.add(rowCopy);
+        }
+        return copy;
+    }
+
+    // Compares two grids for equality
+    function gridsEqual(g1 as Array, g2 as Array) as Boolean {
+        for (var r = 0; r < 4; r++) {
+            var row1 = g1[r] as Array;
+            var row2 = g2[r] as Array;
+            for (var c = 0; c < 4; c++) {
+                if (row1[c] != row2[c]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }

@@ -10,18 +10,15 @@ class Game2048Delegate extends WatchUi.InputDelegate {
 
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
         var direction = swipeEvent.getDirection();
+        var prevGrid = Game2048.cloneGrid(Game2048.grid);
 
         if (direction == SWIPE_RIGHT) { 
             Game2048.slideHorizontally("right");
-            Game2048.spawnNewTile();
-            WatchUi.requestUpdate();
-            return true; // Consume event, avoid default back when sliding right
-            /* It will only truly consume the event
-            if the swipe is from the center of the watch to the right
-            if the swipe starts all the way on the left it will default */
+            /* Right swipe by watch default is to go back
+            if the swipe starts all the way on the left it will default to back
+            if the swipe is from the center of the watch to the right, then the action occurs */
         }
-
-        if (direction == SWIPE_UP) { 
+        else if (direction == SWIPE_UP) { 
             Game2048.slideVertically("up");
             
         } 
@@ -32,7 +29,12 @@ class Game2048Delegate extends WatchUi.InputDelegate {
             Game2048.slideHorizontally("left");
         }
 
-        Game2048.spawnNewTile();
+        var changed = !Game2048.gridsEqual(prevGrid, Game2048.grid);
+
+        if (changed) {
+            Game2048.spawnNewTile();
+        }
+        
         WatchUi.requestUpdate();
 
         return true;
