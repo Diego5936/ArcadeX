@@ -15,7 +15,7 @@ class ArcadeXView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Background
         // setColor(foreground = text and shapes, background)
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
         // Title
@@ -29,12 +29,12 @@ class ArcadeXView extends WatchUi.View {
         game2048B[:x] = Layout.centerX(dc) - (game2048B[:w] / 2);
         game2048B[:y] = Layout.centerY(dc) + 50;
         // rect
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.setColor(Graphics.COLOR_BLACK, Color.none);
         dc.fillRectangle(game2048B[:x], game2048B[:y], game2048B[:w], game2048B[:h]);
-        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_RED, Color.none);
         dc.drawRectangle(game2048B[:x], game2048B[:y], game2048B[:w], game2048B[:h]);
         // title
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_WHITE, Color.none);
         dc.drawText(Layout.centerX(dc), game2048B[:y] + 10,
                 Graphics.FONT_TINY, "2048", Graphics.TEXT_JUSTIFY_CENTER);
     }

@@ -14,11 +14,11 @@ class Menu2048View extends WatchUi.View {
 
     function onUpdate(dc as Dc) as Void {
         // Background
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_LT_GRAY);
+        dc.setColor(Color.none, Graphics.COLOR_LT_GRAY);
         dc.clear();
 
         // Title
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_LT_GRAY);
+        dc.setColor(Graphics.COLOR_BLACK, Color.none);
         dc.drawText(Layout.centerX(dc), Layout.centerY(dc) - 30, 
                     Graphics.FONT_LARGE, "!!2048!!", Graphics.TEXT_JUSTIFY_CENTER);
 
@@ -28,11 +28,12 @@ class Menu2048View extends WatchUi.View {
         newGB[:x] = Layout.centerX(dc) - (newGB[:w] / 2);
         newGB[:y] = Layout.centerY(dc) + 50;
         // rect
-        dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_YELLOW);
+        dc.setColor(Graphics.COLOR_YELLOW, Color.none);
         dc.fillRectangle(newGB[:x], newGB[:y], newGB[:w], newGB[:h]);
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_YELLOW);
+        dc.setColor(Graphics.COLOR_BLACK, Color.none);
         dc.drawRectangle(newGB[:x], newGB[:y], newGB[:w], newGB[:h]);
         // title
+        dc.setColor(Graphics.COLOR_BLACK, Color.none);
         dc.drawText(Layout.centerX(dc), newGB[:y] + 10,
                 Graphics.FONT_TINY, "New Game", Graphics.TEXT_JUSTIFY_CENTER);
     }

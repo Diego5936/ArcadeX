@@ -4,9 +4,9 @@ import Toybox.Lang;
 
 import Game2048;
 import Layout;
+import Color;
 
 class Game2048View extends WatchUi.View {
-
     function initialize() {
         View.initialize();
         Game2048.setStartingGrid();
@@ -18,7 +18,7 @@ class Game2048View extends WatchUi.View {
 
     function drawGrid(dc as Dc) as Void {
         // Background
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_LT_GRAY);
+        dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
         var margin = Layout.workingBuffer;
@@ -28,23 +28,26 @@ class Game2048View extends WatchUi.View {
         var tileWidth = (Layout.workingWidth(dc) - (4 * spacing)) / 4;
         var tileHeight = (Layout.workingHeight(dc) - (4* spacing)) / 4;
 
-        var grid = Game2048.grid as Array;
-
         for (var row = 0; row < 4; row++) {
-            var curRow = grid[row] as Array;
+            var curRow = (Game2048.grid as Array)[row] as Array;
 
             for (var col = 0; col < 4; col++) {     
                 var curTile = curRow[col];
 
                 // Draw Tile
                 var tileColor = setTileColor(curTile);
-                dc.setColor(tileColor, Graphics.COLOR_BLACK);
+                dc.setColor(tileColor, Color.none);
                 dc.fillRectangle(x, y, tileWidth, tileHeight);
-                // Draw Number
-                dc.setColor(Graphics.COLOR_BLACK, tileColor);
-                var fontSize = curTile > 512 ? Graphics.FONT_SYSTEM_TINY : Graphics.FONT_SYSTEM_SMALL;
-                dc.drawText(x + (tileWidth/2), y + (tileHeight/6), fontSize, curTile, Graphics.TEXT_JUSTIFY_CENTER);
+                dc.setColor(Graphics.COLOR_WHITE, Color.none);
+                dc.drawRectangle(x, y, tileWidth, tileHeight);
 
+                // Draw Number
+                if (curTile != 0) {
+                    dc.setColor(Graphics.COLOR_BLACK, Color.none);
+                    var fontSize = curTile > 512 ? Graphics.FONT_SYSTEM_TINY : Graphics.FONT_SYSTEM_SMALL;
+                    dc.drawText(x + (tileWidth/2), y + (tileHeight/6), fontSize, curTile, Graphics.TEXT_JUSTIFY_CENTER);
+                }
+                
                 x += tileWidth + spacing;
             }
 
@@ -56,7 +59,7 @@ class Game2048View extends WatchUi.View {
     function setTileColor(tileNumber) as Graphics.ColorType{
         switch(tileNumber) {
             case 0:
-                return Graphics.COLOR_BLACK;
+                return Graphics.COLOR_TRANSPARENT;
             case 2:
                 return Graphics.COLOR_WHITE;
             case 4:

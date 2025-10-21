@@ -1,0 +1,19 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 3; @symbol_moduledef = [Color,3,7,12]; ]
+module Color {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 3; ]
+    <init> {
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 4 8 ]
+        symbol [ Graphics %tmp.1 4 15 23 ];
+        %tmp.1 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.2 4 24 41 ];
+        %tmp.2 = getv %tmp.1 :COLOR_TRANSPARENT;
+        putv self :none %tmp.2;
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 4; @position = 8; @symbol_vardef = [none,4,8,12]; ]
+    var none;
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 1; ]
+<init> {
+}
