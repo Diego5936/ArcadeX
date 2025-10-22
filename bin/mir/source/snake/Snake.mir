@@ -1,44 +1,175 @@
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+[ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 3; @symbol_moduledef = [Snake,3,7,12]; ]
+[ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Math,4,14,18]; ]
+import Toybox.Math;
+[ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 6; @symbol_moduledef = [Snake,6,7,12]; ]
 module Snake {
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 3; ]
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 6; ]
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 4; @position = 8; @symbol_vardef = [headPosition,4,8,20]; ]
-    var headPosition;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 5; @position = 8; @symbol_vardef = [snakeSegments,5,8,21]; ]
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 7; @position = 8; @symbol_vardef = [gridSize,7,8,16]; ]
+    var gridSize = 15;
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 9; @position = 8; @symbol_vardef = [headPosition,9,8,20]; @symbol_type<0> = [Dictionary,9,24,34]; ]
+    var headPosition as Dictionary or Null;
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 10; @position = 8; @symbol_vardef = [snakeSegments,10,8,21]; ]
     var snakeSegments;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 6; @position = 8; @symbol_vardef = [direction,6,8,17]; ]
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 11; @position = 8; @symbol_vardef = [foodPosition,11,8,20]; ]
+    var foodPosition;
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 13; @position = 8; @symbol_vardef = [direction,13,8,17]; ]
     var direction;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
     function initialize() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_8_26_12_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 9 8 ]
-        %tmp.1 = newd 2;
-        %tmp.3 = const :x;
-        symbol [ x %tmp.3 9 25 26 const ];
-        %tmp.4 = 7;
-        %tmp.5 = dup %tmp.1;
-        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
-        %tmp.8 = const :y;
-        symbol [ y %tmp.8 9 34 35 const ];
-        %tmp.9 = 7;
-        %tmp.10 = dup %tmp.6;
-        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
-        symbol [ headPosition ? 9 8 20 ];
-        putv self :headPosition %tmp.11;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 10 8 ]
-        %tmp.12 = newa 0;
-        symbol [ snakeSegments ? 10 8 21 ];
-        putv self :snakeSegments %tmp.12;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 11 8 ]
-        %tmp.13 = null;
-        symbol [ direction ? 11 8 17 ];
-        putv self :direction %tmp.13;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_8_26_12_4_stop:
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_15_26_22_4_start:
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 16 8 ]
+        [ "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_15_26_22_4_start" "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_15_26_22_4_stop" ]
+        %center.1 = local;
+        symbol [ center %center.1 16 12 18 ];
+        symbol [ gridSize %tmp.2 16 21 29 ];
+        %tmp.2 = getv ? :gridSize;
+        %tmp.3 = 2;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        lputv %center.1 %tmp.4;
+        symbol [ center %center.1 16 12 18 ];
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 17 8 ]
+        %tmp.5 = newd 2;
+        %tmp.7 = const :x;
+        symbol [ x %tmp.7 17 24 25 const ];
+        %tmp.8 = lgetv %center.1;
+        symbol [ center %tmp.8 17 29 35 ];
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.12 = const :y;
+        symbol [ y %tmp.12 17 38 39 const ];
+        %tmp.13 = lgetv %center.1;
+        symbol [ center %tmp.13 17 43 49 ];
+        %tmp.14 = dup %tmp.10;
+        %tmp.15 = aputv %tmp.14 %tmp.12 %tmp.13;
+        symbol [ headPosition ? 17 8 20 ];
+        putv self :headPosition %tmp.15;
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 18 8 ]
+        %tmp.16 = newa 0;
+        symbol [ snakeSegments ? 18 8 21 ];
+        putv self :snakeSegments %tmp.16;
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 20 8 ]
+        %tmp.17 = self;
+        symbol [ spawnFood %tmp.18 20 23 32 ];
+        %tmp.18 = getv function %tmp.17 :spawnFood;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        symbol [ foodPosition ? 20 8 20 ];
+        putv self :foodPosition %tmp.19;
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 21 8 ]
+        %tmp.20 = null;
+        symbol [ direction ? 21 8 17 ];
+        putv self :direction %tmp.20;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_15_26_22_4_stop:
+    }
+    [ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 24; @symbol_functiondef = [spawnFood,24,13,22]; @symbol_return<0> = [Dictionary,24,28,38]; ]
+    function spawnFood() as Dictionary {
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_start:
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 25 8 ]
+        [ "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_start" "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_stop" ]
+        %validPos.1 = local;
+        symbol [ validPos %validPos.1 25 12 20 ];
+        %tmp.1 = false;
+        lputv %validPos.1 %tmp.1;
+        symbol [ validPos %validPos.1 25 12 20 ];
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 26 8 ]
+        [ "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_start" "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_stop" ]
+        %randomX.2 = local;
+        symbol [ randomX %randomX.2 26 12 19 ];
+        %tmp.2 = null;
+        lputv %randomX.2 %tmp.2;
+        symbol [ randomX %randomX.2 26 12 19 ];
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 27 8 ]
+        [ "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_start" "c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_stop" ]
+        %randomY.3 = local;
+        symbol [ randomY %randomY.3 27 12 19 ];
+        %tmp.3 = null;
+        lputv %randomY.3 %tmp.3;
+        symbol [ randomY %randomY.3 27 12 19 ];
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 29 8 ]
+        while @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_test @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_end;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_test:
+        %tmp.4 = lgetv %validPos.1;
+        symbol [ validPos %tmp.4 29 16 24 ];
+        %tmp.5 = not %tmp.4;
+        bf %tmp.5 @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_end;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_begin:
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_26_34_8_start:
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 30 12 ]
+        symbol [ Math %tmp.6 30 22 26 ];
+        %tmp.6 = getm $.Toybox.Math;
+        symbol [ rand %tmp.7 30 27 31 ];
+        %tmp.7 = getv function %tmp.6 :rand;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ gridSize %tmp.10 30 36 44 ];
+        %tmp.10 = getv ? :gridSize;
+        %tmp.11 = mod %tmp.8 %tmp.10;
+        lputv %randomX.2 %tmp.11;
+        symbol [ randomX %randomX.2 30 12 19 ];
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 31 12 ]
+        symbol [ Math %tmp.12 31 22 26 ];
+        %tmp.12 = getm $.Toybox.Math;
+        symbol [ rand %tmp.13 31 27 31 ];
+        %tmp.13 = getv function %tmp.12 :rand;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        symbol [ gridSize %tmp.16 31 36 44 ];
+        %tmp.16 = getv ? :gridSize;
+        %tmp.17 = mod %tmp.14 %tmp.16;
+        lputv %randomY.3 %tmp.17;
+        symbol [ randomY %randomY.3 31 12 19 ];
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 33 12 ]
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_23_33_80_begin:
+        %tmp.18 = lgetv %randomX.2;
+        symbol [ randomX %tmp.18 33 23 30 ];
+        symbol [ headPosition %tmp.20 33 34 46 ];
+        %tmp.20 = getv ? :headPosition;
+        %tmp.22 = const :x;
+        symbol [ x %tmp.22 33 48 49 const ];
+        %tmp.23 = agetv %tmp.20 %tmp.22;
+        %tmp.24 = ne %tmp.18 %tmp.23;
+        %tmp.25 = dup %tmp.24;
+        bf %tmp.25 @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_54_33_80_end;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_54_33_80_true:
+        %tmp.26 = lgetv %randomY.3;
+        symbol [ randomY %tmp.26 33 54 61 ];
+        symbol [ headPosition %tmp.28 33 65 77 ];
+        %tmp.28 = getv ? :headPosition;
+        %tmp.30 = const :y;
+        symbol [ y %tmp.30 33 79 80 const ];
+        %tmp.31 = agetv %tmp.28 %tmp.30;
+        %tmp.32 = ne %tmp.26 %tmp.31;
+        %tmp.33 = and %tmp.24 %tmp.32;
+        push %tmp.33;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_54_33_80_end:
+        %tmp.34 = phi [%tmp.25 @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_23_33_80_begin] [%tmp.33 @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_54_33_80_true] [%tmp.34 @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_33_54_33_80_end];
+        lputv %validPos.1 %tmp.34;
+        symbol [ validPos %validPos.1 33 12 20 ];
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_26_34_8_stop:
+        goto @c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_test;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_29_8_34_8_while_end:
+[ "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 36 8 ]
+        %tmp.35 = newd 2;
+        %tmp.37 = const :x;
+        symbol [ x %tmp.37 36 17 18 const ];
+        %tmp.38 = lgetv %randomX.2;
+        symbol [ randomX %tmp.38 36 22 29 ];
+        %tmp.39 = dup %tmp.35;
+        %tmp.40 = aputv %tmp.39 %tmp.37 %tmp.38;
+        %tmp.42 = const :y;
+        symbol [ y %tmp.42 36 32 33 const ];
+        %tmp.43 = lgetv %randomY.3;
+        symbol [ randomY %tmp.43 36 37 44 ];
+        %tmp.44 = dup %tmp.40;
+        %tmp.45 = aputv %tmp.44 %tmp.42 %tmp.43;
+        ret %tmp.45;
+c__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_24_38_37_4_stop:
     }
 }
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 1; ]
+[ @file = "c:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 1; ]
 <init> {
 }
