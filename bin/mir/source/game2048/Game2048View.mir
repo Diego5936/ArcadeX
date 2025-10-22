@@ -77,8 +77,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game20
         symbol [ margin %margin.1 24 12 18 ];
         symbol [ Layout %tmp.9 24 21 27 ];
         %tmp.9 = getm $.Layout;
-        symbol [ workingBuffer %tmp.10 24 28 41 ];
-        %tmp.10 = getv %tmp.9 :workingBuffer;
+        symbol [ workingBufferX %tmp.10 24 28 42 ];
+        %tmp.10 = getv %tmp.9 :workingBufferX;
         lputv %margin.1 %tmp.10;
         symbol [ margin %margin.1 24 12 18 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 25 8 ]

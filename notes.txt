@@ -1,0 +1,8 @@
+Uppercase Null is a typecast. When setting a new global variable inside a module/class.
+Ex: var x as Array or Null;
+
+Lowercase null is an actual value. When initializing a variable to nothing.
+Ex: var x = null;
+    if (x == null) {
+        System.println("Var is empty");
+    }

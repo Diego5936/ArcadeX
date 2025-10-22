@@ -21,7 +21,7 @@ class Game2048View extends WatchUi.View {
         dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
-        var margin = Layout.workingBuffer;
+        var margin = Layout.workingBufferX;
         var spacing = 5;
         var x = margin;
         var y = margin + 10;

@@ -1,24 +1,255 @@
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 3; @symbol_classdef = [SnakeView,3,6,15]; @symbol_extends<0> = [WatchUi,3,24,31]; @symbol_extends<1> = [View,3,32,36]; ]
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 6; @symbol_importdef<0> = [Snake,6,7,12]; ]
+import Snake;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 8; @symbol_classdef = [SnakeView,8,6,15]; @symbol_extends<0> = [WatchUi,8,24,31]; @symbol_extends<1> = [View,8,32,36]; ]
 class SnakeView extends WatchUi.View {
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 3; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 8; ]
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 3; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 8; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 4; @symbol_functiondef = [initialize,4,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
     function initialize() as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_4_26_6_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 5 8 ]
-        symbol [ View %tmp.2 5 8 12 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_9_26_12_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 10 8 ]
+        symbol [ View %tmp.2 10 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 5 13 23 ];
+        symbol [ initialize %tmp.3 10 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_4_26_6_4_stop:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 11 8 ]
+        symbol [ Snake %tmp.4 11 8 13 ];
+        %tmp.4 = getm $.Snake;
+        symbol [ initialize %tmp.5 11 14 24 ];
+        %tmp.5 = getv function %tmp.4 :initialize;
+        invoke %tmp.4 %tmp.5();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_9_26_12_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 14; @symbol_functiondef = [onUpdate,14,13,21]; @symbol_param<0> = [dc,14,22,24]; @symbol_param<0>_type<0> = [Dc,14,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_14_40_16_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 15 8 ]
+        %tmp.1 = self;
+        symbol [ drawState %tmp.2 15 8 17 ];
+        %tmp.2 = getv function %tmp.1 :drawState;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 15 18 20 ];
+        invoke %tmp.1 %tmp.2(%tmp.3);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_14_40_16_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 18; @symbol_functiondef = [drawState,18,13,22]; @symbol_param<0> = [dc,18,23,25]; @symbol_param<0>_type<0> = [Dc,18,29,31]; ]
+    function drawState(dc as Dc) as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 20 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 20 8 10 ];
+        symbol [ setColor %tmp.2 20 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Color %tmp.4 20 20 25 ];
+        %tmp.4 = getv ? :Color;
+        symbol [ none %tmp.5 20 26 30 ];
+        %tmp.5 = getv %tmp.4 :none;
+        symbol [ Graphics %tmp.6 20 32 40 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.7 20 41 52 ];
+        %tmp.7 = getv %tmp.6 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 21 8 ]
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 21 8 10 ];
+        symbol [ clear %tmp.9 21 11 16 ];
+        %tmp.9 = getv function %tmp.8 :clear;
+        invoke %tmp.8 %tmp.9();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 24 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop" ]
+        %gridSize.1 = local;
+        symbol [ gridSize %gridSize.1 24 12 20 ];
+        %tmp.10 = 15;
+        lputv %gridSize.1 %tmp.10;
+        symbol [ gridSize %gridSize.1 24 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 25 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop" ]
+        %marginX.2 = local;
+        symbol [ marginX %marginX.2 25 12 19 ];
+        symbol [ Layout %tmp.12 25 22 28 ];
+        %tmp.12 = getv ? :Layout;
+        symbol [ workingBufferX %tmp.13 25 29 43 ];
+        %tmp.13 = getv %tmp.12 :workingBufferX;
+        lputv %marginX.2 %tmp.13;
+        symbol [ marginX %marginX.2 25 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 26 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop" ]
+        %marginY.3 = local;
+        symbol [ marginY %marginY.3 26 12 19 ];
+        symbol [ Layout %tmp.15 26 22 28 ];
+        %tmp.15 = getv ? :Layout;
+        symbol [ workingBufferY %tmp.16 26 29 43 ];
+        %tmp.16 = getv %tmp.15 :workingBufferY;
+        lputv %marginY.3 %tmp.16;
+        symbol [ marginY %marginY.3 26 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 27 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop" ]
+        %tileWidth.4 = local;
+        symbol [ tileWidth %tileWidth.4 27 12 21 ];
+        symbol [ Layout %tmp.18 27 25 31 ];
+        %tmp.18 = getv ? :Layout;
+        symbol [ workingWidth %tmp.19 27 32 44 ];
+        %tmp.19 = getv function %tmp.18 :workingWidth;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 27 45 47 ];
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = lgetv %gridSize.1;
+        symbol [ gridSize %tmp.22 27 51 59 ];
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %gridSize.1;
+        symbol [ gridSize %tmp.24 27 63 71 ];
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = 1;
+        %tmp.27 = add %tmp.25 %tmp.26;
+        lputv %tileWidth.4 %tmp.27;
+        symbol [ tileWidth %tileWidth.4 27 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 28 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop" ]
+        %tileHeight.5 = local;
+        symbol [ tileHeight %tileHeight.5 28 12 22 ];
+        symbol [ Layout %tmp.29 28 26 32 ];
+        %tmp.29 = getv ? :Layout;
+        symbol [ workingHeight %tmp.30 28 33 46 ];
+        %tmp.30 = getv function %tmp.29 :workingHeight;
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 28 47 49 ];
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        %tmp.33 = lgetv %gridSize.1;
+        symbol [ gridSize %tmp.33 28 53 61 ];
+        %tmp.34 = sub %tmp.32 %tmp.33;
+        %tmp.35 = lgetv %gridSize.1;
+        symbol [ gridSize %tmp.35 28 65 73 ];
+        %tmp.36 = div %tmp.34 %tmp.35;
+        %tmp.37 = 2;
+        %tmp.38 = add %tmp.36 %tmp.37;
+        lputv %tileHeight.5 %tmp.38;
+        symbol [ tileHeight %tileHeight.5 28 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 47 8 ]
+        %tmp.39 = lgetv %dc;
+        symbol [ dc %tmp.39 47 8 10 ];
+        symbol [ setColor %tmp.40 47 11 19 ];
+        %tmp.40 = getv function %tmp.39 :setColor;
+        symbol [ Graphics %tmp.41 47 20 28 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.42 47 29 40 ];
+        %tmp.42 = getv %tmp.41 :COLOR_WHITE;
+        symbol [ Color %tmp.44 47 42 47 ];
+        %tmp.44 = getv ? :Color;
+        symbol [ none %tmp.45 47 48 52 ];
+        %tmp.45 = getv %tmp.44 :none;
+        invoke %tmp.39 %tmp.40(%tmp.42, %tmp.45);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 48 8 ]
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 48 8 10 ];
+        symbol [ drawRectangle %tmp.47 48 11 24 ];
+        %tmp.47 = getv function %tmp.46 :drawRectangle;
+        %tmp.48 = lgetv %marginX.2;
+        symbol [ marginX %tmp.48 48 25 32 ];
+        %tmp.49 = lgetv %marginY.3;
+        symbol [ marginY %tmp.49 48 34 41 ];
+        %tmp.50 = lgetv %tileWidth.4;
+        symbol [ tileWidth %tmp.50 48 43 52 ];
+        %tmp.51 = lgetv %gridSize.1;
+        symbol [ gridSize %tmp.51 48 55 63 ];
+        %tmp.52 = mul %tmp.50 %tmp.51;
+        %tmp.53 = lgetv %tileHeight.5;
+        symbol [ tileHeight %tmp.53 48 65 75 ];
+        %tmp.54 = lgetv %gridSize.1;
+        symbol [ gridSize %tmp.54 48 78 86 ];
+        %tmp.55 = mul %tmp.53 %tmp.54;
+        invoke %tmp.46 %tmp.47(%tmp.48, %tmp.49, %tmp.52, %tmp.55);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 51 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop" ]
+        %head.6 = local;
+        symbol [ head %head.6 51 12 16 ];
+        symbol [ Snake %tmp.56 51 19 24 ];
+        %tmp.56 = getm $.Snake;
+        symbol [ headPosition %tmp.57 51 25 37 ];
+        %tmp.57 = getv %tmp.56 :headPosition;
+        %tmp.58 = as %tmp.57 Dictionary;
+        symbol [ Dictionary %tmp.58 51 41 51 ];
+        lputv %head.6 %tmp.58;
+        symbol [ head %head.6 51 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 52 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 52 8 10 ];
+        symbol [ setColor %tmp.60 52 11 19 ];
+        %tmp.60 = getv function %tmp.59 :setColor;
+        symbol [ Graphics %tmp.61 52 20 28 ];
+        %tmp.61 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.62 52 29 40 ];
+        %tmp.62 = getv %tmp.61 :COLOR_GREEN;
+        symbol [ Color %tmp.64 52 42 47 ];
+        %tmp.64 = getv ? :Color;
+        symbol [ none %tmp.65 52 48 52 ];
+        %tmp.65 = getv %tmp.64 :none;
+        invoke %tmp.59 %tmp.60(%tmp.62, %tmp.65);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 53 8 ]
+        symbol [ System %tmp.66 53 8 14 ];
+        %tmp.66 = getm $.Toybox.System;
+        symbol [ println %tmp.67 53 15 22 ];
+        %tmp.67 = getv function %tmp.66 :println;
+        %tmp.68 = lgetv %head.6;
+        symbol [ head %tmp.68 53 23 27 ];
+        %tmp.70 = const :x;
+        symbol [ x %tmp.70 53 29 30 const ];
+        %tmp.71 = agetv %tmp.68 %tmp.70;
+        %tmp.72 = " ";
+        %tmp.73 = add %tmp.71 %tmp.72;
+        %tmp.74 = lgetv %head.6;
+        symbol [ head %tmp.74 53 40 44 ];
+        %tmp.76 = const :y;
+        symbol [ y %tmp.76 53 46 47 const ];
+        %tmp.77 = agetv %tmp.74 %tmp.76;
+        %tmp.78 = add %tmp.73 %tmp.77;
+        invoke %tmp.66 %tmp.67(%tmp.78);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc" 54 8 ]
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 54 8 10 ];
+        symbol [ fillRectangle %tmp.80 54 11 24 ];
+        %tmp.80 = getv function %tmp.79 :fillRectangle;
+        %tmp.81 = lgetv %marginX.2;
+        symbol [ marginX %tmp.81 54 25 32 ];
+        %tmp.82 = lgetv %head.6;
+        symbol [ head %tmp.82 54 36 40 ];
+        %tmp.84 = const :x;
+        symbol [ x %tmp.84 54 42 43 const ];
+        %tmp.85 = agetv %tmp.82 %tmp.84;
+        %tmp.86 = lgetv %tileWidth.4;
+        symbol [ tileWidth %tmp.86 54 47 56 ];
+        %tmp.87 = mul %tmp.85 %tmp.86;
+        %tmp.88 = add %tmp.81 %tmp.87;
+        %tmp.89 = lgetv %marginY.3;
+        symbol [ marginY %tmp.89 54 59 66 ];
+        %tmp.90 = lgetv %head.6;
+        symbol [ head %tmp.90 54 70 74 ];
+        %tmp.92 = const :y;
+        symbol [ y %tmp.92 54 76 77 const ];
+        %tmp.93 = agetv %tmp.90 %tmp.92;
+        %tmp.94 = lgetv %tileHeight.5;
+        symbol [ tileHeight %tmp.94 54 81 91 ];
+        %tmp.95 = mul %tmp.93 %tmp.94;
+        %tmp.96 = add %tmp.89 %tmp.95;
+        %tmp.97 = lgetv %tileWidth.4;
+        symbol [ tileWidth %tmp.97 54 94 103 ];
+        %tmp.98 = lgetv %tileHeight.5;
+        symbol [ tileHeight %tmp.98 54 105 115 ];
+        invoke %tmp.79 %tmp.80(%tmp.88, %tmp.96, %tmp.97, %tmp.98);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeView_mc_18_41_55_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeView.mc"; @line = 1; ]

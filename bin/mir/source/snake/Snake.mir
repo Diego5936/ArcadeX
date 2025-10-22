@@ -1,0 +1,44 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 3; @symbol_moduledef = [Snake,3,7,12]; ]
+module Snake {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 4; @position = 8; @symbol_vardef = [headPosition,4,8,20]; ]
+    var headPosition;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 5; @position = 8; @symbol_vardef = [snakeSegments,5,8,21]; ]
+    var snakeSegments;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 6; @position = 8; @symbol_vardef = [direction,6,8,17]; ]
+    var direction;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_8_26_12_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 9 8 ]
+        %tmp.1 = newd 2;
+        %tmp.3 = const :x;
+        symbol [ x %tmp.3 9 25 26 const ];
+        %tmp.4 = 7;
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.8 = const :y;
+        symbol [ y %tmp.8 9 34 35 const ];
+        %tmp.9 = 7;
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
+        symbol [ headPosition ? 9 8 20 ];
+        putv self :headPosition %tmp.11;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 10 8 ]
+        %tmp.12 = newa 0;
+        symbol [ snakeSegments ? 10 8 21 ];
+        putv self :snakeSegments %tmp.12;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc" 11 8 ]
+        %tmp.13 = null;
+        symbol [ direction ? 11 8 17 ];
+        putv self :direction %tmp.13;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_Snake_mc_8_26_12_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\Snake.mc"; @line = 1; ]
+<init> {
+}

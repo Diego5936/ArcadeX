@@ -14,13 +14,14 @@ module Layout {
 
     /* Due to the watches being circular, the working buffer is
     the margin necessary for a square to not be completely cut off */
-    var workingBuffer = 40;
+    var workingBufferX = 56;
+    var workingBufferY = 66;   
 
     function workingWidth(dc as Dc) as Number {
-        return dc.getWidth() - (workingBuffer * 2);
+        return dc.getWidth() - (workingBufferX * 2);
     }
 
     function workingHeight(dc as Dc) as Number {
-        return dc.getHeight() - (workingBuffer * 2);
+        return dc.getHeight() - (workingBufferY * 2);
     }
 }
