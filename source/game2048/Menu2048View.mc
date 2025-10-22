@@ -26,8 +26,4 @@ class Menu2048View extends WatchUi.View {
         playButton = Components.makeStartButton(dc, "Start", Graphics.COLOR_YELLOW, 
                                 Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
     }
-
-    function getPlayButton() as Dictionary {
-        return playButton;
-    }
 }

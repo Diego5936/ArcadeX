@@ -119,15 +119,6 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnake
         putv self :playButton %tmp.47;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeView_mc_13_40_26_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc"; @line = 28; @symbol_functiondef = [getPlayButton,28,13,26]; @symbol_return<0> = [Dictionary,28,32,42]; ]
-    function getPlayButton() as Dictionary {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeView_mc_28_43_30_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc" 29 8 ]
-        symbol [ playButton %tmp.2 29 15 25 ];
-        %tmp.2 = getv ? :playButton;
-        ret %tmp.2;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeView_mc_28_43_30_4_stop:
-    }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc"; @line = 1; ]
 <init> {

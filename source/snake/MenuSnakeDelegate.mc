@@ -15,7 +15,7 @@ class MenuSnakeDelegate extends WatchUi.InputDelegate {
         var view = viewPair[0] as MenuSnakeView;
 
         if (view != null) {
-            var rect = view.getPlayButton();
+            var rect = view.playButton;
 
             var tapPlay = x >= rect[:x] and x <= rect[:x] + rect[:w] and 
                             y >= rect[:y] and y <= rect[:y] + rect[:h];

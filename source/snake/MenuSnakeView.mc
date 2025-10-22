@@ -24,8 +24,4 @@ class MenuSnakeView extends WatchUi.View {
         playButton = Components.makeStartButton(dc, "PLAY", Graphics.COLOR_GREEN, 
                                 Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
     }
-
-    function getPlayButton() as Dictionary {
-        return playButton;
-    }
 }

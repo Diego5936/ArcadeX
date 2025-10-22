@@ -121,15 +121,6 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu20
         putv self :playButton %tmp.45;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_15_40_28_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 30; @symbol_functiondef = [getPlayButton,30,13,26]; @symbol_return<0> = [Dictionary,30,32,42]; ]
-    function getPlayButton() as Dictionary {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_30_43_32_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 31 8 ]
-        symbol [ playButton %tmp.2 31 15 25 ];
-        %tmp.2 = getv ? :playButton;
-        ret %tmp.2;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_30_43_32_4_stop:
-    }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc"; @line = 1; ]
 <init> {
