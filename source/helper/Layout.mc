@@ -2,6 +2,8 @@ import Toybox.Graphics;
 import Toybox.Lang;
 
 module Layout {
+    var workingTop = 50;
+
     function centerX(dc as Dc) as Number {
         return dc.getWidth() / 2;
     }
@@ -10,8 +12,8 @@ module Layout {
         return dc.getHeight() / 2;
     }
 
-    // Due to the watches being circular,
-    // the working buffer is the margin necessary for a square to not be cut off 
+    /* Due to the watches being circular, the working buffer is
+    the margin necessary for a square to not be completely cut off */
     var workingBuffer = 40;
 
     function workingWidth(dc as Dc) as Number {

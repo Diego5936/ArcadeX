@@ -3,7 +3,6 @@ import Toybox.Lang;
 import Toybox.System;
 
 class ArcadeXDelegate extends WatchUi.InputDelegate {
-
     function initialize() {
         InputDelegate.initialize();
     }
@@ -19,14 +18,29 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
         var view = viewPair[0] as ArcadeXView;
 
         if (view != null) {
-            var rect = view.get2048Button();
+            var buttons = view.getButtons();
 
-            var tap2048 = x >= rect[:x] and x <= rect[:x] + rect[:w] and 
-                        y >= rect[:y] and y <= rect[:y] + rect[:h];
+            for (var i = 0; i < buttons.size(); i++) {
+                var rect = buttons[i] as Dictionary;
 
-            if (tap2048) {
-                WatchUi.pushView(new Menu2048View(), new Menu2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
-                return true;
+                var tap = x >= rect[:x] and x <= rect[:x] + rect[:w] and
+                            y >= rect[:y] and y <= rect[:y] + rect[:h];
+                
+                if (!tap) {
+                    continue;
+                }
+                
+                if (rect[:name] == "2048") {
+                    WatchUi.pushView(new Menu2048View(), new Menu2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
+                    return true;
+                }
+                else if (rect[:name] == "Snake") {
+                    WatchUi.pushView(new MenuSnakeView(), new MenuSnakeDelegate(), WatchUi.SLIDE_IMMEDIATE);
+                    return true;
+                }
+                else {
+                    System.println("Tapped unknown button: " + rect[:name]);
+                }
             }
         }
         else {

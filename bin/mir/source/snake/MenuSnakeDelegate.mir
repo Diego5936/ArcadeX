@@ -1,0 +1,26 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 3; @symbol_classdef = [MenuSnakeDelegate,3,6,23]; @symbol_extends<0> = [WatchUi,3,32,39]; @symbol_extends<1> = [InputDelegate,3,40,53]; ]
+class MenuSnakeDelegate extends WatchUi.InputDelegate {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 4; @symbol_functiondef = [initialize,4,13,23]; ]
+    function initialize() as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_4_26_6_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 5 8 ]
+        symbol [ InputDelegate %tmp.2 5 8 21 ];
+        %tmp.2 = getv ? :InputDelegate;
+        symbol [ initialize %tmp.3 5 22 32 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_4_26_6_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 1; ]
+<init> {
+}
