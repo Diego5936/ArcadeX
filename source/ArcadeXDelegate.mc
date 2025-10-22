@@ -25,9 +25,7 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
 
                 var tap = x >= rect[:x] and x <= rect[:x] + rect[:w] and
                             y >= rect[:y] and y <= rect[:y] + rect[:h];
-    
-                System.println(tap);
-                
+                   
                 if (!tap) {
                     continue;
                 }

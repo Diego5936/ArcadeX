@@ -12,20 +12,20 @@ class SnakeDelegate extends WatchUi.InputDelegate {
         var direction = swipeEvent.getDirection();
 
         if (direction == SWIPE_RIGHT) { 
-            Snake.direction = "E";
+            Snake.direction = "right";
             /* Right swipe by watch default is to go back
             if the swipe starts all the way on the left it will default to back
             if the swipe is from the center of the watch to the right, then the action occurs */
         }
         else if (direction == SWIPE_UP) { 
-            Snake.direction = "N";
+            Snake.direction = "up";
             
         } 
         else if (direction == SWIPE_DOWN) { 
-            Snake.direction = "S";
+            Snake.direction = "down";
         } 
         else if (direction == SWIPE_LEFT) {
-            Snake.direction = "W";
+            Snake.direction = "left";
         }
         
         WatchUi.requestUpdate();

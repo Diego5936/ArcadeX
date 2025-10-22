@@ -2,17 +2,36 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
+import Toybox.Timer;
 
 import Snake;
 
 class SnakeView extends WatchUi.View {
+    var tickTimer as Timer.Timer or Null;
+    
     function initialize() {
         View.initialize();
         Snake.initialize();
+
+        // Start ticks
+        tickTimer = new Timer.Timer();
+        tickTimer.start(method(:onTick), 500, true);
+
     }
 
     function onUpdate(dc as Dc) as Void {   
         drawState(dc);
+    }
+
+    function onTick() as Void {
+        Snake.move();
+        WatchUi.requestUpdate();
+    }
+
+    function onHide() as Void {
+        if (tickTimer != null) {
+            tickTimer.stop();
+        }
     }
 
     function drawState(dc as Dc) as Void {
@@ -31,12 +50,12 @@ class SnakeView extends WatchUi.View {
         dc.drawRectangle(marginX, marginY, tileWidth * gridSize, tileHeight * gridSize);
 
         // Snake's head
-        var head = Snake.headPosition as Dictionary;
+        var head = Snake.headPos as Dictionary;
         dc.setColor(Graphics.COLOR_GREEN, Color.none);
         dc.fillRectangle(marginX + (head[:x] * tileWidth), marginY + (head[:y] * tileHeight), tileWidth, tileHeight);
 
         // Food
-        var food = Snake.foodPosition as Dictionary;
+        var food = Snake.foodPos as Dictionary;
         dc.setColor(Graphics.COLOR_RED, Color.none);
         dc.fillRectangle(marginX + (food[:x] * tileWidth), marginY + (food[:y] * tileHeight), tileWidth, tileHeight);
     }

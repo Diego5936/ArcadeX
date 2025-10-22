@@ -51,7 +51,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDele
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeDelegate.mc" 15 12 ]
         symbol [ Snake %tmp.8 15 12 17 ];
         %tmp.8 = getm $.Snake;
-        %tmp.9 = "E";
+        %tmp.9 = "right";
         symbol [ direction ? 15 18 27 ];
         putv %tmp.8 :direction %tmp.9;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDelegate_mc_14_38_19_8_stop:
@@ -70,7 +70,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDele
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeDelegate.mc" 21 12 ]
         symbol [ Snake %tmp.14 21 12 17 ];
         %tmp.14 = getm $.Snake;
-        %tmp.15 = "N";
+        %tmp.15 = "up";
         symbol [ direction ? 21 18 27 ];
         putv %tmp.14 :direction %tmp.15;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDelegate_mc_20_40_23_8_stop:
@@ -89,7 +89,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDele
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeDelegate.mc" 25 12 ]
         symbol [ Snake %tmp.20 25 12 17 ];
         %tmp.20 = getm $.Snake;
-        %tmp.21 = "S";
+        %tmp.21 = "down";
         symbol [ direction ? 25 18 27 ];
         putv %tmp.20 :direction %tmp.21;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDelegate_mc_24_42_26_8_stop:
@@ -108,7 +108,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDele
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\SnakeDelegate.mc" 28 12 ]
         symbol [ Snake %tmp.26 28 12 17 ];
         %tmp.26 = getm $.Snake;
-        %tmp.27 = "W";
+        %tmp.27 = "left";
         symbol [ direction ? 28 18 27 ];
         putv %tmp.26 :direction %tmp.27;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_SnakeDelegate_mc_27_42_29_8_stop:
