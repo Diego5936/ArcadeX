@@ -44,4 +44,30 @@ module Components {
 
         return buttons;
     }
+
+    function makeStartButton (dc as Dc, label as String, backColor, border, textColor) as Dictionary {
+        var screenW = dc.getWidth();
+        var screenH = dc.getHeight();
+
+        // Button sizes
+        var x = 0;
+        var y = screenH * 0.60;
+        var w = screenW;
+        var h = screenH - y;
+
+        // Draw "semicircle" in the bottom half
+        dc.setColor(backColor, Color.none);
+        dc.fillRectangle(x, y, w, h);
+
+        // Border
+        dc.setColor(border, Color.none);
+        dc.drawRectangle(x, y, w, h);
+        
+        // Text
+        dc.setColor(textColor, Color.none);
+        dc.drawText(Layout.centerX(dc), screenH - (h / 1.3), Graphics.FONT_MEDIUM, 
+                    label, Graphics.TEXT_JUSTIFY_CENTER);
+
+        return { :x => x, :y => y, :w => w, :h => h };
+    }
 }
