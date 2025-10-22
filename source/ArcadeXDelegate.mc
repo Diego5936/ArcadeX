@@ -25,16 +25,18 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
 
                 var tap = x >= rect[:x] and x <= rect[:x] + rect[:w] and
                             y >= rect[:y] and y <= rect[:y] + rect[:h];
+    
+                System.println(tap);
                 
                 if (!tap) {
                     continue;
                 }
                 
-                if (rect[:name] == "2048") {
+                if (rect[:name].equals("2048")) {
                     WatchUi.pushView(new Menu2048View(), new Menu2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
                     return true;
                 }
-                else if (rect[:name] == "Snake") {
+                else if (rect[:name].equals("Snake")) {
                     WatchUi.pushView(new MenuSnakeView(), new MenuSnakeDelegate(), WatchUi.SLIDE_IMMEDIATE);
                     return true;
                 }
