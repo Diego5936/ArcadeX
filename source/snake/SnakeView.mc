@@ -54,6 +54,13 @@ class SnakeView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_GREEN, Color.none);
         dc.fillRectangle(marginX + (head[:x] * tileWidth), marginY + (head[:y] * tileHeight), tileWidth, tileHeight);
 
+        // Snake's body
+        for (var i = 0; i < Snake.snakeSegments.size(); i++) {
+            var segment = (Snake.snakeSegments as Array)[i];
+            dc.fillRectangle(marginX + ((segment as Dictionary)[:x] * tileWidth), marginY + 
+                            ((segment as Dictionary)[:y] * tileHeight), tileWidth, tileHeight);
+        }
+
         // Food
         var food = Snake.foodPos as Dictionary;
         dc.setColor(Graphics.COLOR_RED, Color.none);
