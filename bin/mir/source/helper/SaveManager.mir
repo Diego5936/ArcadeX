@@ -1,0 +1,196 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; @symbol_importdef<2> = [Storage,1,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [System,2,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 5; @symbol_moduledef = [SaveManager,5,7,18]; ]
+module SaveManager {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 6; @position = 8; @symbol_vardef = [scoresKey,6,8,17]; @symbol_type<0> = [String,6,21,27]; ]
+    var scoresKey as String = "arcadex_scores";
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 7; @position = 8; @symbol_vardef = [scores,7,8,14]; @symbol_type<0> = [Dictionary,7,18,28]; ]
+    var scores as Dictionary or Null;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_9_26_16_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 10 8 ]
+        symbol [ Storage %tmp.1 10 17 24 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 10 25 33 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        symbol [ scoresKey %tmp.4 10 34 43 ];
+        %tmp.4 = getv ? :scoresKey;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        %tmp.6 = as %tmp.5 Dictionary or Null;
+        symbol [ Dictionary %tmp.6 10 48 58 ];
+        symbol [ scores ? 10 8 14 ];
+        putv self :scores %tmp.6;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 12 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_8_15_8_if_stmt:
+        symbol [ scores %tmp.8 12 12 18 ];
+        %tmp.8 = getv ? :scores;
+        %tmp.9 = null;
+        %tmp.10 = eq %tmp.8 %tmp.9;
+        bf %tmp.10 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_8_15_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_8_15_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_28_15_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 13 12 ]
+        %tmp.11 = newd 0;
+        symbol [ scores ? 13 12 18 ];
+        putv self :scores %tmp.11;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 14 12 ]
+        symbol [ Storage %tmp.12 14 12 19 ];
+        %tmp.12 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.13 14 20 28 ];
+        %tmp.13 = getv function %tmp.12 :setValue;
+        symbol [ scoresKey %tmp.15 14 29 38 ];
+        %tmp.15 = getv ? :scoresKey;
+        symbol [ scores %tmp.17 14 40 46 ];
+        %tmp.17 = getv ? :scores;
+        invoke %tmp.12 %tmp.13(%tmp.15, %tmp.17);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_28_15_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_8_15_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_12_8_15_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_9_26_16_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 19; @symbol_functiondef = [setHighScore,19,13,25]; @symbol_param<0> = [gameName,19,26,34]; @symbol_param<0>_type<0> = [String,19,38,44]; @symbol_param<1> = [newScore,19,46,54]; @symbol_param<1>_type<0> = [Number,19,58,64]; ]
+    function setHighScore(gameName as String, newScore as Number) as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_19_74_33_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 20 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_8_22_8_if_stmt:
+        symbol [ scores %tmp.2 20 12 18 ];
+        %tmp.2 = getv ? :scores;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_8_22_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_8_22_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_28_22_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 21 12 ]
+        %tmp.5 = self;
+        symbol [ initialize %tmp.6 21 12 22 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_28_22_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_8_22_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_8_22_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 24 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_19_74_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_19_74_33_4_stop" ]
+        %current.1 = local;
+        symbol [ current %current.1 24 12 19 ];
+        %tmp.7 = 0;
+        lputv %current.1 %tmp.7;
+        symbol [ current %current.1 24 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 25 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_8_27_8_if_stmt:
+        symbol [ scores %tmp.9 25 12 18 ];
+        %tmp.9 = getv ? :scores;
+        symbol [ hasKey %tmp.10 25 19 25 ];
+        %tmp.10 = getv function %tmp.9 :hasKey;
+        %tmp.11 = lgetv %gameName;
+        symbol [ gameName %tmp.11 25 26 34 ];
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        bf %tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_8_27_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_8_27_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_37_27_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 26 12 ]
+        symbol [ scores %tmp.14 26 22 28 ];
+        %tmp.14 = getv ? :scores;
+        %tmp.15 = lgetv %gameName;
+        symbol [ gameName %tmp.15 26 29 37 ];
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        %tmp.17 = as %tmp.16 Number;
+        symbol [ Number %tmp.17 26 42 48 ];
+        lputv %current.1 %tmp.17;
+        symbol [ current %current.1 26 12 19 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_37_27_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_8_27_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_25_8_27_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 29 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_8_32_8_if_stmt:
+        %tmp.18 = lgetv %newScore;
+        symbol [ newScore %tmp.18 29 12 20 ];
+        %tmp.19 = lgetv %current.1;
+        symbol [ current %tmp.19 29 23 30 ];
+        %tmp.20 = gt %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_8_32_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_8_32_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_32_32_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 30 12 ]
+        symbol [ scores %tmp.21 30 12 18 ];
+        %tmp.21 = getv self :scores;
+        %tmp.22 = lgetv %newScore;
+        symbol [ newScore %tmp.22 30 31 39 ];
+        %tmp.23 = lgetv %gameName;
+        symbol [ gameName %tmp.23 30 19 27 ];
+        aputv %tmp.21 %tmp.23 %tmp.22;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 31 12 ]
+        symbol [ Storage %tmp.24 31 12 19 ];
+        %tmp.24 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.25 31 20 28 ];
+        %tmp.25 = getv function %tmp.24 :setValue;
+        symbol [ scoresKey %tmp.27 31 29 38 ];
+        %tmp.27 = getv ? :scoresKey;
+        symbol [ scores %tmp.29 31 40 46 ];
+        %tmp.29 = getv ? :scores;
+        invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_32_32_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_8_32_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_29_8_32_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_19_74_33_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 36; @symbol_functiondef = [getHighScore,36,13,25]; @symbol_param<0> = [gameName,36,26,34]; @symbol_param<0>_type<0> = [String,36,38,44]; @symbol_return<0> = [Number,36,49,55]; ]
+    function getHighScore(gameName as String) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_36_56_46_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 37 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_8_39_8_if_stmt:
+        symbol [ scores %tmp.2 37 12 18 ];
+        %tmp.2 = getv ? :scores;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_8_39_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_8_39_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_28_39_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 38 12 ]
+        %tmp.5 = self;
+        symbol [ initialize %tmp.6 38 12 22 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_28_39_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_8_39_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_8_39_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 41 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_8_43_8_if_stmt:
+        symbol [ scores %tmp.8 41 12 18 ];
+        %tmp.8 = getv ? :scores;
+        symbol [ hasKey %tmp.9 41 19 25 ];
+        %tmp.9 = getv function %tmp.8 :hasKey;
+        %tmp.10 = lgetv %gameName;
+        symbol [ gameName %tmp.10 41 26 34 ];
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_8_43_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_8_43_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_37_43_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 42 12 ]
+        symbol [ scores %tmp.13 42 19 25 ];
+        %tmp.13 = getv ? :scores;
+        %tmp.14 = lgetv %gameName;
+        symbol [ gameName %tmp.14 42 26 34 ];
+        %tmp.15 = agetv %tmp.13 %tmp.14;
+        %tmp.16 = as %tmp.15 Number;
+        symbol [ Number %tmp.16 42 39 45 ];
+        ret %tmp.16;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_37_43_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_8_43_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_41_8_43_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 45 8 ]
+        %tmp.17 = 0;
+        ret %tmp.17;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_36_56_46_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 1; ]
+<init> {
+}

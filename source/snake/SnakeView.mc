@@ -20,7 +20,12 @@ class SnakeView extends WatchUi.View {
     }
 
     function onUpdate(dc as Dc) as Void {   
-        drawState(dc);
+        if (Snake.active) {
+            drawState(dc);
+        }
+        else {
+            Components.makeGameOver(dc, "snake", Graphics.COLOR_WHITE, Snake.score);
+        }
     }
 
     function onTick() as Void {

@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 
 import Layout;
+import SaveManager;
 
 module Components {
     function makeMenuButtons(dc as Dc, games as Array, initY as Number) as Array {
@@ -69,5 +70,22 @@ module Components {
                     label, Graphics.TEXT_JUSTIFY_CENTER);
 
         return { :x => x, :y => y, :w => w, :h => h };
+    }
+
+    function makeGameOver(dc as Dc, gameName as String, textColor, score as Number) {
+        // Game Over Title
+        dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(Layout.centerX(dc), Layout.centerY(dc), 
+                    Graphics.FONT_SYSTEM_LARGE, "GAME OVER", Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Draw Score
+        var scoreTitle = ("Score: " + score);
+        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) + 50, 
+                    Graphics.FONT_SYSTEM_LARGE, scoreTitle, Graphics.TEXT_JUSTIFY_CENTER);
+
+        var highScore = SaveManager.getHighScore(gameName);
+        var highScoreTitle = ("High: " + highScore);
+        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) + 100, 
+                    Graphics.FONT_SYSTEM_LARGE, highScoreTitle, Graphics.TEXT_JUSTIFY_CENTER);
     }
 }

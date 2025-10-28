@@ -9,6 +9,10 @@ class SnakeDelegate extends WatchUi.InputDelegate {
     }
 
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
+        if (!Snake.active){
+            return true;
+        }
+        
         var direction = swipeEvent.getDirection();
         var current = Snake.direction;
 

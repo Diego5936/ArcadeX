@@ -13,6 +13,9 @@ module Snake {
     var direction;
     var nextDirection;
 
+    var active;
+    var score;
+
     function initialize() {
         var center = gridSize / 2;
         headPos= {:x => center, :y => center};
@@ -21,6 +24,9 @@ module Snake {
         foodPos = spawnFood();
         direction = null;
         nextDirection = null;
+
+        active = true;
+        score = 0;
     }
 
     // Sets food to a new position
@@ -78,7 +84,8 @@ module Snake {
 
         // Check for collisions
         if (checkCollisions(newHead)) {
-            System.println("Game Over!");
+            active = false;
+            SaveManager.setHighScore("snake", score);
             return;
         }
 
@@ -109,6 +116,7 @@ module Snake {
         if (ate) {
             var newSegment = {:x => headPos[:x], :y => headPos[:y]};
             snakeSegments.add(newSegment);
+            score++;
         }
 
         // New head
