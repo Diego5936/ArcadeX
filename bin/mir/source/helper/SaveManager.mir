@@ -13,8 +13,8 @@ module SaveManager {
     var scoresKey as String = "arcadex_scores";
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 7; @position = 8; @symbol_vardef = [scores,7,8,14]; @symbol_type<0> = [Dictionary,7,18,28]; ]
     var scores as Dictionary or Null;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
-    function initialize() {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc"; @line = 9; @symbol_functiondef = [loadScores,9,13,23]; ]
+    function loadScores() {
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_9_26_16_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 10 8 ]
         symbol [ Storage %tmp.1 10 17 24 ];
@@ -70,8 +70,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveMana
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_28_22_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 21 12 ]
         %tmp.5 = self;
-        symbol [ initialize %tmp.6 21 12 22 ];
-        %tmp.6 = getv function %tmp.5 :initialize;
+        symbol [ loadScores %tmp.6 21 12 22 ];
+        %tmp.6 = getv function %tmp.5 :loadScores;
         invoke %tmp.5 %tmp.6();
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_28_22_8_stop:
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_20_8_22_8_if_end;
@@ -155,8 +155,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveMana
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_28_39_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\SaveManager.mc" 38 12 ]
         %tmp.5 = self;
-        symbol [ initialize %tmp.6 38 12 22 ];
-        %tmp.6 = getv function %tmp.5 :initialize;
+        symbol [ loadScores %tmp.6 38 12 22 ];
+        %tmp.6 = getv function %tmp.5 :loadScores;
         invoke %tmp.5 %tmp.6();
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_28_39_8_stop:
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_SaveManager_mc_37_8_39_8_if_end;

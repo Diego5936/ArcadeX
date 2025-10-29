@@ -16,7 +16,7 @@ ArcadeX is a compact game collection built for the **Garmin Connect IQ** platfor
 - **StackUp** – A classic-style block stacking challenge.  
 - **QuickDash** – A fast-paced obstacle game inspired by endless runners.  
 - **MiniMaze** – Navigate simple mazes with touch controls.  
-- **Brick Breaker** – Destroy tiles and test your reflexes.  
+- **Breakout** – Destroy tiles and test your reflexes.  
 - **Catch It!** – Slide to catch falling items in time.
 
 ---

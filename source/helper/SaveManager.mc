@@ -6,7 +6,7 @@ module SaveManager {
     var scoresKey as String = "arcadex_scores";
     var scores as Dictionary or Null;
 
-    function initialize() {
+    function loadScores() {
         scores = Storage.getValue(scoresKey) as Dictionary or Null;
 
         if (scores == null) {
@@ -18,7 +18,7 @@ module SaveManager {
     // Save or update a high score for a given game
     function setHighScore(gameName as String, newScore as Number) as Void {
         if (scores == null) {
-            initialize();
+            loadScores();
         }
 
         var current = 0;
@@ -35,7 +35,7 @@ module SaveManager {
     // Retrieve the high score for a given game
     function getHighScore(gameName as String) as Number {
         if (scores == null) {
-            initialize();
+            loadScores();
         }
 
         if (scores.hasKey(gameName)) {
