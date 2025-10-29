@@ -2,18 +2,19 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Lang;
 
-import Game2048;
-import Layout;
-import Color;
-
 class Game2048View extends WatchUi.View {
     function initialize() {
         View.initialize();
-        Game2048.setStartingGrid();
+        Game2048.initialize();
     }
 
     function onUpdate(dc as Dc) as Void {   
-        drawGrid(dc);
+        if (Game2048.active) {
+            drawGrid(dc);
+        }
+        else {
+            Components.makeGameOver(dc, "snake", Graphics.COLOR_WHITE, Game2048.score);
+        }
     }
 
     function drawGrid(dc as Dc) as Void {
@@ -61,29 +62,29 @@ class Game2048View extends WatchUi.View {
             case 0:
                 return Graphics.COLOR_TRANSPARENT;
             case 2:
-                return Graphics.COLOR_WHITE;
+                return Color.tfe2;
             case 4:
-                return Graphics.COLOR_YELLOW;
+                return Color.tfe4;
             case 8:
-                return Graphics.COLOR_ORANGE;
+                return Color.tfe8;
             case 16:
-                return Graphics.COLOR_RED;
+                return Color.tfe16;
             case 32:
-                return Graphics.COLOR_WHITE;
+                return Color.tfe32;
             case 64:
-                return Graphics.COLOR_BLUE;
+                return Color.tfe64;
             case 128:
-                return Graphics.COLOR_DK_BLUE;
+                return Color.tfe128;
             case 256:
-                return Graphics.COLOR_PURPLE;
+                return Color.tfe256;
             case 512:
-                return Graphics.COLOR_GREEN;
+                return Color.tfe512;
             case 1024:
-                return Graphics.COLOR_DK_GREEN; 
+                return Color.tfe1024;
             case 2048:
-                return Graphics.COLOR_PINK;
+                return Color.tfe2048;
             default:
-                return Graphics.COLOR_BLACK;
+                return Color.tfeBig;
         }
     }
 }

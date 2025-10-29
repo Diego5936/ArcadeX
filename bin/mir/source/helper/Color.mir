@@ -10,9 +10,165 @@ module Color {
         symbol [ COLOR_TRANSPARENT %tmp.2 4 24 41 ];
         %tmp.2 = getv %tmp.1 :COLOR_TRANSPARENT;
         putv self :none %tmp.2;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 7 8 ]
+        symbol [ Graphics %tmp.3 7 15 23 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.4 7 24 35 ];
+        %tmp.4 = getv function %tmp.3 :createColor;
+        %tmp.5 = 1;
+        %tmp.6 = 230;
+        %tmp.7 = 230;
+        %tmp.8 = 255;
+        %tmp.9 = invoke %tmp.3 %tmp.4(%tmp.5, %tmp.6, %tmp.7, %tmp.8);
+        putv self :tfe2 %tmp.9;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 8 8 ]
+        symbol [ Graphics %tmp.10 8 15 23 ];
+        %tmp.10 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.11 8 24 35 ];
+        %tmp.11 = getv function %tmp.10 :createColor;
+        %tmp.12 = 1;
+        %tmp.13 = 214;
+        %tmp.14 = 214;
+        %tmp.15 = 255;
+        %tmp.16 = invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.14, %tmp.15);
+        putv self :tfe4 %tmp.16;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 9 8 ]
+        symbol [ Graphics %tmp.17 9 15 23 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.18 9 24 35 ];
+        %tmp.18 = getv function %tmp.17 :createColor;
+        %tmp.19 = 1;
+        %tmp.20 = 188;
+        %tmp.21 = 188;
+        %tmp.22 = 255;
+        %tmp.23 = invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20, %tmp.21, %tmp.22);
+        putv self :tfe8 %tmp.23;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 10 8 ]
+        symbol [ Graphics %tmp.24 10 16 24 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.25 10 25 36 ];
+        %tmp.25 = getv function %tmp.24 :createColor;
+        %tmp.26 = 1;
+        %tmp.27 = 158;
+        %tmp.28 = 158;
+        %tmp.29 = 255;
+        %tmp.30 = invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.28, %tmp.29);
+        putv self :tfe16 %tmp.30;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 11 8 ]
+        symbol [ Graphics %tmp.31 11 16 24 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.32 11 25 36 ];
+        %tmp.32 = getv function %tmp.31 :createColor;
+        %tmp.33 = 1;
+        %tmp.34 = 116;
+        %tmp.35 = 116;
+        %tmp.36 = 255;
+        %tmp.37 = invoke %tmp.31 %tmp.32(%tmp.33, %tmp.34, %tmp.35, %tmp.36);
+        putv self :tfe32 %tmp.37;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 12 8 ]
+        symbol [ Graphics %tmp.38 12 16 24 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.39 12 25 36 ];
+        %tmp.39 = getv function %tmp.38 :createColor;
+        %tmp.40 = 1;
+        %tmp.41 = 66;
+        %tmp.42 = 66;
+        %tmp.43 = 255;
+        %tmp.44 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.42, %tmp.43);
+        putv self :tfe64 %tmp.44;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 13 8 ]
+        symbol [ Graphics %tmp.45 13 17 25 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.46 13 26 37 ];
+        %tmp.46 = getv function %tmp.45 :createColor;
+        %tmp.47 = 1;
+        %tmp.48 = 40;
+        %tmp.49 = 180;
+        %tmp.50 = 200;
+        %tmp.51 = invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48, %tmp.49, %tmp.50);
+        putv self :tfe128 %tmp.51;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 14 8 ]
+        symbol [ Graphics %tmp.52 14 17 25 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.53 14 26 37 ];
+        %tmp.53 = getv function %tmp.52 :createColor;
+        %tmp.54 = 1;
+        %tmp.55 = 40;
+        %tmp.56 = 200;
+        %tmp.57 = 190;
+        %tmp.58 = invoke %tmp.52 %tmp.53(%tmp.54, %tmp.55, %tmp.56, %tmp.57);
+        putv self :tfe256 %tmp.58;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 15 8 ]
+        symbol [ Graphics %tmp.59 15 17 25 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.60 15 26 37 ];
+        %tmp.60 = getv function %tmp.59 :createColor;
+        %tmp.61 = 1;
+        %tmp.62 = 40;
+        %tmp.63 = 200;
+        %tmp.64 = 160;
+        %tmp.65 = invoke %tmp.59 %tmp.60(%tmp.61, %tmp.62, %tmp.63, %tmp.64);
+        putv self :tfe512 %tmp.65;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 16 8 ]
+        symbol [ Graphics %tmp.66 16 18 26 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.67 16 27 38 ];
+        %tmp.67 = getv function %tmp.66 :createColor;
+        %tmp.68 = 1;
+        %tmp.69 = 40;
+        %tmp.70 = 220;
+        %tmp.71 = 140;
+        %tmp.72 = invoke %tmp.66 %tmp.67(%tmp.68, %tmp.69, %tmp.70, %tmp.71);
+        putv self :tfe1024 %tmp.72;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 17 8 ]
+        symbol [ Graphics %tmp.73 17 18 26 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.74 17 27 38 ];
+        %tmp.74 = getv function %tmp.73 :createColor;
+        %tmp.75 = 1;
+        %tmp.76 = 66;
+        %tmp.77 = 230;
+        %tmp.78 = 120;
+        %tmp.79 = invoke %tmp.73 %tmp.74(%tmp.75, %tmp.76, %tmp.77, %tmp.78);
+        putv self :tfe2048 %tmp.79;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc" 18 8 ]
+        symbol [ Graphics %tmp.80 18 17 25 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.81 18 26 37 ];
+        %tmp.81 = getv function %tmp.80 :createColor;
+        %tmp.82 = 1;
+        %tmp.83 = 0;
+        %tmp.84 = 0;
+        %tmp.85 = 50;
+        %tmp.86 = invoke %tmp.80 %tmp.81(%tmp.82, %tmp.83, %tmp.84, %tmp.85);
+        putv self :tfeBig %tmp.86;
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 4; @position = 8; @symbol_vardef = [none,4,8,12]; ]
     var none;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 7; @position = 8; @symbol_vardef = [tfe2,7,8,12]; ]
+    var tfe2;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 8; @position = 8; @symbol_vardef = [tfe4,8,8,12]; ]
+    var tfe4;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 9; @position = 8; @symbol_vardef = [tfe8,9,8,12]; ]
+    var tfe8;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 10; @position = 8; @symbol_vardef = [tfe16,10,8,13]; ]
+    var tfe16;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 11; @position = 8; @symbol_vardef = [tfe32,11,8,13]; ]
+    var tfe32;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 12; @position = 8; @symbol_vardef = [tfe64,12,8,13]; ]
+    var tfe64;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 13; @position = 8; @symbol_vardef = [tfe128,13,8,14]; ]
+    var tfe128;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 14; @position = 8; @symbol_vardef = [tfe256,14,8,14]; ]
+    var tfe256;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 15; @position = 8; @symbol_vardef = [tfe512,15,8,14]; ]
+    var tfe512;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 16; @position = 8; @symbol_vardef = [tfe1024,16,8,15]; ]
+    var tfe1024;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 17; @position = 8; @symbol_vardef = [tfe2048,17,8,15]; ]
+    var tfe2048;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 18; @position = 8; @symbol_vardef = [tfeBig,18,8,14]; ]
+    var tfeBig;
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Color.mc"; @line = 1; ]
 <init> {

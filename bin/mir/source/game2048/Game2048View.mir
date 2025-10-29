@@ -4,585 +4,611 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 5; @symbol_importdef<0> = [Game2048,5,7,15]; ]
-import Game2048;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 6; @symbol_importdef<0> = [Layout,6,7,13]; ]
-import Layout;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 7; @symbol_importdef<0> = [Color,7,7,12]; ]
-import Color;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 9; @symbol_classdef = [Game2048View,9,6,18]; @symbol_extends<0> = [WatchUi,9,27,34]; @symbol_extends<1> = [View,9,35,39]; ]
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 5; @symbol_classdef = [Game2048View,5,6,18]; @symbol_extends<0> = [WatchUi,5,27,34]; @symbol_extends<1> = [View,5,35,39]; ]
 class Game2048View extends WatchUi.View {
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 9; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 9; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
     function initialize() as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_10_26_13_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 11 8 ]
-        symbol [ View %tmp.2 11 8 12 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_6_26_9_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 7 8 ]
+        symbol [ View %tmp.2 7 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 11 13 23 ];
+        symbol [ initialize %tmp.3 7 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 12 8 ]
-        symbol [ Game2048 %tmp.4 12 8 16 ];
-        %tmp.4 = getm $.Game2048;
-        symbol [ setStartingGrid %tmp.5 12 17 32 ];
-        %tmp.5 = getv function %tmp.4 :setStartingGrid;
-        invoke %tmp.4 %tmp.5();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_10_26_13_4_stop:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 8 8 ]
+        symbol [ Game2048 %tmp.5 8 8 16 ];
+        %tmp.5 = getv ? :Game2048;
+        symbol [ initialize %tmp.6 8 17 27 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_6_26_9_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 15; @symbol_functiondef = [onUpdate,15,13,21]; @symbol_param<0> = [dc,15,22,24]; @symbol_param<0>_type<0> = [Dc,15,28,30]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 11; @symbol_functiondef = [onUpdate,11,13,21]; @symbol_param<0> = [dc,11,22,24]; @symbol_param<0>_type<0> = [Dc,11,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_15_40_17_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 16 8 ]
-        %tmp.1 = self;
-        symbol [ drawGrid %tmp.2 16 8 16 ];
-        %tmp.2 = getv function %tmp.1 :drawGrid;
-        %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 16 17 19 ];
-        invoke %tmp.1 %tmp.2(%tmp.3);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_15_40_17_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_11_40_18_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 12 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_8_17_8_if_stmt:
+        symbol [ Game2048 %tmp.2 12 12 20 ];
+        %tmp.2 = getv ? :Game2048;
+        symbol [ active %tmp.3 12 21 27 ];
+        %tmp.3 = getv %tmp.2 :active;
+        bf %tmp.3 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_8_17_8_if_else_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_8_17_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_29_14_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 13 12 ]
+        %tmp.4 = self;
+        symbol [ drawGrid %tmp.5 13 12 20 ];
+        %tmp.5 = getv function %tmp.4 :drawGrid;
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 13 21 23 ];
+        invoke %tmp.4 %tmp.5(%tmp.6);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_29_14_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_8_17_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_8_17_8_if_else_false:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_15_13_17_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 16 12 ]
+        symbol [ Components %tmp.8 16 12 22 ];
+        %tmp.8 = getv ? :Components;
+        symbol [ makeGameOver %tmp.9 16 23 35 ];
+        %tmp.9 = getv function %tmp.8 :makeGameOver;
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 16 36 38 ];
+        %tmp.11 = "snake";
+        symbol [ Graphics %tmp.12 16 49 57 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.13 16 58 69 ];
+        %tmp.13 = getv %tmp.12 :COLOR_WHITE;
+        symbol [ Game2048 %tmp.15 16 71 79 ];
+        %tmp.15 = getv ? :Game2048;
+        symbol [ score %tmp.16 16 80 85 ];
+        %tmp.16 = getv %tmp.15 :score;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.11, %tmp.13, %tmp.16);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_15_13_17_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_12_8_17_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_11_40_18_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 19; @symbol_functiondef = [drawGrid,19,13,21]; @symbol_param<0> = [dc,19,22,24]; @symbol_param<0>_type<0> = [Dc,19,28,30]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 20; @symbol_functiondef = [drawGrid,20,13,21]; @symbol_param<0> = [dc,20,22,24]; @symbol_param<0>_type<0> = [Dc,20,28,30]; ]
     function drawGrid(dc as Dc) as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 21 8 ]
-        %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 21 8 10 ];
-        symbol [ setColor %tmp.2 21 11 19 ];
-        %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Color %tmp.3 21 20 25 ];
-        %tmp.3 = getm $.Color;
-        symbol [ none %tmp.4 21 26 30 ];
-        %tmp.4 = getv %tmp.3 :none;
-        symbol [ Graphics %tmp.5 21 32 40 ];
-        %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 21 41 52 ];
-        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
-        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 22 8 ]
-        %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 22 8 10 ];
-        symbol [ clear %tmp.8 22 11 16 ];
-        %tmp.8 = getv function %tmp.7 :clear;
-        invoke %tmp.7 %tmp.8();
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 24 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop" ]
-        %margin.1 = local;
-        symbol [ margin %margin.1 24 12 18 ];
-        symbol [ Layout %tmp.9 24 21 27 ];
-        %tmp.9 = getm $.Layout;
-        symbol [ workingBufferX %tmp.10 24 28 42 ];
-        %tmp.10 = getv %tmp.9 :workingBufferX;
-        lputv %margin.1 %tmp.10;
-        symbol [ margin %margin.1 24 12 18 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 22 8 10 ];
+        symbol [ setColor %tmp.2 22 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Color %tmp.4 22 20 25 ];
+        %tmp.4 = getv ? :Color;
+        symbol [ none %tmp.5 22 26 30 ];
+        %tmp.5 = getv %tmp.4 :none;
+        symbol [ Graphics %tmp.6 22 32 40 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.7 22 41 52 ];
+        %tmp.7 = getv %tmp.6 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 23 8 ]
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 23 8 10 ];
+        symbol [ clear %tmp.9 23 11 16 ];
+        %tmp.9 = getv function %tmp.8 :clear;
+        invoke %tmp.8 %tmp.9();
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 25 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop" ]
-        %spacing.2 = local;
-        symbol [ spacing %spacing.2 25 12 19 ];
-        %tmp.11 = 5;
-        lputv %spacing.2 %tmp.11;
-        symbol [ spacing %spacing.2 25 12 19 ];
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop" ]
+        %margin.1 = local;
+        symbol [ margin %margin.1 25 12 18 ];
+        symbol [ Layout %tmp.11 25 21 27 ];
+        %tmp.11 = getv ? :Layout;
+        symbol [ workingBufferX %tmp.12 25 28 42 ];
+        %tmp.12 = getv %tmp.11 :workingBufferX;
+        lputv %margin.1 %tmp.12;
+        symbol [ margin %margin.1 25 12 18 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 26 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop" ]
-        %x.3 = local;
-        symbol [ x %x.3 26 12 13 ];
-        %tmp.12 = lgetv %margin.1;
-        symbol [ margin %tmp.12 26 16 22 ];
-        lputv %x.3 %tmp.12;
-        symbol [ x %x.3 26 12 13 ];
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop" ]
+        %spacing.2 = local;
+        symbol [ spacing %spacing.2 26 12 19 ];
+        %tmp.13 = 5;
+        lputv %spacing.2 %tmp.13;
+        symbol [ spacing %spacing.2 26 12 19 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 27 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop" ]
-        %y.4 = local;
-        symbol [ y %y.4 27 12 13 ];
-        %tmp.13 = lgetv %margin.1;
-        symbol [ margin %tmp.13 27 16 22 ];
-        %tmp.14 = 10;
-        %tmp.15 = add %tmp.13 %tmp.14;
-        lputv %y.4 %tmp.15;
-        symbol [ y %y.4 27 12 13 ];
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop" ]
+        %x.3 = local;
+        symbol [ x %x.3 27 12 13 ];
+        %tmp.14 = lgetv %margin.1;
+        symbol [ margin %tmp.14 27 16 22 ];
+        lputv %x.3 %tmp.14;
+        symbol [ x %x.3 27 12 13 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 28 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop" ]
-        %tileWidth.5 = local;
-        symbol [ tileWidth %tileWidth.5 28 12 21 ];
-        symbol [ Layout %tmp.16 28 25 31 ];
-        %tmp.16 = getm $.Layout;
-        symbol [ workingWidth %tmp.17 28 32 44 ];
-        %tmp.17 = getv function %tmp.16 :workingWidth;
-        %tmp.18 = lgetv %dc;
-        symbol [ dc %tmp.18 28 45 47 ];
-        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
-        %tmp.20 = 4;
-        %tmp.21 = lgetv %spacing.2;
-        symbol [ spacing %tmp.21 28 56 63 ];
-        %tmp.22 = mul %tmp.20 %tmp.21;
-        %tmp.23 = sub %tmp.19 %tmp.22;
-        %tmp.24 = 4;
-        %tmp.25 = div %tmp.23 %tmp.24;
-        lputv %tileWidth.5 %tmp.25;
-        symbol [ tileWidth %tileWidth.5 28 12 21 ];
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop" ]
+        %y.4 = local;
+        symbol [ y %y.4 28 12 13 ];
+        %tmp.15 = lgetv %margin.1;
+        symbol [ margin %tmp.15 28 16 22 ];
+        %tmp.16 = 10;
+        %tmp.17 = add %tmp.15 %tmp.16;
+        lputv %y.4 %tmp.17;
+        symbol [ y %y.4 28 12 13 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 29 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop" ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop" ]
+        %tileWidth.5 = local;
+        symbol [ tileWidth %tileWidth.5 29 12 21 ];
+        symbol [ Layout %tmp.19 29 25 31 ];
+        %tmp.19 = getv ? :Layout;
+        symbol [ workingWidth %tmp.20 29 32 44 ];
+        %tmp.20 = getv function %tmp.19 :workingWidth;
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 29 45 47 ];
+        %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
+        %tmp.23 = 4;
+        %tmp.24 = lgetv %spacing.2;
+        symbol [ spacing %tmp.24 29 56 63 ];
+        %tmp.25 = mul %tmp.23 %tmp.24;
+        %tmp.26 = sub %tmp.22 %tmp.25;
+        %tmp.27 = 4;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        lputv %tileWidth.5 %tmp.28;
+        symbol [ tileWidth %tileWidth.5 29 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 30 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop" ]
         %tileHeight.6 = local;
-        symbol [ tileHeight %tileHeight.6 29 12 22 ];
-        symbol [ Layout %tmp.26 29 26 32 ];
-        %tmp.26 = getm $.Layout;
-        symbol [ workingHeight %tmp.27 29 33 46 ];
-        %tmp.27 = getv function %tmp.26 :workingHeight;
-        %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 29 47 49 ];
-        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
-        %tmp.30 = 4;
-        %tmp.31 = lgetv %spacing.2;
-        symbol [ spacing %tmp.31 29 57 64 ];
-        %tmp.32 = mul %tmp.30 %tmp.31;
-        %tmp.33 = sub %tmp.29 %tmp.32;
+        symbol [ tileHeight %tileHeight.6 30 12 22 ];
+        symbol [ Layout %tmp.30 30 26 32 ];
+        %tmp.30 = getv ? :Layout;
+        symbol [ workingHeight %tmp.31 30 33 46 ];
+        %tmp.31 = getv function %tmp.30 :workingHeight;
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 30 47 49 ];
+        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
         %tmp.34 = 4;
-        %tmp.35 = div %tmp.33 %tmp.34;
-        lputv %tileHeight.6 %tmp.35;
-        symbol [ tileHeight %tileHeight.6 29 12 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 31 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_end" ]
-        %row.7 = local;
-        symbol [ row %row.7 31 17 20 ];
-        %tmp.36 = 0;
-        lputv %row.7 %tmp.36;
-        symbol [ row %row.7 31 17 20 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_test:
-        %tmp.37 = lgetv %row.7;
-        symbol [ row %tmp.37 31 26 29 ];
+        %tmp.35 = lgetv %spacing.2;
+        symbol [ spacing %tmp.35 30 57 64 ];
+        %tmp.36 = mul %tmp.34 %tmp.35;
+        %tmp.37 = sub %tmp.33 %tmp.36;
         %tmp.38 = 4;
-        %tmp.39 = lt %tmp.37 %tmp.38;
-        bf %tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_42_56_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 32 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_42_56_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_42_56_8_stop" ]
+        %tmp.39 = div %tmp.37 %tmp.38;
+        lputv %tileHeight.6 %tmp.39;
+        symbol [ tileHeight %tileHeight.6 30 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 32 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_end" ]
+        %row.7 = local;
+        symbol [ row %row.7 32 17 20 ];
+        %tmp.40 = 0;
+        lputv %row.7 %tmp.40;
+        symbol [ row %row.7 32 17 20 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_test:
+        %tmp.41 = lgetv %row.7;
+        symbol [ row %tmp.41 32 26 29 ];
+        %tmp.42 = 4;
+        %tmp.43 = lt %tmp.41 %tmp.42;
+        bf %tmp.43 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_42_57_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 33 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_42_57_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_42_57_8_stop" ]
         %curRow.8 = local;
-        symbol [ curRow %curRow.8 32 16 22 ];
-        symbol [ Game2048 %tmp.40 32 26 34 ];
-        %tmp.40 = getm $.Game2048;
-        symbol [ grid %tmp.41 32 35 39 ];
-        %tmp.41 = getv %tmp.40 :grid;
-        %tmp.42 = as %tmp.41 Array;
-        symbol [ Array %tmp.42 32 43 48 ];
-        %tmp.43 = lgetv %row.7;
-        symbol [ row %tmp.43 32 50 53 ];
-        %tmp.44 = agetv %tmp.42 %tmp.43;
-        %tmp.45 = as %tmp.44 Array;
-        symbol [ Array %tmp.45 32 58 63 ];
-        lputv %curRow.8 %tmp.45;
-        symbol [ curRow %curRow.8 32 16 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 34 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_end" ]
+        symbol [ curRow %curRow.8 33 16 22 ];
+        symbol [ Game2048 %tmp.45 33 26 34 ];
+        %tmp.45 = getv ? :Game2048;
+        symbol [ grid %tmp.46 33 35 39 ];
+        %tmp.46 = getv %tmp.45 :grid;
+        %tmp.47 = as %tmp.46 Array;
+        symbol [ Array %tmp.47 33 43 48 ];
+        %tmp.48 = lgetv %row.7;
+        symbol [ row %tmp.48 33 50 53 ];
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        %tmp.50 = as %tmp.49 Array;
+        symbol [ Array %tmp.50 33 58 63 ];
+        lputv %curRow.8 %tmp.50;
+        symbol [ curRow %curRow.8 33 16 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 35 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_end" ]
         %col.9 = local;
-        symbol [ col %col.9 34 21 24 ];
-        %tmp.46 = 0;
-        lputv %col.9 %tmp.46;
-        symbol [ col %col.9 34 21 24 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_test:
-        %tmp.47 = lgetv %col.9;
-        symbol [ col %tmp.47 34 30 33 ];
-        %tmp.48 = 4;
-        %tmp.49 = lt %tmp.47 %tmp.48;
-        bf %tmp.49 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_46_52_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 35 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_46_52_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_46_52_12_stop" ]
+        symbol [ col %col.9 35 21 24 ];
+        %tmp.51 = 0;
+        lputv %col.9 %tmp.51;
+        symbol [ col %col.9 35 21 24 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_test:
+        %tmp.52 = lgetv %col.9;
+        symbol [ col %tmp.52 35 30 33 ];
+        %tmp.53 = 4;
+        %tmp.54 = lt %tmp.52 %tmp.53;
+        bf %tmp.54 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_46_53_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 36 16 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_46_53_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_46_53_12_stop" ]
         %curTile.10 = local;
-        symbol [ curTile %curTile.10 35 20 27 ];
-        %tmp.50 = lgetv %curRow.8;
-        symbol [ curRow %tmp.50 35 30 36 ];
-        %tmp.51 = lgetv %col.9;
-        symbol [ col %tmp.51 35 37 40 ];
-        %tmp.52 = agetv %tmp.50 %tmp.51;
-        lputv %curTile.10 %tmp.52;
-        symbol [ curTile %curTile.10 35 20 27 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 38 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_46_52_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_46_52_12_stop" ]
-        %tileColor.11 = local;
-        symbol [ tileColor %tileColor.11 38 20 29 ];
-        %tmp.53 = self;
-        symbol [ setTileColor %tmp.54 38 32 44 ];
-        %tmp.54 = getv function %tmp.53 :setTileColor;
-        %tmp.55 = lgetv %curTile.10;
-        symbol [ curTile %tmp.55 38 45 52 ];
-        %tmp.56 = invoke %tmp.53 %tmp.54(%tmp.55);
-        lputv %tileColor.11 %tmp.56;
-        symbol [ tileColor %tileColor.11 38 20 29 ];
+        symbol [ curTile %curTile.10 36 20 27 ];
+        %tmp.55 = lgetv %curRow.8;
+        symbol [ curRow %tmp.55 36 30 36 ];
+        %tmp.56 = lgetv %col.9;
+        symbol [ col %tmp.56 36 37 40 ];
+        %tmp.57 = agetv %tmp.55 %tmp.56;
+        lputv %curTile.10 %tmp.57;
+        symbol [ curTile %curTile.10 36 20 27 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 39 16 ]
-        %tmp.57 = lgetv %dc;
-        symbol [ dc %tmp.57 39 16 18 ];
-        symbol [ setColor %tmp.58 39 19 27 ];
-        %tmp.58 = getv function %tmp.57 :setColor;
-        %tmp.59 = lgetv %tileColor.11;
-        symbol [ tileColor %tmp.59 39 28 37 ];
-        symbol [ Color %tmp.60 39 39 44 ];
-        %tmp.60 = getm $.Color;
-        symbol [ none %tmp.61 39 45 49 ];
-        %tmp.61 = getv %tmp.60 :none;
-        invoke %tmp.57 %tmp.58(%tmp.59, %tmp.61);
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_46_53_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_46_53_12_stop" ]
+        %tileColor.11 = local;
+        symbol [ tileColor %tileColor.11 39 20 29 ];
+        %tmp.58 = self;
+        symbol [ setTileColor %tmp.59 39 32 44 ];
+        %tmp.59 = getv function %tmp.58 :setTileColor;
+        %tmp.60 = lgetv %curTile.10;
+        symbol [ curTile %tmp.60 39 45 52 ];
+        %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
+        lputv %tileColor.11 %tmp.61;
+        symbol [ tileColor %tileColor.11 39 20 29 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 40 16 ]
         %tmp.62 = lgetv %dc;
         symbol [ dc %tmp.62 40 16 18 ];
-        symbol [ fillRectangle %tmp.63 40 19 32 ];
-        %tmp.63 = getv function %tmp.62 :fillRectangle;
-        %tmp.64 = lgetv %x.3;
-        symbol [ x %tmp.64 40 33 34 ];
-        %tmp.65 = lgetv %y.4;
-        symbol [ y %tmp.65 40 36 37 ];
-        %tmp.66 = lgetv %tileWidth.5;
-        symbol [ tileWidth %tmp.66 40 39 48 ];
-        %tmp.67 = lgetv %tileHeight.6;
-        symbol [ tileHeight %tmp.67 40 50 60 ];
-        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.65, %tmp.66, %tmp.67);
+        symbol [ setColor %tmp.63 40 19 27 ];
+        %tmp.63 = getv function %tmp.62 :setColor;
+        %tmp.64 = lgetv %tileColor.11;
+        symbol [ tileColor %tmp.64 40 28 37 ];
+        symbol [ Color %tmp.66 40 39 44 ];
+        %tmp.66 = getv ? :Color;
+        symbol [ none %tmp.67 40 45 49 ];
+        %tmp.67 = getv %tmp.66 :none;
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.67);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 41 16 ]
         %tmp.68 = lgetv %dc;
         symbol [ dc %tmp.68 41 16 18 ];
-        symbol [ setColor %tmp.69 41 19 27 ];
-        %tmp.69 = getv function %tmp.68 :setColor;
-        symbol [ Graphics %tmp.70 41 28 36 ];
-        %tmp.70 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.71 41 37 48 ];
-        %tmp.71 = getv %tmp.70 :COLOR_WHITE;
-        symbol [ Color %tmp.72 41 50 55 ];
-        %tmp.72 = getm $.Color;
-        symbol [ none %tmp.73 41 56 60 ];
-        %tmp.73 = getv %tmp.72 :none;
-        invoke %tmp.68 %tmp.69(%tmp.71, %tmp.73);
+        symbol [ fillRectangle %tmp.69 41 19 32 ];
+        %tmp.69 = getv function %tmp.68 :fillRectangle;
+        %tmp.70 = lgetv %x.3;
+        symbol [ x %tmp.70 41 33 34 ];
+        %tmp.71 = lgetv %y.4;
+        symbol [ y %tmp.71 41 36 37 ];
+        %tmp.72 = lgetv %tileWidth.5;
+        symbol [ tileWidth %tmp.72 41 39 48 ];
+        %tmp.73 = lgetv %tileHeight.6;
+        symbol [ tileHeight %tmp.73 41 50 60 ];
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.71, %tmp.72, %tmp.73);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 42 16 ]
         %tmp.74 = lgetv %dc;
         symbol [ dc %tmp.74 42 16 18 ];
-        symbol [ drawRectangle %tmp.75 42 19 32 ];
-        %tmp.75 = getv function %tmp.74 :drawRectangle;
-        %tmp.76 = lgetv %x.3;
-        symbol [ x %tmp.76 42 33 34 ];
-        %tmp.77 = lgetv %y.4;
-        symbol [ y %tmp.77 42 36 37 ];
-        %tmp.78 = lgetv %tileWidth.5;
-        symbol [ tileWidth %tmp.78 42 39 48 ];
-        %tmp.79 = lgetv %tileHeight.6;
-        symbol [ tileHeight %tmp.79 42 50 60 ];
-        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.77, %tmp.78, %tmp.79);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 45 16 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_16_49_16_if_stmt:
-        %tmp.80 = lgetv %curTile.10;
-        symbol [ curTile %tmp.80 45 20 27 ];
-        %tmp.81 = 0;
-        %tmp.82 = ne %tmp.80 %tmp.81;
-        bf %tmp.82 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_16_49_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_16_49_16_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_34_49_16_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 46 20 ]
-        %tmp.83 = lgetv %dc;
-        symbol [ dc %tmp.83 46 20 22 ];
-        symbol [ setColor %tmp.84 46 23 31 ];
-        %tmp.84 = getv function %tmp.83 :setColor;
-        symbol [ Graphics %tmp.85 46 32 40 ];
-        %tmp.85 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.86 46 41 52 ];
-        %tmp.86 = getv %tmp.85 :COLOR_BLACK;
-        symbol [ Color %tmp.87 46 54 59 ];
-        %tmp.87 = getm $.Color;
-        symbol [ none %tmp.88 46 60 64 ];
-        %tmp.88 = getv %tmp.87 :none;
-        invoke %tmp.83 %tmp.84(%tmp.86, %tmp.88);
+        symbol [ setColor %tmp.75 42 19 27 ];
+        %tmp.75 = getv function %tmp.74 :setColor;
+        symbol [ Graphics %tmp.76 42 28 36 ];
+        %tmp.76 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.77 42 37 48 ];
+        %tmp.77 = getv %tmp.76 :COLOR_WHITE;
+        symbol [ Color %tmp.79 42 50 55 ];
+        %tmp.79 = getv ? :Color;
+        symbol [ none %tmp.80 42 56 60 ];
+        %tmp.80 = getv %tmp.79 :none;
+        invoke %tmp.74 %tmp.75(%tmp.77, %tmp.80);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 43 16 ]
+        %tmp.81 = lgetv %dc;
+        symbol [ dc %tmp.81 43 16 18 ];
+        symbol [ drawRectangle %tmp.82 43 19 32 ];
+        %tmp.82 = getv function %tmp.81 :drawRectangle;
+        %tmp.83 = lgetv %x.3;
+        symbol [ x %tmp.83 43 33 34 ];
+        %tmp.84 = lgetv %y.4;
+        symbol [ y %tmp.84 43 36 37 ];
+        %tmp.85 = lgetv %tileWidth.5;
+        symbol [ tileWidth %tmp.85 43 39 48 ];
+        %tmp.86 = lgetv %tileHeight.6;
+        symbol [ tileHeight %tmp.86 43 50 60 ];
+        invoke %tmp.81 %tmp.82(%tmp.83, %tmp.84, %tmp.85, %tmp.86);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 46 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_16_50_16_if_stmt:
+        %tmp.87 = lgetv %curTile.10;
+        symbol [ curTile %tmp.87 46 20 27 ];
+        %tmp.88 = 0;
+        %tmp.89 = ne %tmp.87 %tmp.88;
+        bf %tmp.89 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_16_50_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_16_50_16_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_34_50_16_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 47 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_34_49_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_34_49_16_stop" ]
-        %fontSize.12 = local;
-        symbol [ fontSize %fontSize.12 47 24 32 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_begin:
-        %tmp.89 = lgetv %curTile.10;
-        symbol [ curTile %tmp.89 47 35 42 ];
-        %tmp.90 = 512;
-        %tmp.91 = gt %tmp.89 %tmp.90;
-        bf %tmp.91 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_true:
-        symbol [ Graphics %tmp.92 47 51 59 ];
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 47 20 22 ];
+        symbol [ setColor %tmp.91 47 23 31 ];
+        %tmp.91 = getv function %tmp.90 :setColor;
+        symbol [ Graphics %tmp.92 47 32 40 ];
         %tmp.92 = getm $.Toybox.Graphics;
-        symbol [ FONT_SYSTEM_TINY %tmp.93 47 60 76 ];
-        %tmp.93 = getv %tmp.92 :FONT_SYSTEM_TINY;
-        push %tmp.93;
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_false:
-        symbol [ Graphics %tmp.94 47 79 87 ];
-        %tmp.94 = getm $.Toybox.Graphics;
-        symbol [ FONT_SYSTEM_SMALL %tmp.95 47 88 105 ];
-        %tmp.95 = getv %tmp.94 :FONT_SYSTEM_SMALL;
-        push %tmp.95;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_end:
-        %tmp.96 = phi [%tmp.91 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_begin] [%tmp.93 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_true] [%tmp.95 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_false] [%tmp.96 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_47_35_47_88_end];
-        lputv %fontSize.12 %tmp.96;
-        symbol [ fontSize %fontSize.12 47 24 32 ];
+        symbol [ COLOR_BLACK %tmp.93 47 41 52 ];
+        %tmp.93 = getv %tmp.92 :COLOR_BLACK;
+        symbol [ Color %tmp.95 47 54 59 ];
+        %tmp.95 = getv ? :Color;
+        symbol [ none %tmp.96 47 60 64 ];
+        %tmp.96 = getv %tmp.95 :none;
+        invoke %tmp.90 %tmp.91(%tmp.93, %tmp.96);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 48 20 ]
-        %tmp.97 = lgetv %dc;
-        symbol [ dc %tmp.97 48 20 22 ];
-        symbol [ drawText %tmp.98 48 23 31 ];
-        %tmp.98 = getv function %tmp.97 :drawText;
-        %tmp.99 = lgetv %x.3;
-        symbol [ x %tmp.99 48 32 33 ];
-        %tmp.100 = lgetv %tileWidth.5;
-        symbol [ tileWidth %tmp.100 48 37 46 ];
-        %tmp.101 = 2;
-        %tmp.102 = div %tmp.100 %tmp.101;
-        %tmp.103 = add %tmp.99 %tmp.102;
-        %tmp.104 = lgetv %y.4;
-        symbol [ y %tmp.104 48 51 52 ];
-        %tmp.105 = lgetv %tileHeight.6;
-        symbol [ tileHeight %tmp.105 48 56 66 ];
-        %tmp.106 = 6;
-        %tmp.107 = div %tmp.105 %tmp.106;
-        %tmp.108 = add %tmp.104 %tmp.107;
-        %tmp.109 = lgetv %fontSize.12;
-        symbol [ fontSize %tmp.109 48 71 79 ];
-        %tmp.110 = lgetv %curTile.10;
-        symbol [ curTile %tmp.110 48 81 88 ];
-        symbol [ Graphics %tmp.111 48 90 98 ];
-        %tmp.111 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.112 48 99 118 ];
-        %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.97 %tmp.98(%tmp.103, %tmp.108, %tmp.109, %tmp.110, %tmp.112);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_34_49_16_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_16_49_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_45_16_49_16_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 51 16 ]
-        %tmp.113 = lgetv %x.3;
-        symbol [ x %tmp.113 51 16 17 ];
-        %tmp.114 = lgetv %tileWidth.5;
-        symbol [ tileWidth %tmp.114 51 21 30 ];
-        %tmp.115 = lgetv %spacing.2;
-        symbol [ spacing %tmp.115 51 33 40 ];
-        %tmp.116 = add %tmp.114 %tmp.115;
-        %tmp.117 = add %tmp.113 %tmp.116;
-        lputv %x.3 %tmp.117;
-        symbol [ x %x.3 51 16 17 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_46_52_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 34 ]
-        %tmp.120 = lgetv %col.9;
-        symbol [ col %tmp.120 34 39 42 ];
-        %tmp.121 = add %tmp.120 1;
-        lputv %col.9 %tmp.121;
-        symbol [ col %col.9 34 39 42 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_34_12_52_12_for_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 54 12 ]
-        %tmp.122 = lgetv %margin.1;
-        symbol [ margin %tmp.122 54 16 22 ];
-        lputv %x.3 %tmp.122;
-        symbol [ x %x.3 54 12 13 ];
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_34_50_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_34_50_16_stop" ]
+        %fontSize.12 = local;
+        symbol [ fontSize %fontSize.12 48 24 32 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_begin:
+        %tmp.97 = lgetv %curTile.10;
+        symbol [ curTile %tmp.97 48 35 42 ];
+        %tmp.98 = 512;
+        %tmp.99 = gt %tmp.97 %tmp.98;
+        bf %tmp.99 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_true:
+        symbol [ Graphics %tmp.100 48 51 59 ];
+        %tmp.100 = getm $.Toybox.Graphics;
+        symbol [ FONT_SYSTEM_TINY %tmp.101 48 60 76 ];
+        %tmp.101 = getv %tmp.100 :FONT_SYSTEM_TINY;
+        push %tmp.101;
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_false:
+        symbol [ Graphics %tmp.102 48 79 87 ];
+        %tmp.102 = getm $.Toybox.Graphics;
+        symbol [ FONT_SYSTEM_SMALL %tmp.103 48 88 105 ];
+        %tmp.103 = getv %tmp.102 :FONT_SYSTEM_SMALL;
+        push %tmp.103;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_end:
+        %tmp.104 = phi [%tmp.99 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_begin] [%tmp.101 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_true] [%tmp.103 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_false] [%tmp.104 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_48_35_48_88_end];
+        lputv %fontSize.12 %tmp.104;
+        symbol [ fontSize %fontSize.12 48 24 32 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 49 20 ]
+        %tmp.105 = lgetv %dc;
+        symbol [ dc %tmp.105 49 20 22 ];
+        symbol [ drawText %tmp.106 49 23 31 ];
+        %tmp.106 = getv function %tmp.105 :drawText;
+        %tmp.107 = lgetv %x.3;
+        symbol [ x %tmp.107 49 32 33 ];
+        %tmp.108 = lgetv %tileWidth.5;
+        symbol [ tileWidth %tmp.108 49 37 46 ];
+        %tmp.109 = 2;
+        %tmp.110 = div %tmp.108 %tmp.109;
+        %tmp.111 = add %tmp.107 %tmp.110;
+        %tmp.112 = lgetv %y.4;
+        symbol [ y %tmp.112 49 51 52 ];
+        %tmp.113 = lgetv %tileHeight.6;
+        symbol [ tileHeight %tmp.113 49 56 66 ];
+        %tmp.114 = 6;
+        %tmp.115 = div %tmp.113 %tmp.114;
+        %tmp.116 = add %tmp.112 %tmp.115;
+        %tmp.117 = lgetv %fontSize.12;
+        symbol [ fontSize %tmp.117 49 71 79 ];
+        %tmp.118 = lgetv %curTile.10;
+        symbol [ curTile %tmp.118 49 81 88 ];
+        symbol [ Graphics %tmp.119 49 90 98 ];
+        %tmp.119 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.120 49 99 118 ];
+        %tmp.120 = getv %tmp.119 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.105 %tmp.106(%tmp.111, %tmp.116, %tmp.117, %tmp.118, %tmp.120);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_34_50_16_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_16_50_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_46_16_50_16_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 52 16 ]
+        %tmp.121 = lgetv %x.3;
+        symbol [ x %tmp.121 52 16 17 ];
+        %tmp.122 = lgetv %tileWidth.5;
+        symbol [ tileWidth %tmp.122 52 21 30 ];
+        %tmp.123 = lgetv %spacing.2;
+        symbol [ spacing %tmp.123 52 33 40 ];
+        %tmp.124 = add %tmp.122 %tmp.123;
+        %tmp.125 = add %tmp.121 %tmp.124;
+        lputv %x.3 %tmp.125;
+        symbol [ x %x.3 52 16 17 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_46_53_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 35 ]
+        %tmp.128 = lgetv %col.9;
+        symbol [ col %tmp.128 35 39 42 ];
+        %tmp.129 = add %tmp.128 1;
+        lputv %col.9 %tmp.129;
+        symbol [ col %col.9 35 39 42 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_35_12_53_12_for_end:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 55 12 ]
-        %tmp.123 = lgetv %y.4;
-        symbol [ y %tmp.123 55 12 13 ];
-        %tmp.124 = lgetv %tileHeight.6;
-        symbol [ tileHeight %tmp.124 55 17 27 ];
-        %tmp.125 = lgetv %spacing.2;
-        symbol [ spacing %tmp.125 55 30 37 ];
-        %tmp.126 = add %tmp.124 %tmp.125;
-        %tmp.127 = add %tmp.123 %tmp.126;
-        lputv %y.4 %tmp.127;
-        symbol [ y %y.4 55 12 13 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_42_56_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 31 ]
-        %tmp.130 = lgetv %row.7;
-        symbol [ row %tmp.130 31 35 38 ];
-        %tmp.131 = add %tmp.130 1;
-        lputv %row.7 %tmp.131;
-        symbol [ row %row.7 31 35 38 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_31_8_56_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_19_40_57_4_stop:
+        %tmp.130 = lgetv %margin.1;
+        symbol [ margin %tmp.130 55 16 22 ];
+        lputv %x.3 %tmp.130;
+        symbol [ x %x.3 55 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 56 12 ]
+        %tmp.131 = lgetv %y.4;
+        symbol [ y %tmp.131 56 12 13 ];
+        %tmp.132 = lgetv %tileHeight.6;
+        symbol [ tileHeight %tmp.132 56 17 27 ];
+        %tmp.133 = lgetv %spacing.2;
+        symbol [ spacing %tmp.133 56 30 37 ];
+        %tmp.134 = add %tmp.132 %tmp.133;
+        %tmp.135 = add %tmp.131 %tmp.134;
+        lputv %y.4 %tmp.135;
+        symbol [ y %y.4 56 12 13 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_42_57_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 32 ]
+        %tmp.138 = lgetv %row.7;
+        symbol [ row %tmp.138 32 35 38 ];
+        %tmp.139 = add %tmp.138 1;
+        lputv %row.7 %tmp.139;
+        symbol [ row %row.7 32 35 38 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_32_8_57_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_20_40_58_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 59; @symbol_functiondef = [setTileColor,59,13,25]; @symbol_param<0> = [tileNumber,59,26,36]; @symbol_return<0> = [Graphics,59,41,49]; @symbol_return<1> = [ColorType,59,50,59]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 60; @symbol_functiondef = [setTileColor,60,13,25]; @symbol_param<0> = [tileNumber,60,26,36]; @symbol_return<0> = [Graphics,60,41,49]; @symbol_return<1> = [ColorType,60,50,59]; ]
     function setTileColor(tileNumber) as Graphics.ColorType {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_59_59_88_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 60 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_59_89_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 61 8 ]
         %tmp.1 = lgetv %tileNumber;
-        symbol [ tileNumber %tmp.1 60 15 25 ];
+        symbol [ tileNumber %tmp.1 61 15 25 ];
         push %tmp.1;
-        switch %tmp.1 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_8_87_8_switchStmtEnd;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_8_87_8_switchStmtBegin:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 61 12 ]
+        switch %tmp.1 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_8_88_8_switchStmtEnd;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_8_88_8_switchStmtBegin:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 62 12 ]
         %tmp.2 = dup %tmp.1;
         %tmp.3 = 0;
         %tmp.4 = getv function %tmp.2 :equals;
         %tmp.5 = invoke %tmp.2 %tmp.4 (%tmp.3);
-        bt %tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_12_62_49_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 63 12 ]
+        bt %tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_62_12_63_49_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 64 12 ]
         %tmp.6 = dup %tmp.1;
         %tmp.7 = 2;
         %tmp.8 = getv function %tmp.6 :equals;
         %tmp.9 = invoke %tmp.6 %tmp.8 (%tmp.7);
-        bt %tmp.9 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_63_12_64_43_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 65 12 ]
+        bt %tmp.9 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_64_12_65_33_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 66 12 ]
         %tmp.10 = dup %tmp.1;
         %tmp.11 = 4;
         %tmp.12 = getv function %tmp.10 :equals;
         %tmp.13 = invoke %tmp.10 %tmp.12 (%tmp.11);
-        bt %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_65_12_66_44_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 67 12 ]
+        bt %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_66_12_67_33_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 68 12 ]
         %tmp.14 = dup %tmp.1;
         %tmp.15 = 8;
         %tmp.16 = getv function %tmp.14 :equals;
         %tmp.17 = invoke %tmp.14 %tmp.16 (%tmp.15);
-        bt %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_67_12_68_44_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 69 12 ]
+        bt %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_68_12_69_33_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 70 12 ]
         %tmp.18 = dup %tmp.1;
         %tmp.19 = 16;
         %tmp.20 = getv function %tmp.18 :equals;
         %tmp.21 = invoke %tmp.18 %tmp.20 (%tmp.19);
-        bt %tmp.21 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_69_12_70_41_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 71 12 ]
+        bt %tmp.21 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_70_12_71_34_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 72 12 ]
         %tmp.22 = dup %tmp.1;
         %tmp.23 = 32;
         %tmp.24 = getv function %tmp.22 :equals;
         %tmp.25 = invoke %tmp.22 %tmp.24 (%tmp.23);
-        bt %tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_71_12_72_43_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 73 12 ]
+        bt %tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_72_12_73_34_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 74 12 ]
         %tmp.26 = dup %tmp.1;
         %tmp.27 = 64;
         %tmp.28 = getv function %tmp.26 :equals;
         %tmp.29 = invoke %tmp.26 %tmp.28 (%tmp.27);
-        bt %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_73_12_74_42_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 75 12 ]
+        bt %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_74_12_75_34_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 76 12 ]
         %tmp.30 = dup %tmp.1;
         %tmp.31 = 128;
         %tmp.32 = getv function %tmp.30 :equals;
         %tmp.33 = invoke %tmp.30 %tmp.32 (%tmp.31);
-        bt %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_75_12_76_45_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 77 12 ]
+        bt %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_76_12_77_35_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 78 12 ]
         %tmp.34 = dup %tmp.1;
         %tmp.35 = 256;
         %tmp.36 = getv function %tmp.34 :equals;
         %tmp.37 = invoke %tmp.34 %tmp.36 (%tmp.35);
-        bt %tmp.37 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_77_12_78_44_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 79 12 ]
+        bt %tmp.37 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_78_12_79_35_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 80 12 ]
         %tmp.38 = dup %tmp.1;
         %tmp.39 = 512;
         %tmp.40 = getv function %tmp.38 :equals;
         %tmp.41 = invoke %tmp.38 %tmp.40 (%tmp.39);
-        bt %tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_79_12_80_43_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 81 12 ]
+        bt %tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_80_12_81_35_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 82 12 ]
         %tmp.42 = dup %tmp.1;
         %tmp.43 = 1024;
         %tmp.44 = getv function %tmp.42 :equals;
         %tmp.45 = invoke %tmp.42 %tmp.44 (%tmp.43);
-        bt %tmp.45 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_81_12_82_46_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 83 12 ]
+        bt %tmp.45 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_82_12_83_36_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 84 12 ]
         %tmp.46 = dup %tmp.1;
         %tmp.47 = 2048;
         %tmp.48 = getv function %tmp.46 :equals;
         %tmp.49 = invoke %tmp.46 %tmp.48 (%tmp.47);
-        bt %tmp.49 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_83_12_84_42_switchCase;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 85 12 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_8_87_8_switchStmtDefault:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_8_87_8_defaultCodeBegin;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_12_62_49_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 62 16 ]
-        symbol [ Graphics %tmp.50 62 23 31 ];
+        bt %tmp.49 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_84_12_85_36_switchCase;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 86 12 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_8_88_8_switchStmtDefault:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_8_88_8_defaultCodeBegin;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_62_12_63_49_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 63 16 ]
+        symbol [ Graphics %tmp.50 63 23 31 ];
         %tmp.50 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.51 62 32 49 ];
+        symbol [ COLOR_TRANSPARENT %tmp.51 63 32 49 ];
         %tmp.51 = getv %tmp.50 :COLOR_TRANSPARENT;
         ret %tmp.51;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_63_12_64_43_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 64 16 ]
-        symbol [ Graphics %tmp.52 64 23 31 ];
-        %tmp.52 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.53 64 32 43 ];
-        %tmp.53 = getv %tmp.52 :COLOR_WHITE;
-        ret %tmp.53;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_65_12_66_44_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 66 16 ]
-        symbol [ Graphics %tmp.54 66 23 31 ];
-        %tmp.54 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.55 66 32 44 ];
-        %tmp.55 = getv %tmp.54 :COLOR_YELLOW;
-        ret %tmp.55;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_67_12_68_44_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 68 16 ]
-        symbol [ Graphics %tmp.56 68 23 31 ];
-        %tmp.56 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.57 68 32 44 ];
-        %tmp.57 = getv %tmp.56 :COLOR_ORANGE;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_64_12_65_33_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 65 16 ]
+        symbol [ Color %tmp.53 65 23 28 ];
+        %tmp.53 = getv ? :Color;
+        symbol [ tfe2 %tmp.54 65 29 33 ];
+        %tmp.54 = getv %tmp.53 :tfe2;
+        ret %tmp.54;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_66_12_67_33_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 67 16 ]
+        symbol [ Color %tmp.56 67 23 28 ];
+        %tmp.56 = getv ? :Color;
+        symbol [ tfe4 %tmp.57 67 29 33 ];
+        %tmp.57 = getv %tmp.56 :tfe4;
         ret %tmp.57;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_69_12_70_41_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 70 16 ]
-        symbol [ Graphics %tmp.58 70 23 31 ];
-        %tmp.58 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.59 70 32 41 ];
-        %tmp.59 = getv %tmp.58 :COLOR_RED;
-        ret %tmp.59;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_71_12_72_43_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 72 16 ]
-        symbol [ Graphics %tmp.60 72 23 31 ];
-        %tmp.60 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.61 72 32 43 ];
-        %tmp.61 = getv %tmp.60 :COLOR_WHITE;
-        ret %tmp.61;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_73_12_74_42_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 74 16 ]
-        symbol [ Graphics %tmp.62 74 23 31 ];
-        %tmp.62 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.63 74 32 42 ];
-        %tmp.63 = getv %tmp.62 :COLOR_BLUE;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_68_12_69_33_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 69 16 ]
+        symbol [ Color %tmp.59 69 23 28 ];
+        %tmp.59 = getv ? :Color;
+        symbol [ tfe8 %tmp.60 69 29 33 ];
+        %tmp.60 = getv %tmp.59 :tfe8;
+        ret %tmp.60;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_70_12_71_34_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 71 16 ]
+        symbol [ Color %tmp.62 71 23 28 ];
+        %tmp.62 = getv ? :Color;
+        symbol [ tfe16 %tmp.63 71 29 34 ];
+        %tmp.63 = getv %tmp.62 :tfe16;
         ret %tmp.63;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_75_12_76_45_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 76 16 ]
-        symbol [ Graphics %tmp.64 76 23 31 ];
-        %tmp.64 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_BLUE %tmp.65 76 32 45 ];
-        %tmp.65 = getv %tmp.64 :COLOR_DK_BLUE;
-        ret %tmp.65;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_77_12_78_44_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 78 16 ]
-        symbol [ Graphics %tmp.66 78 23 31 ];
-        %tmp.66 = getm $.Toybox.Graphics;
-        symbol [ COLOR_PURPLE %tmp.67 78 32 44 ];
-        %tmp.67 = getv %tmp.66 :COLOR_PURPLE;
-        ret %tmp.67;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_79_12_80_43_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 80 16 ]
-        symbol [ Graphics %tmp.68 80 23 31 ];
-        %tmp.68 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.69 80 32 43 ];
-        %tmp.69 = getv %tmp.68 :COLOR_GREEN;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_72_12_73_34_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 73 16 ]
+        symbol [ Color %tmp.65 73 23 28 ];
+        %tmp.65 = getv ? :Color;
+        symbol [ tfe32 %tmp.66 73 29 34 ];
+        %tmp.66 = getv %tmp.65 :tfe32;
+        ret %tmp.66;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_74_12_75_34_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 75 16 ]
+        symbol [ Color %tmp.68 75 23 28 ];
+        %tmp.68 = getv ? :Color;
+        symbol [ tfe64 %tmp.69 75 29 34 ];
+        %tmp.69 = getv %tmp.68 :tfe64;
         ret %tmp.69;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_81_12_82_46_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 82 16 ]
-        symbol [ Graphics %tmp.70 82 23 31 ];
-        %tmp.70 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GREEN %tmp.71 82 32 46 ];
-        %tmp.71 = getv %tmp.70 :COLOR_DK_GREEN;
-        ret %tmp.71;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_83_12_84_42_switchCase:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 84 16 ]
-        symbol [ Graphics %tmp.72 84 23 31 ];
-        %tmp.72 = getm $.Toybox.Graphics;
-        symbol [ COLOR_PINK %tmp.73 84 32 42 ];
-        %tmp.73 = getv %tmp.72 :COLOR_PINK;
-        ret %tmp.73;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_85_12_86_43_switchCase:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_8_87_8_defaultCodeBegin:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 86 16 ]
-        symbol [ Graphics %tmp.74 86 23 31 ];
-        %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.75 86 32 43 ];
-        %tmp.75 = getv %tmp.74 :COLOR_BLACK;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_76_12_77_35_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 77 16 ]
+        symbol [ Color %tmp.71 77 23 28 ];
+        %tmp.71 = getv ? :Color;
+        symbol [ tfe128 %tmp.72 77 29 35 ];
+        %tmp.72 = getv %tmp.71 :tfe128;
+        ret %tmp.72;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_78_12_79_35_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 79 16 ]
+        symbol [ Color %tmp.74 79 23 28 ];
+        %tmp.74 = getv ? :Color;
+        symbol [ tfe256 %tmp.75 79 29 35 ];
+        %tmp.75 = getv %tmp.74 :tfe256;
         ret %tmp.75;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_8_87_8_switchStmtEnd:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_80_12_81_35_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 81 16 ]
+        symbol [ Color %tmp.77 81 23 28 ];
+        %tmp.77 = getv ? :Color;
+        symbol [ tfe512 %tmp.78 81 29 35 ];
+        %tmp.78 = getv %tmp.77 :tfe512;
+        ret %tmp.78;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_82_12_83_36_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 83 16 ]
+        symbol [ Color %tmp.80 83 23 28 ];
+        %tmp.80 = getv ? :Color;
+        symbol [ tfe1024 %tmp.81 83 29 36 ];
+        %tmp.81 = getv %tmp.80 :tfe1024;
+        ret %tmp.81;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_84_12_85_36_switchCase:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 85 16 ]
+        symbol [ Color %tmp.83 85 23 28 ];
+        %tmp.83 = getv ? :Color;
+        symbol [ tfe2048 %tmp.84 85 29 36 ];
+        %tmp.84 = getv %tmp.83 :tfe2048;
+        ret %tmp.84;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_86_12_87_35_switchCase:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_8_88_8_defaultCodeBegin:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc" 87 16 ]
+        symbol [ Color %tmp.86 87 23 28 ];
+        %tmp.86 = getv ? :Color;
+        symbol [ tfeBig %tmp.87 87 29 35 ];
+        %tmp.87 = getv %tmp.86 :tfeBig;
+        ret %tmp.87;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_61_8_88_8_switchStmtEnd:
         pop;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_59_59_88_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_60_59_89_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 1; ]

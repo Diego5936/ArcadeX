@@ -4,6 +4,14 @@ import Toybox.System;
 
 module Game2048 {
     var grid = [];
+    var active;
+    var score;
+
+    function initialize() {
+        active = true;
+        score = 0;
+        setStartingGrid();
+    }
 
     // Initializes the global grid with two random '2' tiles
     function setStartingGrid() {
@@ -75,7 +83,9 @@ module Game2048 {
             var i = nonZero.size() - 1;
             while (i >= 0) {
                 if (i > 0 && nonZero[i] == nonZero[i - 1]) {
-                    merged.add(nonZero[i] * 2);
+                    var mergedValue = nonZero[i] * 2;
+                    merged.add(mergedValue);
+                    score += mergedValue;
                     i -= 2;
                 } 
                 else {
@@ -128,7 +138,9 @@ module Game2048 {
             var i = nonZero.size() - 1;
             while (i >= 0) {
                 if (i > 0 && nonZero[i] == nonZero[i - 1]) {
-                    merged.add(nonZero[i] * 2);
+                    var mergedValue = nonZero[i] * 2;
+                    merged.add(mergedValue);
+                    score += mergedValue;
                     i -= 2;
                 } 
                 else {
@@ -173,6 +185,33 @@ module Game2048 {
         }
 
         return emptyTiles;
+    }
+
+    // Checks if no moves are left
+    function noMovesLeft() as Boolean {
+        // If any empty tiles exist there are still moves left
+        if (getEmptyTiles().size() > 0) {
+            return false;
+        }
+
+        // Check for merges
+        for (var r = 0; r < 4; r++) {
+            for (var c = 0; c < 4; c++) {
+                var val = ((grid as Array)[r] as Array)[c];
+
+                // Right check
+                if (c < 3 && val == ((grid as Array)[r] as Array)[c + 1]) {
+                    return false;
+                }
+
+                // Down check
+                if (r < 3 && val == ((grid as Array)[r + 1] as Array)[c]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
     // Clones grid for future comparison

@@ -34,6 +34,10 @@ class Game2048Delegate extends WatchUi.InputDelegate {
         if (changed) {
             Game2048.spawnNewTile();
         }
+
+        if (Game2048.noMovesLeft()) {
+            Game2048.active = false;
+        }
         
         WatchUi.requestUpdate();
 

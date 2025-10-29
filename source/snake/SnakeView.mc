@@ -16,7 +16,6 @@ class SnakeView extends WatchUi.View {
         // Start ticks
         tickTimer = new Timer.Timer();
         tickTimer.start(method(:onTick), 500, true);
-
     }
 
     function onUpdate(dc as Dc) as Void {   
