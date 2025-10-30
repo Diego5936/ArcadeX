@@ -5,41 +5,17 @@ import Toybox.System;
 class ArcadeXDelegate extends WatchUi.InputDelegate {
     var view as ArcadeXView or Null;
     
-    function initialize() {
+    function initialize(v as ArcadeXView) {
         InputDelegate.initialize();
+        view = v;
     }
-
-    function setView() {
-        // Get view counterpart
-        // Returns as [view, delegate] so separate
-        var viewPair = WatchUi.getCurrentView();
-        view = viewPair[0] as ArcadeXView;
-    }
-
-    function ensureView() as Boolean {
-        if (view == null) {
-            setView();
-        }
-        return (view != null);
-    }
-
 
     // --- Action Functions ---
     function select() as Boolean {
-        if (!ensureView()) {
-            System.println("Scroll failed: view is null");
-            return false;
-        }
-
         return GameRegistry.launch(GameRegistry.GAMES[view.gameIdx][:id], true);
     }
 
     function scroll(direction as String) {
-        if (!ensureView()) {
-            System.println("Scroll failed: view is null");
-            return;
-        }
-
         if (direction.equals("up")) {
             view.scroll(-1);
         }
@@ -53,10 +29,6 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
         var position = click.getCoordinates();
         var x = position[0];
         var y = position[1];
-
-        if (view == null) {
-            setView();
-        }
 
         var button = view.getMainButton() as Dictionary;
 

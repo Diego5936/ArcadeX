@@ -4,31 +4,14 @@ import Toybox.Lang;
 class MenuSnakeDelegate extends WatchUi.InputDelegate {
     var view as MenuSnakeView or Null;
 
-    function initialize() {
+    function initialize(v as MenuSnakeView) {
         InputDelegate.initialize();
-    }
-
-    function setView() {
-        var viewPair = WatchUi.getCurrentView();
-        view = viewPair[0] as MenuSnakeView;
-    }
-
-    function ensureView() as Boolean {
-        if (view == null) {
-            setView();
-        }
-        return (view != null);
+        view = v;
     }
 
     // --- Action Functions ---
     function select() as Boolean {
-        if (!ensureView()) {
-            System.println("Scroll failed: view is null");
-            return false;
-        }
-
         GameRegistry.launch("snake", false);
-
         return true;
     }
 
@@ -37,10 +20,6 @@ class MenuSnakeDelegate extends WatchUi.InputDelegate {
         var position = clickEvent.getCoordinates();
         var x = position[0];
         var y = position[1];
-
-        if (view == null) {
-            setView();
-        }
 
         var rect = view.playButton;
 

@@ -5,32 +5,15 @@ import Toybox.System;
 class Menu2048Delegate extends WatchUi.InputDelegate {
     var view as Menu2048View or Null;
 
-    function initialize() {
+    function initialize(v as Menu2048View) {
         InputDelegate.initialize();
-    }
-
-    function setView() {
-        var viewPair = WatchUi.getCurrentView();
-        view = viewPair[0] as Menu2048View;
+        view = v;
     }
 
     // --- Action Functions ---
     function select() as Boolean {
-        if (!ensureView()) {
-            System.println("Scroll failed: view is null");
-            return false;
-        }
-
         GameRegistry.launch("2048", false);
-
         return true;
-    }
-
-    function ensureView() as Boolean {
-        if (view == null) {
-            setView();
-        }
-        return (view != null);
     }
 
     // --- Input Handling ---
@@ -38,10 +21,6 @@ class Menu2048Delegate extends WatchUi.InputDelegate {
         var position = clickEvent.getCoordinates();
         var x = position[0];
         var y = position[1];
-
-        if (view == null) {
-            setView();
-        }
 
         var rect = view.playButton;
 

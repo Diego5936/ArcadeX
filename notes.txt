@@ -8,3 +8,7 @@ Ex: var x = null;
     }
 
 When handling an action event (onSwipe, onKey, etc...) the function need to return a boolean to let the system know if our function handled that input> if handled then returns true, if not then it passes it upward to be handleed instead.
+
+WatchUi.getCurrentView() holds a view pair [view, delegate]. If needing one specifically got to separate.
+Ex: var viewPair = WatchUi.getCurrentView();
+    view = viewPair[0] as ArcadeXView;

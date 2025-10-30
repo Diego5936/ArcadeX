@@ -4,8 +4,8 @@ import Toybox.Lang;
 module GameRegistry {
     // --- Games Library ---
     var MAP = {
-        "snake" => new Method(GameRegistry, :runSnake),
-        "2048" => new Method(GameRegistry, :run2048)
+        "2048" => new Method(GameRegistry, :run2048),
+        "snake" => new Method(GameRegistry, :runSnake)
     };
 
     const GAMES = [
@@ -30,24 +30,32 @@ module GameRegistry {
 
     // --- Launchers ---
     // Shared screen launcher
-    function launchScreen(viewClass, delegateClass) {
-        WatchUi.pushView(new viewClass(), new delegateClass(), WatchUi.SLIDE_IMMEDIATE);
+    function launchScreen(viewClass, delegateClass, passView) {
+        var view = new viewClass();
+
+        if (passView) {
+            WatchUi.pushView(view, new delegateClass(view), WatchUi.SLIDE_IMMEDIATE);
+        }
+        else {
+            WatchUi.pushView(view, new delegateClass(), WatchUi.SLIDE_IMMEDIATE);
+        }
     }
 
-    function runSnake(menu as Boolean) { 
-        if (menu) {
-            launchScreen(MenuSnakeView, MenuSnakeDelegate);
-        } 
-        else {
-            launchScreen(SnakeView, SnakeDelegate);
-        }
-    } 
     function run2048(menu as Boolean) {
         if (menu) {
-            launchScreen(Menu2048View, Menu2048Delegate);
+            launchScreen(Menu2048View, Menu2048Delegate, true);
         } 
         else {
-            launchScreen(Game2048View, Game2048Delegate);
+            launchScreen(Game2048View, Game2048Delegate, false);
         }
     }
+    function runSnake(menu as Boolean) { 
+        if (menu) {
+            launchScreen(MenuSnakeView, MenuSnakeDelegate, true);
+        } 
+        else {
+            launchScreen(SnakeView, SnakeDelegate, false);
+        }
+    } 
+    
 }
