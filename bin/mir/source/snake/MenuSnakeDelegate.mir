@@ -1,222 +1,325 @@
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 3; @symbol_classdef = [MenuSnakeDelegate,3,6,23]; @symbol_extends<0> = [WatchUi,3,32,39]; @symbol_extends<1> = [InputDelegate,3,40,53]; ]
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 4; @symbol_classdef = [MenuSnakeDelegate,4,6,23]; @symbol_extends<0> = [WatchUi,4,32,39]; @symbol_extends<1> = [InputDelegate,4,40,53]; ]
 class MenuSnakeDelegate extends WatchUi.InputDelegate {
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 3; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 3; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 4; @symbol_functiondef = [initialize,4,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 5; @position = 8; @symbol_vardef = [view,5,8,12]; @symbol_type<0> = [MenuSnakeView,5,16,29]; ]
+    var view as MenuSnakeView or Null;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
     function initialize() as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_4_26_6_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 5 8 ]
-        symbol [ InputDelegate %tmp.2 5 8 21 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_7_26_9_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 8 8 ]
+        symbol [ InputDelegate %tmp.2 8 8 21 ];
         %tmp.2 = getv ? :InputDelegate;
-        symbol [ initialize %tmp.3 5 22 32 ];
+        symbol [ initialize %tmp.3 8 22 32 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_4_26_6_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_7_26_9_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 8; @symbol_functiondef = [onTap,8,13,18]; @symbol_param<0> = [clickEvent,8,19,29]; @symbol_param<0>_type<0> = [WatchUi,8,33,40]; @symbol_param<0>_type<1> = [ClickEvent,8,41,51]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 11; @symbol_functiondef = [setView,11,13,20]; ]
+    function setView() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_11_23_14_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 12 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_11_23_14_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_11_23_14_4_stop" ]
+        %viewPair.1 = local;
+        symbol [ viewPair %viewPair.1 12 12 20 ];
+        symbol [ WatchUi %tmp.1 12 23 30 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.2 12 31 45 ];
+        %tmp.2 = getv function %tmp.1 :getCurrentView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %viewPair.1 %tmp.3;
+        symbol [ viewPair %viewPair.1 12 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 13 8 ]
+        %tmp.4 = lgetv %viewPair.1;
+        symbol [ viewPair %tmp.4 13 15 23 ];
+        %tmp.5 = 0;
+        %tmp.6 = agetv %tmp.4 %tmp.5;
+        %tmp.7 = as %tmp.6 MenuSnakeView;
+        symbol [ MenuSnakeView %tmp.7 13 30 43 ];
+        symbol [ view ? 13 8 12 ];
+        putv self :view %tmp.7;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_11_23_14_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 16; @symbol_functiondef = [ensureView,16,13,23]; @symbol_return<0> = [Boolean,16,29,36]; ]
+    function ensureView() as Boolean {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_16_37_21_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 17 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_19_8_if_stmt:
+        symbol [ view %tmp.2 17 12 16 ];
+        %tmp.2 = getv ? :view;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_19_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_19_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_19_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 18 12 ]
+        %tmp.5 = self;
+        symbol [ setView %tmp.6 18 12 19 ];
+        %tmp.6 = getv function %tmp.5 :setView;
+        invoke %tmp.5 %tmp.6();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_19_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_19_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_19_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 20 8 ]
+        symbol [ view %tmp.8 20 16 20 ];
+        %tmp.8 = getv ? :view;
+        %tmp.9 = null;
+        %tmp.10 = ne %tmp.8 %tmp.9;
+        ret %tmp.10;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_16_37_21_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 24; @symbol_functiondef = [select,24,13,19]; @symbol_return<0> = [Boolean,24,25,32]; ]
+    function select() as Boolean {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_24_33_33_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 25 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_8_28_8_if_stmt:
+        %tmp.1 = self;
+        symbol [ ensureView %tmp.2 25 13 23 ];
+        %tmp.2 = getv function %tmp.1 :ensureView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = not %tmp.3;
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_8_28_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_8_28_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_27_28_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 26 12 ]
+        symbol [ System %tmp.6 26 12 18 ];
+        %tmp.6 = getv ? :System;
+        symbol [ println %tmp.7 26 19 26 ];
+        %tmp.7 = getv function %tmp.6 :println;
+        %tmp.8 = "Scroll failed: view is null";
+        invoke %tmp.6 %tmp.7(%tmp.8);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 27 12 ]
+        %tmp.9 = false;
+        ret %tmp.9;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_27_28_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_8_28_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_25_8_28_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 30 8 ]
+        symbol [ WatchUi %tmp.10 30 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.11 30 16 24 ];
+        %tmp.11 = getv function %tmp.10 :pushView;
+        symbol [ SnakeView %tmp.15 30 29 38 ];
+        %tmp.15 = getv ? :SnakeView;
+        %tmp.12 = newc %tmp.15 ();
+        symbol [ SnakeDelegate %tmp.19 30 46 59 ];
+        %tmp.19 = getv ? :SnakeDelegate;
+        %tmp.16 = newc %tmp.19 ();
+        symbol [ WatchUi %tmp.20 30 63 70 ];
+        %tmp.20 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.21 30 71 86 ];
+        %tmp.21 = getv %tmp.20 :SLIDE_IMMEDIATE;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.16, %tmp.21);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 32 8 ]
+        %tmp.22 = true;
+        ret %tmp.22;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_24_33_33_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 36; @symbol_functiondef = [onTap,36,13,18]; @symbol_param<0> = [clickEvent,36,19,29]; @symbol_param<0>_type<0> = [WatchUi,36,33,40]; @symbol_param<0>_type<1> = [ClickEvent,36,41,51]; ]
     function onTap(clickEvent as WatchUi.ClickEvent) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 9 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 37 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_stop" ]
         %position.1 = local;
-        symbol [ position %position.1 9 12 20 ];
+        symbol [ position %position.1 37 12 20 ];
         %tmp.1 = lgetv %clickEvent;
-        symbol [ clickEvent %tmp.1 9 23 33 ];
-        symbol [ getCoordinates %tmp.2 9 34 48 ];
+        symbol [ clickEvent %tmp.1 37 23 33 ];
+        symbol [ getCoordinates %tmp.2 37 34 48 ];
         %tmp.2 = getv function %tmp.1 :getCoordinates;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %position.1 %tmp.3;
-        symbol [ position %position.1 9 12 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 10 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_stop" ]
+        symbol [ position %position.1 37 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 38 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_stop" ]
         %x.2 = local;
-        symbol [ x %x.2 10 12 13 ];
+        symbol [ x %x.2 38 12 13 ];
         %tmp.4 = lgetv %position.1;
-        symbol [ position %tmp.4 10 16 24 ];
+        symbol [ position %tmp.4 38 16 24 ];
         %tmp.5 = 0;
         %tmp.6 = agetv %tmp.4 %tmp.5;
         lputv %x.2 %tmp.6;
-        symbol [ x %x.2 10 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 11 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_stop" ]
+        symbol [ x %x.2 38 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 39 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_stop" ]
         %y.3 = local;
-        symbol [ y %y.3 11 12 13 ];
+        symbol [ y %y.3 39 12 13 ];
         %tmp.7 = lgetv %position.1;
-        symbol [ position %tmp.7 11 16 24 ];
+        symbol [ position %tmp.7 39 16 24 ];
         %tmp.8 = 1;
         %tmp.9 = agetv %tmp.7 %tmp.8;
         lputv %y.3 %tmp.9;
-        symbol [ y %y.3 11 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 14 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_stop" ]
-        %viewPair.4 = local;
-        symbol [ viewPair %viewPair.4 14 12 20 ];
-        symbol [ WatchUi %tmp.10 14 23 30 ];
-        %tmp.10 = getm $.Toybox.WatchUi;
-        symbol [ getCurrentView %tmp.11 14 31 45 ];
-        %tmp.11 = getv function %tmp.10 :getCurrentView;
-        %tmp.12 = invoke %tmp.10 %tmp.11();
-        lputv %viewPair.4 %tmp.12;
-        symbol [ viewPair %viewPair.4 14 12 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 15 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_stop" ]
-        %view.5 = local;
-        symbol [ view %view.5 15 12 16 ];
-        %tmp.13 = lgetv %viewPair.4;
-        symbol [ viewPair %tmp.13 15 19 27 ];
-        %tmp.14 = 0;
-        %tmp.15 = agetv %tmp.13 %tmp.14;
-        %tmp.16 = as %tmp.15 MenuSnakeView;
-        symbol [ MenuSnakeView %tmp.16 15 34 47 ];
-        lputv %view.5 %tmp.16;
-        symbol [ view %view.5 15 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 17 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_30_8_if_stmt:
-        %tmp.17 = lgetv %view.5;
-        symbol [ view %tmp.17 17 12 16 ];
-        %tmp.18 = null;
-        %tmp.19 = ne %tmp.17 %tmp.18;
-        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_30_8_if_else_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_30_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_27_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 18 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_27_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_27_8_stop" ]
-        %rect.6 = local;
-        symbol [ rect %rect.6 18 16 20 ];
-        %tmp.20 = lgetv %view.5;
-        symbol [ view %tmp.20 18 23 27 ];
-        %tmp.21 = as %tmp.20 { (!Null) };
-        symbol [ playButton %tmp.22 18 28 38 ];
-        %tmp.22 = getv %tmp.21 :playButton;
-        lputv %rect.6 %tmp.22;
-        symbol [ rect %rect.6 18 16 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 20 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_27_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_27_8_stop" ]
-        %tapPlay.7 = local;
-        symbol [ tapPlay %tapPlay.7 20 16 23 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_26_21_69_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_26_21_40_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_26_20_67_begin:
-        %tmp.23 = lgetv %x.2;
-        symbol [ x %tmp.23 20 26 27 ];
-        %tmp.24 = lgetv %rect.6;
-        symbol [ rect %tmp.24 20 31 35 ];
-        %tmp.26 = const :x;
-        symbol [ x %tmp.26 20 37 38 const ];
-        %tmp.27 = agetv %tmp.24 %tmp.26;
-        %tmp.28 = gte %tmp.23 %tmp.27;
-        %tmp.29 = dup %tmp.28;
-        bf %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_44_20_67_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_44_20_67_true:
-        %tmp.30 = lgetv %x.2;
-        symbol [ x %tmp.30 20 44 45 ];
-        %tmp.31 = lgetv %rect.6;
-        symbol [ rect %tmp.31 20 49 53 ];
-        %tmp.33 = const :x;
-        symbol [ x %tmp.33 20 55 56 const ];
+        symbol [ y %y.3 39 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 41 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_8_43_8_if_stmt:
+        symbol [ view %tmp.11 41 12 16 ];
+        %tmp.11 = getv ? :view;
+        %tmp.12 = null;
+        %tmp.13 = eq %tmp.11 %tmp.12;
+        bf %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_8_43_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_8_43_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_26_43_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 42 12 ]
+        %tmp.14 = self;
+        symbol [ setView %tmp.15 42 12 19 ];
+        %tmp.15 = getv function %tmp.14 :setView;
+        invoke %tmp.14 %tmp.15();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_26_43_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_8_43_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_41_8_43_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 45 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_stop" ]
+        %rect.4 = local;
+        symbol [ rect %rect.4 45 12 16 ];
+        symbol [ view %tmp.17 45 19 23 ];
+        %tmp.17 = getv ? :view;
+        symbol [ playButton %tmp.18 45 24 34 ];
+        %tmp.18 = getv %tmp.17 :playButton;
+        lputv %rect.4 %tmp.18;
+        symbol [ rect %rect.4 45 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 47 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_stop" ]
+        %tapPlay.5 = local;
+        symbol [ tapPlay %tapPlay.5 47 12 19 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_22_48_61_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_22_48_32_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_22_47_63_begin:
+        %tmp.19 = lgetv %x.2;
+        symbol [ x %tmp.19 47 22 23 ];
+        %tmp.20 = lgetv %rect.4;
+        symbol [ rect %tmp.20 47 27 31 ];
+        %tmp.22 = const :x;
+        symbol [ x %tmp.22 47 33 34 const ];
+        %tmp.23 = agetv %tmp.20 %tmp.22;
+        %tmp.24 = gte %tmp.19 %tmp.23;
+        %tmp.25 = dup %tmp.24;
+        bf %tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_40_47_63_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_40_47_63_true:
+        %tmp.26 = lgetv %x.2;
+        symbol [ x %tmp.26 47 40 41 ];
+        %tmp.27 = lgetv %rect.4;
+        symbol [ rect %tmp.27 47 45 49 ];
+        %tmp.29 = const :x;
+        symbol [ x %tmp.29 47 51 52 const ];
+        %tmp.30 = agetv %tmp.27 %tmp.29;
+        %tmp.31 = lgetv %rect.4;
+        symbol [ rect %tmp.31 47 56 60 ];
+        %tmp.33 = const :w;
+        symbol [ w %tmp.33 47 62 63 const ];
         %tmp.34 = agetv %tmp.31 %tmp.33;
-        %tmp.35 = lgetv %rect.6;
-        symbol [ rect %tmp.35 20 60 64 ];
-        %tmp.37 = const :w;
-        symbol [ w %tmp.37 20 66 67 const ];
-        %tmp.38 = agetv %tmp.35 %tmp.37;
-        %tmp.39 = add %tmp.34 %tmp.38;
-        %tmp.40 = lte %tmp.30 %tmp.39;
-        %tmp.41 = and %tmp.28 %tmp.40;
-        push %tmp.41;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_44_20_67_end:
-        %tmp.42 = phi [%tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_26_20_67_begin] [%tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_44_20_67_true] [%tmp.42 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_44_20_67_end];
-        %tmp.43 = dup %tmp.42;
-        bf %tmp.43 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_28_21_40_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_28_21_40_true:
-        %tmp.44 = lgetv %y.3;
-        symbol [ y %tmp.44 21 28 29 ];
-        %tmp.45 = lgetv %rect.6;
-        symbol [ rect %tmp.45 21 33 37 ];
-        %tmp.47 = const :y;
-        symbol [ y %tmp.47 21 39 40 const ];
-        %tmp.48 = agetv %tmp.45 %tmp.47;
-        %tmp.49 = gte %tmp.44 %tmp.48;
-        %tmp.50 = and %tmp.42 %tmp.49;
-        push %tmp.50;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_28_21_40_end:
-        %tmp.51 = phi [%tmp.43 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_26_21_40_begin] [%tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_28_21_40_true] [%tmp.51 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_28_21_40_end];
-        %tmp.52 = dup %tmp.51;
-        bf %tmp.52 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_46_21_69_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_46_21_69_true:
-        %tmp.53 = lgetv %y.3;
-        symbol [ y %tmp.53 21 46 47 ];
-        %tmp.54 = lgetv %rect.6;
-        symbol [ rect %tmp.54 21 51 55 ];
-        %tmp.56 = const :y;
-        symbol [ y %tmp.56 21 57 58 const ];
+        %tmp.35 = add %tmp.30 %tmp.34;
+        %tmp.36 = lte %tmp.26 %tmp.35;
+        %tmp.37 = and %tmp.24 %tmp.36;
+        push %tmp.37;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_40_47_63_end:
+        %tmp.38 = phi [%tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_22_47_63_begin] [%tmp.37 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_40_47_63_true] [%tmp.38 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_40_47_63_end];
+        %tmp.39 = dup %tmp.38;
+        bf %tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_20_48_32_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_20_48_32_true:
+        %tmp.40 = lgetv %y.3;
+        symbol [ y %tmp.40 48 20 21 ];
+        %tmp.41 = lgetv %rect.4;
+        symbol [ rect %tmp.41 48 25 29 ];
+        %tmp.43 = const :y;
+        symbol [ y %tmp.43 48 31 32 const ];
+        %tmp.44 = agetv %tmp.41 %tmp.43;
+        %tmp.45 = gte %tmp.40 %tmp.44;
+        %tmp.46 = and %tmp.38 %tmp.45;
+        push %tmp.46;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_20_48_32_end:
+        %tmp.47 = phi [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_22_48_32_begin] [%tmp.46 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_20_48_32_true] [%tmp.47 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_20_48_32_end];
+        %tmp.48 = dup %tmp.47;
+        bf %tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_38_48_61_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_38_48_61_true:
+        %tmp.49 = lgetv %y.3;
+        symbol [ y %tmp.49 48 38 39 ];
+        %tmp.50 = lgetv %rect.4;
+        symbol [ rect %tmp.50 48 43 47 ];
+        %tmp.52 = const :y;
+        symbol [ y %tmp.52 48 49 50 const ];
+        %tmp.53 = agetv %tmp.50 %tmp.52;
+        %tmp.54 = lgetv %rect.4;
+        symbol [ rect %tmp.54 48 54 58 ];
+        %tmp.56 = const :h;
+        symbol [ h %tmp.56 48 60 61 const ];
         %tmp.57 = agetv %tmp.54 %tmp.56;
-        %tmp.58 = lgetv %rect.6;
-        symbol [ rect %tmp.58 21 62 66 ];
-        %tmp.60 = const :h;
-        symbol [ h %tmp.60 21 68 69 const ];
-        %tmp.61 = agetv %tmp.58 %tmp.60;
-        %tmp.62 = add %tmp.57 %tmp.61;
-        %tmp.63 = lte %tmp.53 %tmp.62;
-        %tmp.64 = and %tmp.51 %tmp.63;
-        push %tmp.64;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_46_21_69_end:
-        %tmp.65 = phi [%tmp.52 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_20_26_21_69_begin] [%tmp.64 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_46_21_69_true] [%tmp.65 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_21_46_21_69_end];
-        lputv %tapPlay.7 %tmp.65;
-        symbol [ tapPlay %tapPlay.7 20 16 23 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 23 12 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_12_26_12_if_stmt:
-        %tmp.66 = lgetv %tapPlay.7;
-        symbol [ tapPlay %tmp.66 23 16 23 ];
-        bf %tmp.66 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_12_26_12_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_12_26_12_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_25_26_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 24 16 ]
-        symbol [ WatchUi %tmp.67 24 16 23 ];
-        %tmp.67 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.68 24 24 32 ];
-        %tmp.68 = getv function %tmp.67 :pushView;
-        symbol [ SnakeView %tmp.72 24 37 46 ];
-        %tmp.72 = getv ? :SnakeView;
-        %tmp.69 = newc %tmp.72 ();
-        symbol [ SnakeDelegate %tmp.76 24 54 67 ];
-        %tmp.76 = getv ? :SnakeDelegate;
-        %tmp.73 = newc %tmp.76 ();
-        symbol [ WatchUi %tmp.77 24 71 78 ];
-        %tmp.77 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.78 24 79 94 ];
-        %tmp.78 = getv %tmp.77 :SLIDE_IMMEDIATE;
-        invoke %tmp.67 %tmp.68(%tmp.69, %tmp.73, %tmp.78);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 25 16 ]
-        %tmp.79 = true;
-        ret %tmp.79;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_25_26_12_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_12_26_12_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_23_12_26_12_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_26_27_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_30_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_30_8_if_else_false:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_28_13_30_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 29 12 ]
-        symbol [ System %tmp.81 29 12 18 ];
-        %tmp.81 = getv ? :System;
-        symbol [ println %tmp.82 29 19 26 ];
-        %tmp.82 = getv function %tmp.81 :println;
-        %tmp.83 = "Current view (Menu2048) view is null.";
-        invoke %tmp.81 %tmp.82(%tmp.83);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_28_13_30_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_17_8_30_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 32 8 ]
-        %tmp.84 = true;
-        ret %tmp.84;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_8_53_33_4_stop:
+        %tmp.58 = add %tmp.53 %tmp.57;
+        %tmp.59 = lte %tmp.49 %tmp.58;
+        %tmp.60 = and %tmp.47 %tmp.59;
+        push %tmp.60;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_38_48_61_end:
+        %tmp.61 = phi [%tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_47_22_48_61_begin] [%tmp.60 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_38_48_61_true] [%tmp.61 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_48_38_48_61_end];
+        lputv %tapPlay.5 %tmp.61;
+        symbol [ tapPlay %tapPlay.5 47 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 50 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_8_52_8_if_stmt:
+        %tmp.62 = lgetv %tapPlay.5;
+        symbol [ tapPlay %tmp.62 50 13 20 ];
+        %tmp.63 = not %tmp.62;
+        bf %tmp.63 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_8_52_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_8_52_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_22_52_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 51 12 ]
+        %tmp.64 = false;
+        ret %tmp.64;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_22_52_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_8_52_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_50_8_52_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 54 8 ]
+        %tmp.65 = self;
+        symbol [ select %tmp.66 54 15 21 ];
+        %tmp.66 = getv function %tmp.65 :select;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        ret %tmp.67;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_36_53_55_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 57; @symbol_functiondef = [onKeyPressed,57,13,25]; @symbol_param<0> = [key,57,26,29]; @symbol_param<0>_type<0> = [WatchUi,57,33,40]; @symbol_param<0>_type<1> = [KeyEvent,57,41,49]; @symbol_return<0> = [Boolean,57,54,61]; ]
+    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_57_62_65_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 58 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_57_62_65_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_57_62_65_4_stop" ]
+        %keyCode.1 = local;
+        symbol [ keyCode %keyCode.1 58 12 19 ];
+        %tmp.1 = lgetv %key;
+        symbol [ key %tmp.1 58 22 25 ];
+        symbol [ getKey %tmp.2 58 26 32 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %keyCode.1 %tmp.3;
+        symbol [ keyCode %keyCode.1 58 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 60 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_8_62_8_if_stmt:
+        %tmp.4 = lgetv %keyCode.1;
+        symbol [ keyCode %tmp.4 60 12 19 ];
+        symbol [ WatchUi %tmp.5 60 23 30 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.6 60 31 40 ];
+        %tmp.6 = getv %tmp.5 :KEY_ENTER;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_8_62_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_8_62_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_42_62_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 61 12 ]
+        %tmp.8 = self;
+        symbol [ select %tmp.9 61 19 25 ];
+        %tmp.9 = getv function %tmp.8 :select;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        ret %tmp.10;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_42_62_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_8_62_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_60_8_62_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc" 64 8 ]
+        %tmp.11 = false;
+        ret %tmp.11;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnakeDelegate_mc_57_62_65_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeDelegate.mc"; @line = 1; ]

@@ -6,3 +6,5 @@ Ex: var x = null;
     if (x == null) {
         System.println("Var is empty");
     }
+
+When handling an action event (onSwipe, onKey, etc...) the function need to return a boolean to let the system know if our function handled that input> if handled then returns true, if not then it passes it upward to be handleed instead.

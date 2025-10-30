@@ -3,34 +3,65 @@ import Toybox.Lang;
 import Toybox.System;
 
 class Menu2048Delegate extends WatchUi.InputDelegate {
+    var view as Menu2048View or Null;
+
     function initialize() {
         InputDelegate.initialize();
     }
 
+    function setView() {
+        var viewPair = WatchUi.getCurrentView();
+        view = viewPair[0] as Menu2048View;
+    }
+
+    // --- Action Functions ---
+    function select() as Boolean {
+        if (!ensureView()) {
+            System.println("Scroll failed: view is null");
+            return false;
+        }
+
+        WatchUi.pushView(new Game2048View(), new Game2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
+
+        return true;
+    }
+
+    function ensureView() as Boolean {
+        if (view == null) {
+            setView();
+        }
+        return (view != null);
+    }
+
+    // --- Input Handling ---
     function onTap(clickEvent as WatchUi.ClickEvent) {
         var position = clickEvent.getCoordinates();
         var x = position[0];
         var y = position[1];
 
-        // Get view counterpart
-        var viewPair = WatchUi.getCurrentView();
-        var view = viewPair[0] as Menu2048View;
-
-        if (view != null) {
-            var rect = view.playButton;
-
-            var tapPlay = x >= rect[:x] and x <= rect[:x] + rect[:w] and 
-                            y >= rect[:y] and y <= rect[:y] + rect[:h];
-
-            if (tapPlay) {
-                WatchUi.pushView(new Game2048View(), new Game2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
-                return true;
-            }
-        }
-        else {
-            System.println("Current view (Menu2048) view is null.");
+        if (view == null) {
+            setView();
         }
 
-        return true;
+        var rect = view.playButton;
+
+        var tapPlay = x >= rect[:x] and x <= rect[:x] + rect[:w] and 
+                    y >= rect[:y] and y <= rect[:y] + rect[:h];
+
+        if (!tapPlay) {
+            return false;
+        }
+
+        return select();
+    }
+
+    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
+        var keyCode = key.getKey();
+
+        if (keyCode == WatchUi.KEY_ENTER) {
+            return select();
+        }
+        
+        return false;
     }
 }
