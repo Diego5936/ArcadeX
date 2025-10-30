@@ -31,19 +31,7 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
             return false;
         }
 
-        var currentGame = view.games[view.gameIdx];
-
-        if (currentGame.equals("2048")) {
-            WatchUi.pushView(new Menu2048View(), new Menu2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
-        }
-        else if (currentGame.equals("Snake")) {
-            WatchUi.pushView(new MenuSnakeView(), new MenuSnakeDelegate(), WatchUi.SLIDE_IMMEDIATE);
-        }
-        else {
-            System.println(currentGame + " is not implemented yet!");
-        }
-
-        return true;
+        return GameRegistry.launch(GameRegistry.GAMES[view.gameIdx][:id], true);
     }
 
     function scroll(direction as String) {

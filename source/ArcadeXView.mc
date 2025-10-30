@@ -7,7 +7,6 @@ import Components;
 
 class ArcadeXView extends WatchUi.View {
     var mainButton as Dictionary or Null;
-    var games as Array = ["Snake", "StackUp", "QuickDash", "MiniMaze", "Breakout", "Catch It!", "2048"];
     var gameIdx = 0;
     
     function initialize() {
@@ -20,7 +19,7 @@ class ArcadeXView extends WatchUi.View {
         dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
-        // Main Title
+        // Main Titles
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.drawText(Layout.centerX(dc), Layout.workingTop, 
                     Graphics.FONT_LARGE, "ArcadeX", Graphics.TEXT_JUSTIFY_CENTER);
@@ -40,7 +39,7 @@ class ArcadeXView extends WatchUi.View {
                                 :text => Graphics.COLOR_WHITE,
                                 :font => Graphics.FONT_LARGE};
 
-        Components.makeRect(dc, mainButton, mainButtonFormat, games[gameIdx]);
+        Components.makeRect(dc, mainButton, mainButtonFormat, GameRegistry.GAMES[gameIdx][:title]);
 
         // Shadow buttons
         var shadowBW = 180;
@@ -56,7 +55,7 @@ class ArcadeXView extends WatchUi.View {
                         :y => Layout.centerY(dc) - shadowBH - 10};
 
         var topIdx = wrapIdx(gameIdx - 1);
-        Components.makeRect(dc, topButton, shadowButtonFormat, games[topIdx]);
+        Components.makeRect(dc, topButton, shadowButtonFormat, GameRegistry.GAMES[topIdx][:title]);
 
         // Bottom Button
         var bottomButton = {:w => shadowBW, :h => shadowBH,
@@ -64,7 +63,7 @@ class ArcadeXView extends WatchUi.View {
                         :y => Layout.centerY(dc) + mainButton[:h] + 10};
 
         var bottomIdx = wrapIdx(gameIdx + 1);
-        Components.makeRect(dc, bottomButton, shadowButtonFormat, games[bottomIdx]);
+        Components.makeRect(dc, bottomButton, shadowButtonFormat, GameRegistry.GAMES[bottomIdx][:title]);
     }
 
     // --- Helpers ---
@@ -75,11 +74,12 @@ class ArcadeXView extends WatchUi.View {
 
     function wrapIdx(idx as Number) as Number {
         var wrappedIdx = idx;
+        var n = GameRegistry.GAMES.size();
 
         if (idx < 0) {
-            wrappedIdx = games.size() - 1;
+            wrappedIdx = n - 1;
         }
-        if (idx > games.size() - 1) {
+        if (idx > n - 1) {
             wrappedIdx = 0;
         }
 

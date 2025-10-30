@@ -78,24 +78,16 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu20
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048Delegate_mc_19_8_22_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048Delegate_mc_19_8_22_8_if_end:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048Delegate.mc" 24 8 ]
-        symbol [ WatchUi %tmp.9 24 8 15 ];
-        %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.10 24 16 24 ];
-        %tmp.10 = getv function %tmp.9 :pushView;
-        symbol [ Game2048View %tmp.14 24 29 41 ];
-        %tmp.14 = getv ? :Game2048View;
-        %tmp.11 = newc %tmp.14 ();
-        symbol [ Game2048Delegate %tmp.18 24 49 65 ];
-        %tmp.18 = getv ? :Game2048Delegate;
-        %tmp.15 = newc %tmp.18 ();
-        symbol [ WatchUi %tmp.19 24 69 76 ];
-        %tmp.19 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.20 24 77 92 ];
-        %tmp.20 = getv %tmp.19 :SLIDE_IMMEDIATE;
-        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.15, %tmp.20);
+        symbol [ GameRegistry %tmp.10 24 8 20 ];
+        %tmp.10 = getv ? :GameRegistry;
+        symbol [ launch %tmp.11 24 21 27 ];
+        %tmp.11 = getv function %tmp.10 :launch;
+        %tmp.12 = "2048";
+        %tmp.13 = false;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048Delegate.mc" 26 8 ]
-        %tmp.21 = true;
-        ret %tmp.21;
+        %tmp.14 = true;
+        ret %tmp.14;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048Delegate_mc_18_33_27_4_stop:
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048Delegate.mc"; @line = 29; @symbol_functiondef = [ensureView,29,13,23]; @symbol_return<0> = [Boolean,29,29,36]; ]

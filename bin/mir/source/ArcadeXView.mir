@@ -12,30 +12,6 @@ import Components;
 class ArcadeXView extends WatchUi.View {
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 8; ]
     <init> {
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 10 8 ]
-        %tmp.1 = newa 7;
-        %tmp.2 = "Snake";
-        %tmp.3 = dup %tmp.1;
-        %tmp.4 = aputv %tmp.3 0 %tmp.2;
-        %tmp.5 = "StackUp";
-        %tmp.6 = dup %tmp.4;
-        %tmp.7 = aputv %tmp.6 1 %tmp.5;
-        %tmp.8 = "QuickDash";
-        %tmp.9 = dup %tmp.7;
-        %tmp.10 = aputv %tmp.9 2 %tmp.8;
-        %tmp.11 = "MiniMaze";
-        %tmp.12 = dup %tmp.10;
-        %tmp.13 = aputv %tmp.12 3 %tmp.11;
-        %tmp.14 = "Breakout";
-        %tmp.15 = dup %tmp.13;
-        %tmp.16 = aputv %tmp.15 4 %tmp.14;
-        %tmp.17 = "Catch It!";
-        %tmp.18 = dup %tmp.16;
-        %tmp.19 = aputv %tmp.18 5 %tmp.17;
-        %tmp.20 = "2048";
-        %tmp.21 = dup %tmp.19;
-        %tmp.22 = aputv %tmp.21 6 %tmp.20;
-        putv self :games %tmp.22;
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 8; ]
     static
@@ -43,506 +19,526 @@ class ArcadeXView extends WatchUi.View {
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 9; @position = 8; @symbol_vardef = [mainButton,9,8,18]; @symbol_type<0> = [Dictionary,9,22,32]; ]
     var mainButton as Dictionary or Null;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 10; @position = 8; @symbol_vardef = [games,10,8,13]; @symbol_type<0> = [Array,10,17,22]; ]
-    var games as Array;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 11; @position = 8; @symbol_vardef = [gameIdx,11,8,15]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 10; @position = 8; @symbol_vardef = [gameIdx,10,8,15]; ]
     var gameIdx = 0;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; ]
     function initialize() as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_13_26_15_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 14 8 ]
-        symbol [ View %tmp.2 14 8 12 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_12_26_14_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 13 8 ]
+        symbol [ View %tmp.2 13 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 14 13 23 ];
+        symbol [ initialize %tmp.3 13 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_13_26_15_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_12_26_14_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 17; @symbol_functiondef = [onUpdate,17,13,21]; @symbol_param<0> = [dc,17,22,24]; @symbol_param<0>_type<0> = [Dc,17,28,30]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 16; @symbol_functiondef = [onUpdate,16,13,21]; @symbol_param<0> = [dc,16,22,24]; @symbol_param<0>_type<0> = [Dc,16,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_17_40_30_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 20 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_16_40_29_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 19 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 20 8 10 ];
-        symbol [ setColor %tmp.2 20 11 19 ];
+        symbol [ dc %tmp.1 19 8 10 ];
+        symbol [ setColor %tmp.2 19 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Color %tmp.4 20 20 25 ];
+        symbol [ Color %tmp.4 19 20 25 ];
         %tmp.4 = getv ? :Color;
-        symbol [ none %tmp.5 20 26 30 ];
+        symbol [ none %tmp.5 19 26 30 ];
         %tmp.5 = getv %tmp.4 :none;
-        symbol [ Graphics %tmp.6 20 32 40 ];
+        symbol [ Graphics %tmp.6 19 32 40 ];
         %tmp.6 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.7 20 41 52 ];
+        symbol [ COLOR_BLACK %tmp.7 19 41 52 ];
         %tmp.7 = getv %tmp.6 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 21 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 20 8 ]
         %tmp.8 = lgetv %dc;
-        symbol [ dc %tmp.8 21 8 10 ];
-        symbol [ clear %tmp.9 21 11 16 ];
+        symbol [ dc %tmp.8 20 8 10 ];
+        symbol [ clear %tmp.9 20 11 16 ];
         %tmp.9 = getv function %tmp.8 :clear;
         invoke %tmp.8 %tmp.9();
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 24 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 23 8 ]
         %tmp.10 = lgetv %dc;
-        symbol [ dc %tmp.10 24 8 10 ];
-        symbol [ setColor %tmp.11 24 11 19 ];
+        symbol [ dc %tmp.10 23 8 10 ];
+        symbol [ setColor %tmp.11 23 11 19 ];
         %tmp.11 = getv function %tmp.10 :setColor;
-        symbol [ Graphics %tmp.12 24 20 28 ];
+        symbol [ Graphics %tmp.12 23 20 28 ];
         %tmp.12 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.13 24 29 40 ];
+        symbol [ COLOR_BLACK %tmp.13 23 29 40 ];
         %tmp.13 = getv %tmp.12 :COLOR_BLACK;
-        symbol [ Graphics %tmp.14 24 42 50 ];
+        symbol [ Graphics %tmp.14 23 42 50 ];
         %tmp.14 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.15 24 51 62 ];
+        symbol [ COLOR_WHITE %tmp.15 23 51 62 ];
         %tmp.15 = getv %tmp.14 :COLOR_WHITE;
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 25 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 24 8 ]
         %tmp.16 = lgetv %dc;
-        symbol [ dc %tmp.16 25 8 10 ];
-        symbol [ drawText %tmp.17 25 11 19 ];
+        symbol [ dc %tmp.16 24 8 10 ];
+        symbol [ drawText %tmp.17 24 11 19 ];
         %tmp.17 = getv function %tmp.16 :drawText;
-        symbol [ Layout %tmp.18 25 20 26 ];
+        symbol [ Layout %tmp.18 24 20 26 ];
         %tmp.18 = getm $.Layout;
-        symbol [ centerX %tmp.19 25 27 34 ];
+        symbol [ centerX %tmp.19 24 27 34 ];
         %tmp.19 = getv function %tmp.18 :centerX;
         %tmp.20 = lgetv %dc;
-        symbol [ dc %tmp.20 25 35 37 ];
+        symbol [ dc %tmp.20 24 35 37 ];
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
-        symbol [ Layout %tmp.22 25 40 46 ];
+        symbol [ Layout %tmp.22 24 40 46 ];
         %tmp.22 = getm $.Layout;
-        symbol [ workingTop %tmp.23 25 47 57 ];
+        symbol [ workingTop %tmp.23 24 47 57 ];
         %tmp.23 = getv %tmp.22 :workingTop;
-        symbol [ Graphics %tmp.24 26 20 28 ];
+        symbol [ Graphics %tmp.24 25 20 28 ];
         %tmp.24 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.25 26 29 39 ];
+        symbol [ FONT_LARGE %tmp.25 25 29 39 ];
         %tmp.25 = getv %tmp.24 :FONT_LARGE;
         %tmp.26 = "ArcadeX";
-        symbol [ Graphics %tmp.27 26 52 60 ];
+        symbol [ Graphics %tmp.27 25 52 60 ];
         %tmp.27 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.28 26 61 80 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.28 25 61 80 ];
         %tmp.28 = getv %tmp.27 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.16 %tmp.17(%tmp.21, %tmp.23, %tmp.25, %tmp.26, %tmp.28);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 29 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 28 8 ]
         %tmp.29 = self;
-        symbol [ makeScrollingWheel %tmp.30 29 8 26 ];
+        symbol [ makeScrollingWheel %tmp.30 28 8 26 ];
         %tmp.30 = getv function %tmp.29 :makeScrollingWheel;
         %tmp.31 = lgetv %dc;
-        symbol [ dc %tmp.31 29 27 29 ];
+        symbol [ dc %tmp.31 28 27 29 ];
         invoke %tmp.29 %tmp.30(%tmp.31);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_17_40_30_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_16_40_29_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 32; @symbol_functiondef = [makeScrollingWheel,32,13,31]; @symbol_param<0> = [dc,32,32,34]; @symbol_param<0>_type<0> = [Dc,32,38,40]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 31; @symbol_functiondef = [makeScrollingWheel,31,13,31]; @symbol_param<0> = [dc,31,32,34]; @symbol_param<0>_type<0> = [Dc,31,38,40]; ]
     function makeScrollingWheel(dc as Dc) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 34 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 33 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %mainBW.1 = local;
-        symbol [ mainBW %mainBW.1 34 12 18 ];
+        symbol [ mainBW %mainBW.1 33 12 18 ];
         %tmp.1 = 300;
         lputv %mainBW.1 %tmp.1;
-        symbol [ mainBW %mainBW.1 34 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 35 8 ]
+        symbol [ mainBW %mainBW.1 33 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 34 8 ]
         %tmp.2 = newd 4;
         %tmp.4 = const :w;
-        symbol [ w %tmp.4 35 23 24 const ];
+        symbol [ w %tmp.4 34 23 24 const ];
         %tmp.5 = lgetv %mainBW.1;
-        symbol [ mainBW %tmp.5 35 28 34 ];
+        symbol [ mainBW %tmp.5 34 28 34 ];
         %tmp.6 = dup %tmp.2;
         %tmp.7 = aputv %tmp.6 %tmp.4 %tmp.5;
         %tmp.9 = const :h;
-        symbol [ h %tmp.9 35 37 38 const ];
+        symbol [ h %tmp.9 34 37 38 const ];
         %tmp.10 = 70;
         %tmp.11 = dup %tmp.7;
         %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
         %tmp.14 = const :x;
-        symbol [ x %tmp.14 36 25 26 const ];
-        symbol [ Layout %tmp.15 36 30 36 ];
+        symbol [ x %tmp.14 35 25 26 const ];
+        symbol [ Layout %tmp.15 35 30 36 ];
         %tmp.15 = getm $.Layout;
-        symbol [ centerX %tmp.16 36 37 44 ];
+        symbol [ centerX %tmp.16 35 37 44 ];
         %tmp.16 = getv function %tmp.15 :centerX;
         %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 36 45 47 ];
+        symbol [ dc %tmp.17 35 45 47 ];
         %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
         %tmp.19 = lgetv %mainBW.1;
-        symbol [ mainBW %tmp.19 36 52 58 ];
+        symbol [ mainBW %tmp.19 35 52 58 ];
         %tmp.20 = 2;
         %tmp.21 = div %tmp.19 %tmp.20;
         %tmp.22 = sub %tmp.18 %tmp.21;
         %tmp.23 = dup %tmp.12;
         %tmp.24 = aputv %tmp.23 %tmp.14 %tmp.22;
         %tmp.26 = const :y;
-        symbol [ y %tmp.26 37 25 26 const ];
-        symbol [ Layout %tmp.27 37 30 36 ];
+        symbol [ y %tmp.26 36 25 26 const ];
+        symbol [ Layout %tmp.27 36 30 36 ];
         %tmp.27 = getm $.Layout;
-        symbol [ centerY %tmp.28 37 37 44 ];
+        symbol [ centerY %tmp.28 36 37 44 ];
         %tmp.28 = getv function %tmp.27 :centerY;
         %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 37 45 47 ];
+        symbol [ dc %tmp.29 36 45 47 ];
         %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
         %tmp.31 = dup %tmp.24;
         %tmp.32 = aputv %tmp.31 %tmp.26 %tmp.30;
-        symbol [ mainButton ? 35 8 18 ];
+        symbol [ mainButton ? 34 8 18 ];
         putv self :mainButton %tmp.32;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 38 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 37 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %mainButtonFormat.2 = local;
-        symbol [ mainButtonFormat %mainButtonFormat.2 38 12 28 ];
+        symbol [ mainButtonFormat %mainButtonFormat.2 37 12 28 ];
         %tmp.33 = newd 4;
         %tmp.35 = const :background;
-        symbol [ background %tmp.35 38 33 43 const ];
-        symbol [ Graphics %tmp.36 38 47 55 ];
+        symbol [ background %tmp.35 37 33 43 const ];
+        symbol [ Graphics %tmp.36 37 47 55 ];
         %tmp.36 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.37 38 56 67 ];
+        symbol [ COLOR_BLACK %tmp.37 37 56 67 ];
         %tmp.37 = getv %tmp.36 :COLOR_BLACK;
         %tmp.38 = dup %tmp.33;
         %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
         %tmp.41 = const :border;
-        symbol [ border %tmp.41 39 33 39 const ];
-        symbol [ Graphics %tmp.42 39 43 51 ];
+        symbol [ border %tmp.41 38 33 39 const ];
+        symbol [ Graphics %tmp.42 38 43 51 ];
         %tmp.42 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.43 39 52 61 ];
+        symbol [ COLOR_RED %tmp.43 38 52 61 ];
         %tmp.43 = getv %tmp.42 :COLOR_RED;
         %tmp.44 = dup %tmp.39;
         %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
         %tmp.47 = const :text;
-        symbol [ text %tmp.47 40 33 37 const ];
-        symbol [ Graphics %tmp.48 40 41 49 ];
+        symbol [ text %tmp.47 39 33 37 const ];
+        symbol [ Graphics %tmp.48 39 41 49 ];
         %tmp.48 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.49 40 50 61 ];
+        symbol [ COLOR_WHITE %tmp.49 39 50 61 ];
         %tmp.49 = getv %tmp.48 :COLOR_WHITE;
         %tmp.50 = dup %tmp.45;
         %tmp.51 = aputv %tmp.50 %tmp.47 %tmp.49;
         %tmp.53 = const :font;
-        symbol [ font %tmp.53 41 33 37 const ];
-        symbol [ Graphics %tmp.54 41 41 49 ];
+        symbol [ font %tmp.53 40 33 37 const ];
+        symbol [ Graphics %tmp.54 40 41 49 ];
         %tmp.54 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.55 41 50 60 ];
+        symbol [ FONT_LARGE %tmp.55 40 50 60 ];
         %tmp.55 = getv %tmp.54 :FONT_LARGE;
         %tmp.56 = dup %tmp.51;
         %tmp.57 = aputv %tmp.56 %tmp.53 %tmp.55;
         lputv %mainButtonFormat.2 %tmp.57;
-        symbol [ mainButtonFormat %mainButtonFormat.2 38 12 28 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 43 8 ]
-        symbol [ Components %tmp.58 43 8 18 ];
+        symbol [ mainButtonFormat %mainButtonFormat.2 37 12 28 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 42 8 ]
+        symbol [ Components %tmp.58 42 8 18 ];
         %tmp.58 = getm $.Components;
-        symbol [ makeRect %tmp.59 43 19 27 ];
+        symbol [ makeRect %tmp.59 42 19 27 ];
         %tmp.59 = getv function %tmp.58 :makeRect;
         %tmp.60 = lgetv %dc;
-        symbol [ dc %tmp.60 43 28 30 ];
-        symbol [ mainButton %tmp.62 43 32 42 ];
+        symbol [ dc %tmp.60 42 28 30 ];
+        symbol [ mainButton %tmp.62 42 32 42 ];
         %tmp.62 = getv ? :mainButton;
         %tmp.63 = lgetv %mainButtonFormat.2;
-        symbol [ mainButtonFormat %tmp.63 43 44 60 ];
-        symbol [ games %tmp.65 43 62 67 ];
-        %tmp.65 = getv ? :games;
-        symbol [ gameIdx %tmp.67 43 68 75 ];
-        %tmp.67 = getv ? :gameIdx;
-        %tmp.68 = agetv %tmp.65 %tmp.67;
-        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.62, %tmp.63, %tmp.68);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 46 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+        symbol [ mainButtonFormat %tmp.63 42 44 60 ];
+        symbol [ GameRegistry %tmp.65 42 62 74 ];
+        %tmp.65 = getv ? :GameRegistry;
+        symbol [ GAMES %tmp.66 42 75 80 ];
+        %tmp.66 = getv %tmp.65 :GAMES;
+        symbol [ gameIdx %tmp.68 42 81 88 ];
+        %tmp.68 = getv ? :gameIdx;
+        %tmp.69 = agetv %tmp.66 %tmp.68;
+        %tmp.71 = const :title;
+        symbol [ title %tmp.71 42 91 96 const ];
+        %tmp.72 = agetv %tmp.69 %tmp.71;
+        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.62, %tmp.63, %tmp.72);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 45 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %shadowBW.3 = local;
-        symbol [ shadowBW %shadowBW.3 46 12 20 ];
-        %tmp.69 = 180;
-        lputv %shadowBW.3 %tmp.69;
-        symbol [ shadowBW %shadowBW.3 46 12 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 47 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+        symbol [ shadowBW %shadowBW.3 45 12 20 ];
+        %tmp.73 = 180;
+        lputv %shadowBW.3 %tmp.73;
+        symbol [ shadowBW %shadowBW.3 45 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 46 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %shadowBH.4 = local;
-        symbol [ shadowBH %shadowBH.4 47 12 20 ];
-        %tmp.70 = 35;
-        lputv %shadowBH.4 %tmp.70;
-        symbol [ shadowBH %shadowBH.4 47 12 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 48 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+        symbol [ shadowBH %shadowBH.4 46 12 20 ];
+        %tmp.74 = 35;
+        lputv %shadowBH.4 %tmp.74;
+        symbol [ shadowBH %shadowBH.4 46 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 47 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %shadowButtonFormat.5 = local;
-        symbol [ shadowButtonFormat %shadowButtonFormat.5 48 12 30 ];
-        %tmp.71 = newd 4;
-        %tmp.73 = const :background;
-        symbol [ background %tmp.73 48 35 45 const ];
-        symbol [ Graphics %tmp.74 48 49 57 ];
-        %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.75 48 58 69 ];
-        %tmp.75 = getv %tmp.74 :COLOR_BLACK;
-        %tmp.76 = dup %tmp.71;
-        %tmp.77 = aputv %tmp.76 %tmp.73 %tmp.75;
-        %tmp.79 = const :border;
-        symbol [ border %tmp.79 49 33 39 const ];
-        symbol [ Graphics %tmp.80 49 43 51 ];
-        %tmp.80 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.81 49 52 61 ];
-        %tmp.81 = getv %tmp.80 :COLOR_RED;
-        %tmp.82 = dup %tmp.77;
-        %tmp.83 = aputv %tmp.82 %tmp.79 %tmp.81;
-        %tmp.85 = const :text;
-        symbol [ text %tmp.85 50 33 37 const ];
-        symbol [ Graphics %tmp.86 50 41 49 ];
-        %tmp.86 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.87 50 50 61 ];
-        %tmp.87 = getv %tmp.86 :COLOR_WHITE;
-        %tmp.88 = dup %tmp.83;
-        %tmp.89 = aputv %tmp.88 %tmp.85 %tmp.87;
-        %tmp.91 = const :font;
-        symbol [ font %tmp.91 51 33 37 const ];
-        symbol [ Graphics %tmp.92 51 41 49 ];
-        %tmp.92 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.93 51 50 60 ];
-        %tmp.93 = getv %tmp.92 :FONT_XTINY;
-        %tmp.94 = dup %tmp.89;
-        %tmp.95 = aputv %tmp.94 %tmp.91 %tmp.93;
-        lputv %shadowButtonFormat.5 %tmp.95;
-        symbol [ shadowButtonFormat %shadowButtonFormat.5 48 12 30 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 54 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+        symbol [ shadowButtonFormat %shadowButtonFormat.5 47 12 30 ];
+        %tmp.75 = newd 4;
+        %tmp.77 = const :background;
+        symbol [ background %tmp.77 47 35 45 const ];
+        symbol [ Graphics %tmp.78 47 49 57 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.79 47 58 69 ];
+        %tmp.79 = getv %tmp.78 :COLOR_BLACK;
+        %tmp.80 = dup %tmp.75;
+        %tmp.81 = aputv %tmp.80 %tmp.77 %tmp.79;
+        %tmp.83 = const :border;
+        symbol [ border %tmp.83 48 33 39 const ];
+        symbol [ Graphics %tmp.84 48 43 51 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.85 48 52 61 ];
+        %tmp.85 = getv %tmp.84 :COLOR_RED;
+        %tmp.86 = dup %tmp.81;
+        %tmp.87 = aputv %tmp.86 %tmp.83 %tmp.85;
+        %tmp.89 = const :text;
+        symbol [ text %tmp.89 49 33 37 const ];
+        symbol [ Graphics %tmp.90 49 41 49 ];
+        %tmp.90 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.91 49 50 61 ];
+        %tmp.91 = getv %tmp.90 :COLOR_WHITE;
+        %tmp.92 = dup %tmp.87;
+        %tmp.93 = aputv %tmp.92 %tmp.89 %tmp.91;
+        %tmp.95 = const :font;
+        symbol [ font %tmp.95 50 33 37 const ];
+        symbol [ Graphics %tmp.96 50 41 49 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.97 50 50 60 ];
+        %tmp.97 = getv %tmp.96 :FONT_XTINY;
+        %tmp.98 = dup %tmp.93;
+        %tmp.99 = aputv %tmp.98 %tmp.95 %tmp.97;
+        lputv %shadowButtonFormat.5 %tmp.99;
+        symbol [ shadowButtonFormat %shadowButtonFormat.5 47 12 30 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 53 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %topButton.6 = local;
-        symbol [ topButton %topButton.6 54 12 21 ];
-        %tmp.96 = newd 4;
-        %tmp.98 = const :w;
-        symbol [ w %tmp.98 54 26 27 const ];
-        %tmp.99 = lgetv %shadowBW.3;
-        symbol [ shadowBW %tmp.99 54 31 39 ];
-        %tmp.100 = dup %tmp.96;
-        %tmp.101 = aputv %tmp.100 %tmp.98 %tmp.99;
-        %tmp.103 = const :h;
-        symbol [ h %tmp.103 54 42 43 const ];
-        %tmp.104 = lgetv %shadowBH.4;
-        symbol [ shadowBH %tmp.104 54 47 55 ];
-        %tmp.105 = dup %tmp.101;
-        %tmp.106 = aputv %tmp.105 %tmp.103 %tmp.104;
-        %tmp.108 = const :x;
-        symbol [ x %tmp.108 55 25 26 const ];
-        symbol [ Layout %tmp.109 55 30 36 ];
-        %tmp.109 = getm $.Layout;
-        symbol [ centerX %tmp.110 55 37 44 ];
-        %tmp.110 = getv function %tmp.109 :centerX;
-        %tmp.111 = lgetv %dc;
-        symbol [ dc %tmp.111 55 45 47 ];
-        %tmp.112 = invoke %tmp.109 %tmp.110(%tmp.111);
-        %tmp.113 = lgetv %shadowBW.3;
-        symbol [ shadowBW %tmp.113 55 52 60 ];
-        %tmp.114 = 2;
-        %tmp.115 = div %tmp.113 %tmp.114;
-        %tmp.116 = sub %tmp.112 %tmp.115;
-        %tmp.117 = dup %tmp.106;
-        %tmp.118 = aputv %tmp.117 %tmp.108 %tmp.116;
-        %tmp.120 = const :y;
-        symbol [ y %tmp.120 56 25 26 const ];
-        symbol [ Layout %tmp.121 56 30 36 ];
-        %tmp.121 = getm $.Layout;
-        symbol [ centerY %tmp.122 56 37 44 ];
-        %tmp.122 = getv function %tmp.121 :centerY;
-        %tmp.123 = lgetv %dc;
-        symbol [ dc %tmp.123 56 45 47 ];
-        %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
-        %tmp.125 = lgetv %shadowBH.4;
-        symbol [ shadowBH %tmp.125 56 51 59 ];
-        %tmp.126 = sub %tmp.124 %tmp.125;
-        %tmp.127 = 10;
-        %tmp.128 = sub %tmp.126 %tmp.127;
-        %tmp.129 = dup %tmp.118;
-        %tmp.130 = aputv %tmp.129 %tmp.120 %tmp.128;
-        lputv %topButton.6 %tmp.130;
-        symbol [ topButton %topButton.6 54 12 21 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 58 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+        symbol [ topButton %topButton.6 53 12 21 ];
+        %tmp.100 = newd 4;
+        %tmp.102 = const :w;
+        symbol [ w %tmp.102 53 26 27 const ];
+        %tmp.103 = lgetv %shadowBW.3;
+        symbol [ shadowBW %tmp.103 53 31 39 ];
+        %tmp.104 = dup %tmp.100;
+        %tmp.105 = aputv %tmp.104 %tmp.102 %tmp.103;
+        %tmp.107 = const :h;
+        symbol [ h %tmp.107 53 42 43 const ];
+        %tmp.108 = lgetv %shadowBH.4;
+        symbol [ shadowBH %tmp.108 53 47 55 ];
+        %tmp.109 = dup %tmp.105;
+        %tmp.110 = aputv %tmp.109 %tmp.107 %tmp.108;
+        %tmp.112 = const :x;
+        symbol [ x %tmp.112 54 25 26 const ];
+        symbol [ Layout %tmp.113 54 30 36 ];
+        %tmp.113 = getm $.Layout;
+        symbol [ centerX %tmp.114 54 37 44 ];
+        %tmp.114 = getv function %tmp.113 :centerX;
+        %tmp.115 = lgetv %dc;
+        symbol [ dc %tmp.115 54 45 47 ];
+        %tmp.116 = invoke %tmp.113 %tmp.114(%tmp.115);
+        %tmp.117 = lgetv %shadowBW.3;
+        symbol [ shadowBW %tmp.117 54 52 60 ];
+        %tmp.118 = 2;
+        %tmp.119 = div %tmp.117 %tmp.118;
+        %tmp.120 = sub %tmp.116 %tmp.119;
+        %tmp.121 = dup %tmp.110;
+        %tmp.122 = aputv %tmp.121 %tmp.112 %tmp.120;
+        %tmp.124 = const :y;
+        symbol [ y %tmp.124 55 25 26 const ];
+        symbol [ Layout %tmp.125 55 30 36 ];
+        %tmp.125 = getm $.Layout;
+        symbol [ centerY %tmp.126 55 37 44 ];
+        %tmp.126 = getv function %tmp.125 :centerY;
+        %tmp.127 = lgetv %dc;
+        symbol [ dc %tmp.127 55 45 47 ];
+        %tmp.128 = invoke %tmp.125 %tmp.126(%tmp.127);
+        %tmp.129 = lgetv %shadowBH.4;
+        symbol [ shadowBH %tmp.129 55 51 59 ];
+        %tmp.130 = sub %tmp.128 %tmp.129;
+        %tmp.131 = 10;
+        %tmp.132 = sub %tmp.130 %tmp.131;
+        %tmp.133 = dup %tmp.122;
+        %tmp.134 = aputv %tmp.133 %tmp.124 %tmp.132;
+        lputv %topButton.6 %tmp.134;
+        symbol [ topButton %topButton.6 53 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 57 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %topIdx.7 = local;
-        symbol [ topIdx %topIdx.7 58 12 18 ];
-        %tmp.131 = self;
-        symbol [ wrapIdx %tmp.132 58 21 28 ];
-        %tmp.132 = getv function %tmp.131 :wrapIdx;
-        symbol [ gameIdx %tmp.134 58 29 36 ];
-        %tmp.134 = getv ? :gameIdx;
-        %tmp.135 = 1;
-        %tmp.136 = sub %tmp.134 %tmp.135;
-        %tmp.137 = invoke %tmp.131 %tmp.132(%tmp.136);
-        lputv %topIdx.7 %tmp.137;
-        symbol [ topIdx %topIdx.7 58 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 59 8 ]
-        symbol [ Components %tmp.138 59 8 18 ];
-        %tmp.138 = getm $.Components;
-        symbol [ makeRect %tmp.139 59 19 27 ];
-        %tmp.139 = getv function %tmp.138 :makeRect;
-        %tmp.140 = lgetv %dc;
-        symbol [ dc %tmp.140 59 28 30 ];
-        %tmp.141 = lgetv %topButton.6;
-        symbol [ topButton %tmp.141 59 32 41 ];
-        %tmp.142 = lgetv %shadowButtonFormat.5;
-        symbol [ shadowButtonFormat %tmp.142 59 43 61 ];
-        symbol [ games %tmp.144 59 63 68 ];
-        %tmp.144 = getv ? :games;
-        %tmp.145 = lgetv %topIdx.7;
-        symbol [ topIdx %tmp.145 59 69 75 ];
-        %tmp.146 = agetv %tmp.144 %tmp.145;
-        invoke %tmp.138 %tmp.139(%tmp.140, %tmp.141, %tmp.142, %tmp.146);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 62 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
+        symbol [ topIdx %topIdx.7 57 12 18 ];
+        %tmp.135 = self;
+        symbol [ wrapIdx %tmp.136 57 21 28 ];
+        %tmp.136 = getv function %tmp.135 :wrapIdx;
+        symbol [ gameIdx %tmp.138 57 29 36 ];
+        %tmp.138 = getv ? :gameIdx;
+        %tmp.139 = 1;
+        %tmp.140 = sub %tmp.138 %tmp.139;
+        %tmp.141 = invoke %tmp.135 %tmp.136(%tmp.140);
+        lputv %topIdx.7 %tmp.141;
+        symbol [ topIdx %topIdx.7 57 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 58 8 ]
+        symbol [ Components %tmp.142 58 8 18 ];
+        %tmp.142 = getm $.Components;
+        symbol [ makeRect %tmp.143 58 19 27 ];
+        %tmp.143 = getv function %tmp.142 :makeRect;
+        %tmp.144 = lgetv %dc;
+        symbol [ dc %tmp.144 58 28 30 ];
+        %tmp.145 = lgetv %topButton.6;
+        symbol [ topButton %tmp.145 58 32 41 ];
+        %tmp.146 = lgetv %shadowButtonFormat.5;
+        symbol [ shadowButtonFormat %tmp.146 58 43 61 ];
+        symbol [ GameRegistry %tmp.148 58 63 75 ];
+        %tmp.148 = getv ? :GameRegistry;
+        symbol [ GAMES %tmp.149 58 76 81 ];
+        %tmp.149 = getv %tmp.148 :GAMES;
+        %tmp.150 = lgetv %topIdx.7;
+        symbol [ topIdx %tmp.150 58 82 88 ];
+        %tmp.151 = agetv %tmp.149 %tmp.150;
+        %tmp.153 = const :title;
+        symbol [ title %tmp.153 58 91 96 const ];
+        %tmp.154 = agetv %tmp.151 %tmp.153;
+        invoke %tmp.142 %tmp.143(%tmp.144, %tmp.145, %tmp.146, %tmp.154);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 61 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
         %bottomButton.8 = local;
-        symbol [ bottomButton %bottomButton.8 62 12 24 ];
-        %tmp.147 = newd 4;
-        %tmp.149 = const :w;
-        symbol [ w %tmp.149 62 29 30 const ];
-        %tmp.150 = lgetv %shadowBW.3;
-        symbol [ shadowBW %tmp.150 62 34 42 ];
-        %tmp.151 = dup %tmp.147;
-        %tmp.152 = aputv %tmp.151 %tmp.149 %tmp.150;
-        %tmp.154 = const :h;
-        symbol [ h %tmp.154 62 45 46 const ];
-        %tmp.155 = lgetv %shadowBH.4;
-        symbol [ shadowBH %tmp.155 62 50 58 ];
-        %tmp.156 = dup %tmp.152;
-        %tmp.157 = aputv %tmp.156 %tmp.154 %tmp.155;
-        %tmp.159 = const :x;
-        symbol [ x %tmp.159 63 25 26 const ];
-        symbol [ Layout %tmp.160 63 30 36 ];
-        %tmp.160 = getm $.Layout;
-        symbol [ centerX %tmp.161 63 37 44 ];
-        %tmp.161 = getv function %tmp.160 :centerX;
-        %tmp.162 = lgetv %dc;
-        symbol [ dc %tmp.162 63 45 47 ];
-        %tmp.163 = invoke %tmp.160 %tmp.161(%tmp.162);
-        %tmp.164 = lgetv %shadowBW.3;
-        symbol [ shadowBW %tmp.164 63 52 60 ];
-        %tmp.165 = 2;
-        %tmp.166 = div %tmp.164 %tmp.165;
-        %tmp.167 = sub %tmp.163 %tmp.166;
-        %tmp.168 = dup %tmp.157;
-        %tmp.169 = aputv %tmp.168 %tmp.159 %tmp.167;
-        %tmp.171 = const :y;
-        symbol [ y %tmp.171 64 25 26 const ];
-        symbol [ Layout %tmp.172 64 30 36 ];
-        %tmp.172 = getm $.Layout;
-        symbol [ centerY %tmp.173 64 37 44 ];
-        %tmp.173 = getv function %tmp.172 :centerY;
-        %tmp.174 = lgetv %dc;
-        symbol [ dc %tmp.174 64 45 47 ];
-        %tmp.175 = invoke %tmp.172 %tmp.173(%tmp.174);
-        symbol [ mainButton %tmp.177 64 51 61 ];
-        %tmp.177 = getv ? :mainButton;
-        %tmp.179 = const :h;
-        symbol [ h %tmp.179 64 63 64 const ];
-        %tmp.180 = agetv %tmp.177 %tmp.179;
-        %tmp.181 = add %tmp.175 %tmp.180;
-        %tmp.182 = 10;
-        %tmp.183 = add %tmp.181 %tmp.182;
-        %tmp.184 = dup %tmp.169;
-        %tmp.185 = aputv %tmp.184 %tmp.171 %tmp.183;
-        lputv %bottomButton.8 %tmp.185;
-        symbol [ bottomButton %bottomButton.8 62 12 24 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 66 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop" ]
-        %bottomIdx.9 = local;
-        symbol [ bottomIdx %bottomIdx.9 66 12 21 ];
-        %tmp.186 = self;
-        symbol [ wrapIdx %tmp.187 66 24 31 ];
-        %tmp.187 = getv function %tmp.186 :wrapIdx;
-        symbol [ gameIdx %tmp.189 66 32 39 ];
-        %tmp.189 = getv ? :gameIdx;
-        %tmp.190 = 1;
+        symbol [ bottomButton %bottomButton.8 61 12 24 ];
+        %tmp.155 = newd 4;
+        %tmp.157 = const :w;
+        symbol [ w %tmp.157 61 29 30 const ];
+        %tmp.158 = lgetv %shadowBW.3;
+        symbol [ shadowBW %tmp.158 61 34 42 ];
+        %tmp.159 = dup %tmp.155;
+        %tmp.160 = aputv %tmp.159 %tmp.157 %tmp.158;
+        %tmp.162 = const :h;
+        symbol [ h %tmp.162 61 45 46 const ];
+        %tmp.163 = lgetv %shadowBH.4;
+        symbol [ shadowBH %tmp.163 61 50 58 ];
+        %tmp.164 = dup %tmp.160;
+        %tmp.165 = aputv %tmp.164 %tmp.162 %tmp.163;
+        %tmp.167 = const :x;
+        symbol [ x %tmp.167 62 25 26 const ];
+        symbol [ Layout %tmp.168 62 30 36 ];
+        %tmp.168 = getm $.Layout;
+        symbol [ centerX %tmp.169 62 37 44 ];
+        %tmp.169 = getv function %tmp.168 :centerX;
+        %tmp.170 = lgetv %dc;
+        symbol [ dc %tmp.170 62 45 47 ];
+        %tmp.171 = invoke %tmp.168 %tmp.169(%tmp.170);
+        %tmp.172 = lgetv %shadowBW.3;
+        symbol [ shadowBW %tmp.172 62 52 60 ];
+        %tmp.173 = 2;
+        %tmp.174 = div %tmp.172 %tmp.173;
+        %tmp.175 = sub %tmp.171 %tmp.174;
+        %tmp.176 = dup %tmp.165;
+        %tmp.177 = aputv %tmp.176 %tmp.167 %tmp.175;
+        %tmp.179 = const :y;
+        symbol [ y %tmp.179 63 25 26 const ];
+        symbol [ Layout %tmp.180 63 30 36 ];
+        %tmp.180 = getm $.Layout;
+        symbol [ centerY %tmp.181 63 37 44 ];
+        %tmp.181 = getv function %tmp.180 :centerY;
+        %tmp.182 = lgetv %dc;
+        symbol [ dc %tmp.182 63 45 47 ];
+        %tmp.183 = invoke %tmp.180 %tmp.181(%tmp.182);
+        symbol [ mainButton %tmp.185 63 51 61 ];
+        %tmp.185 = getv ? :mainButton;
+        %tmp.187 = const :h;
+        symbol [ h %tmp.187 63 63 64 const ];
+        %tmp.188 = agetv %tmp.185 %tmp.187;
+        %tmp.189 = add %tmp.183 %tmp.188;
+        %tmp.190 = 10;
         %tmp.191 = add %tmp.189 %tmp.190;
-        %tmp.192 = invoke %tmp.186 %tmp.187(%tmp.191);
-        lputv %bottomIdx.9 %tmp.192;
-        symbol [ bottomIdx %bottomIdx.9 66 12 21 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 67 8 ]
-        symbol [ Components %tmp.193 67 8 18 ];
-        %tmp.193 = getm $.Components;
-        symbol [ makeRect %tmp.194 67 19 27 ];
-        %tmp.194 = getv function %tmp.193 :makeRect;
-        %tmp.195 = lgetv %dc;
-        symbol [ dc %tmp.195 67 28 30 ];
-        %tmp.196 = lgetv %bottomButton.8;
-        symbol [ bottomButton %tmp.196 67 32 44 ];
-        %tmp.197 = lgetv %shadowButtonFormat.5;
-        symbol [ shadowButtonFormat %tmp.197 67 46 64 ];
-        symbol [ games %tmp.199 67 66 71 ];
-        %tmp.199 = getv ? :games;
-        %tmp.200 = lgetv %bottomIdx.9;
-        symbol [ bottomIdx %tmp.200 67 72 81 ];
-        %tmp.201 = agetv %tmp.199 %tmp.200;
-        invoke %tmp.193 %tmp.194(%tmp.195, %tmp.196, %tmp.197, %tmp.201);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_32_42_68_4_stop:
+        %tmp.192 = dup %tmp.177;
+        %tmp.193 = aputv %tmp.192 %tmp.179 %tmp.191;
+        lputv %bottomButton.8 %tmp.193;
+        symbol [ bottomButton %bottomButton.8 61 12 24 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 65 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop" ]
+        %bottomIdx.9 = local;
+        symbol [ bottomIdx %bottomIdx.9 65 12 21 ];
+        %tmp.194 = self;
+        symbol [ wrapIdx %tmp.195 65 24 31 ];
+        %tmp.195 = getv function %tmp.194 :wrapIdx;
+        symbol [ gameIdx %tmp.197 65 32 39 ];
+        %tmp.197 = getv ? :gameIdx;
+        %tmp.198 = 1;
+        %tmp.199 = add %tmp.197 %tmp.198;
+        %tmp.200 = invoke %tmp.194 %tmp.195(%tmp.199);
+        lputv %bottomIdx.9 %tmp.200;
+        symbol [ bottomIdx %bottomIdx.9 65 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 66 8 ]
+        symbol [ Components %tmp.201 66 8 18 ];
+        %tmp.201 = getm $.Components;
+        symbol [ makeRect %tmp.202 66 19 27 ];
+        %tmp.202 = getv function %tmp.201 :makeRect;
+        %tmp.203 = lgetv %dc;
+        symbol [ dc %tmp.203 66 28 30 ];
+        %tmp.204 = lgetv %bottomButton.8;
+        symbol [ bottomButton %tmp.204 66 32 44 ];
+        %tmp.205 = lgetv %shadowButtonFormat.5;
+        symbol [ shadowButtonFormat %tmp.205 66 46 64 ];
+        symbol [ GameRegistry %tmp.207 66 66 78 ];
+        %tmp.207 = getv ? :GameRegistry;
+        symbol [ GAMES %tmp.208 66 79 84 ];
+        %tmp.208 = getv %tmp.207 :GAMES;
+        %tmp.209 = lgetv %bottomIdx.9;
+        symbol [ bottomIdx %tmp.209 66 85 94 ];
+        %tmp.210 = agetv %tmp.208 %tmp.209;
+        %tmp.212 = const :title;
+        symbol [ title %tmp.212 66 97 102 const ];
+        %tmp.213 = agetv %tmp.210 %tmp.212;
+        invoke %tmp.201 %tmp.202(%tmp.203, %tmp.204, %tmp.205, %tmp.213);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_31_42_67_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 71; @symbol_functiondef = [scroll,71,13,19]; @symbol_param<0> = [direction,71,20,29]; @symbol_param<0>_type<0> = [Number,71,33,39]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 70; @symbol_functiondef = [scroll,70,13,19]; @symbol_param<0> = [direction,70,20,29]; @symbol_param<0>_type<0> = [Number,70,33,39]; ]
     function scroll(direction as Number) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_71_41_74_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 72 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_70_41_73_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 71 8 ]
         %tmp.1 = self;
-        symbol [ wrapIdx %tmp.2 72 18 25 ];
+        symbol [ wrapIdx %tmp.2 71 18 25 ];
         %tmp.2 = getv function %tmp.1 :wrapIdx;
-        symbol [ gameIdx %tmp.4 72 26 33 ];
+        symbol [ gameIdx %tmp.4 71 26 33 ];
         %tmp.4 = getv ? :gameIdx;
         %tmp.5 = lgetv %direction;
-        symbol [ direction %tmp.5 72 36 45 ];
+        symbol [ direction %tmp.5 71 36 45 ];
         %tmp.6 = add %tmp.4 %tmp.5;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
-        symbol [ gameIdx ? 72 8 15 ];
+        symbol [ gameIdx ? 71 8 15 ];
         putv self :gameIdx %tmp.7;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 73 8 ]
-        symbol [ WatchUi %tmp.8 73 8 15 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 72 8 ]
+        symbol [ WatchUi %tmp.8 72 8 15 ];
         %tmp.8 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.9 73 16 29 ];
+        symbol [ requestUpdate %tmp.9 72 16 29 ];
         %tmp.9 = getv function %tmp.8 :requestUpdate;
         invoke %tmp.8 %tmp.9();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_71_41_74_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_70_41_73_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 76; @symbol_functiondef = [wrapIdx,76,13,20]; @symbol_param<0> = [idx,76,21,24]; @symbol_param<0>_type<0> = [Number,76,28,34]; @symbol_return<0> = [Number,76,39,45]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 75; @symbol_functiondef = [wrapIdx,75,13,20]; @symbol_param<0> = [idx,75,21,24]; @symbol_param<0>_type<0> = [Number,75,28,34]; @symbol_return<0> = [Number,75,39,45]; ]
     function wrapIdx(idx as Number) as Number {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_76_46_87_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 77 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_76_46_87_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_76_46_87_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_75_46_87_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 76 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_75_46_87_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_75_46_87_4_stop" ]
         %wrappedIdx.1 = local;
-        symbol [ wrappedIdx %wrappedIdx.1 77 12 22 ];
+        symbol [ wrappedIdx %wrappedIdx.1 76 12 22 ];
         %tmp.1 = lgetv %idx;
-        symbol [ idx %tmp.1 77 25 28 ];
+        symbol [ idx %tmp.1 76 25 28 ];
         lputv %wrappedIdx.1 %tmp.1;
-        symbol [ wrappedIdx %wrappedIdx.1 77 12 22 ];
+        symbol [ wrappedIdx %wrappedIdx.1 76 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 77 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_75_46_87_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_75_46_87_4_stop" ]
+        %n.2 = local;
+        symbol [ n %n.2 77 12 13 ];
+        symbol [ GameRegistry %tmp.3 77 16 28 ];
+        %tmp.3 = getv ? :GameRegistry;
+        symbol [ GAMES %tmp.4 77 29 34 ];
+        %tmp.4 = getv %tmp.3 :GAMES;
+        symbol [ size %tmp.5 77 35 39 ];
+        %tmp.5 = getv function %tmp.4 :size;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %n.2 %tmp.6;
+        symbol [ n %n.2 77 12 13 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 79 8 ]
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_8_81_8_if_stmt:
-        %tmp.2 = lgetv %idx;
-        symbol [ idx %tmp.2 79 12 15 ];
-        %tmp.3 = 0;
-        %tmp.4 = lt %tmp.2 %tmp.3;
-        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_8_81_8_if_end;
+        %tmp.7 = lgetv %idx;
+        symbol [ idx %tmp.7 79 12 15 ];
+        %tmp.8 = 0;
+        %tmp.9 = lt %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_8_81_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_8_81_8_if_true:
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_21_81_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 80 12 ]
-        symbol [ games %tmp.6 80 25 30 ];
-        %tmp.6 = getv ? :games;
-        symbol [ size %tmp.7 80 31 35 ];
-        %tmp.7 = getv function %tmp.6 :size;
-        %tmp.8 = invoke %tmp.6 %tmp.7();
-        %tmp.9 = 1;
-        %tmp.10 = sub %tmp.8 %tmp.9;
-        lputv %wrappedIdx.1 %tmp.10;
+        %tmp.10 = lgetv %n.2;
+        symbol [ n %tmp.10 80 25 26 ];
+        %tmp.11 = 1;
+        %tmp.12 = sub %tmp.10 %tmp.11;
+        lputv %wrappedIdx.1 %tmp.12;
         symbol [ wrappedIdx %wrappedIdx.1 80 12 22 ];
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_21_81_8_stop:
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_8_81_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_79_8_81_8_if_end:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 82 8 ]
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_8_84_8_if_stmt:
-        %tmp.11 = lgetv %idx;
-        symbol [ idx %tmp.11 82 12 15 ];
-        symbol [ games %tmp.13 82 18 23 ];
-        %tmp.13 = getv ? :games;
-        symbol [ size %tmp.14 82 24 28 ];
-        %tmp.14 = getv function %tmp.13 :size;
-        %tmp.15 = invoke %tmp.13 %tmp.14();
-        %tmp.16 = 1;
-        %tmp.17 = sub %tmp.15 %tmp.16;
-        %tmp.18 = gt %tmp.11 %tmp.17;
-        bf %tmp.18 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_8_84_8_if_end;
+        %tmp.13 = lgetv %idx;
+        symbol [ idx %tmp.13 82 12 15 ];
+        %tmp.14 = lgetv %n.2;
+        symbol [ n %tmp.14 82 18 19 ];
+        %tmp.15 = 1;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        %tmp.17 = gt %tmp.13 %tmp.16;
+        bf %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_8_84_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_8_84_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_36_84_8_start:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_25_84_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 83 12 ]
-        %tmp.19 = 0;
-        lputv %wrappedIdx.1 %tmp.19;
+        %tmp.18 = 0;
+        lputv %wrappedIdx.1 %tmp.18;
         symbol [ wrappedIdx %wrappedIdx.1 83 12 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_36_84_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_25_84_8_stop:
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_8_84_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_82_8_84_8_if_end:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc" 86 8 ]
-        %tmp.20 = lgetv %wrappedIdx.1;
-        symbol [ wrappedIdx %tmp.20 86 15 25 ];
-        ret %tmp.20;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_76_46_87_4_stop:
+        %tmp.19 = lgetv %wrappedIdx.1;
+        symbol [ wrappedIdx %tmp.19 86 15 25 ];
+        ret %tmp.19;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXView_mc_75_46_87_4_stop:
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXView.mc"; @line = 90; @symbol_functiondef = [getMainButton,90,13,26]; @symbol_return<0> = [Dictionary,90,32,42]; ]
     function getMainButton() as Dictionary {

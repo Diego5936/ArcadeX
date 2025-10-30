@@ -81,7 +81,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 28; @symbol_functiondef = [select,28,13,19]; @symbol_return<0> = [Boolean,28,25,32]; ]
     function select() as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_28_33_47_4_start:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_28_33_35_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 29 8 ]
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_29_8_32_8_if_stmt:
         %tmp.1 = self;
@@ -106,486 +106,414 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_29_8_32_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_29_8_32_8_if_end:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 34 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_28_33_47_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_28_33_47_4_stop" ]
-        %currentGame.1 = local;
-        symbol [ currentGame %currentGame.1 34 12 23 ];
-        symbol [ view %tmp.10 34 26 30 ];
-        %tmp.10 = getv ? :view;
-        symbol [ games %tmp.11 34 31 36 ];
-        %tmp.11 = getv %tmp.10 :games;
-        symbol [ view %tmp.13 34 37 41 ];
-        %tmp.13 = getv ? :view;
-        symbol [ gameIdx %tmp.14 34 42 49 ];
-        %tmp.14 = getv %tmp.13 :gameIdx;
-        %tmp.15 = agetv %tmp.11 %tmp.14;
-        lputv %currentGame.1 %tmp.15;
-        symbol [ currentGame %currentGame.1 34 12 23 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 36 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_8_44_8_if_stmt:
-        %tmp.16 = lgetv %currentGame.1;
-        symbol [ currentGame %tmp.16 36 12 23 ];
-        symbol [ equals %tmp.17 36 24 30 ];
-        %tmp.17 = getv function %tmp.16 :equals;
-        %tmp.18 = "2048";
-        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
-        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_8_44_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_8_44_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_40_38_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 37 12 ]
-        symbol [ WatchUi %tmp.20 37 12 19 ];
-        %tmp.20 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.21 37 20 28 ];
-        %tmp.21 = getv function %tmp.20 :pushView;
-        symbol [ Menu2048View %tmp.25 37 33 45 ];
-        %tmp.25 = getv ? :Menu2048View;
-        %tmp.22 = newc %tmp.25 ();
-        symbol [ Menu2048Delegate %tmp.29 37 53 69 ];
-        %tmp.29 = getv ? :Menu2048Delegate;
-        %tmp.26 = newc %tmp.29 ();
-        symbol [ WatchUi %tmp.30 37 73 80 ];
-        %tmp.30 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.31 37 81 96 ];
-        %tmp.31 = getv %tmp.30 :SLIDE_IMMEDIATE;
-        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.26, %tmp.31);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_40_38_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_8_44_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_8_44_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 39 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_13_44_8_if_stmt:
-        %tmp.32 = lgetv %currentGame.1;
-        symbol [ currentGame %tmp.32 39 17 28 ];
-        symbol [ equals %tmp.33 39 29 35 ];
-        %tmp.33 = getv function %tmp.32 :equals;
-        %tmp.34 = "Snake";
-        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
-        bf %tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_13_44_8_if_else_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_13_44_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_46_41_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 40 12 ]
-        symbol [ WatchUi %tmp.36 40 12 19 ];
-        %tmp.36 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.37 40 20 28 ];
-        %tmp.37 = getv function %tmp.36 :pushView;
-        symbol [ MenuSnakeView %tmp.41 40 33 46 ];
-        %tmp.41 = getv ? :MenuSnakeView;
-        %tmp.38 = newc %tmp.41 ();
-        symbol [ MenuSnakeDelegate %tmp.45 40 54 71 ];
-        %tmp.45 = getv ? :MenuSnakeDelegate;
-        %tmp.42 = newc %tmp.45 ();
-        symbol [ WatchUi %tmp.46 40 75 82 ];
-        %tmp.46 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.47 40 83 98 ];
-        %tmp.47 = getv %tmp.46 :SLIDE_IMMEDIATE;
-        invoke %tmp.36 %tmp.37(%tmp.38, %tmp.42, %tmp.47);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_46_41_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_13_44_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_13_44_8_if_else_false:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_42_13_44_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 43 12 ]
-        symbol [ System %tmp.48 43 12 18 ];
-        %tmp.48 = getm $.Toybox.System;
-        symbol [ println %tmp.49 43 19 26 ];
-        %tmp.49 = getv function %tmp.48 :println;
-        %tmp.50 = lgetv %currentGame.1;
-        symbol [ currentGame %tmp.50 43 27 38 ];
-        %tmp.51 = " is not implemented yet!";
-        %tmp.52 = add %tmp.50 %tmp.51;
-        invoke %tmp.48 %tmp.49(%tmp.52);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_42_13_44_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_39_13_44_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_36_8_44_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 46 8 ]
-        %tmp.53 = true;
-        ret %tmp.53;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_28_33_47_4_stop:
+        symbol [ GameRegistry %tmp.10 34 15 27 ];
+        %tmp.10 = getv ? :GameRegistry;
+        symbol [ launch %tmp.11 34 28 34 ];
+        %tmp.11 = getv function %tmp.10 :launch;
+        symbol [ GameRegistry %tmp.13 34 35 47 ];
+        %tmp.13 = getv ? :GameRegistry;
+        symbol [ GAMES %tmp.14 34 48 53 ];
+        %tmp.14 = getv %tmp.13 :GAMES;
+        symbol [ view %tmp.16 34 54 58 ];
+        %tmp.16 = getv ? :view;
+        symbol [ gameIdx %tmp.17 34 59 66 ];
+        %tmp.17 = getv %tmp.16 :gameIdx;
+        %tmp.18 = agetv %tmp.14 %tmp.17;
+        %tmp.20 = const :id;
+        symbol [ id %tmp.20 34 69 71 const ];
+        %tmp.21 = agetv %tmp.18 %tmp.20;
+        %tmp.22 = true;
+        %tmp.23 = invoke %tmp.10 %tmp.11(%tmp.21, %tmp.22);
+        ret %tmp.23;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_28_33_35_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 49; @symbol_functiondef = [scroll,49,13,19]; @symbol_param<0> = [direction,49,20,29]; @symbol_param<0>_type<0> = [String,49,33,39]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 37; @symbol_functiondef = [scroll,37,13,19]; @symbol_param<0> = [direction,37,20,29]; @symbol_param<0>_type<0> = [String,37,33,39]; ]
     function scroll(direction as String) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_49_41_61_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 50 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_8_53_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_37_41_49_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 38 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_8_41_8_if_stmt:
         %tmp.1 = self;
-        symbol [ ensureView %tmp.2 50 13 23 ];
+        symbol [ ensureView %tmp.2 38 13 23 ];
         %tmp.2 = getv function %tmp.1 :ensureView;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = not %tmp.3;
-        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_8_53_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_8_53_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_27_53_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 51 12 ]
-        symbol [ System %tmp.5 51 12 18 ];
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_8_41_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_8_41_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_27_41_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 39 12 ]
+        symbol [ System %tmp.5 39 12 18 ];
         %tmp.5 = getm $.Toybox.System;
-        symbol [ println %tmp.6 51 19 26 ];
+        symbol [ println %tmp.6 39 19 26 ];
         %tmp.6 = getv function %tmp.5 :println;
         %tmp.7 = "Scroll failed: view is null";
         invoke %tmp.5 %tmp.6(%tmp.7);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 52 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 40 12 ]
         ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_27_53_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_8_53_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_50_8_53_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 55 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_8_60_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_27_41_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_8_41_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_38_8_41_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 43 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_8_48_8_if_stmt:
         %tmp.8 = lgetv %direction;
-        symbol [ direction %tmp.8 55 12 21 ];
-        symbol [ equals %tmp.9 55 22 28 ];
+        symbol [ direction %tmp.8 43 12 21 ];
+        symbol [ equals %tmp.9 43 22 28 ];
         %tmp.9 = getv function %tmp.8 :equals;
         %tmp.10 = "up";
         %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
-        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_8_60_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_8_60_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_36_57_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 56 12 ]
-        symbol [ view %tmp.13 56 12 16 ];
+        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_8_48_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_8_48_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_36_45_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 44 12 ]
+        symbol [ view %tmp.13 44 12 16 ];
         %tmp.13 = getv ? :view;
-        symbol [ scroll %tmp.14 56 17 23 ];
+        symbol [ scroll %tmp.14 44 17 23 ];
         %tmp.14 = getv function %tmp.13 :scroll;
         %tmp.15 = -1;
         invoke %tmp.13 %tmp.14(%tmp.15);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_36_57_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_8_60_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_8_60_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 58 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_13_60_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_36_45_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_8_48_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_8_48_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 46 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_13_48_8_if_stmt:
         %tmp.16 = lgetv %direction;
-        symbol [ direction %tmp.16 58 17 26 ];
-        symbol [ equals %tmp.17 58 27 33 ];
+        symbol [ direction %tmp.16 46 17 26 ];
+        symbol [ equals %tmp.17 46 27 33 ];
         %tmp.17 = getv function %tmp.16 :equals;
         %tmp.18 = "down";
         %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
-        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_13_60_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_13_60_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_43_60_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 59 12 ]
-        symbol [ view %tmp.21 59 12 16 ];
+        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_13_48_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_13_48_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_43_48_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 47 12 ]
+        symbol [ view %tmp.21 47 12 16 ];
         %tmp.21 = getv ? :view;
-        symbol [ scroll %tmp.22 59 17 23 ];
+        symbol [ scroll %tmp.22 47 17 23 ];
         %tmp.22 = getv function %tmp.21 :scroll;
         %tmp.23 = +1;
         invoke %tmp.21 %tmp.22(%tmp.23);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_43_60_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_13_60_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_58_13_60_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_55_8_60_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_49_41_61_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_43_48_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_13_48_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_46_13_48_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_43_8_48_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_37_41_49_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 64; @symbol_functiondef = [onTap,64,13,18]; @symbol_param<0> = [click,64,19,24]; @symbol_param<0>_type<0> = [WatchUi,64,28,35]; @symbol_param<0>_type<1> = [ClickEvent,64,36,46]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 52; @symbol_functiondef = [onTap,52,13,18]; @symbol_param<0> = [click,52,19,24]; @symbol_param<0>_type<0> = [WatchUi,52,28,35]; @symbol_param<0>_type<1> = [ClickEvent,52,36,46]; ]
     function onTap(click as WatchUi.ClickEvent) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 65 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 53 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_stop" ]
         %position.1 = local;
-        symbol [ position %position.1 65 12 20 ];
+        symbol [ position %position.1 53 12 20 ];
         %tmp.1 = lgetv %click;
-        symbol [ click %tmp.1 65 23 28 ];
-        symbol [ getCoordinates %tmp.2 65 29 43 ];
+        symbol [ click %tmp.1 53 23 28 ];
+        symbol [ getCoordinates %tmp.2 53 29 43 ];
         %tmp.2 = getv function %tmp.1 :getCoordinates;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %position.1 %tmp.3;
-        symbol [ position %position.1 65 12 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 66 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_stop" ]
+        symbol [ position %position.1 53 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 54 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_stop" ]
         %x.2 = local;
-        symbol [ x %x.2 66 12 13 ];
+        symbol [ x %x.2 54 12 13 ];
         %tmp.4 = lgetv %position.1;
-        symbol [ position %tmp.4 66 16 24 ];
+        symbol [ position %tmp.4 54 16 24 ];
         %tmp.5 = 0;
         %tmp.6 = agetv %tmp.4 %tmp.5;
         lputv %x.2 %tmp.6;
-        symbol [ x %x.2 66 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 67 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_stop" ]
+        symbol [ x %x.2 54 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 55 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_stop" ]
         %y.3 = local;
-        symbol [ y %y.3 67 12 13 ];
+        symbol [ y %y.3 55 12 13 ];
         %tmp.7 = lgetv %position.1;
-        symbol [ position %tmp.7 67 16 24 ];
+        symbol [ position %tmp.7 55 16 24 ];
         %tmp.8 = 1;
         %tmp.9 = agetv %tmp.7 %tmp.8;
         lputv %y.3 %tmp.9;
-        symbol [ y %y.3 67 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 69 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_8_71_8_if_stmt:
-        symbol [ view %tmp.11 69 12 16 ];
+        symbol [ y %y.3 55 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 57 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_8_59_8_if_stmt:
+        symbol [ view %tmp.11 57 12 16 ];
         %tmp.11 = getv ? :view;
         %tmp.12 = null;
         %tmp.13 = eq %tmp.11 %tmp.12;
-        bf %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_8_71_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_8_71_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_26_71_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 70 12 ]
+        bf %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_8_59_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_8_59_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_26_59_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 58 12 ]
         %tmp.14 = self;
-        symbol [ setView %tmp.15 70 12 19 ];
+        symbol [ setView %tmp.15 58 12 19 ];
         %tmp.15 = getv function %tmp.14 :setView;
         invoke %tmp.14 %tmp.15();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_26_71_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_8_71_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_69_8_71_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 73 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_26_59_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_8_59_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_57_8_59_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 61 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_stop" ]
         %button.4 = local;
-        symbol [ button %button.4 73 12 18 ];
-        symbol [ view %tmp.17 73 21 25 ];
+        symbol [ button %button.4 61 12 18 ];
+        symbol [ view %tmp.17 61 21 25 ];
         %tmp.17 = getv ? :view;
-        symbol [ getMainButton %tmp.18 73 26 39 ];
+        symbol [ getMainButton %tmp.18 61 26 39 ];
         %tmp.18 = getv function %tmp.17 :getMainButton;
         %tmp.19 = invoke %tmp.17 %tmp.18();
         %tmp.20 = as %tmp.19 Dictionary;
-        symbol [ Dictionary %tmp.20 73 45 55 ];
+        symbol [ Dictionary %tmp.20 61 45 55 ];
         lputv %button.4 %tmp.20;
-        symbol [ button %button.4 73 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 75 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_stop" ]
+        symbol [ button %button.4 61 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 63 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_stop" ]
         %tap.5 = local;
-        symbol [ tap %tap.5 75 12 15 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_18_76_67_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_18_76_34_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_18_75_65_begin:
+        symbol [ tap %tap.5 63 12 15 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_18_64_67_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_18_64_34_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_18_63_65_begin:
         %tmp.21 = lgetv %x.2;
-        symbol [ x %tmp.21 75 18 19 ];
+        symbol [ x %tmp.21 63 18 19 ];
         %tmp.22 = lgetv %button.4;
-        symbol [ button %tmp.22 75 23 29 ];
+        symbol [ button %tmp.22 63 23 29 ];
         %tmp.24 = const :x;
-        symbol [ x %tmp.24 75 31 32 const ];
+        symbol [ x %tmp.24 63 31 32 const ];
         %tmp.25 = agetv %tmp.22 %tmp.24;
         %tmp.26 = gte %tmp.21 %tmp.25;
         %tmp.27 = dup %tmp.26;
-        bf %tmp.27 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_38_75_65_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_38_75_65_true:
+        bf %tmp.27 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_38_63_65_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_38_63_65_true:
         %tmp.28 = lgetv %x.2;
-        symbol [ x %tmp.28 75 38 39 ];
+        symbol [ x %tmp.28 63 38 39 ];
         %tmp.29 = lgetv %button.4;
-        symbol [ button %tmp.29 75 43 49 ];
+        symbol [ button %tmp.29 63 43 49 ];
         %tmp.31 = const :x;
-        symbol [ x %tmp.31 75 51 52 const ];
+        symbol [ x %tmp.31 63 51 52 const ];
         %tmp.32 = agetv %tmp.29 %tmp.31;
         %tmp.33 = lgetv %button.4;
-        symbol [ button %tmp.33 75 56 62 ];
+        symbol [ button %tmp.33 63 56 62 ];
         %tmp.35 = const :w;
-        symbol [ w %tmp.35 75 64 65 const ];
+        symbol [ w %tmp.35 63 64 65 const ];
         %tmp.36 = agetv %tmp.33 %tmp.35;
         %tmp.37 = add %tmp.32 %tmp.36;
         %tmp.38 = lte %tmp.28 %tmp.37;
         %tmp.39 = and %tmp.26 %tmp.38;
         push %tmp.39;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_38_75_65_end:
-        %tmp.40 = phi [%tmp.27 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_18_75_65_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_38_75_65_true] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_38_75_65_end];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_38_63_65_end:
+        %tmp.40 = phi [%tmp.27 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_18_63_65_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_38_63_65_true] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_38_63_65_end];
         %tmp.41 = dup %tmp.40;
-        bf %tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_20_76_34_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_20_76_34_true:
+        bf %tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_20_64_34_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_20_64_34_true:
         %tmp.42 = lgetv %y.3;
-        symbol [ y %tmp.42 76 20 21 ];
+        symbol [ y %tmp.42 64 20 21 ];
         %tmp.43 = lgetv %button.4;
-        symbol [ button %tmp.43 76 25 31 ];
+        symbol [ button %tmp.43 64 25 31 ];
         %tmp.45 = const :y;
-        symbol [ y %tmp.45 76 33 34 const ];
+        symbol [ y %tmp.45 64 33 34 const ];
         %tmp.46 = agetv %tmp.43 %tmp.45;
         %tmp.47 = gte %tmp.42 %tmp.46;
         %tmp.48 = and %tmp.40 %tmp.47;
         push %tmp.48;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_20_76_34_end:
-        %tmp.49 = phi [%tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_18_76_34_begin] [%tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_20_76_34_true] [%tmp.49 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_20_76_34_end];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_20_64_34_end:
+        %tmp.49 = phi [%tmp.41 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_18_64_34_begin] [%tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_20_64_34_true] [%tmp.49 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_20_64_34_end];
         %tmp.50 = dup %tmp.49;
-        bf %tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_40_76_67_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_40_76_67_true:
+        bf %tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_40_64_67_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_40_64_67_true:
         %tmp.51 = lgetv %y.3;
-        symbol [ y %tmp.51 76 40 41 ];
+        symbol [ y %tmp.51 64 40 41 ];
         %tmp.52 = lgetv %button.4;
-        symbol [ button %tmp.52 76 45 51 ];
+        symbol [ button %tmp.52 64 45 51 ];
         %tmp.54 = const :y;
-        symbol [ y %tmp.54 76 53 54 const ];
+        symbol [ y %tmp.54 64 53 54 const ];
         %tmp.55 = agetv %tmp.52 %tmp.54;
         %tmp.56 = lgetv %button.4;
-        symbol [ button %tmp.56 76 58 64 ];
+        symbol [ button %tmp.56 64 58 64 ];
         %tmp.58 = const :h;
-        symbol [ h %tmp.58 76 66 67 const ];
+        symbol [ h %tmp.58 64 66 67 const ];
         %tmp.59 = agetv %tmp.56 %tmp.58;
         %tmp.60 = add %tmp.55 %tmp.59;
         %tmp.61 = lte %tmp.51 %tmp.60;
         %tmp.62 = and %tmp.49 %tmp.61;
         push %tmp.62;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_40_76_67_end:
-        %tmp.63 = phi [%tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_75_18_76_67_begin] [%tmp.62 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_40_76_67_true] [%tmp.63 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_40_76_67_end];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_40_64_67_end:
+        %tmp.63 = phi [%tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_63_18_64_67_begin] [%tmp.62 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_40_64_67_true] [%tmp.63 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_40_64_67_end];
         lputv %tap.5 %tmp.63;
-        symbol [ tap %tap.5 75 12 15 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 78 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_8_80_8_if_stmt:
+        symbol [ tap %tap.5 63 12 15 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 66 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_8_68_8_if_stmt:
         %tmp.64 = lgetv %tap.5;
-        symbol [ tap %tmp.64 78 13 16 ];
+        symbol [ tap %tmp.64 66 13 16 ];
         %tmp.65 = not %tmp.64;
-        bf %tmp.65 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_8_80_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_8_80_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_18_80_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 79 12 ]
+        bf %tmp.65 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_8_68_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_8_68_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_18_68_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 67 12 ]
         %tmp.66 = false;
         ret %tmp.66;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_18_80_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_8_80_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_78_8_80_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 82 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_18_68_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_8_68_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_66_8_68_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 70 8 ]
         %tmp.67 = self;
-        symbol [ select %tmp.68 82 15 21 ];
+        symbol [ select %tmp.68 70 15 21 ];
         %tmp.68 = getv function %tmp.67 :select;
         %tmp.69 = invoke %tmp.67 %tmp.68();
         ret %tmp.69;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_64_48_83_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_52_48_71_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 85; @symbol_functiondef = [onSwipe,85,13,20]; @symbol_param<0> = [swipe,85,21,26]; @symbol_param<0>_type<0> = [WatchUi,85,30,37]; @symbol_param<0>_type<1> = [SwipeEvent,85,38,48]; @symbol_return<0> = [Boolean,85,53,60]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 73; @symbol_functiondef = [onSwipe,73,13,20]; @symbol_param<0> = [swipe,73,21,26]; @symbol_param<0>_type<0> = [WatchUi,73,30,37]; @symbol_param<0>_type<1> = [SwipeEvent,73,38,48]; @symbol_return<0> = [Boolean,73,53,60]; ]
     function onSwipe(swipe as WatchUi.SwipeEvent) as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_85_61_98_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 86 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_85_61_98_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_85_61_98_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_73_61_86_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 74 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_73_61_86_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_73_61_86_4_stop" ]
         %direction.1 = local;
-        symbol [ direction %direction.1 86 12 21 ];
+        symbol [ direction %direction.1 74 12 21 ];
         %tmp.1 = lgetv %swipe;
-        symbol [ swipe %tmp.1 86 24 29 ];
-        symbol [ getDirection %tmp.2 86 30 42 ];
+        symbol [ swipe %tmp.1 74 24 29 ];
+        symbol [ getDirection %tmp.2 74 30 42 ];
         %tmp.2 = getv function %tmp.1 :getDirection;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %direction.1 %tmp.3;
-        symbol [ direction %direction.1 86 12 21 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 88 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_8_95_8_if_stmt:
+        symbol [ direction %direction.1 74 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 76 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_8_83_8_if_stmt:
         %tmp.4 = lgetv %direction.1;
-        symbol [ direction %tmp.4 88 12 21 ];
-        symbol [ WatchUi %tmp.5 88 25 32 ];
+        symbol [ direction %tmp.4 76 12 21 ];
+        symbol [ WatchUi %tmp.5 76 25 32 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ SWIPE_UP %tmp.6 88 33 41 ];
+        symbol [ SWIPE_UP %tmp.6 76 33 41 ];
         %tmp.6 = getv %tmp.5 :SWIPE_UP;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_8_95_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_8_95_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_43_91_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 89 12 ]
+        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_8_83_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_8_83_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_43_79_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 77 12 ]
         %tmp.8 = self;
-        symbol [ scroll %tmp.9 89 12 18 ];
+        symbol [ scroll %tmp.9 77 12 18 ];
         %tmp.9 = getv function %tmp.8 :scroll;
         %tmp.10 = "down";
         invoke %tmp.8 %tmp.9(%tmp.10);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 90 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 78 12 ]
         %tmp.11 = true;
         ret %tmp.11;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_43_91_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_8_95_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_8_95_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 92 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_13_95_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_43_79_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_8_83_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_8_83_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 80 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_13_83_8_if_stmt:
         %tmp.12 = lgetv %direction.1;
-        symbol [ direction %tmp.12 92 17 26 ];
-        symbol [ WatchUi %tmp.13 92 30 37 ];
+        symbol [ direction %tmp.12 80 17 26 ];
+        symbol [ WatchUi %tmp.13 80 30 37 ];
         %tmp.13 = getm $.Toybox.WatchUi;
-        symbol [ SWIPE_DOWN %tmp.14 92 38 48 ];
+        symbol [ SWIPE_DOWN %tmp.14 80 38 48 ];
         %tmp.14 = getv %tmp.13 :SWIPE_DOWN;
         %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_13_95_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_13_95_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_50_95_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 93 12 ]
+        bf %tmp.15 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_13_83_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_13_83_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_50_83_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 81 12 ]
         %tmp.16 = self;
-        symbol [ scroll %tmp.17 93 12 18 ];
+        symbol [ scroll %tmp.17 81 12 18 ];
         %tmp.17 = getv function %tmp.16 :scroll;
         %tmp.18 = "up";
         invoke %tmp.16 %tmp.17(%tmp.18);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 94 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 82 12 ]
         %tmp.19 = true;
         ret %tmp.19;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_50_95_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_13_95_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_92_13_95_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_8_95_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 97 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_50_83_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_13_83_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_80_13_83_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_76_8_83_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 85 8 ]
         %tmp.20 = false;
         ret %tmp.20;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_85_61_98_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_73_61_86_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 100; @symbol_functiondef = [onKeyPressed,100,13,25]; @symbol_param<0> = [key,100,26,29]; @symbol_param<0>_type<0> = [WatchUi,100,33,40]; @symbol_param<0>_type<1> = [KeyEvent,100,41,49]; @symbol_return<0> = [Boolean,100,54,61]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 88; @symbol_functiondef = [onKeyPressed,88,13,25]; @symbol_param<0> = [key,88,26,29]; @symbol_param<0>_type<0> = [WatchUi,88,33,40]; @symbol_param<0>_type<1> = [KeyEvent,88,41,49]; @symbol_return<0> = [Boolean,88,54,61]; ]
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_100_62_116_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 101 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_100_62_116_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_100_62_116_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_62_104_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 89 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_62_104_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_62_104_4_stop" ]
         %keyCode.1 = local;
-        symbol [ keyCode %keyCode.1 101 12 19 ];
+        symbol [ keyCode %keyCode.1 89 12 19 ];
         %tmp.1 = lgetv %key;
-        symbol [ key %tmp.1 101 22 25 ];
-        symbol [ getKey %tmp.2 101 26 32 ];
+        symbol [ key %tmp.1 89 22 25 ];
+        symbol [ getKey %tmp.2 89 26 32 ];
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %keyCode.1 %tmp.3;
-        symbol [ keyCode %keyCode.1 101 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 103 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_8_113_8_if_stmt:
+        symbol [ keyCode %keyCode.1 89 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 91 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_8_101_8_if_stmt:
         %tmp.4 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.4 103 12 19 ];
-        symbol [ WatchUi %tmp.5 103 23 30 ];
+        symbol [ keyCode %tmp.4 91 12 19 ];
+        symbol [ WatchUi %tmp.5 91 23 30 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ KEY_UP %tmp.6 103 31 37 ];
+        symbol [ KEY_UP %tmp.6 91 31 37 ];
         %tmp.6 = getv %tmp.5 :KEY_UP;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_8_113_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_8_113_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_39_106_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 104 12 ]
+        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_8_101_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_8_101_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_39_94_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 92 12 ]
         %tmp.8 = self;
-        symbol [ scroll %tmp.9 104 12 18 ];
+        symbol [ scroll %tmp.9 92 12 18 ];
         %tmp.9 = getv function %tmp.8 :scroll;
         %tmp.10 = "up";
         invoke %tmp.8 %tmp.9(%tmp.10);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 105 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 93 12 ]
         %tmp.11 = true;
         ret %tmp.11;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_39_106_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_8_113_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_8_113_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 107 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_13_113_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_39_94_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_8_101_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_8_101_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 95 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_13_101_8_if_stmt:
         %tmp.12 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.12 107 17 24 ];
-        symbol [ WatchUi %tmp.13 107 28 35 ];
+        symbol [ keyCode %tmp.12 95 17 24 ];
+        symbol [ WatchUi %tmp.13 95 28 35 ];
         %tmp.13 = getm $.Toybox.WatchUi;
-        symbol [ KEY_DOWN %tmp.14 107 36 44 ];
+        symbol [ KEY_DOWN %tmp.14 95 36 44 ];
         %tmp.14 = getv %tmp.13 :KEY_DOWN;
         %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_13_113_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_13_113_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_46_110_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 108 12 ]
+        bf %tmp.15 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_13_101_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_13_101_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_46_98_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 96 12 ]
         %tmp.16 = self;
-        symbol [ scroll %tmp.17 108 12 18 ];
+        symbol [ scroll %tmp.17 96 12 18 ];
         %tmp.17 = getv function %tmp.16 :scroll;
         %tmp.18 = "down";
         invoke %tmp.16 %tmp.17(%tmp.18);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 109 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 97 12 ]
         %tmp.19 = true;
         ret %tmp.19;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_46_110_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_13_113_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_13_113_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 111 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_13_113_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_46_98_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_13_101_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_13_101_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 99 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_13_101_8_if_stmt:
         %tmp.20 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.20 111 17 24 ];
-        symbol [ WatchUi %tmp.21 111 28 35 ];
+        symbol [ keyCode %tmp.20 99 17 24 ];
+        symbol [ WatchUi %tmp.21 99 28 35 ];
         %tmp.21 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.22 111 36 45 ];
+        symbol [ KEY_ENTER %tmp.22 99 36 45 ];
         %tmp.22 = getv %tmp.21 :KEY_ENTER;
         %tmp.23 = eq %tmp.20 %tmp.22;
-        bf %tmp.23 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_13_113_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_13_113_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_47_113_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 112 12 ]
+        bf %tmp.23 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_13_101_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_13_101_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_47_101_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 100 12 ]
         %tmp.24 = self;
-        symbol [ select %tmp.25 112 19 25 ];
+        symbol [ select %tmp.25 100 19 25 ];
         %tmp.25 = getv function %tmp.24 :select;
         %tmp.26 = invoke %tmp.24 %tmp.25();
         ret %tmp.26;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_47_113_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_13_113_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_111_13_113_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_107_13_113_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_103_8_113_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 115 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_47_101_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_13_101_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_99_13_101_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_95_13_101_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_91_8_101_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc" 103 8 ]
         %tmp.27 = false;
         ret %tmp.27;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_100_62_116_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_ArcadeXDelegate_mc_88_62_104_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\ArcadeXDelegate.mc"; @line = 1; ]

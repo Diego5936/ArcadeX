@@ -27,7 +27,7 @@ class MenuSnakeDelegate extends WatchUi.InputDelegate {
             return false;
         }
 
-        WatchUi.pushView(new SnakeView(), new SnakeDelegate(), WatchUi.SLIDE_IMMEDIATE);
+        GameRegistry.launch("snake", false);
 
         return true;
     }

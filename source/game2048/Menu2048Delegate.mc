@@ -21,7 +21,7 @@ class Menu2048Delegate extends WatchUi.InputDelegate {
             return false;
         }
 
-        WatchUi.pushView(new Game2048View(), new Game2048Delegate(), WatchUi.SLIDE_IMMEDIATE);
+        GameRegistry.launch("2048", false);
 
         return true;
     }
