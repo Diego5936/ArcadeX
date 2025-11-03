@@ -64,6 +64,12 @@ class Menu2048Delegate extends WatchUi.InputDelegate {
                 return select(0);
             }
         }
+        else if (keyCode == WatchUi.KEY_UP || keyCode == WatchUi.KEY_DOWN) {
+            view.selected = view.selected == 0 ? 1 : 0;
+            System.println(view.selected);
+            WatchUi.requestUpdate();
+        }
+
         return false;
     }
 }

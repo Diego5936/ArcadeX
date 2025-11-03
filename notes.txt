@@ -14,7 +14,6 @@ Ex: var viewPair = WatchUi.getCurrentView();
     view = viewPair[0] as ArcadeXView;
 
 D TODO:
-Make saved 2048 games with new menu
 two button cycle in 2048 with selected colors
 better game over screen
 Stackup
