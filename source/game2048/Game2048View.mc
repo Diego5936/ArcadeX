@@ -1,5 +1,5 @@
-import Toybox.WatchUi;
 import Toybox.Graphics;
+import Toybox.WatchUi;
 import Toybox.Lang;
 
 class Game2048View extends WatchUi.View {
@@ -13,7 +13,7 @@ class Game2048View extends WatchUi.View {
             drawGrid(dc);
         }
         else {
-            Components.makeGameOver(dc, "snake", Graphics.COLOR_WHITE, Game2048.score);
+            Components.makeGameOver(dc, "game2048", Graphics.COLOR_WHITE, Game2048.score);
         }
     }
 

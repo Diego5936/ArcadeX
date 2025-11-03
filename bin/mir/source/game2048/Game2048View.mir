@@ -1,7 +1,7 @@
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
-import Toybox.WatchUi;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
 import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
 import Toybox.Lang;
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Game2048View.mc"; @line = 5; @symbol_classdef = [Game2048View,5,6,18]; @symbol_extends<0> = [WatchUi,5,27,34]; @symbol_extends<1> = [View,5,35,39]; ]
@@ -60,14 +60,14 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game20
         %tmp.9 = getv function %tmp.8 :makeGameOver;
         %tmp.10 = lgetv %dc;
         symbol [ dc %tmp.10 16 36 38 ];
-        %tmp.11 = "snake";
-        symbol [ Graphics %tmp.12 16 49 57 ];
+        %tmp.11 = "game2048";
+        symbol [ Graphics %tmp.12 16 52 60 ];
         %tmp.12 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.13 16 58 69 ];
+        symbol [ COLOR_WHITE %tmp.13 16 61 72 ];
         %tmp.13 = getv %tmp.12 :COLOR_WHITE;
-        symbol [ Game2048 %tmp.15 16 71 79 ];
+        symbol [ Game2048 %tmp.15 16 74 82 ];
         %tmp.15 = getv ? :Game2048;
-        symbol [ score %tmp.16 16 80 85 ];
+        symbol [ score %tmp.16 16 83 88 ];
         %tmp.16 = getv %tmp.15 :score;
         invoke %tmp.8 %tmp.9(%tmp.10, %tmp.11, %tmp.13, %tmp.16);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Game2048View_mc_15_13_17_8_stop:

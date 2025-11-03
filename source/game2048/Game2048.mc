@@ -1,6 +1,6 @@
+import Toybox.System;
 import Toybox.Lang;
 import Toybox.Math;
-import Toybox.System;
 
 module Game2048 {
     var grid = [];
@@ -15,15 +15,20 @@ module Game2048 {
 
     // Initializes the global grid with two random '2' tiles
     function setStartingGrid() {
-        grid = [
-            [0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0]
-        ];
+        // If no saved grid = create blank, add two new tiles, save
+        // If saved non-empty = laod saved grid
+        var saved = SaveManager.getGrid();
+
+        if (saved != null && !isGridEmpty(saved)) {
+            grid = saved;
+            return;
+        }
+
+        SaveManager.resetGrid();
+        grid = SaveManager.getGrid();
 
         var emptyTiles = getEmptyTiles();
-
+        // Add two starting tiles
         for (var i = 0; i < 2; i++) {
             var randomIdx = Math.rand() % emptyTiles.size();
             var emptyTile = emptyTiles[randomIdx] as Array;
@@ -35,6 +40,7 @@ module Game2048 {
 
             emptyTiles.remove(emptyTile);
         }
+        SaveManager.saveGrid(grid);
     }
 
     // --- GAME LOGIC ---
@@ -44,6 +50,8 @@ module Game2048 {
     function spawnNewTile() {
         var emptyTiles = getEmptyTiles();
 
+        if (emptyTiles.size() == 0 ) { return; }
+
         // Find random location
         var randomIdx = Math.rand() % emptyTiles.size();
         var emptyTile = emptyTiles[randomIdx] as Array;
@@ -52,15 +60,29 @@ module Game2048 {
 
         // Find tile value
         var odds = Math.rand() % 100;
-        var tileVal = odds > 90 ? 4 : 2;
+        var tileVal = odds >= 90 ? 4 : 2;
 
         var curRow = (grid as Array)[row] as Array;
         curRow[col] = tileVal;
     }
 
+    function afterMove(didChange as Boolean) {
+        if (didChange) {
+            spawnNewTile();
+            SaveManager.saveGrid(grid);
+        }
+
+        if (noMovesLeft()) {
+            active = false;
+            SaveManager.setHighScore("game2048", score);
+            SaveManager.clearGrid();
+        }
+    }
+
     // Slides left or right
     function slideHorizontally(direction as String) {
         var slideRight = direction.equals("right");
+        var before = cloneGrid(grid);
 
         for (var row = 0; row < 4; row++) {
             var curRow = (grid as Array)[row] as Array;
@@ -106,11 +128,15 @@ module Game2048 {
             
             (grid as Array)[row] = merged;
         }
+
+        var changed = !gridsEqual(before, grid);
+        afterMove(changed);
     }
 
     // Slides up or down
     function slideVertically(direction as String) {
         var slideDown = direction.equals("down");
+        var before = cloneGrid(grid);
 
         for (var col = 0; col < 4; col++) {
             // Transform column into array
@@ -165,9 +191,27 @@ module Game2048 {
                 curRow[col] = merged[r];
             }
         }
+
+        var changed = !gridsEqual(before, grid);
+        afterMove(changed);
     }
 
     // --- HELPER FUNCTIONS ---
+
+    // Check for blank grid
+    function isGridEmpty(g as Array) as Boolean {
+        if (g == null || g.size() != 4) { return true; }
+
+        for (var r = 0; r < 4; r++) {
+            var row = g[r] as Array;
+            if (row == null || row.size() != 4) { return true; }
+
+            for (var c = 0; c < 4; c++) {
+                if (row[c] != 0) { return false; }
+            }
+        }
+        return true;
+    }
 
     // Returns an array of the empty tiles in the global grid
     function getEmptyTiles() as Array {

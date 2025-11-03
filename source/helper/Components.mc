@@ -1,8 +1,8 @@
 import Toybox.Graphics;
 import Toybox.Lang;
 
-import Layout;
 import SaveManager;
+import Layout;
 
 module Components {
     // Makes a titled box
@@ -51,6 +51,39 @@ module Components {
                     label, Graphics.TEXT_JUSTIFY_CENTER);
 
         return { :x => x, :y => y, :w => w, :h => h };
+    }
+
+    function makeDualButtons(dc as Dc, selected, labels, b1, b2) as Array {
+        // b1 is the format of the selected button, b2 is the format of the other
+        var screenW = dc.getWidth();
+        var screenH = dc.getHeight();
+
+        // Button sizes
+        var buttonY = screenH * 0.60;
+        var bL = {:x => 0, :y => buttonY,
+                    :w => screenW / 2, :h => screenH - buttonY};
+        var bR = {:x => screenW / 2, :y => buttonY,
+                    :w => screenW / 2, :h => screenH - buttonY};
+
+        for (var i = 0; i < 2; i++) {
+            var cur = (i == 0 ? bL as Dictionary : bR as Dictionary);
+            var curf = (selected == i ? b1 as Dictionary : b2 as Dictionary);
+
+            // Draw buttons
+            dc.setColor(curf[:backColor], Color.none);
+            dc.fillRectangle(cur[:x], cur[:y], cur[:w], cur[:h]);
+
+            // Border
+            dc.setColor(curf[:border], Color.none);
+            dc.drawRectangle(cur[:x], cur[:y], cur[:w], cur[:h]);
+
+            // Text
+            dc.setColor(curf[:textColor], Color.none);
+            dc.drawText(cur[:x] + (cur[:w] / 2), screenH - (cur[:h] / 1.3), Graphics.FONT_SMALL, 
+                        (labels as Array)[i], Graphics.TEXT_JUSTIFY_CENTER);
+        }
+
+        return [bL, bR];
     }
 
     function makeGameOver(dc as Dc, gameName as String, textColor, score as Number) {

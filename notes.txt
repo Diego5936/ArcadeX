@@ -12,3 +12,23 @@ When handling an action event (onSwipe, onKey, etc...) the function need to retu
 WatchUi.getCurrentView() holds a view pair [view, delegate]. If needing one specifically got to separate.
 Ex: var viewPair = WatchUi.getCurrentView();
     view = viewPair[0] as ArcadeXView;
+
+D TODO:
+Make saved 2048 games with new menu
+two button cycle in 2048 with selected colors
+better game over screen
+Stackup
+colors for selected wheel choice
+wheel animations
+
+R TODO:
+Maze
+figure out how to do cool font for initial menu
+
+RANDOM:
+1 food replacement, help me fix it and explain steps
+3 replace dics for packed integers. what is a packed integer? how do i change my code to reflect that? does it really make that much of a difference?
+6 i dont understand the step merge? what's the difference? is it that much of a difference for me to restructure the whole game?
+7
+8
+9

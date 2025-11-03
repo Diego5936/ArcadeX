@@ -25,7 +25,7 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
     }
 
     // --- Input Handling ---
-    function onTap(click as WatchUi.ClickEvent) {
+    function onTap(click as WatchUi.ClickEvent) as Boolean {
         var position = click.getCoordinates();
         var x = position[0];
         var y = position[1];
