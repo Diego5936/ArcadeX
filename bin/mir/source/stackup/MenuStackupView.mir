@@ -1,0 +1,125 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 5; @symbol_classdef = [MenuStackupView,5,6,21]; @symbol_extends<0> = [WatchUi,5,30,37]; @symbol_extends<1> = [View,5,38,42]; ]
+class MenuStackupView extends WatchUi.View {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 6; @position = 8; @symbol_vardef = [playButton,6,8,18]; @symbol_type<0> = [Dictionary,6,22,32]; ]
+    var playButton as Dictionary or Null;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_MenuStackupView_mc_8_26_10_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 9 8 ]
+        symbol [ View %tmp.2 9 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 9 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_MenuStackupView_mc_8_26_10_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 12; @symbol_functiondef = [onUpdate,12,13,21]; @symbol_param<0> = [dc,12,22,24]; @symbol_param<0>_type<0> = [Dc,12,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_MenuStackupView_mc_12_40_25_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 14 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 14 8 10 ];
+        symbol [ setColor %tmp.2 14 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Color %tmp.4 14 20 25 ];
+        %tmp.4 = getv ? :Color;
+        symbol [ none %tmp.5 14 26 30 ];
+        %tmp.5 = getv %tmp.4 :none;
+        symbol [ Graphics %tmp.6 14 32 40 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.7 14 41 52 ];
+        %tmp.7 = getv %tmp.6 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 15 8 ]
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 15 8 10 ];
+        symbol [ clear %tmp.9 15 11 16 ];
+        %tmp.9 = getv function %tmp.8 :clear;
+        invoke %tmp.8 %tmp.9();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 18 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 18 8 10 ];
+        symbol [ setColor %tmp.11 18 11 19 ];
+        %tmp.11 = getv function %tmp.10 :setColor;
+        symbol [ Graphics %tmp.12 18 20 28 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.13 18 29 40 ];
+        %tmp.13 = getv %tmp.12 :COLOR_BLACK;
+        symbol [ Color %tmp.15 18 42 47 ];
+        %tmp.15 = getv ? :Color;
+        symbol [ none %tmp.16 18 48 52 ];
+        %tmp.16 = getv %tmp.15 :none;
+        invoke %tmp.10 %tmp.11(%tmp.13, %tmp.16);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 19 8 ]
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 19 8 10 ];
+        symbol [ drawText %tmp.18 19 11 19 ];
+        %tmp.18 = getv function %tmp.17 :drawText;
+        symbol [ Layout %tmp.20 19 20 26 ];
+        %tmp.20 = getv ? :Layout;
+        symbol [ centerX %tmp.21 19 27 34 ];
+        %tmp.21 = getv function %tmp.20 :centerX;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 19 35 37 ];
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        symbol [ Layout %tmp.25 19 40 46 ];
+        %tmp.25 = getv ? :Layout;
+        symbol [ centerY %tmp.26 19 47 54 ];
+        %tmp.26 = getv function %tmp.25 :centerY;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 19 55 57 ];
+        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
+        %tmp.29 = 30;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        symbol [ Graphics %tmp.31 20 20 28 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.32 20 29 39 ];
+        %tmp.32 = getv %tmp.31 :FONT_LARGE;
+        %tmp.33 = "STACKUP";
+        symbol [ Graphics %tmp.34 20 52 60 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.35 20 61 80 ];
+        %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.17 %tmp.18(%tmp.23, %tmp.30, %tmp.32, %tmp.33, %tmp.35);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 23 8 ]
+        symbol [ Components %tmp.37 23 21 31 ];
+        %tmp.37 = getv ? :Components;
+        symbol [ makeStartButton %tmp.38 23 32 47 ];
+        %tmp.38 = getv function %tmp.37 :makeStartButton;
+        %tmp.39 = lgetv %dc;
+        symbol [ dc %tmp.39 23 48 50 ];
+        %tmp.40 = "PLAY";
+        symbol [ Graphics %tmp.41 23 60 68 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ COLOR_PURPLE %tmp.42 23 69 81 ];
+        %tmp.42 = getv %tmp.41 :COLOR_PURPLE;
+        symbol [ Graphics %tmp.43 24 32 40 ];
+        %tmp.43 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.44 24 41 52 ];
+        %tmp.44 = getv %tmp.43 :COLOR_BLACK;
+        symbol [ Graphics %tmp.45 24 54 62 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.46 24 63 74 ];
+        %tmp.46 = getv %tmp.45 :COLOR_BLACK;
+        %tmp.47 = invoke %tmp.37 %tmp.38(%tmp.39, %tmp.40, %tmp.42, %tmp.44, %tmp.46);
+        symbol [ playButton ? 23 8 18 ];
+        putv self :playButton %tmp.47;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_MenuStackupView_mc_12_40_25_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc"; @line = 1; ]
+<init> {
+}

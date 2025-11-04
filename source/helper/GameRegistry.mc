@@ -5,7 +5,8 @@ module GameRegistry {
     // --- Games Library ---
     var MAP = {
         "2048" => new Method(GameRegistry, :run2048),
-        "snake" => new Method(GameRegistry, :runSnake)
+        "snake" => new Method(GameRegistry, :runSnake),
+        "stackup" => new Method(GameRegistry, :runStackup)
     };
 
     const GAMES = [
@@ -57,5 +58,12 @@ module GameRegistry {
             launchScreen(SnakeView, SnakeDelegate, false);
         }
     } 
-    
+    function runStackup(menu as Boolean) { 
+        if (menu) {
+            launchScreen(MenuStackupView, MenuStackupDelegate, true);
+        } 
+        else {
+            launchScreen(StackupView, StackupDelegate, false);
+        }
+    } 
 }

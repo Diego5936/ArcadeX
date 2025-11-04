@@ -1,8 +1,7 @@
-import Toybox.WatchUi;
 import Toybox.Graphics;
-import Toybox.Lang;
-import Toybox.System;
+import Toybox.WatchUi;
 import Toybox.Timer;
+import Toybox.Lang;
 
 import Snake;
 

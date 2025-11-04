@@ -1,6 +1,4 @@
 import Toybox.Lang;
-import Toybox.WatchUi;
-import Toybox.System;
 import Toybox.Math;
 
 module Snake {
