@@ -27,7 +27,7 @@ class Game2048View extends WatchUi.View {
         var x = margin;
         var y = margin + 10;
         var tileWidth = (Layout.workingWidth(dc) - (4 * spacing)) / 4;
-        var tileHeight = (Layout.workingHeight(dc) - (4* spacing)) / 4;
+        var tileHeight = (Layout.workingHeight(dc) - (4 * spacing)) / 4;
 
         for (var row = 0; row < 4; row++) {
             var curRow = (Game2048.grid as Array)[row] as Array;
@@ -36,7 +36,7 @@ class Game2048View extends WatchUi.View {
                 var curTile = curRow[col];
 
                 // Draw Tile
-                var tileColor = setTileColor(curTile);
+                var tileColor = getTileColor(curTile);
                 dc.setColor(tileColor, Color.none);
                 dc.fillRectangle(x, y, tileWidth, tileHeight);
                 dc.setColor(Graphics.COLOR_WHITE, Color.none);
@@ -57,34 +57,17 @@ class Game2048View extends WatchUi.View {
         }
     }
 
-    function setTileColor(tileNumber) as Graphics.ColorType{
-        switch(tileNumber) {
-            case 0:
-                return Graphics.COLOR_TRANSPARENT;
-            case 2:
-                return Color.tfe2;
-            case 4:
-                return Color.tfe4;
-            case 8:
-                return Color.tfe8;
-            case 16:
-                return Color.tfe16;
-            case 32:
-                return Color.tfe32;
-            case 64:
-                return Color.tfe64;
-            case 128:
-                return Color.tfe128;
-            case 256:
-                return Color.tfe256;
-            case 512:
-                return Color.tfe512;
-            case 1024:
-                return Color.tfe1024;
-            case 2048:
-                return Color.tfe2048;
-            default:
-                return Color.tfeBig;
+    function getTileColor(tileNumber) as Graphics.ColorType{
+        var colorMap = Color.TILES as Dictionary;
+
+        if (tileNumber == 0) {
+            return Graphics.COLOR_TRANSPARENT;
         }
+
+        if (colorMap.hasKey(tileNumber)) {
+            return colorMap[tileNumber];
+        }
+        
+        return colorMap["big"];
     }
 }

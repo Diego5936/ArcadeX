@@ -47,9 +47,7 @@ class StackupView extends WatchUi.View {
         drawGrid(dc);
         drawPreview(dc);
 
-        var baseX = Stackup.originX + Stackup.posX * tileSize;
-        var baseY = Stackup.originY + Stackup.posY * tileSize;
-        drawPiece(dc, Stackup.curMatrix, baseX, baseY, tileSize, Graphics.COLOR_PINK);
+        drawPiece(dc, Stackup.curPiece, Stackup.posX, Stackup.posY, tileSize, true);
     }
 
     function drawGrid(dc as Dc) {
@@ -105,12 +103,27 @@ class StackupView extends WatchUi.View {
         dc.drawRectangle(x, y, rectSize, rectSize);
 
         // Draw Piece
-        var nextPiece = Stackup.SHAPES[Stackup.nextPiece] as Array;
         var pieceSize = 20;
-        drawPiece(dc, nextPiece, x, y, pieceSize, Graphics.COLOR_PURPLE);
+        drawPiece(dc, Stackup.nextPiece, x, y, pieceSize, false);
     }
 
-    function drawPiece(dc as Dc, matrix as Array, baseX, baseY, size, color) {
+    // If useGrid == true: x,y are grid coords, so convert to pixels
+    // If useGrid == false: x,y are pixel coords, use as is
+    function drawPiece(dc as Dc, pieceId as String, x, y, size, useGrid as Boolean) {
+        var matrix = (Stackup.SHAPES as Dictionary)[pieceId] as Array;
+
+        // Get piece color
+        var colorMap = Color.STACKS as Dictionary;
+        var pieceColor = Graphics.COLOR_WHITE;
+        if (colorMap.hasKey(pieceId)) {
+            pieceColor = colorMap[pieceId] as Number;
+        }
+
+        // Calculate base position
+        var baseX = useGrid ? Stackup.originX + x * size : x;
+        var baseY = useGrid ? Stackup.originY + y * size : y;
+        
+        // Draw piece
         for (var r = 0; r < matrix.size(); r++) {
             var row = (matrix as Array)[r] as Array;
             for (var c = 0; c < row.size(); c++) {
@@ -120,9 +133,9 @@ class StackupView extends WatchUi.View {
                     var py = baseY + r * size;
 
                     // Draw
-                    dc.setColor(color, Color.none);
+                    dc.setColor(pieceColor, Color.none);
                     dc.fillRectangle(px, py, size, size);
-                    dc.setColor(color, Color.none);
+                    dc.setColor(Graphics.COLOR_BLACK, Color.none);
                     dc.drawRectangle(px, py, size, size);
                 }
             }
