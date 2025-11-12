@@ -144,6 +144,53 @@ module Stackup {
         }
     }
 
+    function hardFall() {
+        if (!active) { return; }
+
+        while (isValidPosition(posX, posY + 1, curMatrix)) {
+            posY += 1;
+        }
+
+        mergePiece();
+    }
+
+    function rotate() {
+        if (!active || curMatrix == null ) { return; }
+
+        var rows = curMatrix.size();
+        var cols = curMatrix[0].size();
+
+        var rotated = [];
+        var val = 0;
+        for (var c = 0; c < cols; c++) {
+            var newRow = [];
+            for (var r = rows - 1; r >= 0; r--) {
+                val = ((curMatrix as Array)[r] as Array)[c];
+                newRow.add(val);
+            }
+            rotated.add(newRow);
+        }
+
+        // Check location
+        if (isValidPosition(posX, posY, rotated)) {
+            curMatrix = rotated;
+            return;
+        }
+
+        // Try wall kick
+        var shifts = [-1, 1, -2, 2];
+        for (var i = 0; i < shifts.size(); i++) {
+            var dx = shifts[i];
+            if (isValidPosition(posX + dx, posY, rotated)) {
+                posX += dx;
+                curMatrix = rotated;
+                return;
+            }
+        }
+
+        // If not valid, then do nothing
+    }
+
     // --- Helpers ---
     function isValidPosition(x as Number, y as Number, matrix as Array) as Boolean {
         for (var r = 0; r < matrix.size(); r++) {
@@ -178,7 +225,7 @@ module Stackup {
                     var gy = posY + r;
                     if (gy >= 0 && gy < rowsN) {
                         var gridR = (grid as Array)[gy] as Array;
-                        gridR[gx] = 1;
+                        gridR[gx] = curPiece;
                     }
                 }
             }

@@ -8,28 +8,24 @@ class StackupDelegate extends WatchUi.InputDelegate {
         InputDelegate.initialize();
     }
 
+    function onTap(clickEvent as WatchUi.ClickEvent) {
+        if (!Stackup.active){ return true; }
+         System.println("tapped THAT BIH");
+
+        Stackup.rotate();
+
+        WatchUi.requestUpdate();
+        return true;
+    }
+
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
-        if (!Stackup.active){
-            return true;
-        }
+        if (!Stackup.active){ return true; }
         
         var direction = swipeEvent.getDirection();
 
-        // if (direction == SWIPE_RIGHT && !(current != null && current.equals("left"))) { 
-        //     Snake.setNextDirection("right");
-        //     /* Right swipe by watch default is to go back
-        //     if the swipe starts all the way on the left it will default to back
-        //     if the swipe is from the center of the watch to the right, then the action occurs */
-        // }
-        // else if (direction == SWIPE_UP && !(current != null && current.equals("down"))) { 
-        //     Snake.setNextDirection("up");
-        // } 
-        // else if (direction == SWIPE_DOWN && !(current != null && current.equals("up"))) { 
-        //     Snake.setNextDirection("down");
-        // } 
-        // else if (direction == SWIPE_LEFT && !(current != null && current.equals("right"))) {
-        //     Snake.setNextDirection("left");
-        // }
+        if (direction == WatchUi.SWIPE_DOWN) {
+            Stackup.hardFall();
+        }
         
         WatchUi.requestUpdate();
         return true;

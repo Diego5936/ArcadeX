@@ -74,12 +74,21 @@ class StackupView extends WatchUi.View {
         var y = startY;   
         for (var r = 0; r < rowsN; r++) {
             for (var c = 0; c < colsN; c++) {
-                // Draw Tile
-                dc.setColor(Graphics.COLOR_BLACK, Color.none);
+                var curTile = ((Stackup.grid as Array)[r] as Array)[c];
+                var tileColor = Graphics.COLOR_BLACK;
+
+                // Get color
+                if (Stackup.SHAPES.hasKey(curTile)) {
+                    var colorMap = Color.STACKS as Dictionary;
+                    tileColor = colorMap[curTile];
+                }
+
+                // Draw tile
+                dc.setColor(tileColor, Color.none);
                 dc.fillRectangle(x, y, tileSize, tileSize);
                 dc.setColor(Graphics.COLOR_LT_GRAY, Color.none);
                 dc.drawRectangle(x, y, tileSize, tileSize);
-
+                
                 x += tileSize;
             }
             x = startX;
@@ -110,7 +119,15 @@ class StackupView extends WatchUi.View {
     // If useGrid == true: x,y are grid coords, so convert to pixels
     // If useGrid == false: x,y are pixel coords, use as is
     function drawPiece(dc as Dc, pieceId as String, x, y, size, useGrid as Boolean) {
-        var matrix = (Stackup.SHAPES as Dictionary)[pieceId] as Array;
+        var matrix;
+
+        // Get piece
+        if (useGrid && pieceId == Stackup.curPiece) {
+            matrix = Stackup.curMatrix;
+        }
+        else {
+            matrix = (Stackup.SHAPES as Dictionary)[pieceId] as Array;
+        }
 
         // Get piece color
         var colorMap = Color.STACKS as Dictionary;
