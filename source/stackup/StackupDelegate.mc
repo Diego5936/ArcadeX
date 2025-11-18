@@ -32,6 +32,9 @@ class StackupDelegate extends WatchUi.InputDelegate {
         else if(direction == WatchUi.SWIPE_LEFT) {
             Stackup.moveHorizontally("left");
         }
+        else if(direction == WatchUi.SWIPE_UP) {
+            Stackup.savePiece();
+        }
         
         WatchUi.requestUpdate();
         return true;

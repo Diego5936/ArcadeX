@@ -3,14 +3,28 @@ import Toybox.Lang;
 import Toybox.Math;
 
 module Stackup {
+    // Game state
     var active; 
     var score;
 
+    // Grid data
     var grid as Array or Null; // All static blocks
     var rowsN = 20;
     var colsN = 10;
     var originX = 0;
     var originY = 0;
+
+    // Pieces
+    var bag as Array = [];
+    var curPiece;
+    var nextPiece;
+    var savedPiece;
+    var savedUsed = false;
+
+    // Piece shape + position
+    var curMatrix as Array or Null; 
+    var posX;
+    var posY;
 
     function initialize() {
         active = true;
@@ -30,6 +44,7 @@ module Stackup {
         refillBag();
         curPiece = getNextPiece();
         nextPiece = getNextPiece();
+        savedPiece = null;
 
         spawnPiece();
     }
@@ -146,15 +161,6 @@ module Stackup {
     }
 
     // ---------- Piece Logic ----------
-    var bag as Array = [];
-    var curPiece;
-    var nextPiece;
-
-    // Piece shape + position
-    var curMatrix as Array or Null; 
-    var posX;
-    var posY;
-
     // Instead of random selection, we use a shuffled bag method for fairness
     function refillBag() {
         bag = ["I", "O", "T", "S", "Z", "J", "L"];
@@ -193,6 +199,24 @@ module Stackup {
         }
     }
 
+    function savePiece() {
+        if (savedUsed == true) { return; }
+
+        savedUsed = true;
+        if (savedPiece == null) {
+            savedPiece = curPiece;
+            curPiece = nextPiece;
+            nextPiece = getNextPiece();
+            spawnPiece();
+        }
+        else {
+            var temp = curPiece;
+            curPiece = savedPiece;
+            savedPiece = temp;
+            spawnPiece();
+        }
+    }
+
     // ---------- Movement logic ----------
     function fall() {
         // Try moving down
@@ -210,7 +234,7 @@ module Stackup {
         }
         land();
     }
-    
+
     function rotate() {
         if ( curMatrix == null ) { return; }
 
@@ -301,5 +325,7 @@ module Stackup {
         curPiece = nextPiece;
         nextPiece = getNextPiece();
         spawnPiece();
+
+        savedUsed = false;
     }
 }

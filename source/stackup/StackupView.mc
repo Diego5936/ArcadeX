@@ -45,7 +45,8 @@ class StackupView extends WatchUi.View {
         dc.clear();
 
         drawGrid(dc);
-        drawPreview(dc);
+        drawPieceGrid(dc, 315, "NEXT", Stackup.nextPiece);
+        drawPieceGrid(dc, 20, "SAVED", Stackup.savedPiece);
 
         drawPiece(dc, Stackup.curPiece, Stackup.posX, Stackup.posY, tileSize, true);
     }
@@ -96,14 +97,13 @@ class StackupView extends WatchUi.View {
         }
     }
 
-    function drawPreview(dc as Dc) {       
+    function drawPieceGrid(dc as Dc, x, title, piece){
         var rectSize = 75;
-        var x = 315;
         var y = Layout.centerY(dc) - (rectSize / 2);
         
         // Draw Title
         dc.setColor(Graphics.COLOR_WHITE, Color.none);
-        dc.drawText(x, y - 40, Graphics.FONT_XTINY, "NEXT", Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x, y - 40, Graphics.FONT_XTINY, title, Graphics.TEXT_JUSTIFY_LEFT);
 
         // Draw container
         dc.setColor(Graphics.COLOR_DK_GRAY, Color.none);
@@ -112,8 +112,24 @@ class StackupView extends WatchUi.View {
         dc.drawRectangle(x, y, rectSize, rectSize);
 
         // Draw Piece
+        if (piece == null) { return; }
+
+        var matrix = (Stackup.SHAPES as Dictionary)[piece] as Array;
+
+        var rows = matrix.size();
+        var cols = matrix[0].size();
         var pieceSize = 20;
-        drawPiece(dc, Stackup.nextPiece, x, y, pieceSize, false);
+
+        var pieceW = cols * pieceSize;
+        var pieceH = rows * pieceSize;
+
+        var centerX = x + (rectSize / 2);
+        var centerY = y + (rectSize / 2);
+
+        var startX = centerX - (pieceW / 2);
+        var startY = centerY - (pieceH / 2);
+        
+        drawPiece(dc, piece, startX, startY, pieceSize, false);
     }
 
     // If useGrid == true: x,y are grid coords, so convert to pixels
