@@ -69,7 +69,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc"; @line = 21; @symbol_functiondef = [onSwipe,21,13,20]; @symbol_param<0> = [swipeEvent,21,21,31]; @symbol_param<0>_type<0> = [WatchUi,21,35,42]; @symbol_param<0>_type<1> = [SwipeEvent,21,43,53]; ]
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_32_4_start:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_38_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 22 8 ]
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_22_8_22_43_if_stmt:
         symbol [ Stackup %tmp.1 22 13 20 ];
@@ -87,7 +87,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_22_8_22_43_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_22_8_22_43_if_end:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 24 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_32_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_32_4_stop" ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_38_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_38_4_stop" ]
         %direction.1 = local;
         symbol [ direction %direction.1 24 12 21 ];
         %tmp.5 = lgetv %swipeEvent;
@@ -98,7 +98,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
         lputv %direction.1 %tmp.7;
         symbol [ direction %direction.1 24 12 21 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 26 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_28_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_34_8_if_stmt:
         %tmp.8 = lgetv %direction.1;
         symbol [ direction %tmp.8 26 12 21 ];
         symbol [ WatchUi %tmp.9 26 25 32 ];
@@ -106,8 +106,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
         symbol [ SWIPE_DOWN %tmp.10 26 33 43 ];
         %tmp.10 = getv %tmp.9 :SWIPE_DOWN;
         %tmp.11 = eq %tmp.8 %tmp.10;
-        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_28_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_28_8_if_true:
+        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_34_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_34_8_if_true:
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_45_28_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 27 12 ]
         symbol [ Stackup %tmp.12 27 12 19 ];
@@ -116,36 +116,82 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
         %tmp.13 = getv function %tmp.12 :hardFall;
         invoke %tmp.12 %tmp.13();
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_45_28_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_28_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_28_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 30 8 ]
-        symbol [ WatchUi %tmp.14 30 8 15 ];
-        %tmp.14 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.15 30 16 29 ];
-        %tmp.15 = getv function %tmp.14 :requestUpdate;
-        invoke %tmp.14 %tmp.15();
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 31 8 ]
-        %tmp.16 = true;
-        ret %tmp.16;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_32_4_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_34_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_34_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 29 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_13_34_8_if_stmt:
+        %tmp.14 = lgetv %direction.1;
+        symbol [ direction %tmp.14 29 16 25 ];
+        symbol [ WatchUi %tmp.15 29 29 36 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_RIGHT %tmp.16 29 37 48 ];
+        %tmp.16 = getv %tmp.15 :SWIPE_RIGHT;
+        %tmp.17 = eq %tmp.14 %tmp.16;
+        bf %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_13_34_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_13_34_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_50_31_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 30 12 ]
+        symbol [ Stackup %tmp.18 30 12 19 ];
+        %tmp.18 = getm $.Stackup;
+        symbol [ moveHorizontally %tmp.19 30 20 36 ];
+        %tmp.19 = getv function %tmp.18 :moveHorizontally;
+        %tmp.20 = "right";
+        invoke %tmp.18 %tmp.19(%tmp.20);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_50_31_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_13_34_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_13_34_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 32 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_13_34_8_if_stmt:
+        %tmp.21 = lgetv %direction.1;
+        symbol [ direction %tmp.21 32 16 25 ];
+        symbol [ WatchUi %tmp.22 32 29 36 ];
+        %tmp.22 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_LEFT %tmp.23 32 37 47 ];
+        %tmp.23 = getv %tmp.22 :SWIPE_LEFT;
+        %tmp.24 = eq %tmp.21 %tmp.23;
+        bf %tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_13_34_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_13_34_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_49_34_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 33 12 ]
+        symbol [ Stackup %tmp.25 33 12 19 ];
+        %tmp.25 = getm $.Stackup;
+        symbol [ moveHorizontally %tmp.26 33 20 36 ];
+        %tmp.26 = getv function %tmp.25 :moveHorizontally;
+        %tmp.27 = "left";
+        invoke %tmp.25 %tmp.26(%tmp.27);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_49_34_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_13_34_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_32_13_34_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_29_13_34_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_26_8_34_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 36 8 ]
+        symbol [ WatchUi %tmp.28 36 8 15 ];
+        %tmp.28 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.29 36 16 29 ];
+        %tmp.29 = getv function %tmp.28 :requestUpdate;
+        invoke %tmp.28 %tmp.29();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 37 8 ]
+        %tmp.30 = true;
+        ret %tmp.30;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_21_55_38_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc"; @line = 34; @symbol_functiondef = [onBack,34,13,19]; @symbol_return<0> = [Boolean,34,25,32]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc"; @line = 40; @symbol_functiondef = [onBack,40,13,19]; @symbol_return<0> = [Boolean,40,25,32]; ]
     function onBack() as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_34_33_37_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 35 8 ]
-        symbol [ WatchUi %tmp.1 35 8 15 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_40_33_43_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 41 8 ]
+        symbol [ WatchUi %tmp.1 41 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.2 35 16 23 ];
+        symbol [ popView %tmp.2 41 16 23 ];
         %tmp.2 = getv function %tmp.1 :popView;
-        symbol [ WatchUi %tmp.3 35 24 31 ];
+        symbol [ WatchUi %tmp.3 41 24 31 ];
         %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.4 35 32 47 ];
+        symbol [ SLIDE_IMMEDIATE %tmp.4 41 32 47 ];
         %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 36 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc" 42 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_34_33_37_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_StackupDelegate_mc_40_33_43_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\StackupDelegate.mc"; @line = 1; ]

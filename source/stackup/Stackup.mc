@@ -78,9 +78,74 @@ module Stackup {
         ]
     };
 
-    // --- Game logic ---
+    // ---------- Game logic ----------
+    function land() {
+        mergePiece();
+        removeRows(checkCompleteRow());
+    }
 
-    // --- Piece Logic ---
+    function checkCompleteRow() as Array {
+        var fullRows = [];
+
+        for (var r = 0; r < rowsN; r++) {
+            var isFull = true;
+            var row = (grid as Array)[r] as Array;
+
+            for (var c = 0; c < colsN; c++) {
+                if (row[c] == 0) {
+                    isFull = false;
+                    break;
+                }
+            }
+
+            if (isFull) {
+                fullRows.add(r);
+            }
+        }
+
+        return fullRows;
+    }
+
+    function removeRows(rowsToRemove as Array) {
+        if (rowsToRemove.size() == 0) { return; }
+
+        // Dic for fast checking
+        var removeMap = {};
+        for (var i = 0; i < rowsToRemove.size(); i++) {
+            removeMap[rowsToRemove[i]] = true;
+        }
+
+        var newGrid = [];
+
+        // Add all non-removed rows top-down
+        for (var r = 0; r < rowsN; r++) {
+            if (!removeMap.hasKey(r)) {
+                newGrid.add((grid as Array)[r]);
+            }
+        }
+
+        // Add empty rows at the top
+        var cleared = rowsToRemove.size();
+        for (var i = 0; i < cleared; i++) {
+            var emptyRow = [];
+            for (var c = 0; c < colsN; c++) {
+                emptyRow.add(0);
+            }
+
+            var temp = [emptyRow];
+            for (var k = 0; k < newGrid.size(); k++) {
+                temp.add(newGrid[k]);
+            }
+
+            newGrid = temp;
+        }
+
+        
+        grid = newGrid;
+        score += cleared * 100;
+    }
+
+    // ---------- Piece Logic ----------
     var bag as Array = [];
     var curPiece;
     var nextPiece;
@@ -128,34 +193,26 @@ module Stackup {
         }
     }
 
-    // --- Movement logic ---
+    // ---------- Movement logic ----------
     function fall() {
-        if (!active) { return; }
-
         // Try moving down
         if (isValidPosition(posX, posY + 1, curMatrix)) {
             posY += 1;
         }
         else {
-            // Landed
-            mergePiece();
-
-            // Check for full lines***************************************************************************************
+            land();
         }
     }
 
     function hardFall() {
-        if (!active) { return; }
-
         while (isValidPosition(posX, posY + 1, curMatrix)) {
             posY += 1;
         }
-
-        mergePiece();
+        land();
     }
-
+    
     function rotate() {
-        if (!active || curMatrix == null ) { return; }
+        if ( curMatrix == null ) { return; }
 
         var rows = curMatrix.size();
         var cols = curMatrix[0].size();
@@ -191,7 +248,16 @@ module Stackup {
         // If not valid, then do nothing
     }
 
-    // --- Helpers ---
+    function moveHorizontally(direction as String) {
+        var dx = direction.equals("right") ? 1 : -1;
+        var newX = posX + dx;
+
+        if (isValidPosition(newX, posY, curMatrix)) {
+            posX = newX;
+        }
+    }
+
+    // ---------- Helpers ----------
     function isValidPosition(x as Number, y as Number, matrix as Array) as Boolean {
         for (var r = 0; r < matrix.size(); r++) {
             var row = matrix[r] as Array;

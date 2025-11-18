@@ -297,7 +297,7 @@ module Stackup {
         %tmp.286 = dup %tmp.247;
         %tmp.287 = aputv %tmp.286 %tmp.248 %tmp.285;
         putv self :SHAPES %tmp.287;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 84 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 149 8 ]
         %tmp.288 = newa 0;
         putv self :bag %tmp.288;
     }
@@ -436,22 +436,462 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 37; @position = 10; @symbol_constdef = [SHAPES,37,10,16]; ]
     const SHAPES;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 84; @position = 8; @symbol_vardef = [bag,84,8,11]; @symbol_type<0> = [Array,84,15,20]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 82; @symbol_functiondef = [land,82,13,17]; ]
+    function land() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_82_20_85_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 83 8 ]
+        %tmp.1 = self;
+        symbol [ mergePiece %tmp.2 83 8 18 ];
+        %tmp.2 = getv function %tmp.1 :mergePiece;
+        invoke %tmp.1 %tmp.2();
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 84 8 ]
+        %tmp.3 = self;
+        symbol [ removeRows %tmp.4 84 8 18 ];
+        %tmp.4 = getv function %tmp.3 :removeRows;
+        %tmp.5 = self;
+        symbol [ checkCompleteRow %tmp.6 84 19 35 ];
+        %tmp.6 = getv function %tmp.5 :checkCompleteRow;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        invoke %tmp.3 %tmp.4(%tmp.7);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_82_20_85_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 87; @symbol_functiondef = [checkCompleteRow,87,13,29]; @symbol_return<0> = [Array,87,35,40]; ]
+    function checkCompleteRow() as Array {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_87_41_107_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 88 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_87_41_107_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_87_41_107_4_stop" ]
+        %fullRows.1 = local;
+        symbol [ fullRows %fullRows.1 88 12 20 ];
+        %tmp.1 = newa 0;
+        lputv %fullRows.1 %tmp.1;
+        symbol [ fullRows %fullRows.1 88 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 90 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_end" ]
+        %r.2 = local;
+        symbol [ r %r.2 90 17 18 ];
+        %tmp.2 = 0;
+        lputv %r.2 %tmp.2;
+        symbol [ r %r.2 90 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_test:
+        %tmp.3 = lgetv %r.2;
+        symbol [ r %tmp.3 90 24 25 ];
+        symbol [ rowsN %tmp.5 90 28 33 ];
+        %tmp.5 = getv ? :rowsN;
+        %tmp.6 = lt %tmp.3 %tmp.5;
+        bf %tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_40_104_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 91 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_40_104_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_40_104_8_stop" ]
+        %isFull.3 = local;
+        symbol [ isFull %isFull.3 91 16 22 ];
+        %tmp.7 = true;
+        lputv %isFull.3 %tmp.7;
+        symbol [ isFull %isFull.3 91 16 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 92 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_40_104_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_40_104_8_stop" ]
+        %row.4 = local;
+        symbol [ row %row.4 92 16 19 ];
+        symbol [ grid %tmp.9 92 23 27 ];
+        %tmp.9 = getv ? :grid;
+        %tmp.10 = as %tmp.9 Array;
+        symbol [ Array %tmp.10 92 31 36 ];
+        %tmp.11 = lgetv %r.2;
+        symbol [ r %tmp.11 92 38 39 ];
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        %tmp.13 = as %tmp.12 Array;
+        symbol [ Array %tmp.13 92 44 49 ];
+        lputv %row.4 %tmp.13;
+        symbol [ row %row.4 92 16 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 94 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_end" ]
+        %c.5 = local;
+        symbol [ c %c.5 94 21 22 ];
+        %tmp.14 = 0;
+        lputv %c.5 %tmp.14;
+        symbol [ c %c.5 94 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_test:
+        %tmp.15 = lgetv %c.5;
+        symbol [ c %tmp.15 94 28 29 ];
+        symbol [ colsN %tmp.17 94 32 37 ];
+        %tmp.17 = getv ? :colsN;
+        %tmp.18 = lt %tmp.15 %tmp.17;
+        bf %tmp.18 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_44_99_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 95 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_16_98_16_if_stmt:
+        %tmp.19 = lgetv %row.4;
+        symbol [ row %tmp.19 95 20 23 ];
+        %tmp.20 = lgetv %c.5;
+        symbol [ c %tmp.20 95 24 25 ];
+        %tmp.21 = agetv %tmp.19 %tmp.20;
+        %tmp.22 = 0;
+        %tmp.23 = eq %tmp.21 %tmp.22;
+        bf %tmp.23 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_16_98_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_16_98_16_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_33_98_16_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 96 20 ]
+        %tmp.24 = false;
+        lputv %isFull.3 %tmp.24;
+        symbol [ isFull %isFull.3 96 20 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 97 20 ]
+        goto break @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_33_98_16_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_16_98_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_95_16_98_16_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_44_99_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 94 ]
+        %tmp.27 = lgetv %c.5;
+        symbol [ c %tmp.27 94 39 40 ];
+        %tmp.28 = add %tmp.27 1;
+        lputv %c.5 %tmp.28;
+        symbol [ c %c.5 94 39 40 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_12_99_12_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 101 12 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_12_103_12_if_stmt:
+        %tmp.29 = lgetv %isFull.3;
+        symbol [ isFull %tmp.29 101 16 22 ];
+        bf %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_12_103_12_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_12_103_12_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_24_103_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 102 16 ]
+        %tmp.30 = lgetv %fullRows.1;
+        symbol [ fullRows %tmp.30 102 16 24 ];
+        symbol [ add %tmp.31 102 25 28 ];
+        %tmp.31 = getv function %tmp.30 :add;
+        %tmp.32 = lgetv %r.2;
+        symbol [ r %tmp.32 102 29 30 ];
+        invoke %tmp.30 %tmp.31(%tmp.32);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_24_103_12_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_12_103_12_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_101_12_103_12_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_40_104_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 90 ]
+        %tmp.35 = lgetv %r.2;
+        symbol [ r %tmp.35 90 35 36 ];
+        %tmp.36 = add %tmp.35 1;
+        lputv %r.2 %tmp.36;
+        symbol [ r %r.2 90 35 36 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_90_8_104_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 106 8 ]
+        %tmp.37 = lgetv %fullRows.1;
+        symbol [ fullRows %tmp.37 106 15 23 ];
+        ret %tmp.37;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_87_41_107_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 109; @symbol_functiondef = [removeRows,109,13,23]; @symbol_param<0> = [rowsToRemove,109,24,36]; @symbol_param<0>_type<0> = [Array,109,40,45]; ]
+    function removeRows(rowsToRemove as Array) {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 110 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_8_110_48_if_stmt:
+        %tmp.1 = lgetv %rowsToRemove;
+        symbol [ rowsToRemove %tmp.1 110 12 24 ];
+        symbol [ size %tmp.2 110 25 29 ];
+        %tmp.2 = getv function %tmp.1 :size;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bf %tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_8_110_48_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_8_110_48_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_38_110_48_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 110 40 ]
+        ret ?;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_38_110_48_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_8_110_48_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_110_8_110_48_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 113 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_stop" ]
+        %removeMap.1 = local;
+        symbol [ removeMap %removeMap.1 113 12 21 ];
+        %tmp.6 = newd 0;
+        lputv %removeMap.1 %tmp.6;
+        symbol [ removeMap %removeMap.1 113 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 114 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 114 17 18 ];
+        %tmp.7 = 0;
+        lputv %i.2 %tmp.7;
+        symbol [ i %i.2 114 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_test:
+        %tmp.8 = lgetv %i.2;
+        symbol [ i %tmp.8 114 24 25 ];
+        %tmp.9 = lgetv %rowsToRemove;
+        symbol [ rowsToRemove %tmp.9 114 28 40 ];
+        symbol [ size %tmp.10 114 41 45 ];
+        %tmp.10 = getv function %tmp.9 :size;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = lt %tmp.8 %tmp.11;
+        bf %tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_54_116_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 115 12 ]
+        %tmp.13 = lgetv %removeMap.1;
+        symbol [ removeMap %tmp.13 115 12 21 ];
+        %tmp.14 = true;
+        %tmp.15 = lgetv %rowsToRemove;
+        symbol [ rowsToRemove %tmp.15 115 22 34 ];
+        %tmp.16 = lgetv %i.2;
+        symbol [ i %tmp.16 115 35 36 ];
+        %tmp.17 = agetv %tmp.15 %tmp.16;
+        aputv %tmp.13 %tmp.17 %tmp.14;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_54_116_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 114 ]
+        %tmp.20 = lgetv %i.2;
+        symbol [ i %tmp.20 114 49 50 ];
+        %tmp.21 = add %tmp.20 1;
+        lputv %i.2 %tmp.21;
+        symbol [ i %i.2 114 49 50 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_114_8_116_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 118 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_stop" ]
+        %newGrid.3 = local;
+        symbol [ newGrid %newGrid.3 118 12 19 ];
+        %tmp.22 = newa 0;
+        lputv %newGrid.3 %tmp.22;
+        symbol [ newGrid %newGrid.3 118 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 121 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_end" ]
+        %r.4 = local;
+        symbol [ r %r.4 121 17 18 ];
+        %tmp.23 = 0;
+        lputv %r.4 %tmp.23;
+        symbol [ r %r.4 121 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_test:
+        %tmp.24 = lgetv %r.4;
+        symbol [ r %tmp.24 121 24 25 ];
+        symbol [ rowsN %tmp.26 121 28 33 ];
+        %tmp.26 = getv ? :rowsN;
+        %tmp.27 = lt %tmp.24 %tmp.26;
+        bf %tmp.27 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_40_125_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 122 12 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_12_124_12_if_stmt:
+        %tmp.28 = lgetv %removeMap.1;
+        symbol [ removeMap %tmp.28 122 17 26 ];
+        symbol [ hasKey %tmp.29 122 27 33 ];
+        %tmp.29 = getv function %tmp.28 :hasKey;
+        %tmp.30 = lgetv %r.4;
+        symbol [ r %tmp.30 122 34 35 ];
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        %tmp.32 = not %tmp.31;
+        bf %tmp.32 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_12_124_12_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_12_124_12_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_38_124_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 123 16 ]
+        %tmp.33 = lgetv %newGrid.3;
+        symbol [ newGrid %tmp.33 123 16 23 ];
+        symbol [ add %tmp.34 123 24 27 ];
+        %tmp.34 = getv function %tmp.33 :add;
+        symbol [ grid %tmp.36 123 29 33 ];
+        %tmp.36 = getv ? :grid;
+        %tmp.37 = as %tmp.36 Array;
+        symbol [ Array %tmp.37 123 37 42 ];
+        %tmp.38 = lgetv %r.4;
+        symbol [ r %tmp.38 123 44 45 ];
+        %tmp.39 = agetv %tmp.37 %tmp.38;
+        invoke %tmp.33 %tmp.34(%tmp.39);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_38_124_12_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_12_124_12_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_122_12_124_12_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_40_125_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 121 ]
+        %tmp.42 = lgetv %r.4;
+        symbol [ r %tmp.42 121 35 36 ];
+        %tmp.43 = add %tmp.42 1;
+        lputv %r.4 %tmp.43;
+        symbol [ r %r.4 121 35 36 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_121_8_125_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 128 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_stop" ]
+        %cleared.5 = local;
+        symbol [ cleared %cleared.5 128 12 19 ];
+        %tmp.44 = lgetv %rowsToRemove;
+        symbol [ rowsToRemove %tmp.44 128 22 34 ];
+        symbol [ size %tmp.45 128 35 39 ];
+        %tmp.45 = getv function %tmp.44 :size;
+        %tmp.46 = invoke %tmp.44 %tmp.45();
+        lputv %cleared.5 %tmp.46;
+        symbol [ cleared %cleared.5 128 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 129 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_end" ]
+        %i.6 = local;
+        symbol [ i %i.6 129 17 18 ];
+        %tmp.47 = 0;
+        lputv %i.6 %tmp.47;
+        symbol [ i %i.6 129 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_test:
+        %tmp.48 = lgetv %i.6;
+        symbol [ i %tmp.48 129 24 25 ];
+        %tmp.49 = lgetv %cleared.5;
+        symbol [ cleared %tmp.49 129 28 35 ];
+        %tmp.50 = lt %tmp.48 %tmp.49;
+        bf %tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_42_141_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 130 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_42_141_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_42_141_8_stop" ]
+        %emptyRow.7 = local;
+        symbol [ emptyRow %emptyRow.7 130 16 24 ];
+        %tmp.51 = newa 0;
+        lputv %emptyRow.7 %tmp.51;
+        symbol [ emptyRow %emptyRow.7 130 16 24 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 131 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_end" ]
+        %c.8 = local;
+        symbol [ c %c.8 131 21 22 ];
+        %tmp.52 = 0;
+        lputv %c.8 %tmp.52;
+        symbol [ c %c.8 131 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_test:
+        %tmp.53 = lgetv %c.8;
+        symbol [ c %tmp.53 131 28 29 ];
+        symbol [ colsN %tmp.55 131 32 37 ];
+        %tmp.55 = getv ? :colsN;
+        %tmp.56 = lt %tmp.53 %tmp.55;
+        bf %tmp.56 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_44_133_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 132 16 ]
+        %tmp.57 = lgetv %emptyRow.7;
+        symbol [ emptyRow %tmp.57 132 16 24 ];
+        symbol [ add %tmp.58 132 25 28 ];
+        %tmp.58 = getv function %tmp.57 :add;
+        %tmp.59 = 0;
+        invoke %tmp.57 %tmp.58(%tmp.59);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_44_133_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 131 ]
+        %tmp.62 = lgetv %c.8;
+        symbol [ c %tmp.62 131 39 40 ];
+        %tmp.63 = add %tmp.62 1;
+        lputv %c.8 %tmp.63;
+        symbol [ c %c.8 131 39 40 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_131_12_133_12_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 135 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_42_141_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_42_141_8_stop" ]
+        %temp.9 = local;
+        symbol [ temp %temp.9 135 16 20 ];
+        %tmp.64 = newa 1;
+        %tmp.65 = lgetv %emptyRow.7;
+        symbol [ emptyRow %tmp.65 135 24 32 ];
+        %tmp.66 = dup %tmp.64;
+        %tmp.67 = aputv %tmp.66 0 %tmp.65;
+        lputv %temp.9 %tmp.67;
+        symbol [ temp %temp.9 135 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 136 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_end" ]
+        %k.10 = local;
+        symbol [ k %k.10 136 21 22 ];
+        %tmp.68 = 0;
+        lputv %k.10 %tmp.68;
+        symbol [ k %k.10 136 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_test:
+        %tmp.69 = lgetv %k.10;
+        symbol [ k %tmp.69 136 28 29 ];
+        %tmp.70 = lgetv %newGrid.3;
+        symbol [ newGrid %tmp.70 136 32 39 ];
+        symbol [ size %tmp.71 136 40 44 ];
+        %tmp.71 = getv function %tmp.70 :size;
+        %tmp.72 = invoke %tmp.70 %tmp.71();
+        %tmp.73 = lt %tmp.69 %tmp.72;
+        bf %tmp.73 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_53_138_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 137 16 ]
+        %tmp.74 = lgetv %temp.9;
+        symbol [ temp %tmp.74 137 16 20 ];
+        symbol [ add %tmp.75 137 21 24 ];
+        %tmp.75 = getv function %tmp.74 :add;
+        %tmp.76 = lgetv %newGrid.3;
+        symbol [ newGrid %tmp.76 137 25 32 ];
+        %tmp.77 = lgetv %k.10;
+        symbol [ k %tmp.77 137 33 34 ];
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        invoke %tmp.74 %tmp.75(%tmp.78);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_53_138_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 136 ]
+        %tmp.81 = lgetv %k.10;
+        symbol [ k %tmp.81 136 48 49 ];
+        %tmp.82 = add %tmp.81 1;
+        lputv %k.10 %tmp.82;
+        symbol [ k %k.10 136 48 49 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_12_138_12_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 140 12 ]
+        %tmp.83 = lgetv %temp.9;
+        symbol [ temp %tmp.83 140 22 26 ];
+        lputv %newGrid.3 %tmp.83;
+        symbol [ newGrid %newGrid.3 140 12 19 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_42_141_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 129 ]
+        %tmp.86 = lgetv %i.6;
+        symbol [ i %tmp.86 129 37 38 ];
+        %tmp.87 = add %tmp.86 1;
+        lputv %i.6 %tmp.87;
+        symbol [ i %i.6 129 37 38 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_129_8_141_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 144 8 ]
+        %tmp.88 = lgetv %newGrid.3;
+        symbol [ newGrid %tmp.88 144 15 22 ];
+        symbol [ grid ? 144 8 12 ];
+        putv self :grid %tmp.88;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 145 8 ]
+        symbol [ score %tmp.89 145 8 13 ];
+        %tmp.89 = getv self :score;
+        %tmp.90 = lgetv %cleared.5;
+        symbol [ cleared %tmp.90 145 17 24 ];
+        %tmp.91 = 100;
+        %tmp.92 = mul %tmp.90 %tmp.91;
+        %tmp.93 = add %tmp.89 %tmp.92;
+        symbol [ score ? 145 8 13 ];
+        putv self :score dup %tmp.93;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_109_47_146_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 149; @position = 8; @symbol_vardef = [bag,149,8,11]; @symbol_type<0> = [Array,149,15,20]; ]
     var bag as Array;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 85; @position = 8; @symbol_vardef = [curPiece,85,8,16]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 150; @position = 8; @symbol_vardef = [curPiece,150,8,16]; ]
     var curPiece;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 86; @position = 8; @symbol_vardef = [nextPiece,86,8,17]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 151; @position = 8; @symbol_vardef = [nextPiece,151,8,17]; ]
     var nextPiece;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 89; @position = 8; @symbol_vardef = [curMatrix,89,8,17]; @symbol_type<0> = [Array,89,21,26]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 154; @position = 8; @symbol_vardef = [curMatrix,154,8,17]; @symbol_type<0> = [Array,154,21,26]; ]
     var curMatrix as Array or Null;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 90; @position = 8; @symbol_vardef = [posX,90,8,12]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 155; @position = 8; @symbol_vardef = [posX,155,8,12]; ]
     var posX;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 91; @position = 8; @symbol_vardef = [posY,91,8,12]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 156; @position = 8; @symbol_vardef = [posY,156,8,12]; ]
     var posY;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 94; @symbol_functiondef = [refillBag,94,13,22]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 159; @symbol_functiondef = [refillBag,159,13,22]; ]
     function refillBag() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_25_104_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 95 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_159_25_169_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 160 8 ]
         %tmp.1 = newa 7;
         %tmp.2 = "I";
         %tmp.3 = dup %tmp.1;
@@ -474,999 +914,1026 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup
         %tmp.20 = "L";
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 6 %tmp.20;
-        symbol [ bag ? 95 8 11 ];
+        symbol [ bag ? 160 8 11 ];
         putv self :bag %tmp.22;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 98 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_end" ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 163 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_end" ]
         %i.1 = local;
-        symbol [ i %i.1 98 17 18 ];
-        symbol [ bag %tmp.24 98 21 24 ];
+        symbol [ i %i.1 163 17 18 ];
+        symbol [ bag %tmp.24 163 21 24 ];
         %tmp.24 = getv ? :bag;
-        symbol [ size %tmp.25 98 25 29 ];
+        symbol [ size %tmp.25 163 25 29 ];
         %tmp.25 = getv function %tmp.24 :size;
         %tmp.26 = invoke %tmp.24 %tmp.25();
         %tmp.27 = 1;
         %tmp.28 = sub %tmp.26 %tmp.27;
         lputv %i.1 %tmp.28;
-        symbol [ i %i.1 98 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_test:
+        symbol [ i %i.1 163 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_test:
         %tmp.29 = lgetv %i.1;
-        symbol [ i %tmp.29 98 37 38 ];
+        symbol [ i %tmp.29 163 37 38 ];
         %tmp.30 = 0;
         %tmp.31 = gt %tmp.29 %tmp.30;
-        bf %tmp.31 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_49_103_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 99 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_49_103_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_49_103_8_stop" ]
+        bf %tmp.31 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_49_168_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 164 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_49_168_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_49_168_8_stop" ]
         %j.2 = local;
-        symbol [ j %j.2 99 16 17 ];
-        symbol [ Math %tmp.32 99 20 24 ];
+        symbol [ j %j.2 164 16 17 ];
+        symbol [ Math %tmp.32 164 20 24 ];
         %tmp.32 = getm $.Toybox.Math;
-        symbol [ rand %tmp.33 99 25 29 ];
+        symbol [ rand %tmp.33 164 25 29 ];
         %tmp.33 = getv function %tmp.32 :rand;
         %tmp.34 = invoke %tmp.32 %tmp.33();
         %tmp.35 = lgetv %i.1;
-        symbol [ i %tmp.35 99 35 36 ];
+        symbol [ i %tmp.35 164 35 36 ];
         %tmp.36 = 1;
         %tmp.37 = add %tmp.35 %tmp.36;
         %tmp.38 = mod %tmp.34 %tmp.37;
         lputv %j.2 %tmp.38;
-        symbol [ j %j.2 99 16 17 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 100 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_49_103_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_49_103_8_stop" ]
+        symbol [ j %j.2 164 16 17 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 165 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_49_168_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_49_168_8_stop" ]
         %temp.3 = local;
-        symbol [ temp %temp.3 100 16 20 ];
-        symbol [ bag %tmp.40 100 24 27 ];
+        symbol [ temp %temp.3 165 16 20 ];
+        symbol [ bag %tmp.40 165 24 27 ];
         %tmp.40 = getv ? :bag;
         %tmp.41 = as %tmp.40 Array;
-        symbol [ Array %tmp.41 100 31 36 ];
+        symbol [ Array %tmp.41 165 31 36 ];
         %tmp.42 = lgetv %i.1;
-        symbol [ i %tmp.42 100 38 39 ];
+        symbol [ i %tmp.42 165 38 39 ];
         %tmp.43 = agetv %tmp.41 %tmp.42;
         lputv %temp.3 %tmp.43;
-        symbol [ temp %temp.3 100 16 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 101 12 ]
-        symbol [ bag %tmp.44 101 13 16 ];
+        symbol [ temp %temp.3 165 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 166 12 ]
+        symbol [ bag %tmp.44 166 13 16 ];
         %tmp.44 = getv self :bag;
         %tmp.45 = as %tmp.44 Array;
-        symbol [ Array %tmp.45 101 20 25 ];
-        symbol [ bag %tmp.47 101 33 36 ];
+        symbol [ Array %tmp.45 166 20 25 ];
+        symbol [ bag %tmp.47 166 33 36 ];
         %tmp.47 = getv ? :bag;
         %tmp.48 = as %tmp.47 Array;
-        symbol [ Array %tmp.48 101 40 45 ];
+        symbol [ Array %tmp.48 166 40 45 ];
         %tmp.49 = lgetv %j.2;
-        symbol [ j %tmp.49 101 47 48 ];
+        symbol [ j %tmp.49 166 47 48 ];
         %tmp.50 = agetv %tmp.48 %tmp.49;
         %tmp.51 = lgetv %i.1;
-        symbol [ i %tmp.51 101 27 28 ];
+        symbol [ i %tmp.51 166 27 28 ];
         aputv %tmp.45 %tmp.51 %tmp.50;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 102 12 ]
-        symbol [ bag %tmp.52 102 13 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 167 12 ]
+        symbol [ bag %tmp.52 167 13 16 ];
         %tmp.52 = getv self :bag;
         %tmp.53 = as %tmp.52 Array;
-        symbol [ Array %tmp.53 102 20 25 ];
+        symbol [ Array %tmp.53 167 20 25 ];
         %tmp.54 = lgetv %temp.3;
-        symbol [ temp %tmp.54 102 32 36 ];
+        symbol [ temp %tmp.54 167 32 36 ];
         %tmp.55 = lgetv %j.2;
-        symbol [ j %tmp.55 102 27 28 ];
+        symbol [ j %tmp.55 167 27 28 ];
         aputv %tmp.53 %tmp.55 %tmp.54;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_49_103_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 98 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_49_168_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 163 ]
         %tmp.58 = lgetv %i.1;
-        symbol [ i %tmp.58 98 44 45 ];
+        symbol [ i %tmp.58 163 44 45 ];
         %tmp.59 = sub %tmp.58 1;
         lputv %i.1 %tmp.59;
-        symbol [ i %i.1 98 44 45 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_98_8_103_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_94_25_104_4_stop:
+        symbol [ i %i.1 163 44 45 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_163_8_168_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_159_25_169_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 107; @symbol_functiondef = [getNextPiece,107,13,25]; @symbol_return<0> = [String,107,31,37]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 172; @symbol_functiondef = [getNextPiece,172,13,25]; @symbol_return<0> = [String,172,31,37]; ]
     function getNextPiece() as String {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_107_37_115_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 108 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_8_110_8_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_12_108_41_begin:
-        symbol [ bag %tmp.2 108 12 15 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_172_37_180_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 173 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_8_175_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_12_173_41_begin:
+        symbol [ bag %tmp.2 173 12 15 ];
         %tmp.2 = getv ? :bag;
         %tmp.3 = null;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bt %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_8_110_8_if_true;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_27_108_41_false:
-        symbol [ bag %tmp.6 108 27 30 ];
+        bt %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_8_175_8_if_true;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_27_173_41_false:
+        symbol [ bag %tmp.6 173 27 30 ];
         %tmp.6 = getv ? :bag;
         %tmp.7 = as %tmp.6 { (!Null) };
-        symbol [ size %tmp.8 108 31 35 ];
+        symbol [ size %tmp.8 173 31 35 ];
         %tmp.8 = getv function %tmp.7 :size;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = 0;
         %tmp.11 = eq %tmp.9 %tmp.10;
         push %tmp.11;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_27_108_41_end:
-        %tmp.12 = phi [%tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_12_108_41_begin] [%tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_27_108_41_false] [%tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_27_108_41_end];
-        bf %tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_8_110_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_8_110_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_44_110_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 109 12 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_27_173_41_end:
+        %tmp.12 = phi [%tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_12_173_41_begin] [%tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_27_173_41_false] [%tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_27_173_41_end];
+        bf %tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_8_175_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_8_175_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_44_175_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 174 12 ]
         %tmp.13 = self;
-        symbol [ refillBag %tmp.14 109 12 21 ];
+        symbol [ refillBag %tmp.14 174 12 21 ];
         %tmp.14 = getv function %tmp.13 :refillBag;
         invoke %tmp.13 %tmp.14();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_44_110_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_8_110_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_108_8_110_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 112 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_107_37_115_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_107_37_115_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_44_175_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_8_175_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_173_8_175_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 177 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_172_37_180_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_172_37_180_4_stop" ]
         %nextKey.1 = local;
-        symbol [ nextKey %nextKey.1 112 12 19 ];
-        symbol [ bag %tmp.16 112 23 26 ];
+        symbol [ nextKey %nextKey.1 177 12 19 ];
+        symbol [ bag %tmp.16 177 23 26 ];
         %tmp.16 = getv ? :bag;
         %tmp.17 = as %tmp.16 Array;
-        symbol [ Array %tmp.17 112 30 35 ];
+        symbol [ Array %tmp.17 177 30 35 ];
         %tmp.18 = 0;
         %tmp.19 = agetv %tmp.17 %tmp.18;
         %tmp.20 = as %tmp.19 String;
-        symbol [ String %tmp.20 112 43 49 ];
+        symbol [ String %tmp.20 177 43 49 ];
         lputv %nextKey.1 %tmp.20;
-        symbol [ nextKey %nextKey.1 112 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 113 8 ]
-        symbol [ bag %tmp.22 113 8 11 ];
+        symbol [ nextKey %nextKey.1 177 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 178 8 ]
+        symbol [ bag %tmp.22 178 8 11 ];
         %tmp.22 = getv ? :bag;
-        symbol [ remove %tmp.23 113 12 18 ];
+        symbol [ remove %tmp.23 178 12 18 ];
         %tmp.23 = getv function %tmp.22 :remove;
         %tmp.24 = lgetv %nextKey.1;
-        symbol [ nextKey %tmp.24 113 19 26 ];
+        symbol [ nextKey %tmp.24 178 19 26 ];
         invoke %tmp.22 %tmp.23(%tmp.24);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 114 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 179 8 ]
         %tmp.25 = lgetv %nextKey.1;
-        symbol [ nextKey %tmp.25 114 15 22 ];
+        symbol [ nextKey %tmp.25 179 15 22 ];
         ret %tmp.25;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_107_37_115_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_172_37_180_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 118; @symbol_functiondef = [spawnPiece,118,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 183; @symbol_functiondef = [spawnPiece,183,13,23]; ]
     function spawnPiece() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_118_26_129_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 119 8 ]
-        symbol [ SHAPES %tmp.2 119 21 27 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_183_26_194_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 184 8 ]
+        symbol [ SHAPES %tmp.2 184 21 27 ];
         %tmp.2 = getv ? :SHAPES;
         %tmp.3 = as %tmp.2 Dictionary;
-        symbol [ Dictionary %tmp.3 119 31 41 ];
-        symbol [ curPiece %tmp.5 119 43 51 ];
+        symbol [ Dictionary %tmp.3 184 31 41 ];
+        symbol [ curPiece %tmp.5 184 43 51 ];
         %tmp.5 = getv ? :curPiece;
         %tmp.6 = agetv %tmp.3 %tmp.5;
         %tmp.7 = as %tmp.6 Array;
-        symbol [ Array %tmp.7 119 56 61 ];
-        symbol [ curMatrix ? 119 8 17 ];
+        symbol [ Array %tmp.7 184 56 61 ];
+        symbol [ curMatrix ? 184 8 17 ];
         putv self :curMatrix %tmp.7;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 121 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_118_26_129_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_118_26_129_4_stop" ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 186 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_183_26_194_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_183_26_194_4_stop" ]
         %row.1 = local;
-        symbol [ row %row.1 121 12 15 ];
-        symbol [ curMatrix %tmp.9 121 19 28 ];
+        symbol [ row %row.1 186 12 15 ];
+        symbol [ curMatrix %tmp.9 186 19 28 ];
         %tmp.9 = getv ? :curMatrix;
         %tmp.10 = as %tmp.9 Array;
-        symbol [ Array %tmp.10 121 32 37 ];
+        symbol [ Array %tmp.10 186 32 37 ];
         %tmp.11 = 0;
         %tmp.12 = agetv %tmp.10 %tmp.11;
         %tmp.13 = as %tmp.12 Array;
-        symbol [ Array %tmp.13 121 45 50 ];
+        symbol [ Array %tmp.13 186 45 50 ];
         lputv %row.1 %tmp.13;
-        symbol [ row %row.1 121 12 15 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 122 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_118_26_129_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_118_26_129_4_stop" ]
+        symbol [ row %row.1 186 12 15 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 187 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_183_26_194_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_183_26_194_4_stop" ]
         %pieceW.2 = local;
-        symbol [ pieceW %pieceW.2 122 12 18 ];
+        symbol [ pieceW %pieceW.2 187 12 18 ];
         %tmp.14 = lgetv %row.1;
-        symbol [ row %tmp.14 122 21 24 ];
-        symbol [ size %tmp.15 122 25 29 ];
+        symbol [ row %tmp.14 187 21 24 ];
+        symbol [ size %tmp.15 187 25 29 ];
         %tmp.15 = getv function %tmp.14 :size;
         %tmp.16 = invoke %tmp.14 %tmp.15();
         lputv %pieceW.2 %tmp.16;
-        symbol [ pieceW %pieceW.2 122 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 123 8 ]
-        symbol [ colsN %tmp.18 123 16 21 ];
+        symbol [ pieceW %pieceW.2 187 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 188 8 ]
+        symbol [ colsN %tmp.18 188 16 21 ];
         %tmp.18 = getv ? :colsN;
         %tmp.19 = lgetv %pieceW.2;
-        symbol [ pieceW %tmp.19 123 24 30 ];
+        symbol [ pieceW %tmp.19 188 24 30 ];
         %tmp.20 = sub %tmp.18 %tmp.19;
         %tmp.21 = 2;
         %tmp.22 = div %tmp.20 %tmp.21;
-        symbol [ posX ? 123 8 12 ];
+        symbol [ posX ? 188 8 12 ];
         putv self :posX %tmp.22;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 124 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 189 8 ]
         %tmp.23 = 0;
-        symbol [ posY ? 124 8 12 ];
+        symbol [ posY ? 189 8 12 ];
         putv self :posY %tmp.23;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 126 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_8_128_8_if_stmt:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 191 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_8_193_8_if_stmt:
         %tmp.24 = self;
-        symbol [ isValidPosition %tmp.25 126 13 28 ];
+        symbol [ isValidPosition %tmp.25 191 13 28 ];
         %tmp.25 = getv function %tmp.24 :isValidPosition;
-        symbol [ posX %tmp.27 126 29 33 ];
+        symbol [ posX %tmp.27 191 29 33 ];
         %tmp.27 = getv ? :posX;
-        symbol [ posY %tmp.29 126 35 39 ];
+        symbol [ posY %tmp.29 191 35 39 ];
         %tmp.29 = getv ? :posY;
-        symbol [ curMatrix %tmp.31 126 41 50 ];
+        symbol [ curMatrix %tmp.31 191 41 50 ];
         %tmp.31 = getv ? :curMatrix;
         %tmp.32 = invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29, %tmp.31);
         %tmp.33 = not %tmp.32;
-        bf %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_8_128_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_8_128_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_53_128_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 127 12 ]
+        bf %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_8_193_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_8_193_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_53_193_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 192 12 ]
         %tmp.34 = false;
-        symbol [ active ? 127 12 18 ];
+        symbol [ active ? 192 12 18 ];
         putv self :active %tmp.34;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_53_128_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_8_128_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_126_8_128_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_118_26_129_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_53_193_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_8_193_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_191_8_193_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_183_26_194_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 132; @symbol_functiondef = [fall,132,13,17]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 197; @symbol_functiondef = [fall,197,13,17]; ]
     function fall() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_132_20_145_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 133 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_8_133_31_if_stmt:
-        symbol [ active %tmp.2 133 13 19 ];
-        %tmp.2 = getv ? :active;
-        %tmp.3 = not %tmp.2;
-        bf %tmp.3 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_8_133_31_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_8_133_31_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_21_133_31_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 133 23 ]
-        ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_21_133_31_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_8_133_31_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_133_8_133_31_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 136 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_8_144_8_if_stmt:
-        %tmp.4 = self;
-        symbol [ isValidPosition %tmp.5 136 12 27 ];
-        %tmp.5 = getv function %tmp.4 :isValidPosition;
-        symbol [ posX %tmp.7 136 28 32 ];
-        %tmp.7 = getv ? :posX;
-        symbol [ posY %tmp.9 136 34 38 ];
-        %tmp.9 = getv ? :posY;
-        %tmp.10 = 1;
-        %tmp.11 = add %tmp.9 %tmp.10;
-        symbol [ curMatrix %tmp.13 136 44 53 ];
-        %tmp.13 = getv ? :curMatrix;
-        %tmp.14 = invoke %tmp.4 %tmp.5(%tmp.7, %tmp.11, %tmp.13);
-        bf %tmp.14 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_8_144_8_if_else_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_8_144_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_56_138_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 137 12 ]
-        symbol [ posY %tmp.15 137 12 16 ];
-        %tmp.15 = getv self :posY;
-        %tmp.16 = 1;
-        %tmp.17 = add %tmp.15 %tmp.16;
-        symbol [ posY ? 137 12 16 ];
-        putv self :posY dup %tmp.17;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_56_138_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_8_144_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_8_144_8_if_else_false:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_139_13_144_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 141 12 ]
-        %tmp.18 = self;
-        symbol [ mergePiece %tmp.19 141 12 22 ];
-        %tmp.19 = getv function %tmp.18 :mergePiece;
-        invoke %tmp.18 %tmp.19();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_139_13_144_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_136_8_144_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_132_20_145_4_stop:
-    }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 147; @symbol_functiondef = [hardFall,147,13,21]; ]
-    function hardFall() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_147_24_155_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 148 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_8_148_31_if_stmt:
-        symbol [ active %tmp.2 148 13 19 ];
-        %tmp.2 = getv ? :active;
-        %tmp.3 = not %tmp.2;
-        bf %tmp.3 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_8_148_31_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_8_148_31_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_21_148_31_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 148 23 ]
-        ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_21_148_31_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_8_148_31_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_148_8_148_31_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 150 8 ]
-        while @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_test:
-        %tmp.4 = self;
-        symbol [ isValidPosition %tmp.5 150 15 30 ];
-        %tmp.5 = getv function %tmp.4 :isValidPosition;
-        symbol [ posX %tmp.7 150 31 35 ];
-        %tmp.7 = getv ? :posX;
-        symbol [ posY %tmp.9 150 37 41 ];
-        %tmp.9 = getv ? :posY;
-        %tmp.10 = 1;
-        %tmp.11 = add %tmp.9 %tmp.10;
-        symbol [ curMatrix %tmp.13 150 47 56 ];
-        %tmp.13 = getv ? :curMatrix;
-        %tmp.14 = invoke %tmp.4 %tmp.5(%tmp.7, %tmp.11, %tmp.13);
-        bf %tmp.14 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_59_152_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 151 12 ]
-        symbol [ posY %tmp.15 151 12 16 ];
-        %tmp.15 = getv self :posY;
-        %tmp.16 = 1;
-        %tmp.17 = add %tmp.15 %tmp.16;
-        symbol [ posY ? 151 12 16 ];
-        putv self :posY dup %tmp.17;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_59_152_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_150_8_152_8_while_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 154 8 ]
-        %tmp.18 = self;
-        symbol [ mergePiece %tmp.19 154 8 18 ];
-        %tmp.19 = getv function %tmp.18 :mergePiece;
-        invoke %tmp.18 %tmp.19();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_147_24_155_4_stop:
-    }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 157; @symbol_functiondef = [rotate,157,13,19]; ]
-    function rotate() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 158 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_8_158_53_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_12_158_36_begin:
-        symbol [ active %tmp.2 158 13 19 ];
-        %tmp.2 = getv ? :active;
-        %tmp.3 = not %tmp.2;
-        bt %tmp.3 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_8_158_53_if_true;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_23_158_36_false:
-        symbol [ curMatrix %tmp.5 158 23 32 ];
-        %tmp.5 = getv ? :curMatrix;
-        %tmp.6 = null;
-        %tmp.7 = eq %tmp.5 %tmp.6;
-        push %tmp.7;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_23_158_36_end:
-        %tmp.8 = phi [%tmp.3 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_12_158_36_begin] [%tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_23_158_36_false] [%tmp.8 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_23_158_36_end];
-        bf %tmp.8 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_8_158_53_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_8_158_53_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_43_158_53_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 158 45 ]
-        ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_43_158_53_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_8_158_53_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_158_8_158_53_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 160 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_stop" ]
-        %rows.1 = local;
-        symbol [ rows %rows.1 160 12 16 ];
-        symbol [ curMatrix %tmp.10 160 19 28 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_197_20_205_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 199 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_8_204_8_if_stmt:
+        %tmp.1 = self;
+        symbol [ isValidPosition %tmp.2 199 12 27 ];
+        %tmp.2 = getv function %tmp.1 :isValidPosition;
+        symbol [ posX %tmp.4 199 28 32 ];
+        %tmp.4 = getv ? :posX;
+        symbol [ posY %tmp.6 199 34 38 ];
+        %tmp.6 = getv ? :posY;
+        %tmp.7 = 1;
+        %tmp.8 = add %tmp.6 %tmp.7;
+        symbol [ curMatrix %tmp.10 199 44 53 ];
         %tmp.10 = getv ? :curMatrix;
-        symbol [ size %tmp.11 160 29 33 ];
-        %tmp.11 = getv function %tmp.10 :size;
-        %tmp.12 = invoke %tmp.10 %tmp.11();
-        lputv %rows.1 %tmp.12;
-        symbol [ rows %rows.1 160 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 161 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_stop" ]
-        %cols.2 = local;
-        symbol [ cols %cols.2 161 12 16 ];
-        symbol [ curMatrix %tmp.14 161 19 28 ];
-        %tmp.14 = getv ? :curMatrix;
-        %tmp.15 = 0;
-        %tmp.16 = agetv %tmp.14 %tmp.15;
-        symbol [ size %tmp.17 161 32 36 ];
-        %tmp.17 = getv function %tmp.16 :size;
-        %tmp.18 = invoke %tmp.16 %tmp.17();
-        lputv %cols.2 %tmp.18;
-        symbol [ cols %cols.2 161 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 163 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_stop" ]
-        %rotated.3 = local;
-        symbol [ rotated %rotated.3 163 12 19 ];
-        %tmp.19 = newa 0;
-        lputv %rotated.3 %tmp.19;
-        symbol [ rotated %rotated.3 163 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 164 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_stop" ]
-        %val.4 = local;
-        symbol [ val %val.4 164 12 15 ];
-        %tmp.20 = 0;
-        lputv %val.4 %tmp.20;
-        symbol [ val %val.4 164 12 15 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 165 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_end" ]
-        %c.5 = local;
-        symbol [ c %c.5 165 17 18 ];
-        %tmp.21 = 0;
-        lputv %c.5 %tmp.21;
-        symbol [ c %c.5 165 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_test:
-        %tmp.22 = lgetv %c.5;
-        symbol [ c %tmp.22 165 24 25 ];
-        %tmp.23 = lgetv %cols.2;
-        symbol [ cols %tmp.23 165 28 32 ];
-        %tmp.24 = lt %tmp.22 %tmp.23;
-        bf %tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_39_172_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 166 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_39_172_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_39_172_8_stop" ]
-        %newRow.6 = local;
-        symbol [ newRow %newRow.6 166 16 22 ];
-        %tmp.25 = newa 0;
-        lputv %newRow.6 %tmp.25;
-        symbol [ newRow %newRow.6 166 16 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 167 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_end" ]
-        %r.7 = local;
-        symbol [ r %r.7 167 21 22 ];
-        %tmp.26 = lgetv %rows.1;
-        symbol [ rows %tmp.26 167 25 29 ];
-        %tmp.27 = 1;
-        %tmp.28 = sub %tmp.26 %tmp.27;
-        lputv %r.7 %tmp.28;
-        symbol [ r %r.7 167 21 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_test:
-        %tmp.29 = lgetv %r.7;
-        symbol [ r %tmp.29 167 35 36 ];
-        %tmp.30 = 0;
-        %tmp.31 = gte %tmp.29 %tmp.30;
-        bf %tmp.31 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_48_170_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 168 16 ]
-        symbol [ curMatrix %tmp.33 168 24 33 ];
-        %tmp.33 = getv ? :curMatrix;
-        %tmp.34 = as %tmp.33 Array;
-        symbol [ Array %tmp.34 168 37 42 ];
-        %tmp.35 = lgetv %r.7;
-        symbol [ r %tmp.35 168 44 45 ];
-        %tmp.36 = agetv %tmp.34 %tmp.35;
-        %tmp.37 = as %tmp.36 Array;
-        symbol [ Array %tmp.37 168 50 55 ];
-        %tmp.38 = lgetv %c.5;
-        symbol [ c %tmp.38 168 57 58 ];
-        %tmp.39 = agetv %tmp.37 %tmp.38;
-        lputv %val.4 %tmp.39;
-        symbol [ val %val.4 168 16 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 169 16 ]
-        %tmp.40 = lgetv %newRow.6;
-        symbol [ newRow %tmp.40 169 16 22 ];
-        symbol [ add %tmp.41 169 23 26 ];
-        %tmp.41 = getv function %tmp.40 :add;
-        %tmp.42 = lgetv %val.4;
-        symbol [ val %tmp.42 169 27 30 ];
-        invoke %tmp.40 %tmp.41(%tmp.42);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_48_170_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 167 ]
-        %tmp.45 = lgetv %r.7;
-        symbol [ r %tmp.45 167 43 44 ];
-        %tmp.46 = sub %tmp.45 1;
-        lputv %r.7 %tmp.46;
-        symbol [ r %r.7 167 43 44 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_167_12_170_12_for_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 171 12 ]
-        %tmp.47 = lgetv %rotated.3;
-        symbol [ rotated %tmp.47 171 12 19 ];
-        symbol [ add %tmp.48 171 20 23 ];
-        %tmp.48 = getv function %tmp.47 :add;
-        %tmp.49 = lgetv %newRow.6;
-        symbol [ newRow %tmp.49 171 24 30 ];
-        invoke %tmp.47 %tmp.48(%tmp.49);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_39_172_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 165 ]
-        %tmp.52 = lgetv %c.5;
-        symbol [ c %tmp.52 165 34 35 ];
-        %tmp.53 = add %tmp.52 1;
-        lputv %c.5 %tmp.53;
-        symbol [ c %c.5 165 34 35 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_165_8_172_8_for_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 175 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_8_178_8_if_stmt:
-        %tmp.54 = self;
-        symbol [ isValidPosition %tmp.55 175 12 27 ];
-        %tmp.55 = getv function %tmp.54 :isValidPosition;
-        symbol [ posX %tmp.57 175 28 32 ];
-        %tmp.57 = getv ? :posX;
-        symbol [ posY %tmp.59 175 34 38 ];
-        %tmp.59 = getv ? :posY;
-        %tmp.60 = lgetv %rotated.3;
-        symbol [ rotated %tmp.60 175 40 47 ];
-        %tmp.61 = invoke %tmp.54 %tmp.55(%tmp.57, %tmp.59, %tmp.60);
-        bf %tmp.61 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_8_178_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_8_178_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_50_178_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 176 12 ]
-        %tmp.62 = lgetv %rotated.3;
-        symbol [ rotated %tmp.62 176 24 31 ];
-        symbol [ curMatrix ? 176 12 21 ];
-        putv self :curMatrix %tmp.62;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 177 12 ]
-        ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_50_178_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_8_178_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_175_8_178_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 181 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_stop" ]
-        %shifts.8 = local;
-        symbol [ shifts %shifts.8 181 12 18 ];
-        %tmp.63 = newa 4;
-        %tmp.64 = -1;
-        %tmp.65 = dup %tmp.63;
-        %tmp.66 = aputv %tmp.65 0 %tmp.64;
-        %tmp.67 = 1;
-        %tmp.68 = dup %tmp.66;
-        %tmp.69 = aputv %tmp.68 1 %tmp.67;
-        %tmp.70 = -2;
-        %tmp.71 = dup %tmp.69;
-        %tmp.72 = aputv %tmp.71 2 %tmp.70;
-        %tmp.73 = 2;
-        %tmp.74 = dup %tmp.72;
-        %tmp.75 = aputv %tmp.74 3 %tmp.73;
-        lputv %shifts.8 %tmp.75;
-        symbol [ shifts %shifts.8 181 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 182 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_end" ]
-        %i.9 = local;
-        symbol [ i %i.9 182 17 18 ];
-        %tmp.76 = 0;
-        lputv %i.9 %tmp.76;
-        symbol [ i %i.9 182 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_test:
-        %tmp.77 = lgetv %i.9;
-        symbol [ i %tmp.77 182 24 25 ];
-        %tmp.78 = lgetv %shifts.8;
-        symbol [ shifts %tmp.78 182 28 34 ];
-        symbol [ size %tmp.79 182 35 39 ];
-        %tmp.79 = getv function %tmp.78 :size;
-        %tmp.80 = invoke %tmp.78 %tmp.79();
-        %tmp.81 = lt %tmp.77 %tmp.80;
-        bf %tmp.81 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_48_189_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 183 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_48_189_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_48_189_8_stop" ]
-        %dx.10 = local;
-        symbol [ dx %dx.10 183 16 18 ];
-        %tmp.82 = lgetv %shifts.8;
-        symbol [ shifts %tmp.82 183 21 27 ];
-        %tmp.83 = lgetv %i.9;
-        symbol [ i %tmp.83 183 28 29 ];
-        %tmp.84 = agetv %tmp.82 %tmp.83;
-        lputv %dx.10 %tmp.84;
-        symbol [ dx %dx.10 183 16 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 184 12 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_12_188_12_if_stmt:
-        %tmp.85 = self;
-        symbol [ isValidPosition %tmp.86 184 16 31 ];
-        %tmp.86 = getv function %tmp.85 :isValidPosition;
-        symbol [ posX %tmp.88 184 32 36 ];
-        %tmp.88 = getv ? :posX;
-        %tmp.89 = lgetv %dx.10;
-        symbol [ dx %tmp.89 184 39 41 ];
-        %tmp.90 = add %tmp.88 %tmp.89;
-        symbol [ posY %tmp.92 184 43 47 ];
-        %tmp.92 = getv ? :posY;
-        %tmp.93 = lgetv %rotated.3;
-        symbol [ rotated %tmp.93 184 49 56 ];
-        %tmp.94 = invoke %tmp.85 %tmp.86(%tmp.90, %tmp.92, %tmp.93);
-        bf %tmp.94 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_12_188_12_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_12_188_12_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_59_188_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 185 16 ]
-        symbol [ posX %tmp.95 185 16 20 ];
-        %tmp.95 = getv self :posX;
-        %tmp.96 = lgetv %dx.10;
-        symbol [ dx %tmp.96 185 24 26 ];
-        %tmp.97 = add %tmp.95 %tmp.96;
-        symbol [ posX ? 185 16 20 ];
-        putv self :posX dup %tmp.97;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 186 16 ]
-        %tmp.98 = lgetv %rotated.3;
-        symbol [ rotated %tmp.98 186 28 35 ];
-        symbol [ curMatrix ? 186 16 25 ];
-        putv self :curMatrix %tmp.98;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 187 16 ]
-        ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_59_188_12_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_12_188_12_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_184_12_188_12_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_48_189_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 182 ]
-        %tmp.101 = lgetv %i.9;
-        symbol [ i %tmp.101 182 43 44 ];
-        %tmp.102 = add %tmp.101 1;
-        lputv %i.9 %tmp.102;
-        symbol [ i %i.9 182 43 44 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_182_8_189_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_157_22_192_4_stop:
+        %tmp.11 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.8, %tmp.10);
+        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_8_204_8_if_else_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_8_204_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_56_201_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 200 12 ]
+        symbol [ posY %tmp.12 200 12 16 ];
+        %tmp.12 = getv self :posY;
+        %tmp.13 = 1;
+        %tmp.14 = add %tmp.12 %tmp.13;
+        symbol [ posY ? 200 12 16 ];
+        putv self :posY dup %tmp.14;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_56_201_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_8_204_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_8_204_8_if_else_false:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_202_13_204_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 203 12 ]
+        %tmp.15 = self;
+        symbol [ land %tmp.16 203 12 16 ];
+        %tmp.16 = getv function %tmp.15 :land;
+        invoke %tmp.15 %tmp.16();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_202_13_204_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_8_204_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_197_20_205_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 195; @symbol_functiondef = [isValidPosition,195,13,28]; @symbol_param<0> = [x,195,29,30]; @symbol_param<0>_type<0> = [Number,195,34,40]; @symbol_param<1> = [y,195,42,43]; @symbol_param<1>_type<0> = [Number,195,47,53]; @symbol_param<2> = [matrix,195,55,61]; @symbol_param<2>_type<0> = [Array,195,65,70]; @symbol_return<0> = [Boolean,195,75,82]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 207; @symbol_functiondef = [hardFall,207,13,21]; ]
+    function hardFall() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_207_24_212_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 208 8 ]
+        while @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_test:
+        %tmp.1 = self;
+        symbol [ isValidPosition %tmp.2 208 15 30 ];
+        %tmp.2 = getv function %tmp.1 :isValidPosition;
+        symbol [ posX %tmp.4 208 31 35 ];
+        %tmp.4 = getv ? :posX;
+        symbol [ posY %tmp.6 208 37 41 ];
+        %tmp.6 = getv ? :posY;
+        %tmp.7 = 1;
+        %tmp.8 = add %tmp.6 %tmp.7;
+        symbol [ curMatrix %tmp.10 208 47 56 ];
+        %tmp.10 = getv ? :curMatrix;
+        %tmp.11 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.8, %tmp.10);
+        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_59_210_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 209 12 ]
+        symbol [ posY %tmp.12 209 12 16 ];
+        %tmp.12 = getv self :posY;
+        %tmp.13 = 1;
+        %tmp.14 = add %tmp.12 %tmp.13;
+        symbol [ posY ? 209 12 16 ];
+        putv self :posY dup %tmp.14;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_59_210_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_208_8_210_8_while_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 211 8 ]
+        %tmp.15 = self;
+        symbol [ land %tmp.16 211 8 12 ];
+        %tmp.16 = getv function %tmp.15 :land;
+        invoke %tmp.15 %tmp.16();
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_207_24_212_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 214; @symbol_functiondef = [rotate,214,13,19]; ]
+    function rotate() {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 215 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_8_215_43_if_stmt:
+        symbol [ curMatrix %tmp.2 215 13 22 ];
+        %tmp.2 = getv ? :curMatrix;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_8_215_43_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_8_215_43_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_33_215_43_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 215 35 ]
+        ret ?;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_33_215_43_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_8_215_43_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_215_8_215_43_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 217 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_stop" ]
+        %rows.1 = local;
+        symbol [ rows %rows.1 217 12 16 ];
+        symbol [ curMatrix %tmp.6 217 19 28 ];
+        %tmp.6 = getv ? :curMatrix;
+        symbol [ size %tmp.7 217 29 33 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %rows.1 %tmp.8;
+        symbol [ rows %rows.1 217 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 218 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_stop" ]
+        %cols.2 = local;
+        symbol [ cols %cols.2 218 12 16 ];
+        symbol [ curMatrix %tmp.10 218 19 28 ];
+        %tmp.10 = getv ? :curMatrix;
+        %tmp.11 = 0;
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        symbol [ size %tmp.13 218 32 36 ];
+        %tmp.13 = getv function %tmp.12 :size;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %cols.2 %tmp.14;
+        symbol [ cols %cols.2 218 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 220 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_stop" ]
+        %rotated.3 = local;
+        symbol [ rotated %rotated.3 220 12 19 ];
+        %tmp.15 = newa 0;
+        lputv %rotated.3 %tmp.15;
+        symbol [ rotated %rotated.3 220 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 221 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_stop" ]
+        %val.4 = local;
+        symbol [ val %val.4 221 12 15 ];
+        %tmp.16 = 0;
+        lputv %val.4 %tmp.16;
+        symbol [ val %val.4 221 12 15 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 222 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_end" ]
+        %c.5 = local;
+        symbol [ c %c.5 222 17 18 ];
+        %tmp.17 = 0;
+        lputv %c.5 %tmp.17;
+        symbol [ c %c.5 222 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_test:
+        %tmp.18 = lgetv %c.5;
+        symbol [ c %tmp.18 222 24 25 ];
+        %tmp.19 = lgetv %cols.2;
+        symbol [ cols %tmp.19 222 28 32 ];
+        %tmp.20 = lt %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_39_229_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 223 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_39_229_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_39_229_8_stop" ]
+        %newRow.6 = local;
+        symbol [ newRow %newRow.6 223 16 22 ];
+        %tmp.21 = newa 0;
+        lputv %newRow.6 %tmp.21;
+        symbol [ newRow %newRow.6 223 16 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 224 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_end" ]
+        %r.7 = local;
+        symbol [ r %r.7 224 21 22 ];
+        %tmp.22 = lgetv %rows.1;
+        symbol [ rows %tmp.22 224 25 29 ];
+        %tmp.23 = 1;
+        %tmp.24 = sub %tmp.22 %tmp.23;
+        lputv %r.7 %tmp.24;
+        symbol [ r %r.7 224 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_test:
+        %tmp.25 = lgetv %r.7;
+        symbol [ r %tmp.25 224 35 36 ];
+        %tmp.26 = 0;
+        %tmp.27 = gte %tmp.25 %tmp.26;
+        bf %tmp.27 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_48_227_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 225 16 ]
+        symbol [ curMatrix %tmp.29 225 24 33 ];
+        %tmp.29 = getv ? :curMatrix;
+        %tmp.30 = as %tmp.29 Array;
+        symbol [ Array %tmp.30 225 37 42 ];
+        %tmp.31 = lgetv %r.7;
+        symbol [ r %tmp.31 225 44 45 ];
+        %tmp.32 = agetv %tmp.30 %tmp.31;
+        %tmp.33 = as %tmp.32 Array;
+        symbol [ Array %tmp.33 225 50 55 ];
+        %tmp.34 = lgetv %c.5;
+        symbol [ c %tmp.34 225 57 58 ];
+        %tmp.35 = agetv %tmp.33 %tmp.34;
+        lputv %val.4 %tmp.35;
+        symbol [ val %val.4 225 16 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 226 16 ]
+        %tmp.36 = lgetv %newRow.6;
+        symbol [ newRow %tmp.36 226 16 22 ];
+        symbol [ add %tmp.37 226 23 26 ];
+        %tmp.37 = getv function %tmp.36 :add;
+        %tmp.38 = lgetv %val.4;
+        symbol [ val %tmp.38 226 27 30 ];
+        invoke %tmp.36 %tmp.37(%tmp.38);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_48_227_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 224 ]
+        %tmp.41 = lgetv %r.7;
+        symbol [ r %tmp.41 224 43 44 ];
+        %tmp.42 = sub %tmp.41 1;
+        lputv %r.7 %tmp.42;
+        symbol [ r %r.7 224 43 44 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_224_12_227_12_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 228 12 ]
+        %tmp.43 = lgetv %rotated.3;
+        symbol [ rotated %tmp.43 228 12 19 ];
+        symbol [ add %tmp.44 228 20 23 ];
+        %tmp.44 = getv function %tmp.43 :add;
+        %tmp.45 = lgetv %newRow.6;
+        symbol [ newRow %tmp.45 228 24 30 ];
+        invoke %tmp.43 %tmp.44(%tmp.45);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_39_229_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 222 ]
+        %tmp.48 = lgetv %c.5;
+        symbol [ c %tmp.48 222 34 35 ];
+        %tmp.49 = add %tmp.48 1;
+        lputv %c.5 %tmp.49;
+        symbol [ c %c.5 222 34 35 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_8_229_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 232 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_8_235_8_if_stmt:
+        %tmp.50 = self;
+        symbol [ isValidPosition %tmp.51 232 12 27 ];
+        %tmp.51 = getv function %tmp.50 :isValidPosition;
+        symbol [ posX %tmp.53 232 28 32 ];
+        %tmp.53 = getv ? :posX;
+        symbol [ posY %tmp.55 232 34 38 ];
+        %tmp.55 = getv ? :posY;
+        %tmp.56 = lgetv %rotated.3;
+        symbol [ rotated %tmp.56 232 40 47 ];
+        %tmp.57 = invoke %tmp.50 %tmp.51(%tmp.53, %tmp.55, %tmp.56);
+        bf %tmp.57 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_8_235_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_8_235_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_50_235_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 233 12 ]
+        %tmp.58 = lgetv %rotated.3;
+        symbol [ rotated %tmp.58 233 24 31 ];
+        symbol [ curMatrix ? 233 12 21 ];
+        putv self :curMatrix %tmp.58;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 234 12 ]
+        ret ?;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_50_235_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_8_235_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_232_8_235_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 238 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_stop" ]
+        %shifts.8 = local;
+        symbol [ shifts %shifts.8 238 12 18 ];
+        %tmp.59 = newa 4;
+        %tmp.60 = -1;
+        %tmp.61 = dup %tmp.59;
+        %tmp.62 = aputv %tmp.61 0 %tmp.60;
+        %tmp.63 = 1;
+        %tmp.64 = dup %tmp.62;
+        %tmp.65 = aputv %tmp.64 1 %tmp.63;
+        %tmp.66 = -2;
+        %tmp.67 = dup %tmp.65;
+        %tmp.68 = aputv %tmp.67 2 %tmp.66;
+        %tmp.69 = 2;
+        %tmp.70 = dup %tmp.68;
+        %tmp.71 = aputv %tmp.70 3 %tmp.69;
+        lputv %shifts.8 %tmp.71;
+        symbol [ shifts %shifts.8 238 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 239 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_end" ]
+        %i.9 = local;
+        symbol [ i %i.9 239 17 18 ];
+        %tmp.72 = 0;
+        lputv %i.9 %tmp.72;
+        symbol [ i %i.9 239 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_test:
+        %tmp.73 = lgetv %i.9;
+        symbol [ i %tmp.73 239 24 25 ];
+        %tmp.74 = lgetv %shifts.8;
+        symbol [ shifts %tmp.74 239 28 34 ];
+        symbol [ size %tmp.75 239 35 39 ];
+        %tmp.75 = getv function %tmp.74 :size;
+        %tmp.76 = invoke %tmp.74 %tmp.75();
+        %tmp.77 = lt %tmp.73 %tmp.76;
+        bf %tmp.77 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_48_246_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 240 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_48_246_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_48_246_8_stop" ]
+        %dx.10 = local;
+        symbol [ dx %dx.10 240 16 18 ];
+        %tmp.78 = lgetv %shifts.8;
+        symbol [ shifts %tmp.78 240 21 27 ];
+        %tmp.79 = lgetv %i.9;
+        symbol [ i %tmp.79 240 28 29 ];
+        %tmp.80 = agetv %tmp.78 %tmp.79;
+        lputv %dx.10 %tmp.80;
+        symbol [ dx %dx.10 240 16 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 241 12 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_12_245_12_if_stmt:
+        %tmp.81 = self;
+        symbol [ isValidPosition %tmp.82 241 16 31 ];
+        %tmp.82 = getv function %tmp.81 :isValidPosition;
+        symbol [ posX %tmp.84 241 32 36 ];
+        %tmp.84 = getv ? :posX;
+        %tmp.85 = lgetv %dx.10;
+        symbol [ dx %tmp.85 241 39 41 ];
+        %tmp.86 = add %tmp.84 %tmp.85;
+        symbol [ posY %tmp.88 241 43 47 ];
+        %tmp.88 = getv ? :posY;
+        %tmp.89 = lgetv %rotated.3;
+        symbol [ rotated %tmp.89 241 49 56 ];
+        %tmp.90 = invoke %tmp.81 %tmp.82(%tmp.86, %tmp.88, %tmp.89);
+        bf %tmp.90 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_12_245_12_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_12_245_12_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_59_245_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 242 16 ]
+        symbol [ posX %tmp.91 242 16 20 ];
+        %tmp.91 = getv self :posX;
+        %tmp.92 = lgetv %dx.10;
+        symbol [ dx %tmp.92 242 24 26 ];
+        %tmp.93 = add %tmp.91 %tmp.92;
+        symbol [ posX ? 242 16 20 ];
+        putv self :posX dup %tmp.93;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 243 16 ]
+        %tmp.94 = lgetv %rotated.3;
+        symbol [ rotated %tmp.94 243 28 35 ];
+        symbol [ curMatrix ? 243 16 25 ];
+        putv self :curMatrix %tmp.94;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 244 16 ]
+        ret ?;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_59_245_12_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_12_245_12_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_241_12_245_12_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_48_246_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 239 ]
+        %tmp.97 = lgetv %i.9;
+        symbol [ i %tmp.97 239 43 44 ];
+        %tmp.98 = add %tmp.97 1;
+        lputv %i.9 %tmp.98;
+        symbol [ i %i.9 239 43 44 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_239_8_246_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_214_22_249_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 251; @symbol_functiondef = [moveHorizontally,251,13,29]; @symbol_param<0> = [direction,251,30,39]; @symbol_param<0>_type<0> = [String,251,43,49]; ]
+    function moveHorizontally(direction as String) {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_251_51_258_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 252 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_251_51_258_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_251_51_258_4_stop" ]
+        %dx.1 = local;
+        symbol [ dx %dx.1 252 12 14 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_begin:
+        %tmp.1 = lgetv %direction;
+        symbol [ direction %tmp.1 252 17 26 ];
+        symbol [ equals %tmp.2 252 27 33 ];
+        %tmp.2 = getv function %tmp.1 :equals;
+        %tmp.3 = "right";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_true:
+        %tmp.5 = 1;
+        push %tmp.5;
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_false:
+        %tmp.6 = -1;
+        push %tmp.6;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_end:
+        %tmp.7 = phi [%tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_begin] [%tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_true] [%tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_false] [%tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_252_17_252_50_end];
+        lputv %dx.1 %tmp.7;
+        symbol [ dx %dx.1 252 12 14 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 253 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_251_51_258_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_251_51_258_4_stop" ]
+        %newX.2 = local;
+        symbol [ newX %newX.2 253 12 16 ];
+        symbol [ posX %tmp.9 253 19 23 ];
+        %tmp.9 = getv ? :posX;
+        %tmp.10 = lgetv %dx.1;
+        symbol [ dx %tmp.10 253 26 28 ];
+        %tmp.11 = add %tmp.9 %tmp.10;
+        lputv %newX.2 %tmp.11;
+        symbol [ newX %newX.2 253 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 255 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_8_257_8_if_stmt:
+        %tmp.12 = self;
+        symbol [ isValidPosition %tmp.13 255 12 27 ];
+        %tmp.13 = getv function %tmp.12 :isValidPosition;
+        %tmp.14 = lgetv %newX.2;
+        symbol [ newX %tmp.14 255 28 32 ];
+        symbol [ posY %tmp.16 255 34 38 ];
+        %tmp.16 = getv ? :posY;
+        symbol [ curMatrix %tmp.18 255 40 49 ];
+        %tmp.18 = getv ? :curMatrix;
+        %tmp.19 = invoke %tmp.12 %tmp.13(%tmp.14, %tmp.16, %tmp.18);
+        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_8_257_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_8_257_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_52_257_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 256 12 ]
+        %tmp.20 = lgetv %newX.2;
+        symbol [ newX %tmp.20 256 19 23 ];
+        symbol [ posX ? 256 12 16 ];
+        putv self :posX %tmp.20;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_52_257_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_8_257_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_255_8_257_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_251_51_258_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 261; @symbol_functiondef = [isValidPosition,261,13,28]; @symbol_param<0> = [x,261,29,30]; @symbol_param<0>_type<0> = [Number,261,34,40]; @symbol_param<1> = [y,261,42,43]; @symbol_param<1>_type<0> = [Number,261,47,53]; @symbol_param<2> = [matrix,261,55,61]; @symbol_param<2>_type<0> = [Array,261,65,70]; @symbol_return<0> = [Boolean,261,75,82]; ]
     function isValidPosition(x as Number, y as Number, matrix as Array) as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_195_83_216_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 196 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_end" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_261_83_282_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 262 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_end" ]
         %r.1 = local;
-        symbol [ r %r.1 196 17 18 ];
+        symbol [ r %r.1 262 17 18 ];
         %tmp.1 = 0;
         lputv %r.1 %tmp.1;
-        symbol [ r %r.1 196 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_test:
+        symbol [ r %r.1 262 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_test:
         %tmp.2 = lgetv %r.1;
-        symbol [ r %tmp.2 196 24 25 ];
+        symbol [ r %tmp.2 262 24 25 ];
         %tmp.3 = lgetv %matrix;
-        symbol [ matrix %tmp.3 196 28 34 ];
-        symbol [ size %tmp.4 196 35 39 ];
+        symbol [ matrix %tmp.3 262 28 34 ];
+        symbol [ size %tmp.4 262 35 39 ];
         %tmp.4 = getv function %tmp.3 :size;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         %tmp.6 = lt %tmp.2 %tmp.5;
-        bf %tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_48_214_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 197 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_48_214_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_48_214_8_stop" ]
+        bf %tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_48_280_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 263 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_48_280_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_48_280_8_stop" ]
         %row.2 = local;
-        symbol [ row %row.2 197 16 19 ];
+        symbol [ row %row.2 263 16 19 ];
         %tmp.7 = lgetv %matrix;
-        symbol [ matrix %tmp.7 197 22 28 ];
+        symbol [ matrix %tmp.7 263 22 28 ];
         %tmp.8 = lgetv %r.1;
-        symbol [ r %tmp.8 197 29 30 ];
+        symbol [ r %tmp.8 263 29 30 ];
         %tmp.9 = agetv %tmp.7 %tmp.8;
         %tmp.10 = as %tmp.9 Array;
-        symbol [ Array %tmp.10 197 35 40 ];
+        symbol [ Array %tmp.10 263 35 40 ];
         lputv %row.2 %tmp.10;
-        symbol [ row %row.2 197 16 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 198 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_end" ]
+        symbol [ row %row.2 263 16 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 264 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_end" ]
         %c.3 = local;
-        symbol [ c %c.3 198 21 22 ];
+        symbol [ c %c.3 264 21 22 ];
         %tmp.11 = 0;
         lputv %c.3 %tmp.11;
-        symbol [ c %c.3 198 21 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_test:
+        symbol [ c %c.3 264 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_test:
         %tmp.12 = lgetv %c.3;
-        symbol [ c %tmp.12 198 28 29 ];
+        symbol [ c %tmp.12 264 28 29 ];
         %tmp.13 = lgetv %row.2;
-        symbol [ row %tmp.13 198 32 35 ];
-        symbol [ size %tmp.14 198 36 40 ];
+        symbol [ row %tmp.13 264 32 35 ];
+        symbol [ size %tmp.14 264 36 40 ];
         %tmp.14 = getv function %tmp.13 :size;
         %tmp.15 = invoke %tmp.13 %tmp.14();
         %tmp.16 = lt %tmp.12 %tmp.15;
-        bf %tmp.16 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_49_213_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 199 16 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_16_212_16_if_stmt:
+        bf %tmp.16 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_49_279_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 265 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_16_278_16_if_stmt:
         %tmp.17 = lgetv %row.2;
-        symbol [ row %tmp.17 199 20 23 ];
+        symbol [ row %tmp.17 265 20 23 ];
         %tmp.18 = lgetv %c.3;
-        symbol [ c %tmp.18 199 24 25 ];
+        symbol [ c %tmp.18 265 24 25 ];
         %tmp.19 = agetv %tmp.17 %tmp.18;
         %tmp.20 = 1;
         %tmp.21 = eq %tmp.19 %tmp.20;
-        bf %tmp.21 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_16_212_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_16_212_16_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_33_212_16_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 200 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_33_212_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_33_212_16_stop" ]
+        bf %tmp.21 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_16_278_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_16_278_16_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_33_278_16_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 266 20 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_33_278_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_33_278_16_stop" ]
         %gx.4 = local;
-        symbol [ gx %gx.4 200 24 26 ];
+        symbol [ gx %gx.4 266 24 26 ];
         %tmp.22 = lgetv %x;
-        symbol [ x %tmp.22 200 29 30 ];
+        symbol [ x %tmp.22 266 29 30 ];
         %tmp.23 = lgetv %c.3;
-        symbol [ c %tmp.23 200 33 34 ];
+        symbol [ c %tmp.23 266 33 34 ];
         %tmp.24 = add %tmp.22 %tmp.23;
         lputv %gx.4 %tmp.24;
-        symbol [ gx %gx.4 200 24 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 201 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_33_212_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_33_212_16_stop" ]
+        symbol [ gx %gx.4 266 24 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 267 20 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_33_278_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_33_278_16_stop" ]
         %gy.5 = local;
-        symbol [ gy %gy.5 201 24 26 ];
+        symbol [ gy %gy.5 267 24 26 ];
         %tmp.25 = lgetv %y;
-        symbol [ y %tmp.25 201 29 30 ];
+        symbol [ y %tmp.25 267 29 30 ];
         %tmp.26 = lgetv %r.1;
-        symbol [ r %tmp.26 201 33 34 ];
+        symbol [ r %tmp.26 267 33 34 ];
         %tmp.27 = add %tmp.25 %tmp.26;
         lputv %gy.5 %tmp.27;
-        symbol [ gy %gy.5 201 24 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 204 20 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_24_204_55_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_24_204_40_begin:
+        symbol [ gy %gy.5 267 24 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 270 20 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_24_270_55_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_24_270_40_begin:
         %tmp.28 = lgetv %gx.4;
-        symbol [ gx %tmp.28 204 24 26 ];
+        symbol [ gx %tmp.28 270 24 26 ];
         %tmp.29 = 0;
         %tmp.30 = lt %tmp.28 %tmp.29;
-        bt %tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_true;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_34_204_40_false:
+        bt %tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_true;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_34_270_40_false:
         %tmp.31 = lgetv %gx.4;
-        symbol [ gx %tmp.31 204 34 36 ];
-        symbol [ colsN %tmp.33 204 40 45 ];
+        symbol [ gx %tmp.31 270 34 36 ];
+        symbol [ colsN %tmp.33 270 40 45 ];
         %tmp.33 = getv ? :colsN;
         %tmp.34 = gte %tmp.31 %tmp.33;
         push %tmp.34;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_34_204_40_end:
-        %tmp.35 = phi [%tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_24_204_40_begin] [%tmp.34 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_34_204_40_false] [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_34_204_40_end];
-        bt %tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_true;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_49_204_55_false:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_34_270_40_end:
+        %tmp.35 = phi [%tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_24_270_40_begin] [%tmp.34 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_34_270_40_false] [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_34_270_40_end];
+        bt %tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_true;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_49_270_55_false:
         %tmp.36 = lgetv %gy.5;
-        symbol [ gy %tmp.36 204 49 51 ];
-        symbol [ rowsN %tmp.38 204 55 60 ];
+        symbol [ gy %tmp.36 270 49 51 ];
+        symbol [ rowsN %tmp.38 270 55 60 ];
         %tmp.38 = getv ? :rowsN;
         %tmp.39 = gte %tmp.36 %tmp.38;
         push %tmp.39;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_49_204_55_end:
-        %tmp.40 = phi [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_24_204_55_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_49_204_55_false] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_49_204_55_end];
-        bf %tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_62_206_20_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 205 24 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_49_270_55_end:
+        %tmp.40 = phi [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_24_270_55_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_49_270_55_false] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_49_270_55_end];
+        bf %tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_62_272_20_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 271 24 ]
         %tmp.41 = false;
         ret %tmp.41;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_62_206_20_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_204_20_206_20_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 209 20 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_20_211_20_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_24_209_75_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_62_272_20_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_270_20_272_20_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 275 20 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_20_277_20_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_24_275_75_begin:
         %tmp.42 = lgetv %gy.5;
-        symbol [ gy %tmp.42 209 24 26 ];
+        symbol [ gy %tmp.42 275 24 26 ];
         %tmp.43 = 0;
         %tmp.44 = gte %tmp.42 %tmp.43;
-        bf %tmp.44 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_20_211_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_35_209_75_true:
-        symbol [ grid %tmp.46 209 38 42 ];
+        bf %tmp.44 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_20_277_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_35_275_75_true:
+        symbol [ grid %tmp.46 275 38 42 ];
         %tmp.46 = getv ? :grid;
         %tmp.47 = as %tmp.46 Array;
-        symbol [ Array %tmp.47 209 46 51 ];
+        symbol [ Array %tmp.47 275 46 51 ];
         %tmp.48 = lgetv %gy.5;
-        symbol [ gy %tmp.48 209 53 55 ];
+        symbol [ gy %tmp.48 275 53 55 ];
         %tmp.49 = agetv %tmp.47 %tmp.48;
         %tmp.50 = as %tmp.49 Array;
-        symbol [ Array %tmp.50 209 60 65 ];
+        symbol [ Array %tmp.50 275 60 65 ];
         %tmp.51 = lgetv %gx.4;
-        symbol [ gx %tmp.51 209 67 69 ];
+        symbol [ gx %tmp.51 275 67 69 ];
         %tmp.52 = agetv %tmp.50 %tmp.51;
         %tmp.53 = 0;
         %tmp.54 = ne %tmp.52 %tmp.53;
         push %tmp.54;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_35_209_75_end:
-        %tmp.55 = phi [%tmp.44 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_24_209_75_begin] [%tmp.54 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_35_209_75_true] [%tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_35_209_75_end];
-        bf %tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_20_211_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_20_211_20_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_78_211_20_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 210 24 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_35_275_75_end:
+        %tmp.55 = phi [%tmp.44 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_24_275_75_begin] [%tmp.54 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_35_275_75_true] [%tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_35_275_75_end];
+        bf %tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_20_277_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_20_277_20_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_78_277_20_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 276 24 ]
         %tmp.56 = false;
         ret %tmp.56;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_78_211_20_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_20_211_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_209_20_211_20_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_33_212_16_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_16_212_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_199_16_212_16_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_49_213_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 198 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_78_277_20_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_20_277_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_275_20_277_20_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_33_278_16_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_16_278_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_265_16_278_16_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_49_279_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 264 ]
         %tmp.59 = lgetv %c.3;
-        symbol [ c %tmp.59 198 44 45 ];
+        symbol [ c %tmp.59 264 44 45 ];
         %tmp.60 = add %tmp.59 1;
         lputv %c.3 %tmp.60;
-        symbol [ c %c.3 198 44 45 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_198_12_213_12_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_48_214_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 196 ]
+        symbol [ c %c.3 264 44 45 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_264_12_279_12_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_48_280_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 262 ]
         %tmp.63 = lgetv %r.1;
-        symbol [ r %tmp.63 196 43 44 ];
+        symbol [ r %tmp.63 262 43 44 ];
         %tmp.64 = add %tmp.63 1;
         lputv %r.1 %tmp.64;
-        symbol [ r %r.1 196 43 44 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_196_8_214_8_for_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 215 8 ]
+        symbol [ r %r.1 262 43 44 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_262_8_280_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 281 8 ]
         %tmp.65 = true;
         ret %tmp.65;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_195_83_216_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_261_83_282_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 219; @symbol_functiondef = [mergePiece,219,13,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 285; @symbol_functiondef = [mergePiece,285,13,23]; ]
     function mergePiece() {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_219_26_238_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 220 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_end" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_285_26_304_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 286 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_end" ]
         %r.1 = local;
-        symbol [ r %r.1 220 17 18 ];
+        symbol [ r %r.1 286 17 18 ];
         %tmp.1 = 0;
         lputv %r.1 %tmp.1;
-        symbol [ r %r.1 220 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_test:
+        symbol [ r %r.1 286 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_test:
         %tmp.2 = lgetv %r.1;
-        symbol [ r %tmp.2 220 24 25 ];
-        symbol [ curMatrix %tmp.4 220 28 37 ];
+        symbol [ r %tmp.2 286 24 25 ];
+        symbol [ curMatrix %tmp.4 286 28 37 ];
         %tmp.4 = getv ? :curMatrix;
-        symbol [ size %tmp.5 220 38 42 ];
+        symbol [ size %tmp.5 286 38 42 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = lt %tmp.2 %tmp.6;
-        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_51_232_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 221 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_51_232_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_51_232_8_stop" ]
+        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_51_298_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 287 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_51_298_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_51_298_8_stop" ]
         %row.2 = local;
-        symbol [ row %row.2 221 16 19 ];
-        symbol [ curMatrix %tmp.9 221 23 32 ];
+        symbol [ row %row.2 287 16 19 ];
+        symbol [ curMatrix %tmp.9 287 23 32 ];
         %tmp.9 = getv ? :curMatrix;
         %tmp.10 = as %tmp.9 Array;
-        symbol [ Array %tmp.10 221 36 41 ];
+        symbol [ Array %tmp.10 287 36 41 ];
         %tmp.11 = lgetv %r.1;
-        symbol [ r %tmp.11 221 43 44 ];
+        symbol [ r %tmp.11 287 43 44 ];
         %tmp.12 = agetv %tmp.10 %tmp.11;
         %tmp.13 = as %tmp.12 Array;
-        symbol [ Array %tmp.13 221 49 54 ];
+        symbol [ Array %tmp.13 287 49 54 ];
         lputv %row.2 %tmp.13;
-        symbol [ row %row.2 221 16 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 222 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_end" ]
+        symbol [ row %row.2 287 16 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 288 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_end" ]
         %c.3 = local;
-        symbol [ c %c.3 222 21 22 ];
+        symbol [ c %c.3 288 21 22 ];
         %tmp.14 = 0;
         lputv %c.3 %tmp.14;
-        symbol [ c %c.3 222 21 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_test:
+        symbol [ c %c.3 288 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_test:
         %tmp.15 = lgetv %c.3;
-        symbol [ c %tmp.15 222 28 29 ];
+        symbol [ c %tmp.15 288 28 29 ];
         %tmp.16 = lgetv %row.2;
-        symbol [ row %tmp.16 222 32 35 ];
-        symbol [ size %tmp.17 222 36 40 ];
+        symbol [ row %tmp.16 288 32 35 ];
+        symbol [ size %tmp.17 288 36 40 ];
         %tmp.17 = getv function %tmp.16 :size;
         %tmp.18 = invoke %tmp.16 %tmp.17();
         %tmp.19 = lt %tmp.15 %tmp.18;
-        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_49_231_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 223 16 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_16_230_16_if_stmt:
+        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_49_297_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 289 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_16_296_16_if_stmt:
         %tmp.20 = lgetv %row.2;
-        symbol [ row %tmp.20 223 20 23 ];
+        symbol [ row %tmp.20 289 20 23 ];
         %tmp.21 = lgetv %c.3;
-        symbol [ c %tmp.21 223 24 25 ];
+        symbol [ c %tmp.21 289 24 25 ];
         %tmp.22 = agetv %tmp.20 %tmp.21;
         %tmp.23 = 1;
         %tmp.24 = eq %tmp.22 %tmp.23;
-        bf %tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_16_230_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_16_230_16_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_33_230_16_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 224 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_33_230_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_33_230_16_stop" ]
+        bf %tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_16_296_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_16_296_16_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_33_296_16_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 290 20 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_33_296_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_33_296_16_stop" ]
         %gx.4 = local;
-        symbol [ gx %gx.4 224 24 26 ];
-        symbol [ posX %tmp.26 224 29 33 ];
+        symbol [ gx %gx.4 290 24 26 ];
+        symbol [ posX %tmp.26 290 29 33 ];
         %tmp.26 = getv ? :posX;
         %tmp.27 = lgetv %c.3;
-        symbol [ c %tmp.27 224 36 37 ];
+        symbol [ c %tmp.27 290 36 37 ];
         %tmp.28 = add %tmp.26 %tmp.27;
         lputv %gx.4 %tmp.28;
-        symbol [ gx %gx.4 224 24 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 225 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_33_230_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_33_230_16_stop" ]
+        symbol [ gx %gx.4 290 24 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 291 20 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_33_296_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_33_296_16_stop" ]
         %gy.5 = local;
-        symbol [ gy %gy.5 225 24 26 ];
-        symbol [ posY %tmp.30 225 29 33 ];
+        symbol [ gy %gy.5 291 24 26 ];
+        symbol [ posY %tmp.30 291 29 33 ];
         %tmp.30 = getv ? :posY;
         %tmp.31 = lgetv %r.1;
-        symbol [ r %tmp.31 225 36 37 ];
+        symbol [ r %tmp.31 291 36 37 ];
         %tmp.32 = add %tmp.30 %tmp.31;
         lputv %gy.5 %tmp.32;
-        symbol [ gy %gy.5 225 24 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 226 20 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_20_229_20_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_24_226_40_begin:
+        symbol [ gy %gy.5 291 24 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 292 20 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_20_295_20_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_24_292_40_begin:
         %tmp.33 = lgetv %gy.5;
-        symbol [ gy %tmp.33 226 24 26 ];
+        symbol [ gy %tmp.33 292 24 26 ];
         %tmp.34 = 0;
         %tmp.35 = gte %tmp.33 %tmp.34;
-        bf %tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_20_229_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_35_226_40_true:
+        bf %tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_20_295_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_35_292_40_true:
         %tmp.36 = lgetv %gy.5;
-        symbol [ gy %tmp.36 226 35 37 ];
-        symbol [ rowsN %tmp.38 226 40 45 ];
+        symbol [ gy %tmp.36 292 35 37 ];
+        symbol [ rowsN %tmp.38 292 40 45 ];
         %tmp.38 = getv ? :rowsN;
         %tmp.39 = lt %tmp.36 %tmp.38;
         push %tmp.39;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_35_226_40_end:
-        %tmp.40 = phi [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_24_226_40_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_35_226_40_true] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_35_226_40_end];
-        bf %tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_20_229_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_20_229_20_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_47_229_20_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 227 24 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_47_229_20_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_47_229_20_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_35_292_40_end:
+        %tmp.40 = phi [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_24_292_40_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_35_292_40_true] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_35_292_40_end];
+        bf %tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_20_295_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_20_295_20_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_47_295_20_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 293 24 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_47_295_20_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_47_295_20_stop" ]
         %gridR.6 = local;
-        symbol [ gridR %gridR.6 227 28 33 ];
-        symbol [ grid %tmp.42 227 37 41 ];
+        symbol [ gridR %gridR.6 293 28 33 ];
+        symbol [ grid %tmp.42 293 37 41 ];
         %tmp.42 = getv ? :grid;
         %tmp.43 = as %tmp.42 Array;
-        symbol [ Array %tmp.43 227 45 50 ];
+        symbol [ Array %tmp.43 293 45 50 ];
         %tmp.44 = lgetv %gy.5;
-        symbol [ gy %tmp.44 227 52 54 ];
+        symbol [ gy %tmp.44 293 52 54 ];
         %tmp.45 = agetv %tmp.43 %tmp.44;
         %tmp.46 = as %tmp.45 Array;
-        symbol [ Array %tmp.46 227 59 64 ];
+        symbol [ Array %tmp.46 293 59 64 ];
         lputv %gridR.6 %tmp.46;
-        symbol [ gridR %gridR.6 227 28 33 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 228 24 ]
+        symbol [ gridR %gridR.6 293 28 33 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 294 24 ]
         %tmp.47 = lgetv %gridR.6;
-        symbol [ gridR %tmp.47 228 24 29 ];
-        symbol [ curPiece %tmp.49 228 36 44 ];
+        symbol [ gridR %tmp.47 294 24 29 ];
+        symbol [ curPiece %tmp.49 294 36 44 ];
         %tmp.49 = getv ? :curPiece;
         %tmp.50 = lgetv %gx.4;
-        symbol [ gx %tmp.50 228 30 32 ];
+        symbol [ gx %tmp.50 294 30 32 ];
         aputv %tmp.47 %tmp.50 %tmp.49;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_47_229_20_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_20_229_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_226_20_229_20_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_33_230_16_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_16_230_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_223_16_230_16_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_49_231_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 222 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_47_295_20_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_20_295_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_292_20_295_20_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_33_296_16_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_16_296_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_289_16_296_16_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_49_297_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 288 ]
         %tmp.53 = lgetv %c.3;
-        symbol [ c %tmp.53 222 44 45 ];
+        symbol [ c %tmp.53 288 44 45 ];
         %tmp.54 = add %tmp.53 1;
         lputv %c.3 %tmp.54;
-        symbol [ c %c.3 222 44 45 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_222_12_231_12_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_51_232_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 220 ]
+        symbol [ c %c.3 288 44 45 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_288_12_297_12_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_51_298_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 286 ]
         %tmp.57 = lgetv %r.1;
-        symbol [ r %tmp.57 220 46 47 ];
+        symbol [ r %tmp.57 286 46 47 ];
         %tmp.58 = add %tmp.57 1;
         lputv %r.1 %tmp.58;
-        symbol [ r %r.1 220 46 47 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_220_8_232_8_for_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 235 8 ]
-        symbol [ nextPiece %tmp.60 235 19 28 ];
+        symbol [ r %r.1 286 46 47 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_286_8_298_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 301 8 ]
+        symbol [ nextPiece %tmp.60 301 19 28 ];
         %tmp.60 = getv ? :nextPiece;
-        symbol [ curPiece ? 235 8 16 ];
+        symbol [ curPiece ? 301 8 16 ];
         putv self :curPiece %tmp.60;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 236 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 302 8 ]
         %tmp.61 = self;
-        symbol [ getNextPiece %tmp.62 236 20 32 ];
+        symbol [ getNextPiece %tmp.62 302 20 32 ];
         %tmp.62 = getv function %tmp.61 :getNextPiece;
         %tmp.63 = invoke %tmp.61 %tmp.62();
-        symbol [ nextPiece ? 236 8 17 ];
+        symbol [ nextPiece ? 302 8 17 ];
         putv self :nextPiece %tmp.63;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 237 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc" 303 8 ]
         %tmp.64 = self;
-        symbol [ spawnPiece %tmp.65 237 8 18 ];
+        symbol [ spawnPiece %tmp.65 303 8 18 ];
         %tmp.65 = getv function %tmp.64 :spawnPiece;
         invoke %tmp.64 %tmp.65();
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_219_26_238_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_Stackup_mc_285_26_304_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\Stackup.mc"; @line = 1; ]
