@@ -16,9 +16,8 @@ class MenuSnakeView extends WatchUi.View {
         dc.clear();
 
         // Title
-        dc.setColor(Graphics.COLOR_BLACK, Color.none);
-        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) - 30, 
-                    Graphics.FONT_LARGE, "SNAKE", Graphics.TEXT_JUSTIFY_CENTER);
+        Components.drawSnakeTitle(dc);
+        Components.drawHighScore(dc, "snake", Graphics.COLOR_GREEN);
 
         // New Game Button
         playButton = Components.makeStartButton(dc, "PLAY", Graphics.COLOR_GREEN, 

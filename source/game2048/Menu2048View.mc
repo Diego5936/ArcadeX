@@ -17,13 +17,13 @@ class Menu2048View extends WatchUi.View {
 
     function onUpdate(dc as Dc) as Void {
         // Background
-        dc.setColor(Color.none, Graphics.COLOR_LT_GRAY);
+        var background = Color.TILES["big"];
+        dc.setColor(Color.none, background);
         dc.clear();
 
         // Title
-        dc.setColor(Graphics.COLOR_BLACK, Color.none);
-        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) - 30, 
-                    Graphics.FONT_LARGE, "!!2048!!", Graphics.TEXT_JUSTIFY_CENTER);
+        Components.draw2048Title(dc);
+        Components.drawHighScore(dc, "2048", Graphics.COLOR_WHITE);
 
         // Decide menu state
         hasContinue = SaveManager.hasGrid();
@@ -33,12 +33,12 @@ class Menu2048View extends WatchUi.View {
         if (hasContinue) {
             // Dual Buttons: New / Continue
             var labels = ["New", "Continue"];
-            var selectedButton = {:backColor => Graphics.COLOR_YELLOW,
-                                :border => Graphics.COLOR_BLACK,
-                                :textColor => Graphics.COLOR_BLACK};
-            var otherButton = {:backColor => Graphics.COLOR_WHITE,
-                                :border => Graphics.COLOR_BLACK,
-                                :textColor => Graphics.COLOR_BLACK};
+            var selectedButton = {:backColor => Color.TILES[2048],
+                                :border => Graphics.COLOR_WHITE,
+                                :textColor => Graphics.COLOR_WHITE};
+            var otherButton = {:backColor => background,
+                                :border => Graphics.COLOR_WHITE,
+                                :textColor => Graphics.COLOR_WHITE};
             playButtons = Components.makeDualButtons(dc, selected, labels, selectedButton, otherButton);
         }
         else {
