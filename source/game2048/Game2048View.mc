@@ -19,9 +19,14 @@ class Game2048View extends WatchUi.View {
 
     function drawGrid(dc as Dc) as Void {
         // Background
-        dc.setColor(Color.none, Graphics.COLOR_BLACK);
+        dc.setColor(Color.none, Color.TILES["big"]);
         dc.clear();
 
+        // Draw score
+        dc.setColor(Graphics.COLOR_WHITE, Color.none);
+        dc.drawText(Layout.centerX(dc), 15, Graphics.FONT_TINY, "Score: " + Game2048.score, Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Grid
         var margin = Layout.workingBufferX;
         var spacing = 5;
         var x = margin;

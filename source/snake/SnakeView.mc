@@ -42,6 +42,10 @@ class SnakeView extends WatchUi.View {
         dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
+        // Draw score
+        dc.setColor(Graphics.COLOR_GREEN, Color.none);
+        dc.drawText(Layout.centerX(dc), 15, Graphics.FONT_TINY, "Score: " + Snake.score, Graphics.TEXT_JUSTIFY_CENTER);
+
         // Grid
         var gridSize = Snake.gridSize;
         var marginX = Layout.workingBufferX;
