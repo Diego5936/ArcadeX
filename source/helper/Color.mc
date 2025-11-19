@@ -3,6 +3,13 @@ import Toybox.Graphics;
 module Color {
     var none = Graphics.COLOR_TRANSPARENT;
 
+    // Home Screen Arcade Colors
+    const NEON = {
+        "pink"    => Graphics.createColor(1, 255, 51, 255),
+        "blue"    => Graphics.createColor(1, 0, 255, 255),
+        "green"   => Graphics.createColor(1, 0, 255, 128),
+    };
+
     // 2048 Custom Colors
     const TILES = {
         2     => Graphics.createColor(1, 230, 230, 255), // Light blue

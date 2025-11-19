@@ -50,12 +50,12 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnake
         %tmp.9 = getv function %tmp.8 :clear;
         invoke %tmp.8 %tmp.9();
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc" 19 8 ]
-        symbol [ Components %tmp.11 19 8 18 ];
-        %tmp.11 = getv ? :Components;
-        symbol [ drawSnakeTitle %tmp.12 19 19 33 ];
-        %tmp.12 = getv function %tmp.11 :drawSnakeTitle;
+        symbol [ Titles %tmp.11 19 8 14 ];
+        %tmp.11 = getv ? :Titles;
+        symbol [ titleSnake %tmp.12 19 15 25 ];
+        %tmp.12 = getv function %tmp.11 :titleSnake;
         %tmp.13 = lgetv %dc;
-        symbol [ dc %tmp.13 19 34 36 ];
+        symbol [ dc %tmp.13 19 26 28 ];
         invoke %tmp.11 %tmp.12(%tmp.13);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc" 20 8 ]
         symbol [ Components %tmp.15 20 8 18 ];

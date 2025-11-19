@@ -19,10 +19,8 @@ class ArcadeXView extends WatchUi.View {
         dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
-        // Main Titles
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-        dc.drawText(Layout.centerX(dc), Layout.workingTop, 
-                    Graphics.FONT_LARGE, "ArcadeX", Graphics.TEXT_JUSTIFY_CENTER);
+        // Main Title
+        Titles.pixelShadowedText(dc, 60, 83, 8, "ARCADEX", Color.NEON["pink"], Color.NEON["blue"]);
 
         // Buttons
         makeScrollingWheel(dc);
@@ -35,7 +33,7 @@ class ArcadeXView extends WatchUi.View {
                         :x => Layout.centerX(dc) - (mainBW / 2),
                         :y => Layout.centerY(dc)};
         var mainButtonFormat = {:background => Graphics.COLOR_BLACK,
-                                :border => Graphics.COLOR_RED, 
+                                :border => Color.NEON["green"], 
                                 :text => Graphics.COLOR_WHITE,
                                 :font => Graphics.FONT_LARGE};
 
@@ -45,7 +43,7 @@ class ArcadeXView extends WatchUi.View {
         var shadowBW = 180;
         var shadowBH = 35;
         var shadowButtonFormat = {:background => Graphics.COLOR_BLACK,
-                                :border => Graphics.COLOR_RED, 
+                                :border => Color.NEON["green"], 
                                 :text => Graphics.COLOR_WHITE,
                                 :font => Graphics.FONT_XTINY};
 

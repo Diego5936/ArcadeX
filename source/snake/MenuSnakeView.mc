@@ -16,7 +16,7 @@ class MenuSnakeView extends WatchUi.View {
         dc.clear();
 
         // Title
-        Components.drawSnakeTitle(dc);
+        Titles.titleSnake(dc);
         Components.drawHighScore(dc, "snake", Graphics.COLOR_GREEN);
 
         // New Game Button

@@ -50,12 +50,12 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_stackup_MenuSta
         %tmp.9 = getv function %tmp.8 :clear;
         invoke %tmp.8 %tmp.9();
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 18 8 ]
-        symbol [ Components %tmp.11 18 8 18 ];
-        %tmp.11 = getv ? :Components;
-        symbol [ drawStackupTitle %tmp.12 18 19 35 ];
-        %tmp.12 = getv function %tmp.11 :drawStackupTitle;
+        symbol [ Titles %tmp.11 18 8 14 ];
+        %tmp.11 = getv ? :Titles;
+        symbol [ titleStackup %tmp.12 18 15 27 ];
+        %tmp.12 = getv function %tmp.11 :titleStackup;
         %tmp.13 = lgetv %dc;
-        symbol [ dc %tmp.13 18 36 38 ];
+        symbol [ dc %tmp.13 18 28 30 ];
         invoke %tmp.11 %tmp.12(%tmp.13);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\stackup\MenuStackupView.mc" 19 8 ]
         symbol [ Components %tmp.15 19 8 18 ];

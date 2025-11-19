@@ -22,7 +22,7 @@ class Menu2048View extends WatchUi.View {
         dc.clear();
 
         // Title
-        Components.draw2048Title(dc);
+        Titles.title2048(dc);
         Components.drawHighScore(dc, "2048", Graphics.COLOR_WHITE);
 
         // Decide menu state

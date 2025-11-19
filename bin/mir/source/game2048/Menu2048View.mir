@@ -70,12 +70,12 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu20
         %tmp.13 = getv function %tmp.12 :clear;
         invoke %tmp.12 %tmp.13();
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 25 8 ]
-        symbol [ Components %tmp.15 25 8 18 ];
-        %tmp.15 = getv ? :Components;
-        symbol [ draw2048Title %tmp.16 25 19 32 ];
-        %tmp.16 = getv function %tmp.15 :draw2048Title;
+        symbol [ Titles %tmp.15 25 8 14 ];
+        %tmp.15 = getv ? :Titles;
+        symbol [ title2048 %tmp.16 25 15 24 ];
+        %tmp.16 = getv function %tmp.15 :title2048;
         %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 25 33 35 ];
+        symbol [ dc %tmp.17 25 25 27 ];
         invoke %tmp.15 %tmp.16(%tmp.17);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 26 8 ]
         symbol [ Components %tmp.19 26 8 18 ];

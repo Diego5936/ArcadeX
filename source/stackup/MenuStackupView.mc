@@ -15,7 +15,7 @@ class MenuStackupView extends WatchUi.View {
         dc.clear();
 
         // Title
-        Components.drawStackupTitle(dc);
+        Titles.titleStackup(dc);
         Components.drawHighScore(dc, "stackup", Graphics.COLOR_PURPLE);
 
         // New Game Button

@@ -1,0 +1,117 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 5; @symbol_moduledef = [QD,5,7,9]; ]
+module QD {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 7; @symbol_functiondef = [pos,7,13,16]; @symbol_param<0> = [x,7,17,18]; @symbol_param<0>_type<0> = [Number,7,22,28]; @symbol_param<1> = [y,7,30,31]; @symbol_param<1>_type<0> = [Number,7,35,41]; @symbol_return<0> = [Dictionary,7,46,56]; ]
+    function pos(x as Number, y as Number) as Dictionary {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_7_57_9_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc" 8 8 ]
+        %tmp.1 = newd 2;
+        %tmp.3 = const :x;
+        symbol [ x %tmp.3 8 17 18 const ];
+        %tmp.4 = lgetv %x;
+        symbol [ x %tmp.4 8 22 23 ];
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.8 = const :y;
+        symbol [ y %tmp.8 8 26 27 const ];
+        %tmp.9 = lgetv %y;
+        symbol [ y %tmp.9 8 31 32 ];
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
+        ret %tmp.11;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_7_57_9_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 11; @symbol_functiondef = [posSize,11,13,20]; @symbol_param<0> = [x,11,21,22]; @symbol_param<0>_type<0> = [Number,11,26,32]; @symbol_param<1> = [y,11,34,35]; @symbol_param<1>_type<0> = [Number,11,39,45]; @symbol_param<2> = [size,11,47,51]; @symbol_param<2>_type<0> = [Number,11,55,61]; @symbol_return<0> = [Dictionary,11,66,76]; ]
+    function posSize(x as Number, y as Number, size as Number) as Dictionary {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_11_77_13_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc" 12 8 ]
+        %tmp.1 = newd 4;
+        %tmp.3 = const :x;
+        symbol [ x %tmp.3 12 17 18 const ];
+        %tmp.4 = lgetv %x;
+        symbol [ x %tmp.4 12 22 23 ];
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.8 = const :y;
+        symbol [ y %tmp.8 12 26 27 const ];
+        %tmp.9 = lgetv %y;
+        symbol [ y %tmp.9 12 31 32 ];
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
+        %tmp.13 = const :w;
+        symbol [ w %tmp.13 12 35 36 const ];
+        %tmp.14 = lgetv %size;
+        symbol [ size %tmp.14 12 40 44 ];
+        %tmp.15 = dup %tmp.11;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.18 = const :h;
+        symbol [ h %tmp.18 12 47 48 const ];
+        %tmp.19 = lgetv %size;
+        symbol [ size %tmp.19 12 52 56 ];
+        %tmp.20 = dup %tmp.16;
+        %tmp.21 = aputv %tmp.20 %tmp.18 %tmp.19;
+        ret %tmp.21;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_11_77_13_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 15; @symbol_functiondef = [rect,15,13,17]; @symbol_param<0> = [x,15,18,19]; @symbol_param<0>_type<0> = [Number,15,23,29]; @symbol_param<1> = [y,15,31,32]; @symbol_param<1>_type<0> = [Number,15,36,42]; @symbol_param<2> = [w,15,44,45]; @symbol_param<2>_type<0> = [Number,15,49,55]; @symbol_param<3> = [h,15,57,58]; @symbol_param<3>_type<0> = [Number,15,62,68]; @symbol_return<0> = [Dictionary,15,73,83]; ]
+    function rect(x as Number, y as Number, w as Number, h as Number) as Dictionary {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_15_84_17_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc" 16 8 ]
+        %tmp.1 = newd 4;
+        %tmp.3 = const :x;
+        symbol [ x %tmp.3 16 17 18 const ];
+        %tmp.4 = lgetv %x;
+        symbol [ x %tmp.4 16 22 23 ];
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.8 = const :y;
+        symbol [ y %tmp.8 16 26 27 const ];
+        %tmp.9 = lgetv %y;
+        symbol [ y %tmp.9 16 31 32 ];
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
+        %tmp.13 = const :w;
+        symbol [ w %tmp.13 16 35 36 const ];
+        %tmp.14 = lgetv %w;
+        symbol [ w %tmp.14 16 40 41 ];
+        %tmp.15 = dup %tmp.11;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.18 = const :h;
+        symbol [ h %tmp.18 16 44 45 const ];
+        %tmp.19 = lgetv %h;
+        symbol [ h %tmp.19 16 49 50 ];
+        %tmp.20 = dup %tmp.16;
+        %tmp.21 = aputv %tmp.20 %tmp.18 %tmp.19;
+        ret %tmp.21;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_15_84_17_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 20; @symbol_functiondef = [shadeColors,20,13,24]; @symbol_param<0> = [main,20,25,29]; @symbol_param<1> = [shadow,20,31,37]; @symbol_return<0> = [Dictionary,20,42,52]; ]
+    function shadeColors(main, shadow) as Dictionary {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_20_53_22_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc" 21 8 ]
+        %tmp.1 = newd 2;
+        %tmp.3 = const :main;
+        symbol [ main %tmp.3 21 17 21 const ];
+        %tmp.4 = lgetv %main;
+        symbol [ main %tmp.4 21 25 29 ];
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.8 = const :shadow;
+        symbol [ shadow %tmp.8 21 32 38 const ];
+        %tmp.9 = lgetv %shadow;
+        symbol [ shadow %tmp.9 21 42 48 ];
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 %tmp.8 %tmp.9;
+        ret %tmp.11;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_QD_mc_20_53_22_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\QD.mc"; @line = 1; ]
+<init> {
+}
