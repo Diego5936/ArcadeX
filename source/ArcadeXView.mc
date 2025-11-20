@@ -7,10 +7,18 @@ import Components;
 
 class ArcadeXView extends WatchUi.View {
     var mainButton as Dictionary or Null;
-    var gameIdx = 0;
+    var favIcon as Dictionary or Null;
+    var gameIdx;
     
     function initialize() {
         View.initialize();
+
+        // Load favorite game
+        SaveManager.loadFavGame();
+        if (SaveManager.favGame == null) {
+            SaveManager.setFavGame(0);
+        }
+        gameIdx = SaveManager.favGame;
     }
 
     function onUpdate(dc as Dc) as Void {
@@ -27,13 +35,18 @@ class ArcadeXView extends WatchUi.View {
     }
 
     function makeScrollingWheel(dc as Dc) {
+        // Favorite icon
+        var icon = gameIdx == SaveManager.favGame ? Drawings.FILLED_HEART : Drawings.EMPTY_HEART;
+        favIcon = Drawings.drawPixelArt(dc, 13, Layout.centerY(dc) + 10, 6, icon);
+
         // Main button
+        var iconSpace = 20;
         var mainBW = 300;
-        mainButton = {:w => mainBW, :h => 70,
-                        :x => Layout.centerX(dc) - (mainBW / 2),
+        mainButton = {:w => mainBW - iconSpace, :h => 70,
+                        :x => Layout.centerX(dc) - (mainBW / 2) + iconSpace,
                         :y => Layout.centerY(dc)};
         var mainButtonFormat = {:background => Graphics.COLOR_BLACK,
-                                :border => Color.NEON["green"], 
+                                :border => Color.NEON["blue"], 
                                 :text => Graphics.COLOR_WHITE,
                                 :font => Graphics.FONT_LARGE};
 
@@ -43,7 +56,7 @@ class ArcadeXView extends WatchUi.View {
         var shadowBW = 180;
         var shadowBH = 35;
         var shadowButtonFormat = {:background => Graphics.COLOR_BLACK,
-                                :border => Color.NEON["green"], 
+                                :border => Color.NEON["blue"], 
                                 :text => Graphics.COLOR_WHITE,
                                 :font => Graphics.FONT_XTINY};
 
@@ -87,5 +100,9 @@ class ArcadeXView extends WatchUi.View {
     // --- Getters ---
     function getMainButton() as Dictionary {
         return mainButton;
+    }
+
+    function getFavIcon() as Dictionary {
+        return favIcon;
     }
 }

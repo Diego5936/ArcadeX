@@ -3,6 +3,19 @@ import Toybox.System;
 import Toybox.Lang;
 
 module SaveManager {
+    // --- Settings ---
+    var favGameKey as String = "arcadex_favgame";
+    var favGame as Number or Null;
+
+    function loadFavGame() {
+        favGame = Storage.getValue(favGameKey) as Number or Null;
+    }
+
+    function setFavGame(gameIdx as Number) as Void {
+        favGame = gameIdx;
+        Storage.setValue(favGameKey, favGame);
+    }
+
     // --- High Scores ---
     var scoresKey as String = "arcadex_scores";
     var scores as Dictionary or Null;

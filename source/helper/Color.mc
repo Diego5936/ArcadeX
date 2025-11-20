@@ -6,8 +6,15 @@ module Color {
     // Home Screen Arcade Colors
     const NEON = {
         "pink"    => Graphics.createColor(1, 255, 51, 255),
-        "blue"    => Graphics.createColor(1, 0, 255, 255),
-        "green"   => Graphics.createColor(1, 0, 255, 128),
+        "blue"    => Graphics.createColor(1, 0, 255, 255)
+    };
+
+    // Pixel Art Drawing Colors
+    const PAINT = {
+        1 => Graphics.COLOR_BLACK,
+        2 => Graphics.COLOR_WHITE,
+        3 => Graphics.createColor(1, 255, 0, 0),       // Red
+        4 => NEON["blue"]                              // Neon Blue
     };
 
     // 2048 Custom Colors

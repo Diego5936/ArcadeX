@@ -12,11 +12,11 @@ module GameRegistry {
     const GAMES = [
         { :id => "2048", :title => "2048" },
         { :id => "snake", :title => "Snake" },
-        { :id => "stackup", :title => "Stack Up" },
-        { :id => "quickdash", :title => "Quick Dash" },
-        { :id => "minimaze", :title => "Mini Maze" },
-        { :id => "breakout", :title => "Breakout" },
-        { :id => "catchit", :title => "Catch It!" }
+        { :id => "stackup", :title => "Stack Up" }
+        // { :id => "quickdash", :title => "Quick Dash" },
+        // { :id => "minimaze", :title => "Mini Maze" },
+        // { :id => "breakout", :title => "Breakout" },
+        // { :id => "catchit", :title => "Catch It!" }
     ];
 
     // Public launch function

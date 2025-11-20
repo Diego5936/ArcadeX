@@ -31,12 +31,21 @@ class ArcadeXDelegate extends WatchUi.InputDelegate {
         var y = position[1];
 
         var button = view.getMainButton() as Dictionary;
-
-        var tap = x >= button[:x] and x <= button[:x] + button[:w] and
+        var buttonTap = x >= button[:x] and x <= button[:x] + button[:w] and
                     y >= button[:y] and y <= button[:y] + button[:h];
+
+        var icon = view.getFavIcon() as Dictionary;
+        var iconTap = x >= icon[:x] and x <= icon[:x] + icon[:width] and
+                    y >= icon[:y] and y <= icon[:y] + icon[:height];
                 
-        if (!tap) {
+        if (!buttonTap && !iconTap) {
             return false;
+        }
+        else if (iconTap) {
+            var favGameIdx = view.gameIdx;
+            SaveManager.setFavGame(favGameIdx);
+            WatchUi.requestUpdate();
+            return true;
         }
 
         return select();
