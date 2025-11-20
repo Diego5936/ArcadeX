@@ -44,9 +44,9 @@ class Menu2048View extends WatchUi.View {
         else {
             // Single Button: New
             playButton = Components.makeStartButton(dc, "New", 
-                                            Graphics.COLOR_YELLOW, 
-                                            Graphics.COLOR_BLACK, 
-                                            Graphics.COLOR_BLACK);
+                                            Color.TILES[2048], 
+                                            Graphics.COLOR_WHITE, 
+                                            Graphics.COLOR_WHITE);
         }
     }
 }

@@ -218,21 +218,23 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu20
         %tmp.92 = lgetv %dc;
         symbol [ dc %tmp.92 46 52 54 ];
         %tmp.93 = "New";
-        symbol [ Graphics %tmp.94 47 44 52 ];
-        %tmp.94 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.95 47 53 65 ];
-        %tmp.95 = getv %tmp.94 :COLOR_YELLOW;
-        symbol [ Graphics %tmp.96 48 44 52 ];
-        %tmp.96 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.97 48 53 64 ];
-        %tmp.97 = getv %tmp.96 :COLOR_BLACK;
-        symbol [ Graphics %tmp.98 49 44 52 ];
-        %tmp.98 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.99 49 53 64 ];
-        %tmp.99 = getv %tmp.98 :COLOR_BLACK;
-        %tmp.100 = invoke %tmp.90 %tmp.91(%tmp.92, %tmp.93, %tmp.95, %tmp.97, %tmp.99);
+        symbol [ Color %tmp.95 47 44 49 ];
+        %tmp.95 = getv ? :Color;
+        symbol [ TILES %tmp.96 47 50 55 ];
+        %tmp.96 = getv %tmp.95 :TILES;
+        %tmp.97 = 2048;
+        %tmp.98 = agetv %tmp.96 %tmp.97;
+        symbol [ Graphics %tmp.99 48 44 52 ];
+        %tmp.99 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.100 48 53 64 ];
+        %tmp.100 = getv %tmp.99 :COLOR_WHITE;
+        symbol [ Graphics %tmp.101 49 44 52 ];
+        %tmp.101 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.102 49 53 64 ];
+        %tmp.102 = getv %tmp.101 :COLOR_WHITE;
+        %tmp.103 = invoke %tmp.90 %tmp.91(%tmp.92, %tmp.93, %tmp.98, %tmp.100, %tmp.102);
         symbol [ playButton ? 46 12 22 ];
-        putv self :playButton %tmp.100;
+        putv self :playButton %tmp.103;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_44_13_50_8_stop:
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_33_8_50_8_if_end:
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu2048View_mc_18_40_51_4_stop:
