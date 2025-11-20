@@ -1,7 +1,11 @@
+import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Math;
 
 module Snake {
+
+    // ---------- Initialization ----------
+
     var gridSize = 15; // HAS to be odd to have a center
 
     var headPos as Dictionary or Null;
@@ -27,6 +31,31 @@ module Snake {
         score = 0;
     }
 
+    // ---------- Input Logic ----------
+
+    function handleMove(direction as String) {
+        if (!active){ return; }
+
+        var current = direction;
+
+        if (direction.equals("right") && !(current != null && current.equals("left"))) {
+            nextDirection = "right";
+        }
+        else if (direction.equals("left") && !(current != null && current.equals("right"))) {
+            nextDirection = "left";
+        }
+        else if (direction.equals("up") && !(current != null && current.equals("down"))) {
+            nextDirection = "up";
+        }
+        else if (direction.equals("down") && !(current != null && current.equals("up"))) {
+            nextDirection = "down";
+        }
+
+        WatchUi.requestUpdate();
+    }
+
+    // ---------- Game Logic ----------
+
     // Sets food to a new position
     function spawnFood() as Dictionary{
         var validPos = false;
@@ -42,6 +71,8 @@ module Snake {
 
         return {:x => randomX, :y => randomY};
     }
+
+    // ---------- Movement Logic ----------
 
     function move() {
         if (nextDirection != null) {
@@ -121,6 +152,9 @@ module Snake {
         headPos = newHead;
     }
 
+    // ---------- Helper Functions ----------
+
+    // Checks for collisions with walls or self
     function checkCollisions(head as Dictionary) as Boolean {
         // Wall
         if (head[:x] < 0 || head[:x] >= gridSize ||
@@ -138,11 +172,7 @@ module Snake {
         return false;
     }
 
-    // Helper Functions
-    function setNextDirection(dir as String) as Void {
-        nextDirection = dir;
-    }
-
+    // Check if two directions are opposites
     function isOpposite(a as String or Null, b as String) as Boolean {
     if (a == null) {
         return false;
@@ -152,5 +182,5 @@ module Snake {
            (a == "down" and b == "up") or
            (a == "left" and b == "right") or
            (a == "right" and b == "left");
-}
+    }
 }

@@ -1,8 +1,11 @@
-import Toybox.System;
+import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Math;
 
-module Game2048 {
+module Game2048 {    
+
+    // ---------- Initialization ----------
+
     var grid = [];
     var active;
     var score;
@@ -43,7 +46,40 @@ module Game2048 {
         SaveManager.saveGrid(grid);
     }
 
-    // --- GAME LOGIC ---
+    // ---------- Input Logic ----------
+
+    function handleMove(direction as String) {
+        if (!active){ return; }
+
+        var prevGrid = cloneGrid(grid);
+
+        if (direction.equals("right")) {
+            slideHorizontally("right");
+        }
+        else if (direction.equals("left")) {
+            slideHorizontally("left");
+        }
+        else if (direction.equals("up")) {
+            slideVertically("up");
+        }
+        else if (direction.equals("down")) {
+            slideVertically("down");
+        }
+
+        var changed = !gridsEqual(prevGrid, grid);
+
+        if (changed) {
+            spawnNewTile();
+        }
+
+        if (noMovesLeft()) {
+            active = false;
+        }
+
+        WatchUi.requestUpdate();
+    }
+
+    // ---------- Game Logic ----------
 
     // Adds a new tile after action
     // Odds: 90% '2', 10% '4'
@@ -66,6 +102,7 @@ module Game2048 {
         curRow[col] = tileVal;
     }
 
+    // Manages post move actions like saving or game overs
     function afterMove(didChange as Boolean) {
         if (didChange) {
             spawnNewTile();
@@ -196,7 +233,7 @@ module Game2048 {
         afterMove(changed);
     }
 
-    // --- HELPER FUNCTIONS ---
+    // ---------- Helper Functions ----------
 
     // Check for blank grid
     function isGridEmpty(g as Array) as Boolean {

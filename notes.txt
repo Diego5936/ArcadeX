@@ -18,9 +18,9 @@ better game over screen
 wheel animations
 
 Now that i installed on my watch:
-- my swiping is kinda bad, make snake and 2048 and stackup(but specific regions for rotation too) to work by tapping on a certain side of the watch too (swipe right or tap right side of the screen)
 - after game over, tap or press startto go back pop view and go to main menu
 - make wheel bigger take up more of the empty space at the bottom
 - make favorite game icon bigger and give it its own action button (like holding start)
 - why is 2048 adding two tiles every time instead of one
 - make tetris save state like 2048 too, make it go faster so it doesnt go infinite, but start slower
+- why does the snake go right when going left?

@@ -2,7 +2,9 @@ import Toybox.WatchUi;
 import Toybox.Lang;
 
 module GameRegistry {
-    // --- Games Library ---
+
+    // ---------- Games Library ----------
+
     var MAP = {
         "2048" => new Method(GameRegistry, :run2048),
         "snake" => new Method(GameRegistry, :runSnake),
@@ -19,6 +21,8 @@ module GameRegistry {
         // { :id => "catchit", :title => "Catch It!" }
     ];
 
+
+
     // Public launch function
     function launch(id as String, menu as Boolean) as Boolean {
         if (!MAP.hasKey(id)) { return false; }
@@ -29,41 +33,45 @@ module GameRegistry {
 
     }
 
-    // --- Launchers ---
+    // ---------- Launchers ----------
+
     // Shared screen launcher
-    function launchScreen(viewClass, delegateClass, passView) {
+    function launchScreen(viewClass, delegateClass, passView, moveCallback as Method or Null) {
         var view = new viewClass();
 
         if (passView) {
             WatchUi.pushView(view, new delegateClass(view), WatchUi.SLIDE_IMMEDIATE);
         }
         else {
-            WatchUi.pushView(view, new delegateClass(), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(view, new delegateClass(moveCallback), WatchUi.SLIDE_IMMEDIATE);
         }
     }
 
+    // --- Individual Launchers ---
     function run2048(menu as Boolean) {
         if (menu) {
-            launchScreen(Menu2048View, Menu2048Delegate, true);
+            launchScreen(Menu2048View, Menu2048Delegate, true, null);
         } 
         else {
-            launchScreen(Game2048View, Game2048Delegate, false);
+            launchScreen(Game2048View, GameInputDelegate, false, new Method(Game2048, :handleMove));
         }
     }
+
     function runSnake(menu as Boolean) { 
         if (menu) {
-            launchScreen(MenuSnakeView, MenuSnakeDelegate, true);
+            launchScreen(MenuSnakeView, MenuSnakeDelegate, true, null);
         } 
         else {
-            launchScreen(SnakeView, SnakeDelegate, false);
+            launchScreen(SnakeView, GameInputDelegate, false, new Method(Snake, :handleMove));
         }
     } 
+
     function runStackup(menu as Boolean) { 
         if (menu) {
-            launchScreen(MenuStackupView, MenuStackupDelegate, true);
+            launchScreen(MenuStackupView, MenuStackupDelegate, true, null);
         } 
         else {
-            launchScreen(StackupView, StackupDelegate, false);
+            launchScreen(StackupView, GameInputDelegate, false, new Method(Stackup, :handleMove));
         }
     } 
 }

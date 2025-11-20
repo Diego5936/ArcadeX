@@ -1,8 +1,11 @@
-import Toybox.System;
+import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Math;
 
 module Stackup {
+
+    // ---------- Initialization ----------
+
     // Game state
     var active; 
     var score;
@@ -49,6 +52,7 @@ module Stackup {
         spawnPiece();
     }
 
+    // Piece Shapes
     const SHAPES = {
         "I" => [
             [0,0,0,0],
@@ -93,7 +97,32 @@ module Stackup {
         ]
     };
 
+    // ---------- Input logic ----------
+
+    function handleMove(direction as String) {
+        if (!active){ return; }
+
+        if (direction.equals("right")) {
+            moveHorizontally("right");
+        }
+        else if (direction.equals("left")) {
+            moveHorizontally("left");
+        }
+        else if (direction.equals("up")) {
+            savePiece();
+        }
+        else if (direction.equals("down")) {
+            hardFall();
+        }
+        else if(direction.equals("center")) {
+            rotate();
+        }
+
+        WatchUi.requestUpdate();
+    }
+
     // ---------- Game logic ----------
+
     function land() {
         mergePiece();
         removeRows(checkCompleteRow());
@@ -161,6 +190,7 @@ module Stackup {
     }
 
     // ---------- Piece Logic ----------
+
     // Instead of random selection, we use a shuffled bag method for fairness
     function refillBag() {
         bag = ["I", "O", "T", "S", "Z", "J", "L"];
@@ -218,6 +248,7 @@ module Stackup {
     }
 
     // ---------- Movement logic ----------
+    
     function fall() {
         // Try moving down
         if (isValidPosition(posX, posY + 1, curMatrix)) {
@@ -282,6 +313,8 @@ module Stackup {
     }
 
     // ---------- Helpers ----------
+
+    // Checks that the piece position is inside the grid
     function isValidPosition(x as Number, y as Number, matrix as Array) as Boolean {
         for (var r = 0; r < matrix.size(); r++) {
             var row = matrix[r] as Array;

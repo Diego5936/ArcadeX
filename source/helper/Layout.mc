@@ -24,4 +24,29 @@ module Layout {
     function workingHeight(dc as Dc) as Number {
         return dc.getHeight() - (workingBufferY * 2);
     }
+
+    // Regions for touch input
+    var leftX = 90;
+    var rightX = 320;
+    var topY = 95;
+    var bottomY = 315;
+
+    function determineRegion(x, y) as String{
+        var direction = "center";
+
+        if (x <= Layout.leftX && y < Layout.bottomY && y > Layout.topY) {
+            direction = "left";
+        }
+        else if (x >= Layout.rightX && y < Layout.bottomY && y > Layout.topY) {
+            direction = "right";
+        }
+        else if (y <= Layout.topY && x > Layout.leftX && x < Layout.rightX) {
+            direction = "up";
+        }
+        else if (y >= Layout.bottomY && x > Layout.leftX && x < Layout.rightX) {
+            direction = "down";
+        }
+
+        return direction;
+    }
 }
