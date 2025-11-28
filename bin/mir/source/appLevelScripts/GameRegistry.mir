@@ -235,8 +235,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
         %tmp.20 = getv ? :Method;
         symbol [ Game2048 %tmp.22 56 76 84 ];
         %tmp.22 = getv ? :Game2048;
-        %tmp.24 = const :handleMove;
-        symbol [ handleMove %tmp.24 56 87 97 const ];
+        %tmp.24 = const :handleInput;
+        symbol [ handleInput %tmp.24 56 87 98 const ];
         %tmp.17 = newc %tmp.20 (%tmp.22, %tmp.24);
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15, %tmp.16, %tmp.17);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameRegistry_mc_55_13_57_8_stop:
@@ -281,8 +281,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
         %tmp.20 = getv ? :Method;
         symbol [ Snake %tmp.22 65 73 78 ];
         %tmp.22 = getv ? :Snake;
-        %tmp.24 = const :handleMove;
-        symbol [ handleMove %tmp.24 65 81 91 const ];
+        %tmp.24 = const :handleInput;
+        symbol [ handleInput %tmp.24 65 81 92 const ];
         %tmp.17 = newc %tmp.20 (%tmp.22, %tmp.24);
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15, %tmp.16, %tmp.17);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameRegistry_mc_64_13_66_8_stop:
@@ -327,8 +327,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
         %tmp.20 = getv ? :Method;
         symbol [ Stackup %tmp.22 74 75 82 ];
         %tmp.22 = getv ? :Stackup;
-        %tmp.24 = const :handleMove;
-        symbol [ handleMove %tmp.24 74 85 95 const ];
+        %tmp.24 = const :handleInput;
+        symbol [ handleInput %tmp.24 74 85 96 const ];
         %tmp.17 = newc %tmp.20 (%tmp.22, %tmp.24);
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15, %tmp.16, %tmp.17);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameRegistry_mc_73_13_75_8_stop:

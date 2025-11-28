@@ -99,22 +99,25 @@ module Stackup {
 
     // ---------- Input logic ----------
 
-    function handleMove(direction as String) {
+    function handleInput(input as String) {
+        if ((input.equals("enter") || input.equals("center")) && !active) {
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        }
         if (!active){ return; }
 
-        if (direction.equals("right")) {
+        if (input.equals("right")) {
             moveHorizontally("right");
         }
-        else if (direction.equals("left")) {
+        else if (input.equals("left")) {
             moveHorizontally("left");
         }
-        else if (direction.equals("up")) {
+        else if (input.equals("up")) {
             savePiece();
         }
-        else if (direction.equals("down")) {
+        else if (input.equals("down")) {
             hardFall();
         }
-        else if(direction.equals("center")) {
+        else if(input.equals("center")) {
             rotate();
         }
 

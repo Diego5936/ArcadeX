@@ -18,7 +18,6 @@ better game over screen
 wheel animations
 
 Now that i installed on my watch:
-- after game over, tap or press startto go back pop view and go to main menu
 - make wheel bigger take up more of the empty space at the bottom
 - make favorite game icon bigger and give it its own action button (like holding start)
 - why is 2048 adding two tiles every time instead of one

@@ -48,21 +48,24 @@ module Game2048 {
 
     // ---------- Input Logic ----------
 
-    function handleMove(direction as String) {
+    function handleInput(input as String) {
+        if ((input.equals("enter") || input.equals("center")) && !active) {
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        }
         if (!active){ return; }
 
         var prevGrid = cloneGrid(grid);
 
-        if (direction.equals("right")) {
+        if (input.equals("right")) {
             slideHorizontally("right");
         }
-        else if (direction.equals("left")) {
+        else if (input.equals("left")) {
             slideHorizontally("left");
         }
-        else if (direction.equals("up")) {
+        else if (input.equals("up")) {
             slideVertically("up");
         }
-        else if (direction.equals("down")) {
+        else if (input.equals("down")) {
             slideVertically("down");
         }
 

@@ -11,9 +11,9 @@ class GameInputDelegate extends WatchUi.InputDelegate {
         self.moveCallback = moveCallback;
     }
 
-    function handleMove(direction as String) {
+    function handleInput(input as String) {
         if (moveCallback != null) {
-            moveCallback.invoke(direction);
+            moveCallback.invoke(input);
         }
     }
 
@@ -23,19 +23,19 @@ class GameInputDelegate extends WatchUi.InputDelegate {
         var direction = swipe.getDirection();
 
         if (direction == SWIPE_RIGHT) { 
-            handleMove("right");
+            handleInput("right");
             /* Right swipe by watch default is to go back
             if the swipe starts all the way on the left it will default to back
             if the swipe is from the center of the watch to the right, then the action occurs */
         }
         else if (direction == SWIPE_LEFT) {
-            handleMove("left");
+            handleInput("left");
         }
         else if (direction == SWIPE_UP) { 
-            handleMove("up");
+            handleInput("up");
         } 
         else if (direction == SWIPE_DOWN) { 
-            handleMove("down");
+            handleInput("down");
         } 
 
         return true;
@@ -47,8 +47,21 @@ class GameInputDelegate extends WatchUi.InputDelegate {
         var y = position[1];
 
         var direction = Layout.determineRegion(x, y);
-        handleMove(direction);
+        handleInput(direction);
 
+        return true;
+    }
+
+    function onKey(key as KeyEvent) as Boolean{
+        var code = key.getKey();
+
+        if (code == WatchUi.KEY_ENTER) {
+            handleInput("enter");
+        }
+        else {
+            return false;
+        }
+        
         return true;
     }
 

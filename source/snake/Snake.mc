@@ -2,6 +2,8 @@ import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Math;
 
+import Toybox.System;
+
 module Snake {
 
     // ---------- Initialization ----------
@@ -33,21 +35,24 @@ module Snake {
 
     // ---------- Input Logic ----------
 
-    function handleMove(direction as String) {
+    function handleInput(input as String) {
+        if ((input.equals("enter") || input.equals("center")) && !active) {
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        }
         if (!active){ return; }
 
-        var current = direction;
+        var current = input;
 
-        if (direction.equals("right") && !(current != null && current.equals("left"))) {
+        if (input.equals("right") && !(current != null && current.equals("left"))) {
             nextDirection = "right";
         }
-        else if (direction.equals("left") && !(current != null && current.equals("right"))) {
+        else if (input.equals("left") && !(current != null && current.equals("right"))) {
             nextDirection = "left";
         }
-        else if (direction.equals("up") && !(current != null && current.equals("down"))) {
+        else if (input.equals("up") && !(current != null && current.equals("down"))) {
             nextDirection = "up";
         }
-        else if (direction.equals("down") && !(current != null && current.equals("up"))) {
+        else if (input.equals("down") && !(current != null && current.equals("up"))) {
             nextDirection = "down";
         }
 

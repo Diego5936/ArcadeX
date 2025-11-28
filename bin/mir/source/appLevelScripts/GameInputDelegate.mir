@@ -32,9 +32,9 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
         putv self :moveCallback %tmp.4;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_9_48_12_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 14; @symbol_functiondef = [handleMove,14,13,23]; @symbol_param<0> = [direction,14,24,33]; @symbol_param<0>_type<0> = [String,14,37,43]; ]
-    function handleMove(direction as String) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_14_45_18_4_start:
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 14; @symbol_functiondef = [handleInput,14,13,24]; @symbol_param<0> = [input,14,25,30]; @symbol_param<0>_type<0> = [String,14,34,40]; ]
+    function handleInput(input as String) {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_14_42_18_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 15 8 ]
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_15_8_17_8_if_stmt:
         symbol [ moveCallback %tmp.2 15 12 24 ];
@@ -50,13 +50,13 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
         %tmp.7 = as %tmp.6 { (!Null) };
         symbol [ invoke %tmp.8 16 25 31 ];
         %tmp.8 = getv function %tmp.7 :invoke;
-        %tmp.9 = lgetv %direction;
-        symbol [ direction %tmp.9 16 32 41 ];
+        %tmp.9 = lgetv %input;
+        symbol [ input %tmp.9 16 32 37 ];
         invoke %tmp.7 %tmp.8(%tmp.9);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_15_34_17_8_stop:
         goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_15_8_17_8_if_end;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_15_8_17_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_14_45_18_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_14_42_18_4_stop:
     }
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 22; @symbol_functiondef = [onSwipe,22,13,20]; @symbol_param<0> = [swipe,22,21,26]; @symbol_param<0>_type<0> = [WatchUi,22,30,37]; @symbol_param<0>_type<1> = [SwipeEvent,22,38,48]; @symbol_return<0> = [Boolean,22,53,60]; ]
     function onSwipe(swipe as WatchUi.SwipeEvent) as Boolean {
@@ -84,8 +84,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_25_38_30_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 26 12 ]
         %tmp.8 = self;
-        symbol [ handleMove %tmp.9 26 12 22 ];
-        %tmp.9 = getv function %tmp.8 :handleMove;
+        symbol [ handleInput %tmp.9 26 12 23 ];
+        %tmp.9 = getv function %tmp.8 :handleInput;
         %tmp.10 = "right";
         invoke %tmp.8 %tmp.9(%tmp.10);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_25_38_30_8_stop:
@@ -103,8 +103,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_31_42_33_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 32 12 ]
         %tmp.15 = self;
-        symbol [ handleMove %tmp.16 32 12 22 ];
-        %tmp.16 = getv function %tmp.15 :handleMove;
+        symbol [ handleInput %tmp.16 32 12 23 ];
+        %tmp.16 = getv function %tmp.15 :handleInput;
         %tmp.17 = "left";
         invoke %tmp.15 %tmp.16(%tmp.17);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_31_42_33_8_stop:
@@ -122,8 +122,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_34_40_36_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 35 12 ]
         %tmp.22 = self;
-        symbol [ handleMove %tmp.23 35 12 22 ];
-        %tmp.23 = getv function %tmp.22 :handleMove;
+        symbol [ handleInput %tmp.23 35 12 23 ];
+        %tmp.23 = getv function %tmp.22 :handleInput;
         %tmp.24 = "up";
         invoke %tmp.22 %tmp.23(%tmp.24);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_34_40_36_8_stop:
@@ -141,8 +141,8 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_37_42_39_8_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 38 12 ]
         %tmp.29 = self;
-        symbol [ handleMove %tmp.30 38 12 22 ];
-        %tmp.30 = getv function %tmp.29 :handleMove;
+        symbol [ handleInput %tmp.30 38 12 23 ];
+        %tmp.30 = getv function %tmp.29 :handleInput;
         %tmp.31 = "down";
         invoke %tmp.29 %tmp.30(%tmp.31);
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_37_42_39_8_stop:
@@ -207,33 +207,79 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts
         symbol [ direction %direction.4 49 12 21 ];
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 50 8 ]
         %tmp.16 = self;
-        symbol [ handleMove %tmp.17 50 8 18 ];
-        %tmp.17 = getv function %tmp.16 :handleMove;
+        symbol [ handleInput %tmp.17 50 8 19 ];
+        %tmp.17 = getv function %tmp.16 :handleInput;
         %tmp.18 = lgetv %direction.4;
-        symbol [ direction %tmp.18 50 19 28 ];
+        symbol [ direction %tmp.18 50 20 29 ];
         invoke %tmp.16 %tmp.17(%tmp.18);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 52 8 ]
         %tmp.19 = true;
         ret %tmp.19;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_44_59_53_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 55; @symbol_functiondef = [onBack,55,13,19]; @symbol_return<0> = [Boolean,55,25,32]; ]
-    function onBack() as Boolean {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_55_33_58_4_start:
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 55; @symbol_functiondef = [onKey,55,13,18]; @symbol_param<0> = [key,55,19,22]; @symbol_param<0>_type<0> = [KeyEvent,55,26,34]; @symbol_return<0> = [Boolean,55,39,46]; ]
+    function onKey(key as KeyEvent) as Boolean {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_55_46_66_4_start:
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 56 8 ]
-        symbol [ WatchUi %tmp.1 56 8 15 ];
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_55_46_66_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_55_46_66_4_stop" ]
+        %code.1 = local;
+        symbol [ code %code.1 56 12 16 ];
+        %tmp.1 = lgetv %key;
+        symbol [ key %tmp.1 56 19 22 ];
+        symbol [ getKey %tmp.2 56 23 29 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %code.1 %tmp.3;
+        symbol [ code %code.1 56 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 58 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_8_63_8_if_stmt:
+        %tmp.4 = lgetv %code.1;
+        symbol [ code %tmp.4 58 12 16 ];
+        symbol [ WatchUi %tmp.5 58 20 27 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.6 58 28 37 ];
+        %tmp.6 = getv %tmp.5 :KEY_ENTER;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_8_63_8_if_else_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_8_63_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_39_60_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 59 12 ]
+        %tmp.8 = self;
+        symbol [ handleInput %tmp.9 59 12 23 ];
+        %tmp.9 = getv function %tmp.8 :handleInput;
+        %tmp.10 = "enter";
+        invoke %tmp.8 %tmp.9(%tmp.10);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_39_60_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_8_63_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_8_63_8_if_else_false:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_61_13_63_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 62 12 ]
+        %tmp.11 = false;
+        ret %tmp.11;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_61_13_63_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_58_8_63_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 65 8 ]
+        %tmp.12 = true;
+        ret %tmp.12;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_55_46_66_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 68; @symbol_functiondef = [onBack,68,13,19]; @symbol_return<0> = [Boolean,68,25,32]; ]
+    function onBack() as Boolean {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_68_33_71_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 69 8 ]
+        symbol [ WatchUi %tmp.1 69 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.2 56 16 23 ];
+        symbol [ popView %tmp.2 69 16 23 ];
         %tmp.2 = getv function %tmp.1 :popView;
-        symbol [ WatchUi %tmp.3 56 24 31 ];
+        symbol [ WatchUi %tmp.3 69 24 31 ];
         %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.4 56 32 47 ];
+        symbol [ SLIDE_IMMEDIATE %tmp.4 69 32 47 ];
         %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 57 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc" 70 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_55_33_58_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_appLevelScripts_GameInputDelegate_mc_68_33_71_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\appLevelScripts\GameInputDelegate.mc"; @line = 1; ]

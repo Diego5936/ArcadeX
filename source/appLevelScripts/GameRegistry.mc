@@ -53,7 +53,7 @@ module GameRegistry {
             launchScreen(Menu2048View, Menu2048Delegate, true, null);
         } 
         else {
-            launchScreen(Game2048View, GameInputDelegate, false, new Method(Game2048, :handleMove));
+            launchScreen(Game2048View, GameInputDelegate, false, new Method(Game2048, :handleInput));
         }
     }
 
@@ -62,7 +62,7 @@ module GameRegistry {
             launchScreen(MenuSnakeView, MenuSnakeDelegate, true, null);
         } 
         else {
-            launchScreen(SnakeView, GameInputDelegate, false, new Method(Snake, :handleMove));
+            launchScreen(SnakeView, GameInputDelegate, false, new Method(Snake, :handleInput));
         }
     } 
 
@@ -71,7 +71,7 @@ module GameRegistry {
             launchScreen(MenuStackupView, MenuStackupDelegate, true, null);
         } 
         else {
-            launchScreen(StackupView, GameInputDelegate, false, new Method(Stackup, :handleMove));
+            launchScreen(StackupView, GameInputDelegate, false, new Method(Stackup, :handleInput));
         }
     } 
 }
