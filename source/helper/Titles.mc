@@ -5,6 +5,7 @@ import Toybox.System;
 
 module Titles {
     // ---------- Fonts ----------
+    var fontSize = 5;
     const LETTERS = {
         "A" => [
             [0,1,1,1,0],
@@ -103,21 +104,44 @@ module Titles {
         ]
     };
 
-    function pixelShadowedText(dc as Dc, x, y, size, text as String, color, shadow) {
-        var textArr = text.toCharArray();
-        for (var i = 0; i < 2; i++) {
-            var spacing = 5;
-            var offset = (i == 0) ? 2 : 0;
-            var drawColor = (i == 0) ? shadow : color;
+    // Draws pixel art with a shadown. Center aligned
+    function drawPixelShadowedText(dc as Dc, centerX, centerY, size, text as String, color, shadow) {
+        // Shadow first
+        var offset = 2;
+        drawPixelText(dc, centerX + offset, centerY + offset, size, text, shadow);
 
-            for (var j = 0; j < text.length(); j++) {
-                var letter = textArr[j] as String;
-                var posX = x + j * (size * 5 + spacing) + offset;
-                var posY = y + offset;
-                drawLetter(dc, letter, drawColor, Color.none, posX, posY, size);
-            }
+        // Main text on top
+        drawPixelText(dc, centerX, centerY, size, text, color);
+    }
+
+    function drawPixelText(dc as Dc, centerX, centerY, size, text as String, color) {
+        var textArr = text.toCharArray();
+
+        var spacing = 5;
+        var charWidth  = size * fontSize;
+        var charHeight = size * fontSize;
+
+        var n = text.length();
+        if (n == 0) { return; }
+
+        var advance = charWidth + spacing;
+        var totalWidth  = (n * advance - spacing).toFloat();
+        var totalHeight = charHeight.toFloat();
+
+        // Top-left cords to center
+        var startX = centerX.toFloat() - totalWidth  / 2.0;
+        var startY = centerY.toFloat() - totalHeight / 2.0;
+
+        for (var j = 0; j < n; j++) {
+            var letter = textArr[j] as String;
+
+            var posX = startX + j * advance;
+            var posY = startY;
+
+            drawLetter(dc, letter, color, Color.none, posX, posY, size);
         }
     }
+
 
     function drawLetter(dc as Dc, letter as String, color, border, x, y, size) {
         letter = letter.toString().toUpper();

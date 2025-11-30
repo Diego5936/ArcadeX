@@ -6,25 +6,27 @@ import Layout;
 import Titles;
 
 module Components {
-    // Makes a titled box
+    // Makes a titled box, Center aligned
     /* Takes in:
         rect as Dictionary {[:x] X-position, [:y] Y-position, [:w] Width, [:h] Height}\
         format as Dictionary {[:background], [:border], [:text], [:font]}
         title of the rect
     */
     function makeRect(dc as Dc, rect as Dictionary, format as Dictionary, title as String) {
+        var startX = rect[:x] - (rect[:w] / 2);
+        var startY = rect[:y] - (rect[:h] / 2);
+
         // Rect fillc
         dc.setColor(format[:background], Color.none);
-        dc.fillRectangle(rect[:x], rect[:y], rect[:w], rect[:h]);
+        dc.fillRectangle(startX, startY, rect[:w], rect[:h]);
 
         // Rect border
         dc.setColor(format[:border], Color.none);
-        dc.drawRectangle(rect[:x], rect[:y], rect[:w], rect[:h]);
+        dc.drawRectangle(startX, startY, rect[:w], rect[:h]);
 
         // Title
-        var titleX = rect[:x] + (rect[:w] / 2);
         dc.setColor(format[:text], Color.none);
-        dc.drawText(titleX, rect[:y],
+        dc.drawText(rect[:x], startY + (rect[:h] * 0.10),
                 format[:font], title, Graphics.TEXT_JUSTIFY_CENTER);
     }
 

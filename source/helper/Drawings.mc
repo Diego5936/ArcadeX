@@ -33,25 +33,38 @@ module Drawings {
         [0,0,0,0,2,0,0,0,0]
     ];
 
-    // Draws the given pixel art drawing on the screen
-    function drawPixelArt(dc, x, y, size, drawing) as Dictionary{
+    // Draws the given pixel art drawing on the screen. Center aligned
+    function drawPixelArt(dc, centerX, centerY, size, drawing) as Dictionary {
         var matrix = drawing as Array;
-        for (var rowIdx = 0; rowIdx < matrix.size(); rowIdx += 1) {
+
+        var rows = matrix.size();
+        var cols = matrix[0].size();
+
+        var width = cols * size;
+        var height = rows * size;
+
+        // Top left corner
+        var startX = centerX - width  / 2.0;
+        var startY = centerY - height / 2.0;
+
+        for (var rowIdx = 0; rowIdx < rows; rowIdx += 1) {
             var row = matrix[rowIdx];
-            for (var colIdx = 0; colIdx < row.size(); colIdx += 1) {
+            
+            for (var colIdx = 0; colIdx < cols; colIdx += 1) {
                 var colorCode = (row as Array)[colIdx];
+
                 if (colorCode != 0) {
                     dc.setColor(Color.PAINT[colorCode], Color.none);
-                    dc.fillRectangle(x + (colIdx * size), y + (rowIdx * size), size, size);
+                    dc.fillRectangle(startX + (colIdx * size), startY + (rowIdx * size), size, size);
                 }
             }
         }
 
         return {
-            :x => x,
-            :y => y,
-            :width => matrix[0].size() * size,
-            :height => matrix.size() * size
+            :x => startX,
+            :y => startY,
+            :width => width,
+            :height => height
         };
     }
 }

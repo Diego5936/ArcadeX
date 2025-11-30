@@ -1,16 +1,13 @@
 import Toybox.Graphics;
+import Toybox.Math;
 import Toybox.Lang;
 
 module Layout {
     var workingTop = 50;
 
-    function centerX(dc as Dc) as Number {
-        return dc.getWidth() / 2;
-    }
-
-    function centerY(dc as Dc) as Number {
-        return dc.getHeight() / 2;
-    }
+    function centerX(dc) { return dc.getWidth() / 2; }
+    function centerY(dc) { return dc.getHeight() / 2; }
+    // function radius(dc) { return Math.min(dc.getWidth(), dc.getHeight()) / 2; }  
 
     /* Due to the watches being circular, the working buffer is
     the margin necessary for a square to not be completely cut off */

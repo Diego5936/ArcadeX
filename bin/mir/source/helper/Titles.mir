@@ -8,7 +8,7 @@ import Toybox.System;
 module Titles {
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 6; ]
     <init> {
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 8 10 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 9 10 ]
         %tmp.1 = newd 12;
         %tmp.2 = "A";
         %tmp.3 = newa 5;
@@ -1139,7 +1139,7 @@ module Titles {
         %tmp.1128 = dup %tmp.1035;
         %tmp.1129 = aputv %tmp.1128 %tmp.1036 %tmp.1127;
         putv self :LETTERS %tmp.1129;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 216 10 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 240 10 ]
         %tmp.1130 = newa 7;
         %tmp.1131 = newa 36;
         %tmp.1132 = 0;
@@ -1919,7 +1919,7 @@ module Titles {
         %tmp.1906 = dup %tmp.1796;
         %tmp.1907 = aputv %tmp.1906 6 %tmp.1905;
         putv self :SNAKE_TITLE %tmp.1907;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 233 10 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 257 10 ]
         %tmp.1908 = newa 5;
         %tmp.1909 = newa 16;
         %tmp.1910 = 1;
@@ -2177,84 +2177,84 @@ module Titles {
         %tmp.2162 = dup %tmp.2112;
         %tmp.2163 = aputv %tmp.2162 4 %tmp.2161;
         putv self :SNAKE_SCORE %tmp.2163;
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 280 10 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 304 10 ]
         %tmp.2164 = newd 9;
         %tmp.2165 = "A";
-        symbol [ Color %tmp.2167 281 15 20 ];
+        symbol [ Color %tmp.2167 305 15 20 ];
         %tmp.2167 = getv ? :Color;
-        symbol [ STACKS %tmp.2168 281 21 27 ];
+        symbol [ STACKS %tmp.2168 305 21 27 ];
         %tmp.2168 = getv %tmp.2167 :STACKS;
         %tmp.2169 = "J";
         %tmp.2170 = agetv %tmp.2168 %tmp.2169;
         %tmp.2171 = dup %tmp.2164;
         %tmp.2172 = aputv %tmp.2171 %tmp.2165 %tmp.2170;
         %tmp.2173 = "B";
-        symbol [ Color %tmp.2175 282 15 20 ];
+        symbol [ Color %tmp.2175 306 15 20 ];
         %tmp.2175 = getv ? :Color;
-        symbol [ STACKS %tmp.2176 282 21 27 ];
+        symbol [ STACKS %tmp.2176 306 21 27 ];
         %tmp.2176 = getv %tmp.2175 :STACKS;
         %tmp.2177 = "I";
         %tmp.2178 = agetv %tmp.2176 %tmp.2177;
         %tmp.2179 = dup %tmp.2172;
         %tmp.2180 = aputv %tmp.2179 %tmp.2173 %tmp.2178;
         %tmp.2181 = "C";
-        symbol [ Color %tmp.2183 283 15 20 ];
+        symbol [ Color %tmp.2183 307 15 20 ];
         %tmp.2183 = getv ? :Color;
-        symbol [ STACKS %tmp.2184 283 21 27 ];
+        symbol [ STACKS %tmp.2184 307 21 27 ];
         %tmp.2184 = getv %tmp.2183 :STACKS;
         %tmp.2185 = "O";
         %tmp.2186 = agetv %tmp.2184 %tmp.2185;
         %tmp.2187 = dup %tmp.2180;
         %tmp.2188 = aputv %tmp.2187 %tmp.2181 %tmp.2186;
         %tmp.2189 = "E";
-        symbol [ Color %tmp.2191 284 15 20 ];
+        symbol [ Color %tmp.2191 308 15 20 ];
         %tmp.2191 = getv ? :Color;
-        symbol [ STACKS %tmp.2192 284 21 27 ];
+        symbol [ STACKS %tmp.2192 308 21 27 ];
         %tmp.2192 = getv %tmp.2191 :STACKS;
         %tmp.2193 = "O";
         %tmp.2194 = agetv %tmp.2192 %tmp.2193;
         %tmp.2195 = dup %tmp.2188;
         %tmp.2196 = aputv %tmp.2195 %tmp.2189 %tmp.2194;
         %tmp.2197 = "K";
-        symbol [ Color %tmp.2199 285 15 20 ];
+        symbol [ Color %tmp.2199 309 15 20 ];
         %tmp.2199 = getv ? :Color;
-        symbol [ STACKS %tmp.2200 285 21 27 ];
+        symbol [ STACKS %tmp.2200 309 21 27 ];
         %tmp.2200 = getv %tmp.2199 :STACKS;
         %tmp.2201 = "I";
         %tmp.2202 = agetv %tmp.2200 %tmp.2201;
         %tmp.2203 = dup %tmp.2196;
         %tmp.2204 = aputv %tmp.2203 %tmp.2197 %tmp.2202;
         %tmp.2205 = "P";
-        symbol [ Color %tmp.2207 286 15 20 ];
+        symbol [ Color %tmp.2207 310 15 20 ];
         %tmp.2207 = getv ? :Color;
-        symbol [ STACKS %tmp.2208 286 21 27 ];
+        symbol [ STACKS %tmp.2208 310 21 27 ];
         %tmp.2208 = getv %tmp.2207 :STACKS;
         %tmp.2209 = "Z";
         %tmp.2210 = agetv %tmp.2208 %tmp.2209;
         %tmp.2211 = dup %tmp.2204;
         %tmp.2212 = aputv %tmp.2211 %tmp.2205 %tmp.2210;
         %tmp.2213 = "S";
-        symbol [ Color %tmp.2215 287 15 20 ];
+        symbol [ Color %tmp.2215 311 15 20 ];
         %tmp.2215 = getv ? :Color;
-        symbol [ STACKS %tmp.2216 287 21 27 ];
+        symbol [ STACKS %tmp.2216 311 21 27 ];
         %tmp.2216 = getv %tmp.2215 :STACKS;
         %tmp.2217 = "S";
         %tmp.2218 = agetv %tmp.2216 %tmp.2217;
         %tmp.2219 = dup %tmp.2212;
         %tmp.2220 = aputv %tmp.2219 %tmp.2213 %tmp.2218;
         %tmp.2221 = "T";
-        symbol [ Color %tmp.2223 288 15 20 ];
+        symbol [ Color %tmp.2223 312 15 20 ];
         %tmp.2223 = getv ? :Color;
-        symbol [ STACKS %tmp.2224 288 21 27 ];
+        symbol [ STACKS %tmp.2224 312 21 27 ];
         %tmp.2224 = getv %tmp.2223 :STACKS;
         %tmp.2225 = "T";
         %tmp.2226 = agetv %tmp.2224 %tmp.2225;
         %tmp.2227 = dup %tmp.2220;
         %tmp.2228 = aputv %tmp.2227 %tmp.2221 %tmp.2226;
         %tmp.2229 = "U";
-        symbol [ Color %tmp.2231 289 15 20 ];
+        symbol [ Color %tmp.2231 313 15 20 ];
         %tmp.2231 = getv ? :Color;
-        symbol [ STACKS %tmp.2232 289 21 27 ];
+        symbol [ STACKS %tmp.2232 313 21 27 ];
         %tmp.2232 = getv %tmp.2231 :STACKS;
         %tmp.2233 = "L";
         %tmp.2234 = agetv %tmp.2232 %tmp.2233;
@@ -2262,441 +2262,528 @@ module Titles {
         %tmp.2236 = aputv %tmp.2235 %tmp.2229 %tmp.2234;
         putv self :LETTER_COLORS %tmp.2236;
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 8; @position = 10; @symbol_constdef = [LETTERS,8,10,17]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 8; @position = 8; @symbol_vardef = [fontSize,8,8,16]; ]
+    var fontSize = 5;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 9; @position = 10; @symbol_constdef = [LETTERS,9,10,17]; ]
     const LETTERS;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 106; @symbol_functiondef = [pixelShadowedText,106,13,30]; @symbol_param<0> = [dc,106,31,33]; @symbol_param<0>_type<0> = [Dc,106,37,39]; @symbol_param<1> = [x,106,41,42]; @symbol_param<2> = [y,106,44,45]; @symbol_param<3> = [size,106,47,51]; @symbol_param<4> = [text,106,53,57]; @symbol_param<4>_type<0> = [String,106,61,67]; @symbol_param<5> = [color,106,69,74]; @symbol_param<6> = [shadow,106,76,82]; ]
-    function pixelShadowedText(dc as Dc, x, y, size, text as String, color, shadow) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_106_84_120_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 107 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_106_84_120_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_106_84_120_4_stop" ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 108; @symbol_functiondef = [drawPixelShadowedText,108,13,34]; @symbol_param<0> = [dc,108,35,37]; @symbol_param<0>_type<0> = [Dc,108,41,43]; @symbol_param<1> = [centerX,108,45,52]; @symbol_param<2> = [centerY,108,54,61]; @symbol_param<3> = [size,108,63,67]; @symbol_param<4> = [text,108,69,73]; @symbol_param<4>_type<0> = [String,108,77,83]; @symbol_param<5> = [color,108,85,90]; @symbol_param<6> = [shadow,108,92,98]; ]
+    function drawPixelShadowedText(dc as Dc, centerX, centerY, size, text as String, color, shadow) {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_100_115_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 110 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_100_115_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_100_115_4_stop" ]
+        %offset.1 = local;
+        symbol [ offset %offset.1 110 12 18 ];
+        %tmp.1 = 2;
+        lputv %offset.1 %tmp.1;
+        symbol [ offset %offset.1 110 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 111 8 ]
+        %tmp.2 = self;
+        symbol [ drawPixelText %tmp.3 111 8 21 ];
+        %tmp.3 = getv function %tmp.2 :drawPixelText;
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 111 22 24 ];
+        %tmp.5 = lgetv %centerX;
+        symbol [ centerX %tmp.5 111 26 33 ];
+        %tmp.6 = lgetv %offset.1;
+        symbol [ offset %tmp.6 111 36 42 ];
+        %tmp.7 = add %tmp.5 %tmp.6;
+        %tmp.8 = lgetv %centerY;
+        symbol [ centerY %tmp.8 111 44 51 ];
+        %tmp.9 = lgetv %offset.1;
+        symbol [ offset %tmp.9 111 54 60 ];
+        %tmp.10 = add %tmp.8 %tmp.9;
+        %tmp.11 = lgetv %size;
+        symbol [ size %tmp.11 111 62 66 ];
+        %tmp.12 = lgetv %text;
+        symbol [ text %tmp.12 111 68 72 ];
+        %tmp.13 = lgetv %shadow;
+        symbol [ shadow %tmp.13 111 74 80 ];
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.7, %tmp.10, %tmp.11, %tmp.12, %tmp.13);
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 114 8 ]
+        %tmp.14 = self;
+        symbol [ drawPixelText %tmp.15 114 8 21 ];
+        %tmp.15 = getv function %tmp.14 :drawPixelText;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 114 22 24 ];
+        %tmp.17 = lgetv %centerX;
+        symbol [ centerX %tmp.17 114 26 33 ];
+        %tmp.18 = lgetv %centerY;
+        symbol [ centerY %tmp.18 114 35 42 ];
+        %tmp.19 = lgetv %size;
+        symbol [ size %tmp.19 114 44 48 ];
+        %tmp.20 = lgetv %text;
+        symbol [ text %tmp.20 114 50 54 ];
+        %tmp.21 = lgetv %color;
+        symbol [ color %tmp.21 114 56 61 ];
+        invoke %tmp.14 %tmp.15(%tmp.16, %tmp.17, %tmp.18, %tmp.19, %tmp.20, %tmp.21);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_100_115_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 117; @symbol_functiondef = [drawPixelText,117,13,26]; @symbol_param<0> = [dc,117,27,29]; @symbol_param<0>_type<0> = [Dc,117,33,35]; @symbol_param<1> = [centerX,117,37,44]; @symbol_param<2> = [centerY,117,46,53]; @symbol_param<3> = [size,117,55,59]; @symbol_param<4> = [text,117,61,65]; @symbol_param<4>_type<0> = [String,117,69,75]; @symbol_param<5> = [color,117,77,82]; ]
+    function drawPixelText(dc as Dc, centerX, centerY, size, text as String, color) {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 118 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
         %textArr.1 = local;
-        symbol [ textArr %textArr.1 107 12 19 ];
+        symbol [ textArr %textArr.1 118 12 19 ];
         %tmp.1 = lgetv %text;
-        symbol [ text %tmp.1 107 22 26 ];
-        symbol [ toCharArray %tmp.2 107 27 38 ];
+        symbol [ text %tmp.1 118 22 26 ];
+        symbol [ toCharArray %tmp.2 118 27 38 ];
         %tmp.2 = getv function %tmp.1 :toCharArray;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %textArr.1 %tmp.3;
-        symbol [ textArr %textArr.1 107 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 108 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_end" ]
-        %i.2 = local;
-        symbol [ i %i.2 108 17 18 ];
-        %tmp.4 = 0;
-        lputv %i.2 %tmp.4;
-        symbol [ i %i.2 108 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_test:
-        %tmp.5 = lgetv %i.2;
-        symbol [ i %tmp.5 108 24 25 ];
-        %tmp.6 = 2;
-        %tmp.7 = lt %tmp.5 %tmp.6;
-        bf %tmp.7 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 109 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_stop" ]
-        %spacing.3 = local;
-        symbol [ spacing %spacing.3 109 16 23 ];
-        %tmp.8 = 5;
-        lputv %spacing.3 %tmp.8;
-        symbol [ spacing %spacing.3 109 16 23 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 110 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_stop" ]
-        %offset.4 = local;
-        symbol [ offset %offset.4 110 16 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_begin:
-        %tmp.9 = lgetv %i.2;
-        symbol [ i %tmp.9 110 26 27 ];
-        %tmp.10 = 0;
-        %tmp.11 = eq %tmp.9 %tmp.10;
-        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_true:
-        %tmp.12 = 2;
-        push %tmp.12;
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_false:
-        %tmp.13 = 0;
-        push %tmp.13;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_end:
-        %tmp.14 = phi [%tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_begin] [%tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_true] [%tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_false] [%tmp.14 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_110_25_110_40_end];
-        lputv %offset.4 %tmp.14;
-        symbol [ offset %offset.4 110 16 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 111 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_stop" ]
-        %drawColor.5 = local;
-        symbol [ drawColor %drawColor.5 111 16 25 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_begin:
-        %tmp.15 = lgetv %i.2;
-        symbol [ i %tmp.15 111 29 30 ];
-        %tmp.16 = 0;
-        %tmp.17 = eq %tmp.15 %tmp.16;
-        bf %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_true:
-        %tmp.18 = lgetv %shadow;
-        symbol [ shadow %tmp.18 111 39 45 ];
-        push %tmp.18;
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_false:
-        %tmp.19 = lgetv %color;
-        symbol [ color %tmp.19 111 48 53 ];
-        push %tmp.19;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_end:
-        %tmp.20 = phi [%tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_begin] [%tmp.18 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_true] [%tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_false] [%tmp.20 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_111_28_111_48_end];
-        lputv %drawColor.5 %tmp.20;
-        symbol [ drawColor %drawColor.5 111 16 25 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 113 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_end" ]
-        %j.6 = local;
-        symbol [ j %j.6 113 21 22 ];
-        %tmp.21 = 0;
-        lputv %j.6 %tmp.21;
-        symbol [ j %j.6 113 21 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_test:
-        %tmp.22 = lgetv %j.6;
-        symbol [ j %tmp.22 113 28 29 ];
-        %tmp.23 = lgetv %text;
-        symbol [ text %tmp.23 113 32 36 ];
-        symbol [ length %tmp.24 113 37 43 ];
-        %tmp.24 = getv function %tmp.23 :length;
-        %tmp.25 = invoke %tmp.23 %tmp.24();
-        %tmp.26 = lt %tmp.22 %tmp.25;
-        bf %tmp.26 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 114 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_stop" ]
-        %letter.7 = local;
-        symbol [ letter %letter.7 114 20 26 ];
-        %tmp.27 = lgetv %textArr.1;
-        symbol [ textArr %tmp.27 114 29 36 ];
-        %tmp.28 = lgetv %j.6;
-        symbol [ j %tmp.28 114 37 38 ];
-        %tmp.29 = agetv %tmp.27 %tmp.28;
-        %tmp.30 = as %tmp.29 String;
-        symbol [ String %tmp.30 114 43 49 ];
-        lputv %letter.7 %tmp.30;
-        symbol [ letter %letter.7 114 20 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 115 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_stop" ]
-        %posX.8 = local;
-        symbol [ posX %posX.8 115 20 24 ];
-        %tmp.31 = lgetv %x;
-        symbol [ x %tmp.31 115 27 28 ];
-        %tmp.32 = lgetv %j.6;
-        symbol [ j %tmp.32 115 31 32 ];
-        %tmp.33 = lgetv %size;
-        symbol [ size %tmp.33 115 36 40 ];
-        %tmp.34 = 5;
-        %tmp.35 = mul %tmp.33 %tmp.34;
-        %tmp.36 = lgetv %spacing.3;
-        symbol [ spacing %tmp.36 115 47 54 ];
-        %tmp.37 = add %tmp.35 %tmp.36;
-        %tmp.38 = mul %tmp.32 %tmp.37;
-        %tmp.39 = add %tmp.31 %tmp.38;
-        %tmp.40 = lgetv %offset.4;
-        symbol [ offset %tmp.40 115 58 64 ];
-        %tmp.41 = add %tmp.39 %tmp.40;
-        lputv %posX.8 %tmp.41;
-        symbol [ posX %posX.8 115 20 24 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 116 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_stop" ]
-        %posY.9 = local;
-        symbol [ posY %posY.9 116 20 24 ];
-        %tmp.42 = lgetv %y;
-        symbol [ y %tmp.42 116 27 28 ];
-        %tmp.43 = lgetv %offset.4;
-        symbol [ offset %tmp.43 116 31 37 ];
-        %tmp.44 = add %tmp.42 %tmp.43;
-        lputv %posY.9 %tmp.44;
-        symbol [ posY %posY.9 116 20 24 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 117 16 ]
-        %tmp.45 = self;
-        symbol [ drawLetter %tmp.46 117 16 26 ];
-        %tmp.46 = getv function %tmp.45 :drawLetter;
-        %tmp.47 = lgetv %dc;
-        symbol [ dc %tmp.47 117 27 29 ];
-        %tmp.48 = lgetv %letter.7;
-        symbol [ letter %tmp.48 117 31 37 ];
-        %tmp.49 = lgetv %drawColor.5;
-        symbol [ drawColor %tmp.49 117 39 48 ];
-        symbol [ Color %tmp.51 117 50 55 ];
-        %tmp.51 = getv ? :Color;
-        symbol [ none %tmp.52 117 56 60 ];
-        %tmp.52 = getv %tmp.51 :none;
-        %tmp.53 = lgetv %posX.8;
-        symbol [ posX %tmp.53 117 62 66 ];
-        %tmp.54 = lgetv %posY.9;
-        symbol [ posY %tmp.54 117 68 72 ];
-        %tmp.55 = lgetv %size;
-        symbol [ size %tmp.55 117 74 78 ];
-        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48, %tmp.49, %tmp.52, %tmp.53, %tmp.54, %tmp.55);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_52_118_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 113 ]
-        %tmp.58 = lgetv %j.6;
-        symbol [ j %tmp.58 113 47 48 ];
-        %tmp.59 = add %tmp.58 1;
-        lputv %j.6 %tmp.59;
-        symbol [ j %j.6 113 47 48 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_113_12_118_12_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_36_119_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 108 ]
-        %tmp.62 = lgetv %i.2;
-        symbol [ i %tmp.62 108 31 32 ];
-        %tmp.63 = add %tmp.62 1;
-        lputv %i.2 %tmp.63;
-        symbol [ i %i.2 108 31 32 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_108_8_119_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_106_84_120_4_stop:
+        symbol [ textArr %textArr.1 118 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 120 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %spacing.2 = local;
+        symbol [ spacing %spacing.2 120 12 19 ];
+        %tmp.4 = 5;
+        lputv %spacing.2 %tmp.4;
+        symbol [ spacing %spacing.2 120 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 121 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %charWidth.3 = local;
+        symbol [ charWidth %charWidth.3 121 12 21 ];
+        %tmp.5 = lgetv %size;
+        symbol [ size %tmp.5 121 25 29 ];
+        symbol [ fontSize %tmp.7 121 32 40 ];
+        %tmp.7 = getv ? :fontSize;
+        %tmp.8 = mul %tmp.5 %tmp.7;
+        lputv %charWidth.3 %tmp.8;
+        symbol [ charWidth %charWidth.3 121 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 122 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %charHeight.4 = local;
+        symbol [ charHeight %charHeight.4 122 12 22 ];
+        %tmp.9 = lgetv %size;
+        symbol [ size %tmp.9 122 25 29 ];
+        symbol [ fontSize %tmp.11 122 32 40 ];
+        %tmp.11 = getv ? :fontSize;
+        %tmp.12 = mul %tmp.9 %tmp.11;
+        lputv %charHeight.4 %tmp.12;
+        symbol [ charHeight %charHeight.4 122 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 124 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %n.5 = local;
+        symbol [ n %n.5 124 12 13 ];
+        %tmp.13 = lgetv %text;
+        symbol [ text %tmp.13 124 16 20 ];
+        symbol [ length %tmp.14 124 21 27 ];
+        %tmp.14 = getv function %tmp.13 :length;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %n.5 %tmp.15;
+        symbol [ n %n.5 124 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 125 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_8_125_30_if_stmt:
+        %tmp.16 = lgetv %n.5;
+        symbol [ n %tmp.16 125 12 13 ];
+        %tmp.17 = 0;
+        %tmp.18 = eq %tmp.16 %tmp.17;
+        bf %tmp.18 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_8_125_30_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_8_125_30_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_20_125_30_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 125 22 ]
+        ret ?;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_20_125_30_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_8_125_30_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_125_8_125_30_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 127 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %advance.6 = local;
+        symbol [ advance %advance.6 127 12 19 ];
+        %tmp.19 = lgetv %charWidth.3;
+        symbol [ charWidth %tmp.19 127 22 31 ];
+        %tmp.20 = lgetv %spacing.2;
+        symbol [ spacing %tmp.20 127 34 41 ];
+        %tmp.21 = add %tmp.19 %tmp.20;
+        lputv %advance.6 %tmp.21;
+        symbol [ advance %advance.6 127 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 128 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %totalWidth.7 = local;
+        symbol [ totalWidth %totalWidth.7 128 12 22 ];
+        %tmp.22 = lgetv %n.5;
+        symbol [ n %tmp.22 128 27 28 ];
+        %tmp.23 = lgetv %advance.6;
+        symbol [ advance %tmp.23 128 31 38 ];
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        %tmp.25 = lgetv %spacing.2;
+        symbol [ spacing %tmp.25 128 41 48 ];
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        symbol [ toFloat %tmp.27 128 50 57 ];
+        %tmp.27 = getv function %tmp.26 :toFloat;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        lputv %totalWidth.7 %tmp.28;
+        symbol [ totalWidth %totalWidth.7 128 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 129 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %totalHeight.8 = local;
+        symbol [ totalHeight %totalHeight.8 129 12 23 ];
+        %tmp.29 = lgetv %charHeight.4;
+        symbol [ charHeight %tmp.29 129 26 36 ];
+        symbol [ toFloat %tmp.30 129 37 44 ];
+        %tmp.30 = getv function %tmp.29 :toFloat;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %totalHeight.8 %tmp.31;
+        symbol [ totalHeight %totalHeight.8 129 12 23 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 132 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %startX.9 = local;
+        symbol [ startX %startX.9 132 12 18 ];
+        %tmp.32 = lgetv %centerX;
+        symbol [ centerX %tmp.32 132 21 28 ];
+        symbol [ toFloat %tmp.33 132 29 36 ];
+        %tmp.33 = getv function %tmp.32 :toFloat;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = lgetv %totalWidth.7;
+        symbol [ totalWidth %tmp.35 132 41 51 ];
+        %tmp.36 = 2.0;
+        %tmp.37 = div %tmp.35 %tmp.36;
+        %tmp.38 = sub %tmp.34 %tmp.37;
+        lputv %startX.9 %tmp.38;
+        symbol [ startX %startX.9 132 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 133 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop" ]
+        %startY.10 = local;
+        symbol [ startY %startY.10 133 12 18 ];
+        %tmp.39 = lgetv %centerY;
+        symbol [ centerY %tmp.39 133 21 28 ];
+        symbol [ toFloat %tmp.40 133 29 36 ];
+        %tmp.40 = getv function %tmp.39 :toFloat;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        %tmp.42 = lgetv %totalHeight.8;
+        symbol [ totalHeight %tmp.42 133 41 52 ];
+        %tmp.43 = 2.0;
+        %tmp.44 = div %tmp.42 %tmp.43;
+        %tmp.45 = sub %tmp.41 %tmp.44;
+        lputv %startY.10 %tmp.45;
+        symbol [ startY %startY.10 133 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 135 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_end" ]
+        %j.11 = local;
+        symbol [ j %j.11 135 17 18 ];
+        %tmp.46 = 0;
+        lputv %j.11 %tmp.46;
+        symbol [ j %j.11 135 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_test:
+        %tmp.47 = lgetv %j.11;
+        symbol [ j %tmp.47 135 24 25 ];
+        %tmp.48 = lgetv %n.5;
+        symbol [ n %tmp.48 135 28 29 ];
+        %tmp.49 = lt %tmp.47 %tmp.48;
+        bf %tmp.49 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 136 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_stop" ]
+        %letter.12 = local;
+        symbol [ letter %letter.12 136 16 22 ];
+        %tmp.50 = lgetv %textArr.1;
+        symbol [ textArr %tmp.50 136 25 32 ];
+        %tmp.51 = lgetv %j.11;
+        symbol [ j %tmp.51 136 33 34 ];
+        %tmp.52 = agetv %tmp.50 %tmp.51;
+        %tmp.53 = as %tmp.52 String;
+        symbol [ String %tmp.53 136 39 45 ];
+        lputv %letter.12 %tmp.53;
+        symbol [ letter %letter.12 136 16 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 138 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_stop" ]
+        %posX.13 = local;
+        symbol [ posX %posX.13 138 16 20 ];
+        %tmp.54 = lgetv %startX.9;
+        symbol [ startX %tmp.54 138 23 29 ];
+        %tmp.55 = lgetv %j.11;
+        symbol [ j %tmp.55 138 32 33 ];
+        %tmp.56 = lgetv %advance.6;
+        symbol [ advance %tmp.56 138 36 43 ];
+        %tmp.57 = mul %tmp.55 %tmp.56;
+        %tmp.58 = add %tmp.54 %tmp.57;
+        lputv %posX.13 %tmp.58;
+        symbol [ posX %posX.13 138 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 139 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_stop" ]
+        %posY.14 = local;
+        symbol [ posY %posY.14 139 16 20 ];
+        %tmp.59 = lgetv %startY.10;
+        symbol [ startY %tmp.59 139 23 29 ];
+        lputv %posY.14 %tmp.59;
+        symbol [ posY %posY.14 139 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 141 12 ]
+        %tmp.60 = self;
+        symbol [ drawLetter %tmp.61 141 12 22 ];
+        %tmp.61 = getv function %tmp.60 :drawLetter;
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 141 23 25 ];
+        %tmp.63 = lgetv %letter.12;
+        symbol [ letter %tmp.63 141 27 33 ];
+        %tmp.64 = lgetv %color;
+        symbol [ color %tmp.64 141 35 40 ];
+        symbol [ Color %tmp.66 141 42 47 ];
+        %tmp.66 = getv ? :Color;
+        symbol [ none %tmp.67 141 48 52 ];
+        %tmp.67 = getv %tmp.66 :none;
+        %tmp.68 = lgetv %posX.13;
+        symbol [ posX %tmp.68 141 54 58 ];
+        %tmp.69 = lgetv %posY.14;
+        symbol [ posY %tmp.69 141 60 64 ];
+        %tmp.70 = lgetv %size;
+        symbol [ size %tmp.70 141 66 70 ];
+        invoke %tmp.60 %tmp.61(%tmp.62, %tmp.63, %tmp.64, %tmp.67, %tmp.68, %tmp.69, %tmp.70);
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_36_142_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 135 ]
+        %tmp.73 = lgetv %j.11;
+        symbol [ j %tmp.73 135 31 32 ];
+        %tmp.74 = add %tmp.73 1;
+        lputv %j.11 %tmp.74;
+        symbol [ j %j.11 135 31 32 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_135_8_142_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_117_84_143_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 122; @symbol_functiondef = [drawLetter,122,13,23]; @symbol_param<0> = [dc,122,24,26]; @symbol_param<0>_type<0> = [Dc,122,30,32]; @symbol_param<1> = [letter,122,34,40]; @symbol_param<1>_type<0> = [String,122,44,50]; @symbol_param<2> = [color,122,52,57]; @symbol_param<3> = [border,122,59,65]; @symbol_param<4> = [x,122,67,68]; @symbol_param<5> = [y,122,70,71]; @symbol_param<6> = [size,122,73,77]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 146; @symbol_functiondef = [drawLetter,146,13,23]; @symbol_param<0> = [dc,146,24,26]; @symbol_param<0>_type<0> = [Dc,146,30,32]; @symbol_param<1> = [letter,146,34,40]; @symbol_param<1>_type<0> = [String,146,44,50]; @symbol_param<2> = [color,146,52,57]; @symbol_param<3> = [border,146,59,65]; @symbol_param<4> = [x,146,67,68]; @symbol_param<5> = [y,146,70,71]; @symbol_param<6> = [size,146,73,77]; ]
     function drawLetter(dc as Dc, letter as String, color, border, x, y, size) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_122_79_148_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 123 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_146_79_172_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 147 8 ]
         %tmp.1 = lgetv %letter;
-        symbol [ letter %tmp.1 123 17 23 ];
-        symbol [ toString %tmp.2 123 24 32 ];
+        symbol [ letter %tmp.1 147 17 23 ];
+        symbol [ toString %tmp.2 147 24 32 ];
         %tmp.2 = getv function %tmp.1 :toString;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ toUpper %tmp.4 123 35 42 ];
+        symbol [ toUpper %tmp.4 147 35 42 ];
         %tmp.4 = getv function %tmp.3 :toUpper;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         lputv %letter %tmp.5;
-        symbol [ letter %letter 123 8 14 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 124 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_8_124_47_if_stmt:
-        symbol [ LETTERS %tmp.7 124 13 20 ];
+        symbol [ letter %letter 147 8 14 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 148 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_8_148_47_if_stmt:
+        symbol [ LETTERS %tmp.7 148 13 20 ];
         %tmp.7 = getv ? :LETTERS;
-        symbol [ hasKey %tmp.8 124 21 27 ];
+        symbol [ hasKey %tmp.8 148 21 27 ];
         %tmp.8 = getv function %tmp.7 :hasKey;
         %tmp.9 = lgetv %letter;
-        symbol [ letter %tmp.9 124 28 34 ];
+        symbol [ letter %tmp.9 148 28 34 ];
         %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
         %tmp.11 = not %tmp.10;
-        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_8_124_47_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_8_124_47_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_37_124_47_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 124 39 ]
+        bf %tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_8_148_47_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_8_148_47_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_37_148_47_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 148 39 ]
         ret ?;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_37_124_47_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_8_124_47_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_124_8_124_47_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 126 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_122_79_148_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_122_79_148_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_37_148_47_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_8_148_47_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_148_8_148_47_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 150 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_146_79_172_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_146_79_172_4_stop" ]
         %matrix.1 = local;
-        symbol [ matrix %matrix.1 126 12 18 ];
-        symbol [ LETTERS %tmp.13 126 21 28 ];
+        symbol [ matrix %matrix.1 150 12 18 ];
+        symbol [ LETTERS %tmp.13 150 21 28 ];
         %tmp.13 = getv ? :LETTERS;
         %tmp.14 = lgetv %letter;
-        symbol [ letter %tmp.14 126 29 35 ];
+        symbol [ letter %tmp.14 150 29 35 ];
         %tmp.15 = agetv %tmp.13 %tmp.14;
         %tmp.16 = as %tmp.15 Array;
-        symbol [ Array %tmp.16 126 40 45 ];
+        symbol [ Array %tmp.16 150 40 45 ];
         lputv %matrix.1 %tmp.16;
-        symbol [ matrix %matrix.1 126 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 128 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_end" ]
+        symbol [ matrix %matrix.1 150 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 152 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_end" ]
         %r.2 = local;
-        symbol [ r %r.2 128 17 18 ];
+        symbol [ r %r.2 152 17 18 ];
         %tmp.17 = 0;
         lputv %r.2 %tmp.17;
-        symbol [ r %r.2 128 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_test:
+        symbol [ r %r.2 152 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_test:
         %tmp.18 = lgetv %r.2;
-        symbol [ r %tmp.18 128 24 25 ];
+        symbol [ r %tmp.18 152 24 25 ];
         %tmp.19 = lgetv %matrix.1;
-        symbol [ matrix %tmp.19 128 28 34 ];
-        symbol [ size %tmp.20 128 35 39 ];
+        symbol [ matrix %tmp.19 152 28 34 ];
+        symbol [ size %tmp.20 152 35 39 ];
         %tmp.20 = getv function %tmp.19 :size;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         %tmp.22 = lt %tmp.18 %tmp.21;
-        bf %tmp.22 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_48_147_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 129 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_48_147_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_48_147_8_stop" ]
+        bf %tmp.22 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_48_171_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 153 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_48_171_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_48_171_8_stop" ]
         %row.3 = local;
-        symbol [ row %row.3 129 16 19 ];
+        symbol [ row %row.3 153 16 19 ];
         %tmp.23 = lgetv %matrix.1;
-        symbol [ matrix %tmp.23 129 23 29 ];
+        symbol [ matrix %tmp.23 153 23 29 ];
         %tmp.24 = as %tmp.23 Array;
-        symbol [ Array %tmp.24 129 33 38 ];
+        symbol [ Array %tmp.24 153 33 38 ];
         %tmp.25 = lgetv %r.2;
-        symbol [ r %tmp.25 129 40 41 ];
+        symbol [ r %tmp.25 153 40 41 ];
         %tmp.26 = agetv %tmp.24 %tmp.25;
         %tmp.27 = as %tmp.26 Array;
-        symbol [ Array %tmp.27 129 46 51 ];
+        symbol [ Array %tmp.27 153 46 51 ];
         lputv %row.3 %tmp.27;
-        symbol [ row %row.3 129 16 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 131 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_end" ]
+        symbol [ row %row.3 153 16 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 155 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_end" ]
         %c.4 = local;
-        symbol [ c %c.4 131 21 22 ];
+        symbol [ c %c.4 155 21 22 ];
         %tmp.28 = 0;
         lputv %c.4 %tmp.28;
-        symbol [ c %c.4 131 21 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_test:
+        symbol [ c %c.4 155 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_test:
         %tmp.29 = lgetv %c.4;
-        symbol [ c %tmp.29 131 28 29 ];
+        symbol [ c %tmp.29 155 28 29 ];
         %tmp.30 = lgetv %row.3;
-        symbol [ row %tmp.30 131 32 35 ];
-        symbol [ size %tmp.31 131 36 40 ];
+        symbol [ row %tmp.30 155 32 35 ];
+        symbol [ size %tmp.31 155 36 40 ];
         %tmp.31 = getv function %tmp.30 :size;
         %tmp.32 = invoke %tmp.30 %tmp.31();
         %tmp.33 = lt %tmp.29 %tmp.32;
-        bf %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_49_146_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 132 16 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_16_145_16_if_stmt:
+        bf %tmp.33 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_49_170_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 156 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_16_169_16_if_stmt:
         %tmp.34 = lgetv %row.3;
-        symbol [ row %tmp.34 132 20 23 ];
+        symbol [ row %tmp.34 156 20 23 ];
         %tmp.35 = lgetv %c.4;
-        symbol [ c %tmp.35 132 24 25 ];
+        symbol [ c %tmp.35 156 24 25 ];
         %tmp.36 = agetv %tmp.34 %tmp.35;
         %tmp.37 = 1;
         %tmp.38 = eq %tmp.36 %tmp.37;
-        bf %tmp.38 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_16_145_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_16_145_16_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_33_145_16_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 133 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_33_145_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_33_145_16_stop" ]
+        bf %tmp.38 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_16_169_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_16_169_16_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_33_169_16_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 157 20 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_33_169_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_33_169_16_stop" ]
         %px.5 = local;
-        symbol [ px %px.5 133 24 26 ];
+        symbol [ px %px.5 157 24 26 ];
         %tmp.39 = lgetv %x;
-        symbol [ x %tmp.39 133 29 30 ];
+        symbol [ x %tmp.39 157 29 30 ];
         %tmp.40 = lgetv %c.4;
-        symbol [ c %tmp.40 133 33 34 ];
+        symbol [ c %tmp.40 157 33 34 ];
         %tmp.41 = lgetv %size;
-        symbol [ size %tmp.41 133 37 41 ];
+        symbol [ size %tmp.41 157 37 41 ];
         %tmp.42 = mul %tmp.40 %tmp.41;
         %tmp.43 = add %tmp.39 %tmp.42;
         lputv %px.5 %tmp.43;
-        symbol [ px %px.5 133 24 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 134 20 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_33_145_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_33_145_16_stop" ]
+        symbol [ px %px.5 157 24 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 158 20 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_33_169_16_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_33_169_16_stop" ]
         %py.6 = local;
-        symbol [ py %py.6 134 24 26 ];
+        symbol [ py %py.6 158 24 26 ];
         %tmp.44 = lgetv %y;
-        symbol [ y %tmp.44 134 29 30 ];
+        symbol [ y %tmp.44 158 29 30 ];
         %tmp.45 = lgetv %r.2;
-        symbol [ r %tmp.45 134 33 34 ];
+        symbol [ r %tmp.45 158 33 34 ];
         %tmp.46 = lgetv %size;
-        symbol [ size %tmp.46 134 37 41 ];
+        symbol [ size %tmp.46 158 37 41 ];
         %tmp.47 = mul %tmp.45 %tmp.46;
         %tmp.48 = add %tmp.44 %tmp.47;
         lputv %py.6 %tmp.48;
-        symbol [ py %py.6 134 24 26 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 137 20 ]
+        symbol [ py %py.6 158 24 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 161 20 ]
         %tmp.49 = lgetv %dc;
-        symbol [ dc %tmp.49 137 20 22 ];
-        symbol [ setColor %tmp.50 137 23 31 ];
+        symbol [ dc %tmp.49 161 20 22 ];
+        symbol [ setColor %tmp.50 161 23 31 ];
         %tmp.50 = getv function %tmp.49 :setColor;
         %tmp.51 = lgetv %color;
-        symbol [ color %tmp.51 137 32 37 ];
-        symbol [ Color %tmp.53 137 39 44 ];
+        symbol [ color %tmp.51 161 32 37 ];
+        symbol [ Color %tmp.53 161 39 44 ];
         %tmp.53 = getv ? :Color;
-        symbol [ none %tmp.54 137 45 49 ];
+        symbol [ none %tmp.54 161 45 49 ];
         %tmp.54 = getv %tmp.53 :none;
         invoke %tmp.49 %tmp.50(%tmp.51, %tmp.54);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 138 20 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 162 20 ]
         %tmp.55 = lgetv %dc;
-        symbol [ dc %tmp.55 138 20 22 ];
-        symbol [ fillRectangle %tmp.56 138 23 36 ];
+        symbol [ dc %tmp.55 162 20 22 ];
+        symbol [ fillRectangle %tmp.56 162 23 36 ];
         %tmp.56 = getv function %tmp.55 :fillRectangle;
         %tmp.57 = lgetv %px.5;
-        symbol [ px %tmp.57 138 37 39 ];
+        symbol [ px %tmp.57 162 37 39 ];
         %tmp.58 = lgetv %py.6;
-        symbol [ py %tmp.58 138 41 43 ];
+        symbol [ py %tmp.58 162 41 43 ];
         %tmp.59 = lgetv %size;
-        symbol [ size %tmp.59 138 45 49 ];
+        symbol [ size %tmp.59 162 45 49 ];
         %tmp.60 = lgetv %size;
-        symbol [ size %tmp.60 138 51 55 ];
+        symbol [ size %tmp.60 162 51 55 ];
         invoke %tmp.55 %tmp.56(%tmp.57, %tmp.58, %tmp.59, %tmp.60);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 141 20 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_20_144_20_if_stmt:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 165 20 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_20_168_20_if_stmt:
         %tmp.61 = lgetv %border;
-        symbol [ border %tmp.61 141 24 30 ];
-        symbol [ Color %tmp.63 141 34 39 ];
+        symbol [ border %tmp.61 165 24 30 ];
+        symbol [ Color %tmp.63 165 34 39 ];
         %tmp.63 = getv ? :Color;
-        symbol [ none %tmp.64 141 40 44 ];
+        symbol [ none %tmp.64 165 40 44 ];
         %tmp.64 = getv %tmp.63 :none;
         %tmp.65 = ne %tmp.61 %tmp.64;
-        bf %tmp.65 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_20_144_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_20_144_20_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_46_144_20_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 142 24 ]
+        bf %tmp.65 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_20_168_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_20_168_20_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_46_168_20_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 166 24 ]
         %tmp.66 = lgetv %dc;
-        symbol [ dc %tmp.66 142 24 26 ];
-        symbol [ setColor %tmp.67 142 27 35 ];
+        symbol [ dc %tmp.66 166 24 26 ];
+        symbol [ setColor %tmp.67 166 27 35 ];
         %tmp.67 = getv function %tmp.66 :setColor;
         %tmp.68 = lgetv %border;
-        symbol [ border %tmp.68 142 36 42 ];
-        symbol [ Color %tmp.70 142 44 49 ];
+        symbol [ border %tmp.68 166 36 42 ];
+        symbol [ Color %tmp.70 166 44 49 ];
         %tmp.70 = getv ? :Color;
-        symbol [ none %tmp.71 142 50 54 ];
+        symbol [ none %tmp.71 166 50 54 ];
         %tmp.71 = getv %tmp.70 :none;
         invoke %tmp.66 %tmp.67(%tmp.68, %tmp.71);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 143 24 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 167 24 ]
         %tmp.72 = lgetv %dc;
-        symbol [ dc %tmp.72 143 24 26 ];
-        symbol [ drawRectangle %tmp.73 143 27 40 ];
+        symbol [ dc %tmp.72 167 24 26 ];
+        symbol [ drawRectangle %tmp.73 167 27 40 ];
         %tmp.73 = getv function %tmp.72 :drawRectangle;
         %tmp.74 = lgetv %px.5;
-        symbol [ px %tmp.74 143 41 43 ];
+        symbol [ px %tmp.74 167 41 43 ];
         %tmp.75 = lgetv %py.6;
-        symbol [ py %tmp.75 143 45 47 ];
+        symbol [ py %tmp.75 167 45 47 ];
         %tmp.76 = lgetv %size;
-        symbol [ size %tmp.76 143 49 53 ];
+        symbol [ size %tmp.76 167 49 53 ];
         %tmp.77 = lgetv %size;
-        symbol [ size %tmp.77 143 55 59 ];
+        symbol [ size %tmp.77 167 55 59 ];
         invoke %tmp.72 %tmp.73(%tmp.74, %tmp.75, %tmp.76, %tmp.77);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_46_144_20_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_20_144_20_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_141_20_144_20_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_33_145_16_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_16_145_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_132_16_145_16_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_49_146_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 131 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_46_168_20_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_20_168_20_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_165_20_168_20_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_33_169_16_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_16_169_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_156_16_169_16_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_49_170_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 155 ]
         %tmp.80 = lgetv %c.4;
-        symbol [ c %tmp.80 131 44 45 ];
+        symbol [ c %tmp.80 155 44 45 ];
         %tmp.81 = add %tmp.80 1;
         lputv %c.4 %tmp.81;
-        symbol [ c %c.4 131 44 45 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_131_12_146_12_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_48_147_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 128 ]
+        symbol [ c %c.4 155 44 45 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_155_12_170_12_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_48_171_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 152 ]
         %tmp.84 = lgetv %r.2;
-        symbol [ r %tmp.84 128 43 44 ];
+        symbol [ r %tmp.84 152 43 44 ];
         %tmp.85 = add %tmp.84 1;
         lputv %r.2 %tmp.85;
-        symbol [ r %r.2 128 43 44 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_128_8_147_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_122_79_148_4_stop:
+        symbol [ r %r.2 152 43 44 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_8_171_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_146_79_172_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 152; @symbol_functiondef = [title2048,152,13,22]; @symbol_param<0> = [dc,152,23,25]; @symbol_param<0>_type<0> = [Dc,152,29,31]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 176; @symbol_functiondef = [title2048,176,13,22]; @symbol_param<0> = [dc,176,23,25]; @symbol_param<0>_type<0> = [Dc,176,29,31]; ]
     function title2048(dc as Dc) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 153 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 177 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %title.1 = local;
-        symbol [ title %title.1 153 12 17 ];
+        symbol [ title %title.1 177 12 17 ];
         %tmp.1 = newa 4;
         %tmp.2 = "2";
         %tmp.3 = dup %tmp.1;
@@ -2711,40 +2798,40 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_m
         %tmp.12 = dup %tmp.10;
         %tmp.13 = aputv %tmp.12 3 %tmp.11;
         lputv %title.1 %tmp.13;
-        symbol [ title %title.1 153 12 17 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 154 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ title %title.1 177 12 17 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 178 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %size.2 = local;
-        symbol [ size %size.2 154 12 16 ];
+        symbol [ size %size.2 178 12 16 ];
         %tmp.14 = 85;
         lputv %size.2 %tmp.14;
-        symbol [ size %size.2 154 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 155 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ size %size.2 178 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 179 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %spacing.3 = local;
-        symbol [ spacing %spacing.3 155 12 19 ];
+        symbol [ spacing %spacing.3 179 12 19 ];
         %tmp.15 = lgetv %size.2;
-        symbol [ size %tmp.15 155 22 26 ];
+        symbol [ size %tmp.15 179 22 26 ];
         %tmp.16 = 7;
         %tmp.17 = add %tmp.15 %tmp.16;
         lputv %spacing.3 %tmp.17;
-        symbol [ spacing %spacing.3 155 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 157 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ spacing %spacing.3 179 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 181 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %x.4 = local;
-        symbol [ x %x.4 157 12 13 ];
-        symbol [ Layout %tmp.19 157 16 22 ];
+        symbol [ x %x.4 181 12 13 ];
+        symbol [ Layout %tmp.19 181 16 22 ];
         %tmp.19 = getv ? :Layout;
-        symbol [ centerX %tmp.20 157 23 30 ];
+        symbol [ centerX %tmp.20 181 23 30 ];
         %tmp.20 = getv function %tmp.19 :centerX;
         %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 157 31 33 ];
+        symbol [ dc %tmp.21 181 31 33 ];
         %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
         %tmp.23 = lgetv %spacing.3;
-        symbol [ spacing %tmp.23 157 39 46 ];
+        symbol [ spacing %tmp.23 181 39 46 ];
         %tmp.24 = lgetv %title.1;
-        symbol [ title %tmp.24 157 49 54 ];
-        symbol [ size %tmp.25 157 55 59 ];
+        symbol [ title %tmp.24 181 49 54 ];
+        symbol [ size %tmp.25 181 55 59 ];
         %tmp.25 = getv function %tmp.24 :size;
         %tmp.26 = invoke %tmp.24 %tmp.25();
         %tmp.27 = mul %tmp.23 %tmp.26;
@@ -2754,26 +2841,26 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_m
         %tmp.31 = 3;
         %tmp.32 = add %tmp.30 %tmp.31;
         lputv %x.4 %tmp.32;
-        symbol [ x %x.4 157 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 158 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ x %x.4 181 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 182 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %y.5 = local;
-        symbol [ y %y.5 158 12 13 ];
-        symbol [ Layout %tmp.34 158 16 22 ];
+        symbol [ y %y.5 182 12 13 ];
+        symbol [ Layout %tmp.34 182 16 22 ];
         %tmp.34 = getv ? :Layout;
-        symbol [ centerY %tmp.35 158 23 30 ];
+        symbol [ centerY %tmp.35 182 23 30 ];
         %tmp.35 = getv function %tmp.34 :centerY;
         %tmp.36 = lgetv %dc;
-        symbol [ dc %tmp.36 158 31 33 ];
+        symbol [ dc %tmp.36 182 31 33 ];
         %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
         %tmp.38 = 70;
         %tmp.39 = sub %tmp.37 %tmp.38;
         lputv %y.5 %tmp.39;
-        symbol [ y %y.5 158 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 159 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ y %y.5 182 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 183 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %buffer.6 = local;
-        symbol [ buffer %buffer.6 159 12 18 ];
+        symbol [ buffer %buffer.6 183 12 18 ];
         %tmp.40 = newa 4;
         %tmp.41 = 0;
         %tmp.42 = dup %tmp.40;
@@ -2788,820 +2875,820 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_m
         %tmp.51 = dup %tmp.49;
         %tmp.52 = aputv %tmp.51 3 %tmp.50;
         lputv %buffer.6 %tmp.52;
-        symbol [ buffer %buffer.6 159 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 161 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ buffer %buffer.6 183 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 185 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %colorMap.7 = local;
-        symbol [ colorMap %colorMap.7 161 12 20 ];
-        symbol [ Color %tmp.54 161 23 28 ];
+        symbol [ colorMap %colorMap.7 185 12 20 ];
+        symbol [ Color %tmp.54 185 23 28 ];
         %tmp.54 = getv ? :Color;
-        symbol [ TILES %tmp.55 161 29 34 ];
+        symbol [ TILES %tmp.55 185 29 34 ];
         %tmp.55 = getv %tmp.54 :TILES;
         %tmp.56 = as %tmp.55 Dictionary;
-        symbol [ Dictionary %tmp.56 161 38 48 ];
+        symbol [ Dictionary %tmp.56 185 38 48 ];
         lputv %colorMap.7 %tmp.56;
-        symbol [ colorMap %colorMap.7 161 12 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 162 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop" ]
+        symbol [ colorMap %colorMap.7 185 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 186 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop" ]
         %colors.8 = local;
-        symbol [ colors %colors.8 162 12 18 ];
+        symbol [ colors %colors.8 186 12 18 ];
         %tmp.57 = newa 4;
         %tmp.58 = lgetv %colorMap.7;
-        symbol [ colorMap %tmp.58 162 22 30 ];
+        symbol [ colorMap %tmp.58 186 22 30 ];
         %tmp.59 = 256;
         %tmp.60 = agetv %tmp.58 %tmp.59;
         %tmp.61 = dup %tmp.57;
         %tmp.62 = aputv %tmp.61 0 %tmp.60;
         %tmp.63 = lgetv %colorMap.7;
-        symbol [ colorMap %tmp.63 162 37 45 ];
+        symbol [ colorMap %tmp.63 186 37 45 ];
         %tmp.64 = 32;
         %tmp.65 = agetv %tmp.63 %tmp.64;
         %tmp.66 = dup %tmp.62;
         %tmp.67 = aputv %tmp.66 1 %tmp.65;
         %tmp.68 = lgetv %colorMap.7;
-        symbol [ colorMap %tmp.68 162 51 59 ];
+        symbol [ colorMap %tmp.68 186 51 59 ];
         %tmp.69 = 512;
         %tmp.70 = agetv %tmp.68 %tmp.69;
         %tmp.71 = dup %tmp.67;
         %tmp.72 = aputv %tmp.71 2 %tmp.70;
         %tmp.73 = lgetv %colorMap.7;
-        symbol [ colorMap %tmp.73 162 66 74 ];
+        symbol [ colorMap %tmp.73 186 66 74 ];
         %tmp.74 = 2048;
         %tmp.75 = agetv %tmp.73 %tmp.74;
         %tmp.76 = dup %tmp.72;
         %tmp.77 = aputv %tmp.76 3 %tmp.75;
         lputv %colors.8 %tmp.77;
-        symbol [ colors %colors.8 162 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 164 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_end" ]
+        symbol [ colors %colors.8 186 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 188 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_end" ]
         %i.9 = local;
-        symbol [ i %i.9 164 17 18 ];
+        symbol [ i %i.9 188 17 18 ];
         %tmp.78 = 0;
         lputv %i.9 %tmp.78;
-        symbol [ i %i.9 164 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_test:
+        symbol [ i %i.9 188 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_test:
         %tmp.79 = lgetv %i.9;
-        symbol [ i %tmp.79 164 24 25 ];
+        symbol [ i %tmp.79 188 24 25 ];
         %tmp.80 = lgetv %title.1;
-        symbol [ title %tmp.80 164 28 33 ];
-        symbol [ size %tmp.81 164 34 38 ];
+        symbol [ title %tmp.80 188 28 33 ];
+        symbol [ size %tmp.81 188 34 38 ];
         %tmp.81 = getv function %tmp.80 :size;
         %tmp.82 = invoke %tmp.80 %tmp.81();
         %tmp.83 = lt %tmp.79 %tmp.82;
-        bf %tmp.83 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 165 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_stop" ]
+        bf %tmp.83 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 189 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_stop" ]
         %value.10 = local;
-        symbol [ value %value.10 165 16 21 ];
+        symbol [ value %value.10 189 16 21 ];
         %tmp.84 = lgetv %title.1;
-        symbol [ title %tmp.84 165 24 29 ];
+        symbol [ title %tmp.84 189 24 29 ];
         %tmp.85 = lgetv %i.9;
-        symbol [ i %tmp.85 165 30 31 ];
+        symbol [ i %tmp.85 189 30 31 ];
         %tmp.86 = agetv %tmp.84 %tmp.85;
         %tmp.87 = as %tmp.86 String;
-        symbol [ String %tmp.87 165 36 42 ];
+        symbol [ String %tmp.87 189 36 42 ];
         lputv %value.10 %tmp.87;
-        symbol [ value %value.10 165 16 21 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 166 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_stop" ]
+        symbol [ value %value.10 189 16 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 190 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_stop" ]
         %posX.11 = local;
-        symbol [ posX %posX.11 166 16 20 ];
+        symbol [ posX %posX.11 190 16 20 ];
         %tmp.88 = lgetv %x.4;
-        symbol [ x %tmp.88 166 23 24 ];
+        symbol [ x %tmp.88 190 23 24 ];
         %tmp.89 = lgetv %i.9;
-        symbol [ i %tmp.89 166 27 28 ];
+        symbol [ i %tmp.89 190 27 28 ];
         %tmp.90 = lgetv %spacing.3;
-        symbol [ spacing %tmp.90 166 31 38 ];
+        symbol [ spacing %tmp.90 190 31 38 ];
         %tmp.91 = mul %tmp.89 %tmp.90;
         %tmp.92 = add %tmp.88 %tmp.91;
         lputv %posX.11 %tmp.92;
-        symbol [ posX %posX.11 166 16 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 167 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_stop" ]
+        symbol [ posX %posX.11 190 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 191 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_stop" ]
         %posY.12 = local;
-        symbol [ posY %posY.12 167 16 20 ];
+        symbol [ posY %posY.12 191 16 20 ];
         %tmp.93 = lgetv %y.5;
-        symbol [ y %tmp.93 167 23 24 ];
+        symbol [ y %tmp.93 191 23 24 ];
         %tmp.94 = lgetv %buffer.6;
-        symbol [ buffer %tmp.94 167 27 33 ];
+        symbol [ buffer %tmp.94 191 27 33 ];
         %tmp.95 = lgetv %i.9;
-        symbol [ i %tmp.95 167 34 35 ];
+        symbol [ i %tmp.95 191 34 35 ];
         %tmp.96 = agetv %tmp.94 %tmp.95;
         %tmp.97 = add %tmp.93 %tmp.96;
         lputv %posY.12 %tmp.97;
-        symbol [ posY %posY.12 167 16 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 170 12 ]
+        symbol [ posY %posY.12 191 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 194 12 ]
         %tmp.98 = lgetv %dc;
-        symbol [ dc %tmp.98 170 12 14 ];
-        symbol [ setColor %tmp.99 170 15 23 ];
+        symbol [ dc %tmp.98 194 12 14 ];
+        symbol [ setColor %tmp.99 194 15 23 ];
         %tmp.99 = getv function %tmp.98 :setColor;
         %tmp.100 = lgetv %colors.8;
-        symbol [ colors %tmp.100 170 24 30 ];
+        symbol [ colors %tmp.100 194 24 30 ];
         %tmp.101 = lgetv %i.9;
-        symbol [ i %tmp.101 170 31 32 ];
+        symbol [ i %tmp.101 194 31 32 ];
         %tmp.102 = agetv %tmp.100 %tmp.101;
-        symbol [ Color %tmp.104 170 35 40 ];
+        symbol [ Color %tmp.104 194 35 40 ];
         %tmp.104 = getv ? :Color;
-        symbol [ none %tmp.105 170 41 45 ];
+        symbol [ none %tmp.105 194 41 45 ];
         %tmp.105 = getv %tmp.104 :none;
         invoke %tmp.98 %tmp.99(%tmp.102, %tmp.105);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 171 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 195 12 ]
         %tmp.106 = lgetv %dc;
-        symbol [ dc %tmp.106 171 12 14 ];
-        symbol [ fillRectangle %tmp.107 171 15 28 ];
+        symbol [ dc %tmp.106 195 12 14 ];
+        symbol [ fillRectangle %tmp.107 195 15 28 ];
         %tmp.107 = getv function %tmp.106 :fillRectangle;
         %tmp.108 = lgetv %posX.11;
-        symbol [ posX %tmp.108 171 29 33 ];
+        symbol [ posX %tmp.108 195 29 33 ];
         %tmp.109 = lgetv %posY.12;
-        symbol [ posY %tmp.109 171 35 39 ];
+        symbol [ posY %tmp.109 195 35 39 ];
         %tmp.110 = lgetv %size.2;
-        symbol [ size %tmp.110 171 41 45 ];
+        symbol [ size %tmp.110 195 41 45 ];
         %tmp.111 = lgetv %size.2;
-        symbol [ size %tmp.111 171 47 51 ];
+        symbol [ size %tmp.111 195 47 51 ];
         invoke %tmp.106 %tmp.107(%tmp.108, %tmp.109, %tmp.110, %tmp.111);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 172 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 196 12 ]
         %tmp.112 = lgetv %dc;
-        symbol [ dc %tmp.112 172 12 14 ];
-        symbol [ setColor %tmp.113 172 15 23 ];
+        symbol [ dc %tmp.112 196 12 14 ];
+        symbol [ setColor %tmp.113 196 15 23 ];
         %tmp.113 = getv function %tmp.112 :setColor;
-        symbol [ Graphics %tmp.114 172 24 32 ];
+        symbol [ Graphics %tmp.114 196 24 32 ];
         %tmp.114 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.115 172 33 44 ];
+        symbol [ COLOR_WHITE %tmp.115 196 33 44 ];
         %tmp.115 = getv %tmp.114 :COLOR_WHITE;
-        symbol [ Color %tmp.117 172 46 51 ];
+        symbol [ Color %tmp.117 196 46 51 ];
         %tmp.117 = getv ? :Color;
-        symbol [ none %tmp.118 172 52 56 ];
+        symbol [ none %tmp.118 196 52 56 ];
         %tmp.118 = getv %tmp.117 :none;
         invoke %tmp.112 %tmp.113(%tmp.115, %tmp.118);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 173 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 197 12 ]
         %tmp.119 = lgetv %dc;
-        symbol [ dc %tmp.119 173 12 14 ];
-        symbol [ drawRectangle %tmp.120 173 15 28 ];
+        symbol [ dc %tmp.119 197 12 14 ];
+        symbol [ drawRectangle %tmp.120 197 15 28 ];
         %tmp.120 = getv function %tmp.119 :drawRectangle;
         %tmp.121 = lgetv %posX.11;
-        symbol [ posX %tmp.121 173 29 33 ];
+        symbol [ posX %tmp.121 197 29 33 ];
         %tmp.122 = lgetv %posY.12;
-        symbol [ posY %tmp.122 173 35 39 ];
+        symbol [ posY %tmp.122 197 35 39 ];
         %tmp.123 = lgetv %size.2;
-        symbol [ size %tmp.123 173 41 45 ];
+        symbol [ size %tmp.123 197 41 45 ];
         %tmp.124 = lgetv %size.2;
-        symbol [ size %tmp.124 173 47 51 ];
+        symbol [ size %tmp.124 197 47 51 ];
         invoke %tmp.119 %tmp.120(%tmp.121, %tmp.122, %tmp.123, %tmp.124);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 176 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 200 12 ]
         %tmp.125 = lgetv %dc;
-        symbol [ dc %tmp.125 176 12 14 ];
-        symbol [ setColor %tmp.126 176 15 23 ];
+        symbol [ dc %tmp.125 200 12 14 ];
+        symbol [ setColor %tmp.126 200 15 23 ];
         %tmp.126 = getv function %tmp.125 :setColor;
-        symbol [ Graphics %tmp.127 176 24 32 ];
+        symbol [ Graphics %tmp.127 200 24 32 ];
         %tmp.127 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.128 176 33 44 ];
+        symbol [ COLOR_WHITE %tmp.128 200 33 44 ];
         %tmp.128 = getv %tmp.127 :COLOR_WHITE;
-        symbol [ Color %tmp.130 176 46 51 ];
+        symbol [ Color %tmp.130 200 46 51 ];
         %tmp.130 = getv ? :Color;
-        symbol [ none %tmp.131 176 52 56 ];
+        symbol [ none %tmp.131 200 52 56 ];
         %tmp.131 = getv %tmp.130 :none;
         invoke %tmp.125 %tmp.126(%tmp.128, %tmp.131);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 177 12 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 201 12 ]
         %tmp.132 = lgetv %dc;
-        symbol [ dc %tmp.132 177 12 14 ];
-        symbol [ drawText %tmp.133 177 15 23 ];
+        symbol [ dc %tmp.132 201 12 14 ];
+        symbol [ drawText %tmp.133 201 15 23 ];
         %tmp.133 = getv function %tmp.132 :drawText;
         %tmp.134 = lgetv %posX.11;
-        symbol [ posX %tmp.134 177 24 28 ];
+        symbol [ posX %tmp.134 201 24 28 ];
         %tmp.135 = lgetv %size.2;
-        symbol [ size %tmp.135 177 32 36 ];
+        symbol [ size %tmp.135 201 32 36 ];
         %tmp.136 = 2;
         %tmp.137 = div %tmp.135 %tmp.136;
         %tmp.138 = add %tmp.134 %tmp.137;
         %tmp.139 = lgetv %posY.12;
-        symbol [ posY %tmp.139 177 41 45 ];
+        symbol [ posY %tmp.139 201 41 45 ];
         %tmp.140 = 10;
         %tmp.141 = add %tmp.139 %tmp.140;
-        symbol [ Graphics %tmp.142 177 52 60 ];
+        symbol [ Graphics %tmp.142 201 52 60 ];
         %tmp.142 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.143 177 61 71 ];
+        symbol [ FONT_LARGE %tmp.143 201 61 71 ];
         %tmp.143 = getv %tmp.142 :FONT_LARGE;
         %tmp.144 = lgetv %value.10;
-        symbol [ value %tmp.144 177 73 78 ];
-        symbol [ Graphics %tmp.145 177 80 88 ];
+        symbol [ value %tmp.144 201 73 78 ];
+        symbol [ Graphics %tmp.145 201 80 88 ];
         %tmp.145 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.146 177 89 108 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.146 201 89 108 ];
         %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.132 %tmp.133(%tmp.138, %tmp.141, %tmp.143, %tmp.144, %tmp.146);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_47_178_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 164 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_47_202_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 188 ]
         %tmp.149 = lgetv %i.9;
-        symbol [ i %tmp.149 164 42 43 ];
+        symbol [ i %tmp.149 188 42 43 ];
         %tmp.150 = add %tmp.149 1;
         lputv %i.9 %tmp.150;
-        symbol [ i %i.9 164 42 43 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_164_8_178_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_152_33_179_4_stop:
+        symbol [ i %i.9 188 42 43 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_8_202_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_176_33_203_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 181; @symbol_functiondef = [score2048,181,13,22]; @symbol_param<0> = [dc,181,23,25]; @symbol_param<0>_type<0> = [Dc,181,29,31]; @symbol_param<1> = [score,181,33,38]; @symbol_param<2> = [borderY,181,40,47]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 205; @symbol_functiondef = [score2048,205,13,22]; @symbol_param<0> = [dc,205,23,25]; @symbol_param<0>_type<0> = [Dc,205,29,31]; @symbol_param<1> = [score,205,33,38]; @symbol_param<2> = [borderY,205,40,47]; ]
     function score2048(dc as Dc, score, borderY) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 182 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 206 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_stop" ]
         %height.1 = local;
-        symbol [ height %height.1 182 12 18 ];
+        symbol [ height %height.1 206 12 18 ];
         %tmp.1 = 50;
         lputv %height.1 %tmp.1;
-        symbol [ height %height.1 182 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 183 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_stop" ]
+        symbol [ height %height.1 206 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 207 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_stop" ]
         %width.2 = local;
-        symbol [ width %width.2 183 12 17 ];
+        symbol [ width %width.2 207 12 17 ];
         %tmp.2 = 50;
         lputv %width.2 %tmp.2;
-        symbol [ width %width.2 183 12 17 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 185 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_8_193_8_if_stmt:
+        symbol [ width %width.2 207 12 17 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 209 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_8_217_8_if_stmt:
         %tmp.3 = lgetv %score;
-        symbol [ score %tmp.3 185 12 17 ];
+        symbol [ score %tmp.3 209 12 17 ];
         %tmp.4 = 1000;
         %tmp.5 = gte %tmp.3 %tmp.4;
-        bf %tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_8_193_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_8_193_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_27_187_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 186 12 ]
+        bf %tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_8_217_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_8_217_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_27_211_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 210 12 ]
         %tmp.6 = 110;
         lputv %width.2 %tmp.6;
-        symbol [ width %width.2 186 12 17 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_27_187_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_8_193_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_8_193_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 188 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_13_193_8_if_stmt:
+        symbol [ width %width.2 210 12 17 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_27_211_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_8_217_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_8_217_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 212 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_13_217_8_if_stmt:
         %tmp.7 = lgetv %score;
-        symbol [ score %tmp.7 188 17 22 ];
+        symbol [ score %tmp.7 212 17 22 ];
         %tmp.8 = 100;
         %tmp.9 = gte %tmp.7 %tmp.8;
-        bf %tmp.9 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_13_193_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_13_193_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_31_190_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 189 12 ]
+        bf %tmp.9 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_13_217_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_13_217_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_31_214_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 213 12 ]
         %tmp.10 = 90;
         lputv %width.2 %tmp.10;
-        symbol [ width %width.2 189 12 17 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_31_190_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_13_193_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_13_193_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 191 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_13_193_8_if_stmt:
+        symbol [ width %width.2 213 12 17 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_31_214_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_13_217_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_13_217_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 215 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_13_217_8_if_stmt:
         %tmp.11 = lgetv %score;
-        symbol [ score %tmp.11 191 17 22 ];
+        symbol [ score %tmp.11 215 17 22 ];
         %tmp.12 = 10;
         %tmp.13 = gte %tmp.11 %tmp.12;
-        bf %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_13_193_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_13_193_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_30_193_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 192 12 ]
+        bf %tmp.13 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_13_217_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_13_217_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_30_217_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 216 12 ]
         %tmp.14 = 70;
         lputv %width.2 %tmp.14;
-        symbol [ width %width.2 192 12 17 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_30_193_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_13_193_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_191_13_193_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_188_13_193_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_185_8_193_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 195 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_stop" ]
+        symbol [ width %width.2 216 12 17 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_30_217_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_13_217_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_215_13_217_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_212_13_217_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_209_8_217_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 219 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_stop" ]
         %x.3 = local;
-        symbol [ x %x.3 195 12 13 ];
+        symbol [ x %x.3 219 12 13 ];
         %tmp.15 = 100;
         lputv %x.3 %tmp.15;
-        symbol [ x %x.3 195 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 196 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_stop" ]
+        symbol [ x %x.3 219 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 220 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_stop" ]
         %y.4 = local;
-        symbol [ y %y.4 196 12 13 ];
+        symbol [ y %y.4 220 12 13 ];
         %tmp.16 = lgetv %borderY;
-        symbol [ borderY %tmp.16 196 16 23 ];
+        symbol [ borderY %tmp.16 220 16 23 ];
         %tmp.17 = 65;
         %tmp.18 = sub %tmp.16 %tmp.17;
         lputv %y.4 %tmp.18;
-        symbol [ y %y.4 196 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 199 8 ]
+        symbol [ y %y.4 220 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 223 8 ]
         %tmp.19 = lgetv %dc;
-        symbol [ dc %tmp.19 199 8 10 ];
-        symbol [ setColor %tmp.20 199 11 19 ];
+        symbol [ dc %tmp.19 223 8 10 ];
+        symbol [ setColor %tmp.20 223 11 19 ];
         %tmp.20 = getv function %tmp.19 :setColor;
-        symbol [ Graphics %tmp.21 199 20 28 ];
+        symbol [ Graphics %tmp.21 223 20 28 ];
         %tmp.21 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.22 199 29 40 ];
+        symbol [ COLOR_WHITE %tmp.22 223 29 40 ];
         %tmp.22 = getv %tmp.21 :COLOR_WHITE;
-        symbol [ Color %tmp.24 199 42 47 ];
+        symbol [ Color %tmp.24 223 42 47 ];
         %tmp.24 = getv ? :Color;
-        symbol [ none %tmp.25 199 48 52 ];
+        symbol [ none %tmp.25 223 48 52 ];
         %tmp.25 = getv %tmp.24 :none;
         invoke %tmp.19 %tmp.20(%tmp.22, %tmp.25);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 200 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 224 8 ]
         %tmp.26 = lgetv %dc;
-        symbol [ dc %tmp.26 200 8 10 ];
-        symbol [ drawText %tmp.27 200 11 19 ];
+        symbol [ dc %tmp.26 224 8 10 ];
+        symbol [ drawText %tmp.27 224 11 19 ];
         %tmp.27 = getv function %tmp.26 :drawText;
         %tmp.28 = lgetv %x.3;
-        symbol [ x %tmp.28 200 20 21 ];
+        symbol [ x %tmp.28 224 20 21 ];
         %tmp.29 = lgetv %y.4;
-        symbol [ y %tmp.29 200 23 24 ];
-        symbol [ Graphics %tmp.30 200 26 34 ];
+        symbol [ y %tmp.29 224 23 24 ];
+        symbol [ Graphics %tmp.30 224 26 34 ];
         %tmp.30 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.31 200 35 45 ];
+        symbol [ FONT_SMALL %tmp.31 224 35 45 ];
         %tmp.31 = getv %tmp.30 :FONT_SMALL;
         %tmp.32 = "BEST : ";
-        symbol [ Graphics %tmp.33 200 58 66 ];
+        symbol [ Graphics %tmp.33 224 58 66 ];
         %tmp.33 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.34 200 67 84 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.34 224 67 84 ];
         %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.31, %tmp.32, %tmp.34);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 203 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 227 8 ]
         %tmp.35 = lgetv %y.4;
-        symbol [ y %tmp.35 203 8 9 ];
+        symbol [ y %tmp.35 227 8 9 ];
         %tmp.36 = 2;
         %tmp.37 = sub %tmp.35 %tmp.36;
         lputv %y.4 %tmp.37;
-        symbol [ y %y.4 203 8 9 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 204 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_stop" ]
+        symbol [ y %y.4 227 8 9 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 228 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_stop" ]
         %buffer.5 = local;
-        symbol [ buffer %buffer.5 204 12 18 ];
+        symbol [ buffer %buffer.5 228 12 18 ];
         %tmp.38 = 135;
         lputv %buffer.5 %tmp.38;
-        symbol [ buffer %buffer.5 204 12 18 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 205 8 ]
+        symbol [ buffer %buffer.5 228 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 229 8 ]
         %tmp.39 = lgetv %dc;
-        symbol [ dc %tmp.39 205 8 10 ];
-        symbol [ setColor %tmp.40 205 11 19 ];
+        symbol [ dc %tmp.39 229 8 10 ];
+        symbol [ setColor %tmp.40 229 11 19 ];
         %tmp.40 = getv function %tmp.39 :setColor;
-        symbol [ Color %tmp.42 205 20 25 ];
+        symbol [ Color %tmp.42 229 20 25 ];
         %tmp.42 = getv ? :Color;
-        symbol [ TILES %tmp.43 205 26 31 ];
+        symbol [ TILES %tmp.43 229 26 31 ];
         %tmp.43 = getv %tmp.42 :TILES;
         %tmp.44 = 2048;
         %tmp.45 = agetv %tmp.43 %tmp.44;
-        symbol [ Color %tmp.47 205 39 44 ];
+        symbol [ Color %tmp.47 229 39 44 ];
         %tmp.47 = getv ? :Color;
-        symbol [ none %tmp.48 205 45 49 ];
+        symbol [ none %tmp.48 229 45 49 ];
         %tmp.48 = getv %tmp.47 :none;
         invoke %tmp.39 %tmp.40(%tmp.45, %tmp.48);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 206 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 230 8 ]
         %tmp.49 = lgetv %dc;
-        symbol [ dc %tmp.49 206 8 10 ];
-        symbol [ fillRectangle %tmp.50 206 11 24 ];
+        symbol [ dc %tmp.49 230 8 10 ];
+        symbol [ fillRectangle %tmp.50 230 11 24 ];
         %tmp.50 = getv function %tmp.49 :fillRectangle;
         %tmp.51 = lgetv %x.3;
-        symbol [ x %tmp.51 206 25 26 ];
+        symbol [ x %tmp.51 230 25 26 ];
         %tmp.52 = lgetv %buffer.5;
-        symbol [ buffer %tmp.52 206 29 35 ];
+        symbol [ buffer %tmp.52 230 29 35 ];
         %tmp.53 = add %tmp.51 %tmp.52;
         %tmp.54 = lgetv %y.4;
-        symbol [ y %tmp.54 206 37 38 ];
+        symbol [ y %tmp.54 230 37 38 ];
         %tmp.55 = lgetv %width.2;
-        symbol [ width %tmp.55 206 40 45 ];
+        symbol [ width %tmp.55 230 40 45 ];
         %tmp.56 = lgetv %height.1;
-        symbol [ height %tmp.56 206 47 53 ];
+        symbol [ height %tmp.56 230 47 53 ];
         invoke %tmp.49 %tmp.50(%tmp.53, %tmp.54, %tmp.55, %tmp.56);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 207 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 231 8 ]
         %tmp.57 = lgetv %dc;
-        symbol [ dc %tmp.57 207 8 10 ];
-        symbol [ setColor %tmp.58 207 11 19 ];
+        symbol [ dc %tmp.57 231 8 10 ];
+        symbol [ setColor %tmp.58 231 11 19 ];
         %tmp.58 = getv function %tmp.57 :setColor;
-        symbol [ Graphics %tmp.59 207 20 28 ];
+        symbol [ Graphics %tmp.59 231 20 28 ];
         %tmp.59 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.60 207 29 40 ];
+        symbol [ COLOR_WHITE %tmp.60 231 29 40 ];
         %tmp.60 = getv %tmp.59 :COLOR_WHITE;
-        symbol [ Color %tmp.62 207 42 47 ];
+        symbol [ Color %tmp.62 231 42 47 ];
         %tmp.62 = getv ? :Color;
-        symbol [ none %tmp.63 207 48 52 ];
+        symbol [ none %tmp.63 231 48 52 ];
         %tmp.63 = getv %tmp.62 :none;
         invoke %tmp.57 %tmp.58(%tmp.60, %tmp.63);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 208 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 232 8 ]
         %tmp.64 = lgetv %dc;
-        symbol [ dc %tmp.64 208 8 10 ];
-        symbol [ drawRectangle %tmp.65 208 11 24 ];
+        symbol [ dc %tmp.64 232 8 10 ];
+        symbol [ drawRectangle %tmp.65 232 11 24 ];
         %tmp.65 = getv function %tmp.64 :drawRectangle;
         %tmp.66 = lgetv %x.3;
-        symbol [ x %tmp.66 208 25 26 ];
+        symbol [ x %tmp.66 232 25 26 ];
         %tmp.67 = lgetv %buffer.5;
-        symbol [ buffer %tmp.67 208 29 35 ];
+        symbol [ buffer %tmp.67 232 29 35 ];
         %tmp.68 = add %tmp.66 %tmp.67;
         %tmp.69 = lgetv %y.4;
-        symbol [ y %tmp.69 208 37 38 ];
+        symbol [ y %tmp.69 232 37 38 ];
         %tmp.70 = lgetv %width.2;
-        symbol [ width %tmp.70 208 40 45 ];
+        symbol [ width %tmp.70 232 40 45 ];
         %tmp.71 = lgetv %height.1;
-        symbol [ height %tmp.71 208 47 53 ];
+        symbol [ height %tmp.71 232 47 53 ];
         invoke %tmp.64 %tmp.65(%tmp.68, %tmp.69, %tmp.70, %tmp.71);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 211 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 235 8 ]
         %tmp.72 = lgetv %dc;
-        symbol [ dc %tmp.72 211 8 10 ];
-        symbol [ setColor %tmp.73 211 11 19 ];
+        symbol [ dc %tmp.72 235 8 10 ];
+        symbol [ setColor %tmp.73 235 11 19 ];
         %tmp.73 = getv function %tmp.72 :setColor;
-        symbol [ Graphics %tmp.74 211 20 28 ];
+        symbol [ Graphics %tmp.74 235 20 28 ];
         %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.75 211 29 40 ];
+        symbol [ COLOR_WHITE %tmp.75 235 29 40 ];
         %tmp.75 = getv %tmp.74 :COLOR_WHITE;
-        symbol [ Color %tmp.77 211 42 47 ];
+        symbol [ Color %tmp.77 235 42 47 ];
         %tmp.77 = getv ? :Color;
-        symbol [ none %tmp.78 211 48 52 ];
+        symbol [ none %tmp.78 235 48 52 ];
         %tmp.78 = getv %tmp.77 :none;
         invoke %tmp.72 %tmp.73(%tmp.75, %tmp.78);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 212 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 236 8 ]
         %tmp.79 = lgetv %dc;
-        symbol [ dc %tmp.79 212 8 10 ];
-        symbol [ drawText %tmp.80 212 11 19 ];
+        symbol [ dc %tmp.79 236 8 10 ];
+        symbol [ drawText %tmp.80 236 11 19 ];
         %tmp.80 = getv function %tmp.79 :drawText;
         %tmp.81 = lgetv %x.3;
-        symbol [ x %tmp.81 212 20 21 ];
+        symbol [ x %tmp.81 236 20 21 ];
         %tmp.82 = lgetv %buffer.5;
-        symbol [ buffer %tmp.82 212 24 30 ];
+        symbol [ buffer %tmp.82 236 24 30 ];
         %tmp.83 = add %tmp.81 %tmp.82;
         %tmp.84 = lgetv %width.2;
-        symbol [ width %tmp.84 212 34 39 ];
+        symbol [ width %tmp.84 236 34 39 ];
         %tmp.85 = 2;
         %tmp.86 = div %tmp.84 %tmp.85;
         %tmp.87 = add %tmp.83 %tmp.86;
         %tmp.88 = lgetv %y.4;
-        symbol [ y %tmp.88 212 44 45 ];
-        symbol [ Graphics %tmp.89 212 47 55 ];
+        symbol [ y %tmp.88 236 44 45 ];
+        symbol [ Graphics %tmp.89 236 47 55 ];
         %tmp.89 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.90 212 56 66 ];
+        symbol [ FONT_SMALL %tmp.90 236 56 66 ];
         %tmp.90 = getv %tmp.89 :FONT_SMALL;
         %tmp.91 = lgetv %score;
-        symbol [ score %tmp.91 212 68 73 ];
-        symbol [ Graphics %tmp.92 212 75 83 ];
+        symbol [ score %tmp.91 236 68 73 ];
+        symbol [ Graphics %tmp.92 236 75 83 ];
         %tmp.92 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.93 212 84 103 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.93 236 84 103 ];
         %tmp.93 = getv %tmp.92 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.79 %tmp.80(%tmp.87, %tmp.88, %tmp.90, %tmp.91, %tmp.93);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_181_49_213_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_205_49_237_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 216; @position = 10; @symbol_constdef = [SNAKE_TITLE,216,10,21]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 240; @position = 10; @symbol_constdef = [SNAKE_TITLE,240,10,21]; ]
     const SNAKE_TITLE;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 226; @symbol_functiondef = [titleSnake,226,13,23]; @symbol_param<0> = [dc,226,24,26]; @symbol_param<0>_type<0> = [Dc,226,30,32]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 250; @symbol_functiondef = [titleSnake,250,13,23]; @symbol_param<0> = [dc,250,24,26]; @symbol_param<0>_type<0> = [Dc,250,30,32]; ]
     function titleSnake(dc as Dc) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 227 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 251 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_stop" ]
         %size.1 = local;
-        symbol [ size %size.1 227 12 16 ];
+        symbol [ size %size.1 251 12 16 ];
         %tmp.1 = 10;
         lputv %size.1 %tmp.1;
-        symbol [ size %size.1 227 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 228 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_stop" ]
+        symbol [ size %size.1 251 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 252 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_stop" ]
         %x.2 = local;
-        symbol [ x %x.2 228 12 13 ];
+        symbol [ x %x.2 252 12 13 ];
         %tmp.2 = 30;
         lputv %x.2 %tmp.2;
-        symbol [ x %x.2 228 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 229 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_stop" ]
+        symbol [ x %x.2 252 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 253 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_stop" ]
         %y.3 = local;
-        symbol [ y %y.3 229 12 13 ];
-        symbol [ Layout %tmp.4 229 16 22 ];
+        symbol [ y %y.3 253 12 13 ];
+        symbol [ Layout %tmp.4 253 16 22 ];
         %tmp.4 = getv ? :Layout;
-        symbol [ centerY %tmp.5 229 23 30 ];
+        symbol [ centerY %tmp.5 253 23 30 ];
         %tmp.5 = getv function %tmp.4 :centerY;
         %tmp.6 = lgetv %dc;
-        symbol [ dc %tmp.6 229 31 33 ];
+        symbol [ dc %tmp.6 253 31 33 ];
         %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
         %tmp.8 = 65;
         %tmp.9 = sub %tmp.7 %tmp.8;
         lputv %y.3 %tmp.9;
-        symbol [ y %y.3 229 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 230 8 ]
+        symbol [ y %y.3 253 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 254 8 ]
         %tmp.10 = self;
-        symbol [ drawSnakeMatrix %tmp.11 230 8 23 ];
+        symbol [ drawSnakeMatrix %tmp.11 254 8 23 ];
         %tmp.11 = getv function %tmp.10 :drawSnakeMatrix;
         %tmp.12 = lgetv %dc;
-        symbol [ dc %tmp.12 230 24 26 ];
-        symbol [ SNAKE_TITLE %tmp.14 230 28 39 ];
+        symbol [ dc %tmp.12 254 24 26 ];
+        symbol [ SNAKE_TITLE %tmp.14 254 28 39 ];
         %tmp.14 = getv ? :SNAKE_TITLE;
         %tmp.15 = lgetv %x.2;
-        symbol [ x %tmp.15 230 41 42 ];
+        symbol [ x %tmp.15 254 41 42 ];
         %tmp.16 = lgetv %y.3;
-        symbol [ y %tmp.16 230 44 45 ];
+        symbol [ y %tmp.16 254 44 45 ];
         %tmp.17 = lgetv %size.1;
-        symbol [ size %tmp.17 230 47 51 ];
+        symbol [ size %tmp.17 254 47 51 ];
         invoke %tmp.10 %tmp.11(%tmp.12, %tmp.14, %tmp.15, %tmp.16, %tmp.17);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_226_34_231_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_250_34_255_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 233; @position = 10; @symbol_constdef = [SNAKE_SCORE,233,10,21]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 257; @position = 10; @symbol_constdef = [SNAKE_SCORE,257,10,21]; ]
     const SNAKE_SCORE;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 241; @symbol_functiondef = [scoreSnake,241,13,23]; @symbol_param<0> = [dc,241,24,26]; @symbol_param<0>_type<0> = [Dc,241,30,32]; @symbol_param<1> = [score,241,34,39]; @symbol_param<2> = [borderY,241,41,48]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 265; @symbol_functiondef = [scoreSnake,265,13,23]; @symbol_param<0> = [dc,265,24,26]; @symbol_param<0>_type<0> = [Dc,265,30,32]; @symbol_param<1> = [score,265,34,39]; @symbol_param<2> = [borderY,265,41,48]; ]
     function scoreSnake(dc as Dc, score, borderY) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 242 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 266 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_stop" ]
         %size.1 = local;
-        symbol [ size %size.1 242 12 16 ];
+        symbol [ size %size.1 266 12 16 ];
         %tmp.1 = 7;
         lputv %size.1 %tmp.1;
-        symbol [ size %size.1 242 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 243 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_stop" ]
+        symbol [ size %size.1 266 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 267 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_stop" ]
         %x.2 = local;
-        symbol [ x %x.2 243 12 13 ];
+        symbol [ x %x.2 267 12 13 ];
         %tmp.2 = 120;
         lputv %x.2 %tmp.2;
-        symbol [ x %x.2 243 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 244 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_stop" ]
+        symbol [ x %x.2 267 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 268 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_stop" ]
         %y.3 = local;
-        symbol [ y %y.3 244 12 13 ];
+        symbol [ y %y.3 268 12 13 ];
         %tmp.3 = lgetv %borderY;
-        symbol [ borderY %tmp.3 244 16 23 ];
+        symbol [ borderY %tmp.3 268 16 23 ];
         %tmp.4 = 60;
         %tmp.5 = sub %tmp.3 %tmp.4;
         lputv %y.3 %tmp.5;
-        symbol [ y %y.3 244 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 245 8 ]
+        symbol [ y %y.3 268 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 269 8 ]
         %tmp.6 = self;
-        symbol [ drawSnakeMatrix %tmp.7 245 8 23 ];
+        symbol [ drawSnakeMatrix %tmp.7 269 8 23 ];
         %tmp.7 = getv function %tmp.6 :drawSnakeMatrix;
         %tmp.8 = lgetv %dc;
-        symbol [ dc %tmp.8 245 24 26 ];
-        symbol [ SNAKE_SCORE %tmp.10 245 28 39 ];
+        symbol [ dc %tmp.8 269 24 26 ];
+        symbol [ SNAKE_SCORE %tmp.10 269 28 39 ];
         %tmp.10 = getv ? :SNAKE_SCORE;
         %tmp.11 = lgetv %x.2;
-        symbol [ x %tmp.11 245 41 42 ];
+        symbol [ x %tmp.11 269 41 42 ];
         %tmp.12 = lgetv %y.3;
-        symbol [ y %tmp.12 245 44 45 ];
+        symbol [ y %tmp.12 269 44 45 ];
         %tmp.13 = lgetv %size.1;
-        symbol [ size %tmp.13 245 47 51 ];
+        symbol [ size %tmp.13 269 47 51 ];
         invoke %tmp.6 %tmp.7(%tmp.8, %tmp.10, %tmp.11, %tmp.12, %tmp.13);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 248 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 272 8 ]
         %tmp.14 = lgetv %dc;
-        symbol [ dc %tmp.14 248 8 10 ];
-        symbol [ setColor %tmp.15 248 11 19 ];
+        symbol [ dc %tmp.14 272 8 10 ];
+        symbol [ setColor %tmp.15 272 11 19 ];
         %tmp.15 = getv function %tmp.14 :setColor;
-        symbol [ Graphics %tmp.16 248 20 28 ];
+        symbol [ Graphics %tmp.16 272 20 28 ];
         %tmp.16 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.17 248 29 40 ];
+        symbol [ COLOR_GREEN %tmp.17 272 29 40 ];
         %tmp.17 = getv %tmp.16 :COLOR_GREEN;
-        symbol [ Color %tmp.19 248 42 47 ];
+        symbol [ Color %tmp.19 272 42 47 ];
         %tmp.19 = getv ? :Color;
-        symbol [ none %tmp.20 248 48 52 ];
+        symbol [ none %tmp.20 272 48 52 ];
         %tmp.20 = getv %tmp.19 :none;
         invoke %tmp.14 %tmp.15(%tmp.17, %tmp.20);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 249 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 273 8 ]
         %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 249 8 10 ];
-        symbol [ drawText %tmp.22 249 11 19 ];
+        symbol [ dc %tmp.21 273 8 10 ];
+        symbol [ drawText %tmp.22 273 11 19 ];
         %tmp.22 = getv function %tmp.21 :drawText;
         %tmp.23 = lgetv %x.2;
-        symbol [ x %tmp.23 249 20 21 ];
+        symbol [ x %tmp.23 273 20 21 ];
         %tmp.24 = 125;
         %tmp.25 = add %tmp.23 %tmp.24;
         %tmp.26 = lgetv %y.3;
-        symbol [ y %tmp.26 249 29 30 ];
+        symbol [ y %tmp.26 273 29 30 ];
         %tmp.27 = 7;
         %tmp.28 = sub %tmp.26 %tmp.27;
-        symbol [ Graphics %tmp.29 249 36 44 ];
+        symbol [ Graphics %tmp.29 273 36 44 ];
         %tmp.29 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.30 249 45 55 ];
+        symbol [ FONT_SMALL %tmp.30 273 45 55 ];
         %tmp.30 = getv %tmp.29 :FONT_SMALL;
         %tmp.31 = ": ";
         %tmp.32 = lgetv %score;
-        symbol [ score %tmp.32 249 65 70 ];
+        symbol [ score %tmp.32 273 65 70 ];
         %tmp.33 = add %tmp.31 %tmp.32;
-        symbol [ Graphics %tmp.34 249 73 81 ];
+        symbol [ Graphics %tmp.34 273 73 81 ];
         %tmp.34 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.35 249 82 99 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.35 273 82 99 ];
         %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.21 %tmp.22(%tmp.25, %tmp.28, %tmp.30, %tmp.33, %tmp.35);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_241_50_250_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_265_50_274_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 252; @symbol_functiondef = [drawSnakeMatrix,252,13,28]; @symbol_param<0> = [dc,252,29,31]; @symbol_param<0>_type<0> = [Dc,252,35,37]; @symbol_param<1> = [matrix,252,39,45]; @symbol_param<2> = [x,252,47,48]; @symbol_param<3> = [y,252,50,51]; @symbol_param<4> = [size,252,53,57]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 276; @symbol_functiondef = [drawSnakeMatrix,276,13,28]; @symbol_param<0> = [dc,276,29,31]; @symbol_param<0>_type<0> = [Dc,276,35,37]; @symbol_param<1> = [matrix,276,39,45]; @symbol_param<2> = [x,276,47,48]; @symbol_param<3> = [y,276,50,51]; @symbol_param<4> = [size,276,53,57]; ]
     function drawSnakeMatrix(dc as Dc, matrix, x, y, size) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_252_59_276_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 253 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_end" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_276_59_300_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 277 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_end" ]
         %r.1 = local;
-        symbol [ r %r.1 253 17 18 ];
+        symbol [ r %r.1 277 17 18 ];
         %tmp.1 = 0;
         lputv %r.1 %tmp.1;
-        symbol [ r %r.1 253 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_test:
+        symbol [ r %r.1 277 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_test:
         %tmp.2 = lgetv %r.1;
-        symbol [ r %tmp.2 253 24 25 ];
+        symbol [ r %tmp.2 277 24 25 ];
         %tmp.3 = lgetv %matrix;
-        symbol [ matrix %tmp.3 253 28 34 ];
-        symbol [ size %tmp.4 253 35 39 ];
+        symbol [ matrix %tmp.3 277 28 34 ];
+        symbol [ size %tmp.4 277 35 39 ];
         %tmp.4 = getv function %tmp.3 :size;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         %tmp.6 = lt %tmp.2 %tmp.5;
-        bf %tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_48_275_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 254 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_48_275_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_48_275_8_stop" ]
+        bf %tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_48_299_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 278 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_48_299_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_48_299_8_stop" ]
         %row.2 = local;
-        symbol [ row %row.2 254 16 19 ];
+        symbol [ row %row.2 278 16 19 ];
         %tmp.7 = lgetv %matrix;
-        symbol [ matrix %tmp.7 254 23 29 ];
+        symbol [ matrix %tmp.7 278 23 29 ];
         %tmp.8 = as %tmp.7 Array;
-        symbol [ Array %tmp.8 254 33 38 ];
+        symbol [ Array %tmp.8 278 33 38 ];
         %tmp.9 = lgetv %r.1;
-        symbol [ r %tmp.9 254 40 41 ];
+        symbol [ r %tmp.9 278 40 41 ];
         %tmp.10 = agetv %tmp.8 %tmp.9;
         %tmp.11 = as %tmp.10 Array;
-        symbol [ Array %tmp.11 254 46 51 ];
+        symbol [ Array %tmp.11 278 46 51 ];
         lputv %row.2 %tmp.11;
-        symbol [ row %row.2 254 16 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 256 12 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_end" ]
+        symbol [ row %row.2 278 16 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 280 12 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_end" ]
         %c.3 = local;
-        symbol [ c %c.3 256 21 22 ];
+        symbol [ c %c.3 280 21 22 ];
         %tmp.12 = 0;
         lputv %c.3 %tmp.12;
-        symbol [ c %c.3 256 21 22 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_test:
+        symbol [ c %c.3 280 21 22 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_test:
         %tmp.13 = lgetv %c.3;
-        symbol [ c %tmp.13 256 28 29 ];
+        symbol [ c %tmp.13 280 28 29 ];
         %tmp.14 = lgetv %row.2;
-        symbol [ row %tmp.14 256 32 35 ];
-        symbol [ size %tmp.15 256 36 40 ];
+        symbol [ row %tmp.14 280 32 35 ];
+        symbol [ size %tmp.15 280 36 40 ];
         %tmp.15 = getv function %tmp.14 :size;
         %tmp.16 = invoke %tmp.14 %tmp.15();
         %tmp.17 = lt %tmp.13 %tmp.16;
-        bf %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 257 16 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_16_257_45_if_stmt:
+        bf %tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 281 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_16_281_45_if_stmt:
         %tmp.18 = lgetv %row.2;
-        symbol [ row %tmp.18 257 20 23 ];
+        symbol [ row %tmp.18 281 20 23 ];
         %tmp.19 = lgetv %c.3;
-        symbol [ c %tmp.19 257 24 25 ];
+        symbol [ c %tmp.19 281 24 25 ];
         %tmp.20 = agetv %tmp.18 %tmp.19;
         %tmp.21 = 0;
         %tmp.22 = eq %tmp.20 %tmp.21;
-        bf %tmp.22 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_16_257_45_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_16_257_45_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_33_257_45_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 257 35 ]
-        goto break @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_incr;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_33_257_45_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_16_257_45_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_257_16_257_45_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 259 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_stop" ]
+        bf %tmp.22 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_16_281_45_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_16_281_45_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_33_281_45_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 281 35 ]
+        goto break @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_incr;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_33_281_45_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_16_281_45_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_281_16_281_45_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 283 16 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_stop" ]
         %color.4 = local;
-        symbol [ color %color.4 259 20 25 ];
-        symbol [ Graphics %tmp.23 259 28 36 ];
+        symbol [ color %color.4 283 20 25 ];
+        symbol [ Graphics %tmp.23 283 28 36 ];
         %tmp.23 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.24 259 37 48 ];
+        symbol [ COLOR_GREEN %tmp.24 283 37 48 ];
         %tmp.24 = getv %tmp.23 :COLOR_GREEN;
         lputv %color.4 %tmp.24;
-        symbol [ color %color.4 259 20 25 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 260 16 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_16_262_16_if_stmt:
+        symbol [ color %color.4 283 20 25 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 284 16 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_16_286_16_if_stmt:
         %tmp.25 = lgetv %row.2;
-        symbol [ row %tmp.25 260 20 23 ];
+        symbol [ row %tmp.25 284 20 23 ];
         %tmp.26 = lgetv %c.3;
-        symbol [ c %tmp.26 260 24 25 ];
+        symbol [ c %tmp.26 284 24 25 ];
         %tmp.27 = agetv %tmp.25 %tmp.26;
         %tmp.28 = 2;
         %tmp.29 = eq %tmp.27 %tmp.28;
-        bf %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_16_262_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_16_262_16_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_33_262_16_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 261 20 ]
-        symbol [ Graphics %tmp.30 261 28 36 ];
+        bf %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_16_286_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_16_286_16_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_33_286_16_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 285 20 ]
+        symbol [ Graphics %tmp.30 285 28 36 ];
         %tmp.30 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.31 261 37 46 ];
+        symbol [ COLOR_RED %tmp.31 285 37 46 ];
         %tmp.31 = getv %tmp.30 :COLOR_RED;
         lputv %color.4 %tmp.31;
-        symbol [ color %color.4 261 20 25 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_33_262_16_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_16_262_16_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_260_16_262_16_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 264 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_stop" ]
+        symbol [ color %color.4 285 20 25 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_33_286_16_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_16_286_16_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_284_16_286_16_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 288 16 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_stop" ]
         %px.5 = local;
-        symbol [ px %px.5 264 20 22 ];
+        symbol [ px %px.5 288 20 22 ];
         %tmp.32 = lgetv %x;
-        symbol [ x %tmp.32 264 25 26 ];
+        symbol [ x %tmp.32 288 25 26 ];
         %tmp.33 = lgetv %c.3;
-        symbol [ c %tmp.33 264 29 30 ];
+        symbol [ c %tmp.33 288 29 30 ];
         %tmp.34 = lgetv %size;
-        symbol [ size %tmp.34 264 33 37 ];
+        symbol [ size %tmp.34 288 33 37 ];
         %tmp.35 = mul %tmp.33 %tmp.34;
         %tmp.36 = add %tmp.32 %tmp.35;
         lputv %px.5 %tmp.36;
-        symbol [ px %px.5 264 20 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 265 16 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_stop" ]
+        symbol [ px %px.5 288 20 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 289 16 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_stop" ]
         %py.6 = local;
-        symbol [ py %py.6 265 20 22 ];
+        symbol [ py %py.6 289 20 22 ];
         %tmp.37 = lgetv %y;
-        symbol [ y %tmp.37 265 25 26 ];
+        symbol [ y %tmp.37 289 25 26 ];
         %tmp.38 = lgetv %r.1;
-        symbol [ r %tmp.38 265 29 30 ];
+        symbol [ r %tmp.38 289 29 30 ];
         %tmp.39 = lgetv %size;
-        symbol [ size %tmp.39 265 33 37 ];
+        symbol [ size %tmp.39 289 33 37 ];
         %tmp.40 = mul %tmp.38 %tmp.39;
         %tmp.41 = add %tmp.37 %tmp.40;
         lputv %py.6 %tmp.41;
-        symbol [ py %py.6 265 20 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 268 16 ]
+        symbol [ py %py.6 289 20 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 292 16 ]
         %tmp.42 = lgetv %dc;
-        symbol [ dc %tmp.42 268 16 18 ];
-        symbol [ setColor %tmp.43 268 19 27 ];
+        symbol [ dc %tmp.42 292 16 18 ];
+        symbol [ setColor %tmp.43 292 19 27 ];
         %tmp.43 = getv function %tmp.42 :setColor;
         %tmp.44 = lgetv %color.4;
-        symbol [ color %tmp.44 268 28 33 ];
-        symbol [ Color %tmp.46 268 35 40 ];
+        symbol [ color %tmp.44 292 28 33 ];
+        symbol [ Color %tmp.46 292 35 40 ];
         %tmp.46 = getv ? :Color;
-        symbol [ none %tmp.47 268 41 45 ];
+        symbol [ none %tmp.47 292 41 45 ];
         %tmp.47 = getv %tmp.46 :none;
         invoke %tmp.42 %tmp.43(%tmp.44, %tmp.47);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 269 16 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 293 16 ]
         %tmp.48 = lgetv %dc;
-        symbol [ dc %tmp.48 269 16 18 ];
-        symbol [ fillRectangle %tmp.49 269 19 32 ];
+        symbol [ dc %tmp.48 293 16 18 ];
+        symbol [ fillRectangle %tmp.49 293 19 32 ];
         %tmp.49 = getv function %tmp.48 :fillRectangle;
         %tmp.50 = lgetv %px.5;
-        symbol [ px %tmp.50 269 33 35 ];
+        symbol [ px %tmp.50 293 33 35 ];
         %tmp.51 = lgetv %py.6;
-        symbol [ py %tmp.51 269 37 39 ];
+        symbol [ py %tmp.51 293 37 39 ];
         %tmp.52 = lgetv %size;
-        symbol [ size %tmp.52 269 41 45 ];
+        symbol [ size %tmp.52 293 41 45 ];
         %tmp.53 = lgetv %size;
-        symbol [ size %tmp.53 269 47 51 ];
+        symbol [ size %tmp.53 293 47 51 ];
         invoke %tmp.48 %tmp.49(%tmp.50, %tmp.51, %tmp.52, %tmp.53);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 272 16 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 296 16 ]
         %tmp.54 = lgetv %dc;
-        symbol [ dc %tmp.54 272 16 18 ];
-        symbol [ setColor %tmp.55 272 19 27 ];
+        symbol [ dc %tmp.54 296 16 18 ];
+        symbol [ setColor %tmp.55 296 19 27 ];
         %tmp.55 = getv function %tmp.54 :setColor;
-        symbol [ Graphics %tmp.56 272 28 36 ];
+        symbol [ Graphics %tmp.56 296 28 36 ];
         %tmp.56 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.57 272 37 48 ];
+        symbol [ COLOR_BLACK %tmp.57 296 37 48 ];
         %tmp.57 = getv %tmp.56 :COLOR_BLACK;
-        symbol [ Color %tmp.59 272 50 55 ];
+        symbol [ Color %tmp.59 296 50 55 ];
         %tmp.59 = getv ? :Color;
-        symbol [ none %tmp.60 272 56 60 ];
+        symbol [ none %tmp.60 296 56 60 ];
         %tmp.60 = getv %tmp.59 :none;
         invoke %tmp.54 %tmp.55(%tmp.57, %tmp.60);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 273 16 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 297 16 ]
         %tmp.61 = lgetv %dc;
-        symbol [ dc %tmp.61 273 16 18 ];
-        symbol [ drawRectangle %tmp.62 273 19 32 ];
+        symbol [ dc %tmp.61 297 16 18 ];
+        symbol [ drawRectangle %tmp.62 297 19 32 ];
         %tmp.62 = getv function %tmp.61 :drawRectangle;
         %tmp.63 = lgetv %px.5;
-        symbol [ px %tmp.63 273 33 35 ];
+        symbol [ px %tmp.63 297 33 35 ];
         %tmp.64 = lgetv %py.6;
-        symbol [ py %tmp.64 273 37 39 ];
+        symbol [ py %tmp.64 297 37 39 ];
         %tmp.65 = lgetv %size;
-        symbol [ size %tmp.65 273 41 45 ];
+        symbol [ size %tmp.65 297 41 45 ];
         %tmp.66 = lgetv %size;
-        symbol [ size %tmp.66 273 47 51 ];
+        symbol [ size %tmp.66 297 47 51 ];
         invoke %tmp.61 %tmp.62(%tmp.63, %tmp.64, %tmp.65, %tmp.66);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_49_274_12_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 256 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_49_298_12_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 280 ]
         %tmp.69 = lgetv %c.3;
-        symbol [ c %tmp.69 256 44 45 ];
+        symbol [ c %tmp.69 280 44 45 ];
         %tmp.70 = add %tmp.69 1;
         lputv %c.3 %tmp.70;
-        symbol [ c %c.3 256 44 45 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_256_12_274_12_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_48_275_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 253 ]
+        symbol [ c %c.3 280 44 45 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_280_12_298_12_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_48_299_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 277 ]
         %tmp.73 = lgetv %r.1;
-        symbol [ r %tmp.73 253 43 44 ];
+        symbol [ r %tmp.73 277 43 44 ];
         %tmp.74 = add %tmp.73 1;
         lputv %r.1 %tmp.74;
-        symbol [ r %r.1 253 43 44 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_253_8_275_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_252_59_276_4_stop:
+        symbol [ r %r.1 277 43 44 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_277_8_299_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_276_59_300_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 280; @position = 10; @symbol_constdef = [LETTER_COLORS,280,10,23]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 304; @position = 10; @symbol_constdef = [LETTER_COLORS,304,10,23]; ]
     const LETTER_COLORS;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 292; @symbol_functiondef = [titleStackup,292,13,25]; @symbol_param<0> = [dc,292,26,28]; @symbol_param<0>_type<0> = [Dc,292,32,34]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 316; @symbol_functiondef = [titleStackup,316,13,25]; @symbol_param<0> = [dc,316,26,28]; @symbol_param<0>_type<0> = [Dc,316,32,34]; ]
     function titleStackup(dc as Dc) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 293 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 317 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop" ]
         %title.1 = local;
-        symbol [ title %title.1 293 12 17 ];
+        symbol [ title %title.1 317 12 17 ];
         %tmp.1 = newa 7;
         %tmp.2 = "S";
         %tmp.3 = dup %tmp.1;
@@ -3625,165 +3712,165 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_m
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 6 %tmp.20;
         lputv %title.1 %tmp.22;
-        symbol [ title %title.1 293 12 17 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 295 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop" ]
+        symbol [ title %title.1 317 12 17 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 319 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop" ]
         %size.2 = local;
-        symbol [ size %size.2 295 12 16 ];
+        symbol [ size %size.2 319 12 16 ];
         %tmp.23 = 10;
         lputv %size.2 %tmp.23;
-        symbol [ size %size.2 295 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 296 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop" ]
+        symbol [ size %size.2 319 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 320 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop" ]
         %spacing.3 = local;
-        symbol [ spacing %spacing.3 296 12 19 ];
+        symbol [ spacing %spacing.3 320 12 19 ];
         %tmp.24 = lgetv %size.2;
-        symbol [ size %tmp.24 296 23 27 ];
+        symbol [ size %tmp.24 320 23 27 ];
         %tmp.25 = 5;
         %tmp.26 = mul %tmp.24 %tmp.25;
         %tmp.27 = 2;
         %tmp.28 = add %tmp.26 %tmp.27;
         lputv %spacing.3 %tmp.28;
-        symbol [ spacing %spacing.3 296 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 297 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop" ]
+        symbol [ spacing %spacing.3 320 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 321 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop" ]
         %word_space.4 = local;
-        symbol [ word_space %word_space.4 297 12 22 ];
+        symbol [ word_space %word_space.4 321 12 22 ];
         %tmp.29 = 0;
         lputv %word_space.4 %tmp.29;
-        symbol [ word_space %word_space.4 297 12 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 299 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop" ]
+        symbol [ word_space %word_space.4 321 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 323 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop" ]
         %x.5 = local;
-        symbol [ x %x.5 299 12 13 ];
+        symbol [ x %x.5 323 12 13 ];
         %tmp.30 = 25;
         lputv %x.5 %tmp.30;
-        symbol [ x %x.5 299 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 300 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop" ]
+        symbol [ x %x.5 323 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 324 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop" ]
         %y.6 = local;
-        symbol [ y %y.6 300 12 13 ];
-        symbol [ Layout %tmp.32 300 16 22 ];
+        symbol [ y %y.6 324 12 13 ];
+        symbol [ Layout %tmp.32 324 16 22 ];
         %tmp.32 = getv ? :Layout;
-        symbol [ centerY %tmp.33 300 23 30 ];
+        symbol [ centerY %tmp.33 324 23 30 ];
         %tmp.33 = getv function %tmp.32 :centerY;
         %tmp.34 = lgetv %dc;
-        symbol [ dc %tmp.34 300 31 33 ];
+        symbol [ dc %tmp.34 324 31 33 ];
         %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
         %tmp.36 = 55;
         %tmp.37 = sub %tmp.35 %tmp.36;
         lputv %y.6 %tmp.37;
-        symbol [ y %y.6 300 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 302 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_end" ]
+        symbol [ y %y.6 324 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 326 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_end" ]
         %i.7 = local;
-        symbol [ i %i.7 302 17 18 ];
+        symbol [ i %i.7 326 17 18 ];
         %tmp.38 = 0;
         lputv %i.7 %tmp.38;
-        symbol [ i %i.7 302 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_test:
+        symbol [ i %i.7 326 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_test:
         %tmp.39 = lgetv %i.7;
-        symbol [ i %tmp.39 302 24 25 ];
+        symbol [ i %tmp.39 326 24 25 ];
         %tmp.40 = lgetv %title.1;
-        symbol [ title %tmp.40 302 28 33 ];
-        symbol [ size %tmp.41 302 34 38 ];
+        symbol [ title %tmp.40 326 28 33 ];
+        symbol [ size %tmp.41 326 34 38 ];
         %tmp.41 = getv function %tmp.40 :size;
         %tmp.42 = invoke %tmp.40 %tmp.41();
         %tmp.43 = lt %tmp.39 %tmp.42;
-        bf %tmp.43 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_47_309_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 303 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_47_309_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_47_309_8_stop" ]
+        bf %tmp.43 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_47_333_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 327 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_47_333_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_47_333_8_stop" ]
         %letter.8 = local;
-        symbol [ letter %letter.8 303 16 22 ];
+        symbol [ letter %letter.8 327 16 22 ];
         %tmp.44 = lgetv %title.1;
-        symbol [ title %tmp.44 303 25 30 ];
+        symbol [ title %tmp.44 327 25 30 ];
         %tmp.45 = lgetv %i.7;
-        symbol [ i %tmp.45 303 31 32 ];
+        symbol [ i %tmp.45 327 31 32 ];
         %tmp.46 = agetv %tmp.44 %tmp.45;
         %tmp.47 = as %tmp.46 String;
-        symbol [ String %tmp.47 303 37 43 ];
+        symbol [ String %tmp.47 327 37 43 ];
         lputv %letter.8 %tmp.47;
-        symbol [ letter %letter.8 303 16 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 305 12 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_12_305_43_if_stmt:
+        symbol [ letter %letter.8 327 16 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 329 12 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_12_329_43_if_stmt:
         %tmp.48 = lgetv %i.7;
-        symbol [ i %tmp.48 305 17 18 ];
+        symbol [ i %tmp.48 329 17 18 ];
         %tmp.49 = 5;
         %tmp.50 = eq %tmp.48 %tmp.49;
-        bf %tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_12_305_43_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_12_305_43_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_25_305_43_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 305 27 ]
+        bf %tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_12_329_43_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_12_329_43_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_25_329_43_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 329 27 ]
         %tmp.51 = 2;
         lputv %word_space.4 %tmp.51;
-        symbol [ word_space %word_space.4 305 27 37 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_25_305_43_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_12_305_43_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_305_12_305_43_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 307 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_47_309_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_47_309_8_stop" ]
+        symbol [ word_space %word_space.4 329 27 37 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_25_329_43_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_12_329_43_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_329_12_329_43_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 331 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_47_333_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_47_333_8_stop" ]
         %posX.9 = local;
-        symbol [ posX %posX.9 307 16 20 ];
+        symbol [ posX %posX.9 331 16 20 ];
         %tmp.52 = lgetv %x.5;
-        symbol [ x %tmp.52 307 23 24 ];
+        symbol [ x %tmp.52 331 23 24 ];
         %tmp.53 = lgetv %i.7;
-        symbol [ i %tmp.53 307 27 28 ];
+        symbol [ i %tmp.53 331 27 28 ];
         %tmp.54 = lgetv %spacing.3;
-        symbol [ spacing %tmp.54 307 32 39 ];
+        symbol [ spacing %tmp.54 331 32 39 ];
         %tmp.55 = lgetv %word_space.4;
-        symbol [ word_space %tmp.55 307 42 52 ];
+        symbol [ word_space %tmp.55 331 42 52 ];
         %tmp.56 = add %tmp.54 %tmp.55;
         %tmp.57 = mul %tmp.53 %tmp.56;
         %tmp.58 = add %tmp.52 %tmp.57;
         lputv %posX.9 %tmp.58;
-        symbol [ posX %posX.9 307 16 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 308 12 ]
+        symbol [ posX %posX.9 331 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 332 12 ]
         %tmp.59 = self;
-        symbol [ drawLetter %tmp.60 308 12 22 ];
+        symbol [ drawLetter %tmp.60 332 12 22 ];
         %tmp.60 = getv function %tmp.59 :drawLetter;
         %tmp.61 = lgetv %dc;
-        symbol [ dc %tmp.61 308 23 25 ];
+        symbol [ dc %tmp.61 332 23 25 ];
         %tmp.62 = lgetv %letter.8;
-        symbol [ letter %tmp.62 308 27 33 ];
-        symbol [ LETTER_COLORS %tmp.64 308 35 48 ];
+        symbol [ letter %tmp.62 332 27 33 ];
+        symbol [ LETTER_COLORS %tmp.64 332 35 48 ];
         %tmp.64 = getv ? :LETTER_COLORS;
         %tmp.65 = lgetv %letter.8;
-        symbol [ letter %tmp.65 308 49 55 ];
+        symbol [ letter %tmp.65 332 49 55 ];
         %tmp.66 = agetv %tmp.64 %tmp.65;
-        symbol [ Graphics %tmp.67 308 58 66 ];
+        symbol [ Graphics %tmp.67 332 58 66 ];
         %tmp.67 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.68 308 67 78 ];
+        symbol [ COLOR_BLACK %tmp.68 332 67 78 ];
         %tmp.68 = getv %tmp.67 :COLOR_BLACK;
         %tmp.69 = lgetv %posX.9;
-        symbol [ posX %tmp.69 308 80 84 ];
+        symbol [ posX %tmp.69 332 80 84 ];
         %tmp.70 = lgetv %y.6;
-        symbol [ y %tmp.70 308 86 87 ];
+        symbol [ y %tmp.70 332 86 87 ];
         %tmp.71 = lgetv %size.2;
-        symbol [ size %tmp.71 308 89 93 ];
+        symbol [ size %tmp.71 332 89 93 ];
         invoke %tmp.59 %tmp.60(%tmp.61, %tmp.62, %tmp.66, %tmp.68, %tmp.69, %tmp.70, %tmp.71);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_47_309_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 302 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_47_333_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 326 ]
         %tmp.74 = lgetv %i.7;
-        symbol [ i %tmp.74 302 42 43 ];
+        symbol [ i %tmp.74 326 42 43 ];
         %tmp.75 = add %tmp.74 1;
         lputv %i.7 %tmp.75;
-        symbol [ i %i.7 302 42 43 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_302_8_309_8_for_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_292_36_310_4_stop:
+        symbol [ i %i.7 326 42 43 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_326_8_333_8_for_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_316_36_334_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 312; @symbol_functiondef = [scoreStackup,312,13,25]; @symbol_param<0> = [dc,312,26,28]; @symbol_param<0>_type<0> = [Dc,312,32,34]; @symbol_param<1> = [score,312,36,41]; @symbol_param<2> = [borderY,312,43,50]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 336; @symbol_functiondef = [scoreStackup,336,13,25]; @symbol_param<0> = [dc,336,26,28]; @symbol_param<0>_type<0> = [Dc,336,32,34]; @symbol_param<1> = [score,336,36,41]; @symbol_param<2> = [borderY,336,43,50]; ]
     function scoreStackup(dc as Dc, score, borderY) {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 313 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 337 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_stop" ]
         %scoreTitle.1 = local;
-        symbol [ scoreTitle %scoreTitle.1 313 12 22 ];
+        symbol [ scoreTitle %scoreTitle.1 337 12 22 ];
         %tmp.1 = newa 4;
         %tmp.2 = "B";
         %tmp.3 = dup %tmp.1;
@@ -3798,168 +3885,168 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_m
         %tmp.12 = dup %tmp.10;
         %tmp.13 = aputv %tmp.12 3 %tmp.11;
         lputv %scoreTitle.1 %tmp.13;
-        symbol [ scoreTitle %scoreTitle.1 313 12 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 315 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_stop" ]
+        symbol [ scoreTitle %scoreTitle.1 337 12 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 339 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_stop" ]
         %size.2 = local;
-        symbol [ size %size.2 315 12 16 ];
+        symbol [ size %size.2 339 12 16 ];
         %tmp.14 = 7;
         lputv %size.2 %tmp.14;
-        symbol [ size %size.2 315 12 16 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 316 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_stop" ]
+        symbol [ size %size.2 339 12 16 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 340 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_stop" ]
         %spacing.3 = local;
-        symbol [ spacing %spacing.3 316 12 19 ];
+        symbol [ spacing %spacing.3 340 12 19 ];
         %tmp.15 = lgetv %size.2;
-        symbol [ size %tmp.15 316 23 27 ];
+        symbol [ size %tmp.15 340 23 27 ];
         %tmp.16 = 5;
         %tmp.17 = mul %tmp.15 %tmp.16;
         %tmp.18 = 2;
         %tmp.19 = add %tmp.17 %tmp.18;
         lputv %spacing.3 %tmp.19;
-        symbol [ spacing %spacing.3 316 12 19 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 318 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_stop" ]
+        symbol [ spacing %spacing.3 340 12 19 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 342 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_stop" ]
         %x.4 = local;
-        symbol [ x %x.4 318 12 13 ];
+        symbol [ x %x.4 342 12 13 ];
         %tmp.20 = 100;
         lputv %x.4 %tmp.20;
-        symbol [ x %x.4 318 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 319 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_stop" ]
+        symbol [ x %x.4 342 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 343 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_stop" ]
         %y.5 = local;
-        symbol [ y %y.5 319 12 13 ];
+        symbol [ y %y.5 343 12 13 ];
         %tmp.21 = lgetv %borderY;
-        symbol [ borderY %tmp.21 319 16 23 ];
+        symbol [ borderY %tmp.21 343 16 23 ];
         %tmp.22 = 60;
         %tmp.23 = sub %tmp.21 %tmp.22;
         lputv %y.5 %tmp.23;
-        symbol [ y %y.5 319 12 13 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 321 8 ]
-        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_init:
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_end" ]
+        symbol [ y %y.5 343 12 13 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 345 8 ]
+        for @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_test @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_incr @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_init:
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_begin" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_end" ]
         %i.6 = local;
-        symbol [ i %i.6 321 17 18 ];
+        symbol [ i %i.6 345 17 18 ];
         %tmp.24 = 0;
         lputv %i.6 %tmp.24;
-        symbol [ i %i.6 321 17 18 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_test:
+        symbol [ i %i.6 345 17 18 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_test:
         %tmp.25 = lgetv %i.6;
-        symbol [ i %tmp.25 321 24 25 ];
+        symbol [ i %tmp.25 345 24 25 ];
         %tmp.26 = lgetv %scoreTitle.1;
-        symbol [ scoreTitle %tmp.26 321 28 38 ];
-        symbol [ size %tmp.27 321 39 43 ];
+        symbol [ scoreTitle %tmp.26 345 28 38 ];
+        symbol [ size %tmp.27 345 39 43 ];
         %tmp.27 = getv function %tmp.26 :size;
         %tmp.28 = invoke %tmp.26 %tmp.27();
         %tmp.29 = lt %tmp.25 %tmp.28;
-        bf %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_52_326_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 322 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_52_326_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_52_326_8_stop" ]
+        bf %tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_52_350_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 346 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_52_350_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_52_350_8_stop" ]
         %letter.7 = local;
-        symbol [ letter %letter.7 322 16 22 ];
+        symbol [ letter %letter.7 346 16 22 ];
         %tmp.30 = lgetv %scoreTitle.1;
-        symbol [ scoreTitle %tmp.30 322 25 35 ];
+        symbol [ scoreTitle %tmp.30 346 25 35 ];
         %tmp.31 = lgetv %i.6;
-        symbol [ i %tmp.31 322 36 37 ];
+        symbol [ i %tmp.31 346 36 37 ];
         %tmp.32 = agetv %tmp.30 %tmp.31;
         %tmp.33 = as %tmp.32 String;
-        symbol [ String %tmp.33 322 42 48 ];
+        symbol [ String %tmp.33 346 42 48 ];
         lputv %letter.7 %tmp.33;
-        symbol [ letter %letter.7 322 16 22 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 324 12 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_52_326_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_52_326_8_stop" ]
+        symbol [ letter %letter.7 346 16 22 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 348 12 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_52_350_8_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_52_350_8_stop" ]
         %posX.8 = local;
-        symbol [ posX %posX.8 324 16 20 ];
+        symbol [ posX %posX.8 348 16 20 ];
         %tmp.34 = lgetv %x.4;
-        symbol [ x %tmp.34 324 23 24 ];
+        symbol [ x %tmp.34 348 23 24 ];
         %tmp.35 = lgetv %i.6;
-        symbol [ i %tmp.35 324 27 28 ];
+        symbol [ i %tmp.35 348 27 28 ];
         %tmp.36 = lgetv %spacing.3;
-        symbol [ spacing %tmp.36 324 31 38 ];
+        symbol [ spacing %tmp.36 348 31 38 ];
         %tmp.37 = mul %tmp.35 %tmp.36;
         %tmp.38 = add %tmp.34 %tmp.37;
         lputv %posX.8 %tmp.38;
-        symbol [ posX %posX.8 324 16 20 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 325 12 ]
+        symbol [ posX %posX.8 348 16 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 349 12 ]
         %tmp.39 = self;
-        symbol [ drawLetter %tmp.40 325 12 22 ];
+        symbol [ drawLetter %tmp.40 349 12 22 ];
         %tmp.40 = getv function %tmp.39 :drawLetter;
         %tmp.41 = lgetv %dc;
-        symbol [ dc %tmp.41 325 23 25 ];
+        symbol [ dc %tmp.41 349 23 25 ];
         %tmp.42 = lgetv %letter.7;
-        symbol [ letter %tmp.42 325 27 33 ];
-        symbol [ LETTER_COLORS %tmp.44 325 35 48 ];
+        symbol [ letter %tmp.42 349 27 33 ];
+        symbol [ LETTER_COLORS %tmp.44 349 35 48 ];
         %tmp.44 = getv ? :LETTER_COLORS;
         %tmp.45 = lgetv %letter.7;
-        symbol [ letter %tmp.45 325 49 55 ];
+        symbol [ letter %tmp.45 349 49 55 ];
         %tmp.46 = agetv %tmp.44 %tmp.45;
-        symbol [ Graphics %tmp.47 325 58 66 ];
+        symbol [ Graphics %tmp.47 349 58 66 ];
         %tmp.47 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.48 325 67 78 ];
+        symbol [ COLOR_BLACK %tmp.48 349 67 78 ];
         %tmp.48 = getv %tmp.47 :COLOR_BLACK;
         %tmp.49 = lgetv %posX.8;
-        symbol [ posX %tmp.49 325 80 84 ];
+        symbol [ posX %tmp.49 349 80 84 ];
         %tmp.50 = lgetv %y.5;
-        symbol [ y %tmp.50 325 86 87 ];
+        symbol [ y %tmp.50 349 86 87 ];
         %tmp.51 = lgetv %size.2;
-        symbol [ size %tmp.51 325 89 93 ];
+        symbol [ size %tmp.51 349 89 93 ];
         invoke %tmp.39 %tmp.40(%tmp.41, %tmp.42, %tmp.46, %tmp.48, %tmp.49, %tmp.50, %tmp.51);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_52_326_8_stop:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_incr:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 321 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_52_350_8_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_incr:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 345 ]
         %tmp.54 = lgetv %i.6;
-        symbol [ i %tmp.54 321 47 48 ];
+        symbol [ i %tmp.54 345 47 48 ];
         %tmp.55 = add %tmp.54 1;
         lputv %i.6 %tmp.55;
-        symbol [ i %i.6 321 47 48 ];
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_test;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_321_8_326_8_for_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 329 8 ]
+        symbol [ i %i.6 345 47 48 ];
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_test;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_345_8_350_8_for_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 353 8 ]
         %tmp.56 = lgetv %dc;
-        symbol [ dc %tmp.56 329 8 10 ];
-        symbol [ setColor %tmp.57 329 11 19 ];
+        symbol [ dc %tmp.56 353 8 10 ];
+        symbol [ setColor %tmp.57 353 11 19 ];
         %tmp.57 = getv function %tmp.56 :setColor;
-        symbol [ Color %tmp.59 329 20 25 ];
+        symbol [ Color %tmp.59 353 20 25 ];
         %tmp.59 = getv ? :Color;
-        symbol [ STACKS %tmp.60 329 26 32 ];
+        symbol [ STACKS %tmp.60 353 26 32 ];
         %tmp.60 = getv %tmp.59 :STACKS;
         %tmp.61 = "O";
         %tmp.62 = agetv %tmp.60 %tmp.61;
-        symbol [ Color %tmp.64 329 39 44 ];
+        symbol [ Color %tmp.64 353 39 44 ];
         %tmp.64 = getv ? :Color;
-        symbol [ none %tmp.65 329 45 49 ];
+        symbol [ none %tmp.65 353 45 49 ];
         %tmp.65 = getv %tmp.64 :none;
         invoke %tmp.56 %tmp.57(%tmp.62, %tmp.65);
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 330 8 ]
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc" 354 8 ]
         %tmp.66 = lgetv %dc;
-        symbol [ dc %tmp.66 330 8 10 ];
-        symbol [ drawText %tmp.67 330 11 19 ];
+        symbol [ dc %tmp.66 354 8 10 ];
+        symbol [ drawText %tmp.67 354 11 19 ];
         %tmp.67 = getv function %tmp.66 :drawText;
         %tmp.68 = lgetv %x.4;
-        symbol [ x %tmp.68 330 20 21 ];
+        symbol [ x %tmp.68 354 20 21 ];
         %tmp.69 = 155;
         %tmp.70 = add %tmp.68 %tmp.69;
         %tmp.71 = lgetv %y.5;
-        symbol [ y %tmp.71 330 29 30 ];
+        symbol [ y %tmp.71 354 29 30 ];
         %tmp.72 = 7;
         %tmp.73 = sub %tmp.71 %tmp.72;
-        symbol [ Graphics %tmp.74 330 36 44 ];
+        symbol [ Graphics %tmp.74 354 36 44 ];
         %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.75 330 45 55 ];
+        symbol [ FONT_SMALL %tmp.75 354 45 55 ];
         %tmp.75 = getv %tmp.74 :FONT_SMALL;
         %tmp.76 = ": ";
         %tmp.77 = lgetv %score;
-        symbol [ score %tmp.77 330 65 70 ];
+        symbol [ score %tmp.77 354 65 70 ];
         %tmp.78 = add %tmp.76 %tmp.77;
-        symbol [ Graphics %tmp.79 330 73 81 ];
+        symbol [ Graphics %tmp.79 354 73 81 ];
         %tmp.79 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.80 330 82 99 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.80 354 82 99 ];
         %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.66 %tmp.67(%tmp.70, %tmp.73, %tmp.75, %tmp.78, %tmp.80);
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_312_52_331_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Titles_mc_336_52_355_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Titles.mc"; @line = 1; ]

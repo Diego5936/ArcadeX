@@ -28,7 +28,7 @@ class ArcadeXView extends WatchUi.View {
         dc.clear();
 
         // Main Title
-        Titles.pixelShadowedText(dc, 60, 83, 8, "ARCADEX", Color.NEON["pink"], Color.NEON["blue"]);
+        Titles.drawPixelShadowedText(dc, Layout.centerX(dc), dc.getHeight() * 0.15, 6, "ARCADEX", Color.NEON["pink"], Color.NEON["blue"]);
 
         // Buttons
         makeScrollingWheel(dc);
@@ -37,13 +37,12 @@ class ArcadeXView extends WatchUi.View {
     function makeScrollingWheel(dc as Dc) {
         // Favorite icon
         var icon = gameIdx == SaveManager.favGame ? Drawings.FILLED_HEART : Drawings.EMPTY_HEART;
-        favIcon = Drawings.drawPixelArt(dc, 13, Layout.centerY(dc) + 10, 6, icon);
+        favIcon = Drawings.drawPixelArt(dc, Layout.centerX(dc), dc.getHeight() * .85, 6, icon);
 
         // Main button
-        var iconSpace = 20;
-        var mainBW = 300;
-        mainButton = {:w => mainBW - iconSpace, :h => 70,
-                        :x => Layout.centerX(dc) - (mainBW / 2) + iconSpace,
+        mainButton = {:w => dc.getWidth() * 0.80,
+                        :h => dc.getHeight() * 0.20,
+                        :x => Layout.centerX(dc),
                         :y => Layout.centerY(dc)};
         var mainButtonFormat = {:background => Graphics.COLOR_BLACK,
                                 :border => Color.NEON["blue"], 
@@ -53,8 +52,11 @@ class ArcadeXView extends WatchUi.View {
         Components.makeRect(dc, mainButton, mainButtonFormat, GameRegistry.GAMES[gameIdx][:title]);
 
         // Shadow buttons
-        var shadowBW = 180;
-        var shadowBH = 35;
+        var shadowBW = dc.getWidth() * 0.55;
+        var shadowBH = dc.getHeight() * 0.10;
+        var spacing = dc.getHeight() * 0.03;
+        var buffer = ((mainButton[:h] / 2) + spacing + (shadowBH / 2)).toFloat();
+
         var shadowButtonFormat = {:background => Graphics.COLOR_BLACK,
                                 :border => Color.NEON["blue"], 
                                 :text => Graphics.COLOR_WHITE,
@@ -62,16 +64,16 @@ class ArcadeXView extends WatchUi.View {
 
         // Top Button
         var topButton = {:w => shadowBW, :h => shadowBH,
-                        :x => Layout.centerX(dc) - (shadowBW / 2),
-                        :y => Layout.centerY(dc) - shadowBH - 10};
+                        :x => Layout.centerX(dc),
+                        :y => Layout.centerY(dc) - buffer};
 
         var topIdx = wrapIdx(gameIdx - 1);
         Components.makeRect(dc, topButton, shadowButtonFormat, GameRegistry.GAMES[topIdx][:title]);
 
         // Bottom Button
         var bottomButton = {:w => shadowBW, :h => shadowBH,
-                        :x => Layout.centerX(dc) - (shadowBW / 2),
-                        :y => Layout.centerY(dc) + mainButton[:h] + 10};
+                        :x => Layout.centerX(dc),
+                        :y => Layout.centerY(dc) + buffer};
 
         var bottomIdx = wrapIdx(gameIdx + 1);
         Components.makeRect(dc, bottomButton, shadowButtonFormat, GameRegistry.GAMES[bottomIdx][:title]);
