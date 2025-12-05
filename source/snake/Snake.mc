@@ -41,18 +41,16 @@ module Snake {
         }
         if (!active){ return; }
 
-        var current = input;
-
-        if (input.equals("right") && !(current != null && current.equals("left"))) {
+        if (input.equals("right") && !isOpposite(direction, "right")) {
             nextDirection = "right";
         }
-        else if (input.equals("left") && !(current != null && current.equals("right"))) {
+        else if (input.equals("left") && !isOpposite(direction, "left")) {
             nextDirection = "left";
         }
-        else if (input.equals("up") && !(current != null && current.equals("down"))) {
+        else if (input.equals("up") && !isOpposite(direction, "up")) {
             nextDirection = "up";
         }
-        else if (input.equals("down") && !(current != null && current.equals("up"))) {
+        else if (input.equals("down") && !isOpposite(direction, "down")) {
             nextDirection = "down";
         }
 
@@ -178,14 +176,14 @@ module Snake {
     }
 
     // Check if two directions are opposites
-    function isOpposite(a as String or Null, b as String) as Boolean {
-    if (a == null) {
-        return false;
-    }
-    
-    return (a == "up" and b == "down") or
-           (a == "down" and b == "up") or
-           (a == "left" and b == "right") or
-           (a == "right" and b == "left");
-    }
+    function isOpposite(a as String or Null, b as String or Null) as Boolean {
+        if (a == null || b == null) {
+            return false;
+        }
+        
+        return (a.equals("up") && b.equals("down")) ||
+            (a.equals("down") && b.equals("up")) ||
+            (a.equals("left") && b.equals("right")) ||
+            (a.equals("right") && b.equals("left"));
+        }
 }

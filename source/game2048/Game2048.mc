@@ -54,8 +54,6 @@ module Game2048 {
         }
         if (!active){ return; }
 
-        var prevGrid = cloneGrid(grid);
-
         if (input.equals("right")) {
             slideHorizontally("right");
         }
@@ -67,16 +65,6 @@ module Game2048 {
         }
         else if (input.equals("down")) {
             slideVertically("down");
-        }
-
-        var changed = !gridsEqual(prevGrid, grid);
-
-        if (changed) {
-            spawnNewTile();
-        }
-
-        if (noMovesLeft()) {
-            active = false;
         }
 
         WatchUi.requestUpdate();

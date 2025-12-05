@@ -19,8 +19,7 @@ wheel animations
 
 Now that i installed on my watch:
 - give favorite game icon its own action button (like holding start)
-- why is 2048 adding two tiles every time instead of one
 - make stackup save state like 2048 too, make it go faster so it doesnt go infinite, but start slower
 - make stack up actually save and calculate high score
-- why does the snake go right when going left?
 - if tap top region of the arcadex logo view then a how to rundown
+- buttons not clicking well
