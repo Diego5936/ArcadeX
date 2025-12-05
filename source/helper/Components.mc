@@ -8,26 +8,39 @@ import Titles;
 module Components {
     // Makes a titled box, Center aligned
     /* Takes in:
-        rect as Dictionary {[:x] X-position, [:y] Y-position, [:w] Width, [:h] Height}\
+        rect as Dictionary {[:x] X-position, [:y] Y-position, [:w] Width, [:h] Height}
         format as Dictionary {[:background], [:border], [:text], [:font]}
         title of the rect
     */
-    function makeRect(dc as Dc, rect as Dictionary, format as Dictionary, title as String) {
+    function makeTitleRect(dc as Dc, rect as Dictionary, format as Dictionary, title as String) {
+        // Box
+        makeRect(dc, rect, format);
+
+        // Title
+        var startY = rect[:y] - (rect[:h] / 2);
+
+        dc.setColor(format[:text], Color.none);
+        dc.drawText(rect[:x], startY + (rect[:h] * 0.10),
+                format[:font], title, Graphics.TEXT_JUSTIFY_CENTER);
+    }
+
+    // Makes a rect, centered
+    /* Takes in:
+        rect as Dictionary {[:x] X-position, [:y] Y-position, [:w] Width, [:h] Height}\
+        format as Dictionary {[:background], [:border]}
+        title of the rect
+    */
+    function makeRect(dc as Dc, rect as Dictionary, colors as Dictionary) {
         var startX = rect[:x] - (rect[:w] / 2);
         var startY = rect[:y] - (rect[:h] / 2);
 
         // Rect fillc
-        dc.setColor(format[:background], Color.none);
+        dc.setColor(colors[:background], Color.none);
         dc.fillRectangle(startX, startY, rect[:w], rect[:h]);
 
         // Rect border
-        dc.setColor(format[:border], Color.none);
+        dc.setColor(colors[:border], Color.none);
         dc.drawRectangle(startX, startY, rect[:w], rect[:h]);
-
-        // Title
-        dc.setColor(format[:text], Color.none);
-        dc.drawText(rect[:x], startY + (rect[:h] * 0.10),
-                format[:font], title, Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     function makeStartButton(dc as Dc, label as String, backColor, border, textColor) as Dictionary {
@@ -38,7 +51,7 @@ module Components {
         var x = 0;
         var y = screenH * 0.60;
         var w = screenW;
-        var h = screenH - y + 10;
+        var h = screenH * 0.50;
 
         // Draw "semicircle" in the bottom half
         dc.setColor(backColor, Color.none);
@@ -50,7 +63,7 @@ module Components {
         
         // Text
         dc.setColor(textColor, Color.none);
-        dc.drawText(Layout.centerX(dc), screenH - (h / 1.3), Graphics.FONT_MEDIUM, 
+        dc.drawText(Layout.centerX(dc), screenH * 0.70, Graphics.FONT_MEDIUM, 
                     label, Graphics.TEXT_JUSTIFY_CENTER);
 
         return { :x => x, :y => y, :w => w, :h => h };
@@ -62,13 +75,12 @@ module Components {
         var screenH = dc.getHeight();
 
         // Button sizes
-        var buttonY = screenH * 0.60;
-        var bL = {:x => 0, :y => buttonY,
-                    :w => screenW / 2, :h => screenH - buttonY + 10};
-        var bR = {:x => screenW / 2, :y => buttonY,
-                    :w => screenW / 2, :h => screenH - buttonY + 10};
+        var y = screenH * 0.60;
+        var w = screenW / 2;
+        var h = screenH * 0.50;
 
-        var bufferX = [13, -15];
+        var bL = {:x => 0, :y => y, :w => w, :h => h};
+        var bR = {:x => screenW / 2, :y => y, :w => w, :h => h};
 
         for (var i = 0; i < 2; i++) {
             var cur = (i == 0 ? bL as Dictionary : bR as Dictionary);
@@ -84,7 +96,7 @@ module Components {
 
             // Text
             dc.setColor(curf[:textColor], Color.none);
-            dc.drawText(cur[:x] + (cur[:w] / 2) + bufferX[i], screenH - (cur[:h] / 1.3), Graphics.FONT_SMALL, 
+            dc.drawText(cur[:x] + cur[:w] * 0.45, screenH - cur[:h] * 0.65, Graphics.FONT_SMALL, 
                         (labels as Array)[i], Graphics.TEXT_JUSTIFY_CENTER);
         }
 
@@ -92,39 +104,54 @@ module Components {
     }
 
     function makeGameOver(dc as Dc, gameName as String, textColor, score as Number) {
-        // Game Over Title
-        dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(Layout.centerX(dc), Layout.centerY(dc), 
-                    Graphics.FONT_SYSTEM_LARGE, "GAME OVER", Graphics.TEXT_JUSTIFY_CENTER);
+        var x = Layout.centerX(dc);
+        var yP = 0.30;
 
-        // Draw Score
-        var scoreTitle = ("Score: " + score);
-        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) + 50, 
-                    Graphics.FONT_SYSTEM_LARGE, scoreTitle, Graphics.TEXT_JUSTIFY_CENTER);
-
-        var highScore = SaveManager.getHighScore(gameName);
-        var highScoreTitle = ("High: " + highScore);
-        dc.drawText(Layout.centerX(dc), Layout.centerY(dc) + 100, 
-                    Graphics.FONT_SYSTEM_LARGE, highScoreTitle, Graphics.TEXT_JUSTIFY_CENTER);
-    }
-
-    function drawHighScore(dc as Dc, gameName as String, borderColor) {
-        var highScore = SaveManager.getHighScore(gameName);
-        var borderY = 120;
-
-        dc.setColor(borderColor, Color.none);
-        dc.drawRectangle(0, -10, dc.getWidth(), borderY);
+        // --- Game Over --- 
+        // Background
         
-        switch (gameName) {
-            case "2048":
-                Titles.score2048(dc, highScore, borderY);
-                break;
-            case "snake":
-                Titles.scoreSnake(dc, highScore, borderY);
-                break;
-            case "stackup":
-                Titles.scoreStackup(dc, highScore, borderY);
-                break;
+        var titleRect = {:x => x, :y => dc.getHeight() * yP, 
+                        :w => dc.getWidth() * 0.40,
+                        :h => dc.getHeight() * 0.20};
+        var colors = {:background => Graphics.COLOR_BLACK,
+                        :border => Color.NEON["red"]};
+        makeRect(dc, titleRect, colors);
+        
+        // Title
+        var titleY = dc.getHeight() * (yP - 0.05);
+        Titles.drawPixelShadowedText(dc, Layout.centerX(dc), titleY, "GAME", 
+                                    Graphics.COLOR_WHITE, Color.NEON["red"]);
+
+        var pixel = Layout.getPixelSize(dc, 1);
+        titleY += Titles.fontSize * pixel + pixel;
+        Titles.drawPixelShadowedText(dc, Layout.centerX(dc), titleY, "OVER", 
+                                    Graphics.COLOR_WHITE, Color.NEON["red"]);
+
+        // --- Stats ---
+        var highScore = SaveManager.getHighScore(gameName);
+
+        var width = dc.getWidth() * 0.55;
+        var height = dc.getHeight() * 0.15;
+        if (score > 10000 || highScore >= 10000) {
+            width = dc.getWidth() * 0.60;
         }
+
+        var statsFormat = {:background => Graphics.COLOR_BLACK,
+                                :border => Color.NEON["red"], 
+                                :text => Graphics.COLOR_WHITE,
+                                :font => Graphics.FONT_SMALL};
+
+        // Score
+        var scoreTitle = ("Score: " + score);
+        var scoreY = dc.getWidth() * (yP + 0.2); 
+        var scoreRect = {:w => width, :h => height,
+                        :x => x, :y => scoreY};
+        makeTitleRect(dc, scoreRect, statsFormat, scoreTitle);
+
+        // HighScore
+        var highScoreTitle = ("High: " + highScore);
+        var highScoreRect = {:w => width, :h => height,
+                        :x => x, :y => scoreY + height + Layout.getPixelSize(dc, 2)};
+        makeTitleRect(dc, highScoreRect, statsFormat, highScoreTitle);
     }
 }

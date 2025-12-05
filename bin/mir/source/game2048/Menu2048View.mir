@@ -78,16 +78,16 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu20
         symbol [ dc %tmp.17 25 25 27 ];
         invoke %tmp.15 %tmp.16(%tmp.17);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 26 8 ]
-        symbol [ Components %tmp.19 26 8 18 ];
-        %tmp.19 = getv ? :Components;
-        symbol [ drawHighScore %tmp.20 26 19 32 ];
+        symbol [ Titles %tmp.19 26 8 14 ];
+        %tmp.19 = getv ? :Titles;
+        symbol [ drawHighScore %tmp.20 26 15 28 ];
         %tmp.20 = getv function %tmp.19 :drawHighScore;
         %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 26 33 35 ];
+        symbol [ dc %tmp.21 26 29 31 ];
         %tmp.22 = "2048";
-        symbol [ Graphics %tmp.23 26 45 53 ];
+        symbol [ Graphics %tmp.23 26 41 49 ];
         %tmp.23 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.24 26 54 65 ];
+        symbol [ COLOR_WHITE %tmp.24 26 50 61 ];
         %tmp.24 = getv %tmp.23 :COLOR_WHITE;
         invoke %tmp.19 %tmp.20(%tmp.21, %tmp.22, %tmp.24);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\game2048\Menu2048View.mc" 29 8 ]
@@ -121,7 +121,7 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_game2048_Menu20
         %tmp.33 = "New";
         %tmp.34 = dup %tmp.32;
         %tmp.35 = aputv %tmp.34 0 %tmp.33;
-        %tmp.36 = "Continue";
+        %tmp.36 = "Resume";
         %tmp.37 = dup %tmp.35;
         %tmp.38 = aputv %tmp.37 1 %tmp.36;
         lputv %labels.2 %tmp.38;

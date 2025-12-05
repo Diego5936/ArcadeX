@@ -23,7 +23,7 @@ class Menu2048View extends WatchUi.View {
 
         // Title
         Titles.title2048(dc);
-        Components.drawHighScore(dc, "2048", Graphics.COLOR_WHITE);
+        Titles.drawHighScore(dc, "2048", Graphics.COLOR_WHITE);
 
         // Decide menu state
         hasContinue = SaveManager.hasGrid();
@@ -32,7 +32,7 @@ class Menu2048View extends WatchUi.View {
 
         if (hasContinue) {
             // Dual Buttons: New / Continue
-            var labels = ["New", "Continue"];
+            var labels = ["New", "Resume"];
             var selectedButton = {:backColor => Color.TILES[2048],
                                 :border => Graphics.COLOR_WHITE,
                                 :textColor => Graphics.COLOR_WHITE};

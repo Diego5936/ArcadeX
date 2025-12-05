@@ -22,13 +22,18 @@ class ArcadeXView extends WatchUi.View {
     }
 
     function onUpdate(dc as Dc) as Void {
+        // Inits
+        Layout.setInputRegions(dc);
+
         // Background
         // setColor(foreground = text and shapes, background)
         dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
         // Main Title
-        Titles.drawPixelShadowedText(dc, Layout.centerX(dc), dc.getHeight() * 0.15, 6, "ARCADEX", Color.NEON["pink"], Color.NEON["blue"]);
+        Titles.drawPixelShadowedText(dc, Layout.centerX(dc), 
+                                    dc.getHeight() * 0.15, "ARCADEX", 
+                                    Color.NEON["pink"], Color.NEON["blue"]);
 
         // Buttons
         makeScrollingWheel(dc);
@@ -37,7 +42,7 @@ class ArcadeXView extends WatchUi.View {
     function makeScrollingWheel(dc as Dc) {
         // Favorite icon
         var icon = gameIdx == SaveManager.favGame ? Drawings.FILLED_HEART : Drawings.EMPTY_HEART;
-        favIcon = Drawings.drawPixelArt(dc, Layout.centerX(dc), dc.getHeight() * .85, 6, icon);
+        favIcon = Drawings.drawPixelArt(dc, Layout.centerX(dc), dc.getHeight() * 0.85, Layout.getArtSize(dc), icon);
 
         // Main button
         mainButton = {:w => dc.getWidth() * 0.80,
@@ -48,8 +53,7 @@ class ArcadeXView extends WatchUi.View {
                                 :border => Color.NEON["blue"], 
                                 :text => Graphics.COLOR_WHITE,
                                 :font => Graphics.FONT_LARGE};
-
-        Components.makeRect(dc, mainButton, mainButtonFormat, GameRegistry.GAMES[gameIdx][:title]);
+        Components.makeTitleRect(dc, mainButton, mainButtonFormat, GameRegistry.GAMES[gameIdx][:title]);
 
         // Shadow buttons
         var shadowBW = dc.getWidth() * 0.55;
@@ -68,7 +72,7 @@ class ArcadeXView extends WatchUi.View {
                         :y => Layout.centerY(dc) - buffer};
 
         var topIdx = wrapIdx(gameIdx - 1);
-        Components.makeRect(dc, topButton, shadowButtonFormat, GameRegistry.GAMES[topIdx][:title]);
+        Components.makeTitleRect(dc, topButton, shadowButtonFormat, GameRegistry.GAMES[topIdx][:title]);
 
         // Bottom Button
         var bottomButton = {:w => shadowBW, :h => shadowBH,
@@ -76,7 +80,7 @@ class ArcadeXView extends WatchUi.View {
                         :y => Layout.centerY(dc) + buffer};
 
         var bottomIdx = wrapIdx(gameIdx + 1);
-        Components.makeRect(dc, bottomButton, shadowButtonFormat, GameRegistry.GAMES[bottomIdx][:title]);
+        Components.makeTitleRect(dc, bottomButton, shadowButtonFormat, GameRegistry.GAMES[bottomIdx][:title]);
     }
 
     // --- Helpers ---

@@ -4,7 +4,9 @@ import Toybox.Lang;
 import Toybox.System;
 
 module Titles {
+
     // ---------- Fonts ----------
+
     var fontSize = 5;
     const LETTERS = {
         "A" => [
@@ -47,12 +49,36 @@ module Titles {
             [1,1,1,1,1]
         ],
 
+        "G" => [
+            [0,1,1,1,1],
+            [1,0,0,0,0],
+            [1,0,1,1,0],
+            [1,0,0,0,1],
+            [0,1,1,1,1]
+        ],
+
         "K" => [
             [1,0,0,1,0],
             [1,0,1,0,0],
             [1,1,0,0,0],
             [1,0,1,0,0],
             [1,0,0,1,0]
+        ],
+
+        "M" => [
+            [1,0,0,0,1],
+            [1,1,0,1,1],
+            [1,0,1,0,1],
+            [1,0,0,0,1],
+            [1,0,0,0,1]
+        ],
+
+        "O" => [
+            [0,1,1,1,0],
+            [1,0,0,0,1],
+            [1,0,0,0,1],
+            [1,0,0,0,1],
+            [0,1,1,1,0]
         ],
 
         "P" => [
@@ -95,6 +121,14 @@ module Titles {
             [0,1,1,1,0]
         ],
 
+        "V" => [
+            [1,0,0,0,1],
+            [1,0,0,0,1],
+            [0,1,0,1,0],
+            [0,1,0,1,0],
+            [0,0,1,0,0]
+        ],
+
         "X" => [
             [1,0,0,0,1],
             [0,1,0,1,0],
@@ -105,17 +139,18 @@ module Titles {
     };
 
     // Draws pixel art with a shadown. Center aligned
-    function drawPixelShadowedText(dc as Dc, centerX, centerY, size, text as String, color, shadow) {
+    function drawPixelShadowedText(dc as Dc, centerX, centerY, text as String, color, shadow) {
         // Shadow first
         var offset = 2;
-        drawPixelText(dc, centerX + offset, centerY + offset, size, text, shadow);
+        drawPixelText(dc, centerX + offset, centerY + offset, text, shadow);
 
         // Main text on top
-        drawPixelText(dc, centerX, centerY, size, text, color);
+        drawPixelText(dc, centerX, centerY, text, color);
     }
 
-    function drawPixelText(dc as Dc, centerX, centerY, size, text as String, color) {
+    function drawPixelText(dc as Dc, centerX, centerY, text as String, color) {
         var textArr = text.toCharArray();
+        var size = Layout.getPixelSize(dc, 1);
 
         var spacing = 5;
         var charWidth  = size * fontSize;
@@ -141,7 +176,6 @@ module Titles {
             drawLetter(dc, letter, color, Color.none, posX, posY, size);
         }
     }
-
 
     function drawLetter(dc as Dc, letter as String, color, border, x, y, size) {
         letter = letter.toString().toUpper();
@@ -171,15 +205,38 @@ module Titles {
         }
     }
 
+    // ---------- Runner ----------
+
+    function drawHighScore(dc as Dc, gameName as String, borderColor) {
+        var highScore = SaveManager.getHighScore(gameName);
+        var borderY = dc.getHeight() * 0.30;
+
+        dc.setColor(borderColor, Color.none);
+        dc.drawRectangle(0, -10, dc.getWidth(), borderY);
+        
+        switch (gameName) {
+            case "2048":
+                Titles.score2048(dc, highScore, borderY);
+                break;
+            case "snake":
+                Titles.scoreSnake(dc, highScore, borderY);
+                break;
+            case "stackup":
+                Titles.scoreStackup(dc, highScore, borderY);
+                break;
+        }
+    }
+
     // ---------- Game Titles ----------
-    // 2048
+
+    // --- 2048 ---
     function title2048(dc as Dc) {
         var title = ["2", "0", "4", "8"];
-        var size = 85;
-        var spacing = size + 7;
+        var size = Layout.getPixelSize(dc, 14);
+        var spacing = size + Layout.getPixelSize(dc, 1);
 
-        var x = Layout.centerX(dc) - ((spacing * title.size()) / 2) + 3;
-        var y = Layout.centerY(dc) - 70;
+        var x = Layout.centerX(dc) - ((spacing * title.size()) / 2);
+        var y = Layout.centerY(dc) - (size * 0.9);
         var buffer = [0, 5, -2, 3];
 
         var colorMap = Color.TILES as Dictionary;
@@ -198,34 +255,33 @@ module Titles {
 
             // Draw Number
             dc.setColor(Graphics.COLOR_WHITE, Color.none);
-            dc.drawText(posX + (size/2), posY + 10, Graphics.FONT_LARGE, value, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(posX + (size/2), posY + Layout.getPixelSize(dc, 1), Graphics.FONT_LARGE, value, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
     function score2048(dc as Dc, score, borderY) {
-        var height = 50;
-        var width = 50;
+        var height = Layout.getPixelSize(dc, 8);
+        var width = Layout.getPixelSize(dc, 8);
 
         if (score >= 1000) {
-            width = 110;
+            width = Layout.getPixelSize(dc, 18);
         }
         else if (score >= 100) {
-            width = 90;
+            width = Layout.getPixelSize(dc, 15);
         }
         else if (score >= 10) {
-            width = 70;
+            width = Layout.getPixelSize(dc, 11);
         }
 
-        var x = 100;
-        var y = borderY - 65;
+        var x = dc.getWidth() * 0.25;
+        var y = borderY / 2.5;
 
         // Draw Title
         dc.setColor(Graphics.COLOR_WHITE, Color.none);
-        dc.drawText(x, y, Graphics.FONT_SMALL, "BEST : ", Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x, y, Graphics.FONT_SMALL, "BEST", Graphics.TEXT_JUSTIFY_LEFT);
 
         // Draw tile
-        y -= 2;
-        var buffer = 135;
+        var buffer = Layout.getPixelSize(dc, 19);
         dc.setColor(Color.TILES[2048], Color.none);
         dc.fillRectangle(x + buffer, y, width, height);
         dc.setColor(Graphics.COLOR_WHITE, Color.none);
@@ -248,9 +304,9 @@ module Titles {
     ];
     
     function titleSnake(dc as Dc) {
-        var size = 10;
-        var x = 30;
-        var y = Layout.centerY(dc) - 65;
+        var size = Layout.getPixelSize(dc, 1.5);
+        var x = Layout.centerX(dc) - (SNAKE_TITLE[0].size() * size) / 2;
+        var y = dc.getHeight() * 0.35;
         drawSnakeMatrix(dc, SNAKE_TITLE, x, y, size);
     }
 
@@ -263,14 +319,16 @@ module Titles {
     ];
 
     function scoreSnake(dc as Dc, score, borderY) {
-        var size = 7;
-        var x = 120;
-        var y = borderY - 60;
+        var size = Layout.getPixelSize(dc, 1);
+        var x = dc.getWidth() * 0.25;
+        var y = borderY * 0.50;
         drawSnakeMatrix(dc, SNAKE_SCORE, x, y, size);
 
         // Draw Score Number
+        var bufferX = Layout.getPixelSize(dc, 20);
+        var bufferY = Layout.getPixelSize(dc, 1.5);
         dc.setColor(Graphics.COLOR_GREEN, Color.none);
-        dc.drawText(x + 125, y - 7, Graphics.FONT_SMALL, (": " + score), Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x + bufferX, y - bufferY, Graphics.FONT_SMALL, (score), Graphics.TEXT_JUSTIFY_LEFT);
     }
 
     function drawSnakeMatrix(dc as Dc, matrix, x, y, size) {
@@ -299,7 +357,6 @@ module Titles {
         }
     }
 
-
     // --- Stackup ---
     const LETTER_COLORS = {
         "A" => Color.STACKS["J"],
@@ -316,12 +373,12 @@ module Titles {
     function titleStackup(dc as Dc) {
         var title = ["S", "T", "A", "C", "K", "U", "P"];
 
-        var size = 10;
-        var spacing = (size * 5) + 2;
+        var size = Layout.getPixelSize(dc, 1.5);
+        var spacing = (size * fontSize) + Layout.getPixelSize(dc, 1);
         var word_space = 0;
 
-        var x = 25;
-        var y = Layout.centerY(dc) - 55;
+        var x = Layout.centerX(dc) - ((spacing * title.size()) / 2);
+        var y = Layout.centerY(dc) - (size * fontSize);
 
         for (var i = 0; i < title.size(); i++) {
             var letter = title[i] as String;
@@ -336,11 +393,11 @@ module Titles {
     function scoreStackup(dc as Dc, score, borderY) {
         var scoreTitle = ["B", "E", "S", "T"];
         
-        var size = 7;
-        var spacing = (size * 5) + 2;
+        var size = Layout.getPixelSize(dc, 1);
+        var spacing = (size * fontSize);
 
-        var x = 100;
-        var y = borderY - 60;
+        var x = dc.getWidth() * 0.30;
+        var y = borderY / 1.8;
 
         for (var i = 0; i < scoreTitle.size(); i++) {
             var letter = scoreTitle[i] as String;
@@ -350,7 +407,9 @@ module Titles {
         }
 
         // Draw Score Number
+        var bufferX = Layout.getPixelSize(dc, 23);
+        var bufferY = Layout.getPixelSize(dc, 1.5);
         dc.setColor(Color.STACKS["O"], Color.none);
-        dc.drawText(x + 155, y - 7, Graphics.FONT_SMALL, (": " + score), Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x + bufferX, y - bufferY, Graphics.FONT_SMALL, (score), Graphics.TEXT_JUSTIFY_LEFT);
     }
 }

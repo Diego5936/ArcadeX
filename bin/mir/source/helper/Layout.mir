@@ -4,13 +4,13 @@ import Toybox.Graphics;
 import Toybox.Math;
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 5; @symbol_moduledef = [Layout,5,7,13]; ]
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 5; @symbol_importdef<0> = [MathX,5,7,12]; ]
+import MathX;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 7; @symbol_moduledef = [Layout,7,7,13]; ]
 module Layout {
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 5; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 6; @position = 8; @symbol_vardef = [workingTop,6,8,18]; ]
-    var workingTop = 50;
     [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 8; @symbol_functiondef = [centerX,8,13,20]; @symbol_param<0> = [dc,8,21,23]; ]
     function centerX(dc) {
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_8_25_8_53_start:
@@ -39,250 +39,494 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_m
         ret %tmp.5;
 C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_9_25_9_54_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 14; @position = 8; @symbol_vardef = [workingBufferX,14,8,22]; ]
-    var workingBufferX = 56;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 15; @position = 8; @symbol_vardef = [workingBufferY,15,8,22]; ]
-    var workingBufferY = 66;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 17; @symbol_functiondef = [workingWidth,17,13,25]; @symbol_param<0> = [dc,17,26,28]; @symbol_param<0>_type<0> = [Dc,17,32,34]; @symbol_return<0> = [Number,17,39,45]; ]
-    function workingWidth(dc as Dc) as Number {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_17_46_19_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 18 8 ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 14; @symbol_functiondef = [getMaxSquareSize,14,13,29]; @symbol_param<0> = [dc,14,30,32]; @symbol_param<0>_type<0> = [Dc,14,36,38]; @symbol_return<0> = [Number,14,43,49]; ]
+    function getMaxSquareSize(dc as Dc) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_14_50_18_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 15 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_14_50_18_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_14_50_18_4_stop" ]
+        %diameter.1 = local;
+        symbol [ diameter %diameter.1 15 12 20 ];
+        symbol [ MathX %tmp.1 15 23 28 ];
+        %tmp.1 = getm $.MathX;
+        symbol [ min %tmp.2 15 29 32 ];
+        %tmp.2 = getv function %tmp.1 :min;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 15 33 35 ];
+        symbol [ getWidth %tmp.4 15 36 44 ];
+        %tmp.4 = getv function %tmp.3 :getWidth;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 15 48 50 ];
+        symbol [ getHeight %tmp.7 15 51 60 ];
+        %tmp.7 = getv function %tmp.6 :getHeight;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
+        lputv %diameter.1 %tmp.9;
+        symbol [ diameter %diameter.1 15 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 17 8 ]
+        symbol [ Math %tmp.10 17 15 19 ];
+        %tmp.10 = getm $.Toybox.Math;
+        symbol [ round %tmp.11 17 20 25 ];
+        %tmp.11 = getv function %tmp.10 :round;
+        %tmp.12 = lgetv %diameter.1;
+        symbol [ diameter %tmp.12 17 26 34 ];
+        %tmp.13 = 0.7;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = invoke %tmp.10 %tmp.11(%tmp.14);
+        ret %tmp.15;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_14_50_18_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 22; @symbol_functiondef = [getSquareGridTileSize,22,13,34]; @symbol_param<0> = [dc,22,35,37]; @symbol_param<0>_type<0> = [Dc,22,41,43]; @symbol_param<1> = [gridSize,22,45,53]; @symbol_param<1>_type<0> = [Number,22,57,63]; @symbol_return<0> = [Number,22,68,74]; ]
+    function getSquareGridTileSize(dc as Dc, gridSize as Number) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_22_75_25_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 23 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_22_75_25_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_22_75_25_4_stop" ]
+        %maxSquareSize.1 = local;
+        symbol [ maxSquareSize %maxSquareSize.1 23 12 25 ];
+        %tmp.1 = self;
+        symbol [ getMaxSquareSize %tmp.2 23 28 44 ];
+        %tmp.2 = getv function %tmp.1 :getMaxSquareSize;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 23 45 47 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %maxSquareSize.1 %tmp.4;
+        symbol [ maxSquareSize %maxSquareSize.1 23 12 25 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 24 8 ]
+        symbol [ Math %tmp.5 24 15 19 ];
+        %tmp.5 = getm $.Toybox.Math;
+        symbol [ round %tmp.6 24 20 25 ];
+        %tmp.6 = getv function %tmp.5 :round;
+        %tmp.7 = lgetv %maxSquareSize.1;
+        symbol [ maxSquareSize %tmp.7 24 26 39 ];
+        %tmp.8 = lgetv %gridSize;
+        symbol [ gridSize %tmp.8 24 42 50 ];
+        %tmp.9 = div %tmp.7 %tmp.8;
+        %tmp.10 = invoke %tmp.5 %tmp.6(%tmp.9);
+        ret %tmp.10;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_22_75_25_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 28; @symbol_functiondef = [getRectGridTileSize,28,13,32]; @symbol_param<0> = [dc,28,33,35]; @symbol_param<0>_type<0> = [Dc,28,39,41]; @symbol_param<1> = [cols,28,43,47]; @symbol_param<1>_type<0> = [Number,28,51,57]; @symbol_param<2> = [rows,28,59,63]; @symbol_param<2>_type<0> = [Number,28,67,73]; @symbol_return<0> = [Number,28,78,84]; ]
+    function getRectGridTileSize(dc as Dc, cols as Number, rows as Number) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_28_85_33_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 29 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_28_85_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_28_85_33_4_stop" ]
+        %diameter.1 = local;
+        symbol [ diameter %diameter.1 29 12 20 ];
+        symbol [ MathX %tmp.1 29 23 28 ];
+        %tmp.1 = getm $.MathX;
+        symbol [ min %tmp.2 29 29 32 ];
+        %tmp.2 = getv function %tmp.1 :min;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 29 33 35 ];
+        symbol [ getWidth %tmp.4 29 36 44 ];
+        %tmp.4 = getv function %tmp.3 :getWidth;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 29 48 50 ];
+        symbol [ getHeight %tmp.7 29 51 60 ];
+        %tmp.7 = getv function %tmp.6 :getHeight;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
+        lputv %diameter.1 %tmp.9;
+        symbol [ diameter %diameter.1 29 12 20 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 31 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_28_85_33_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_28_85_33_4_stop" ]
+        %diagonalFactor.2 = local;
+        symbol [ diagonalFactor %diagonalFactor.2 31 12 26 ];
+        symbol [ Math %tmp.10 31 29 33 ];
+        %tmp.10 = getm $.Toybox.Math;
+        symbol [ sqrt %tmp.11 31 34 38 ];
+        %tmp.11 = getv function %tmp.10 :sqrt;
+        %tmp.12 = lgetv %cols;
+        symbol [ cols %tmp.12 31 40 44 ];
+        %tmp.13 = lgetv %cols;
+        symbol [ cols %tmp.13 31 47 51 ];
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = lgetv %rows;
+        symbol [ rows %tmp.15 31 56 60 ];
+        %tmp.16 = lgetv %rows;
+        symbol [ rows %tmp.16 31 63 67 ];
+        %tmp.17 = mul %tmp.15 %tmp.16;
+        %tmp.18 = add %tmp.14 %tmp.17;
+        %tmp.19 = invoke %tmp.10 %tmp.11(%tmp.18);
+        %tmp.20 = 0.5;
+        %tmp.21 = add %tmp.19 %tmp.20;
+        lputv %diagonalFactor.2 %tmp.21;
+        symbol [ diagonalFactor %diagonalFactor.2 31 12 26 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 32 8 ]
+        symbol [ Math %tmp.22 32 15 19 ];
+        %tmp.22 = getm $.Toybox.Math;
+        symbol [ round %tmp.23 32 20 25 ];
+        %tmp.23 = getv function %tmp.22 :round;
+        %tmp.24 = lgetv %diameter.1;
+        symbol [ diameter %tmp.24 32 26 34 ];
+        %tmp.25 = lgetv %diagonalFactor.2;
+        symbol [ diagonalFactor %tmp.25 32 37 51 ];
+        %tmp.26 = div %tmp.24 %tmp.25;
+        %tmp.27 = invoke %tmp.22 %tmp.23(%tmp.26);
+        ret %tmp.27;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_28_85_33_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 37; @symbol_functiondef = [getGridStartPosition,37,13,33]; @symbol_param<0> = [dc,37,34,36]; @symbol_param<0>_type<0> = [Dc,37,40,42]; @symbol_param<1> = [gridWidth,37,44,53]; @symbol_param<1>_type<0> = [Number,37,57,63]; @symbol_param<2> = [gridHeight,37,65,75]; @symbol_param<2>_type<0> = [Number,37,79,85]; @symbol_return<0> = [Dictionary,37,90,100]; ]
+    function getGridStartPosition(dc as Dc, gridWidth as Number, gridHeight as Number) as Dictionary {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_101_44_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 38 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_101_44_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_101_44_4_stop" ]
+        %startX.1 = local;
+        symbol [ startX %startX.1 38 12 18 ];
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 18 15 17 ];
-        symbol [ getWidth %tmp.2 18 18 26 ];
+        symbol [ dc %tmp.1 38 22 24 ];
+        symbol [ getWidth %tmp.2 38 25 33 ];
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ workingBufferX %tmp.5 18 32 46 ];
-        %tmp.5 = getv ? :workingBufferX;
+        %tmp.4 = lgetv %gridWidth;
+        symbol [ gridWidth %tmp.4 38 38 47 ];
+        %tmp.5 = sub %tmp.3 %tmp.4;
         %tmp.6 = 2;
-        %tmp.7 = mul %tmp.5 %tmp.6;
-        %tmp.8 = sub %tmp.3 %tmp.7;
-        ret %tmp.8;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_17_46_19_4_stop:
+        %tmp.7 = div %tmp.5 %tmp.6;
+        lputv %startX.1 %tmp.7;
+        symbol [ startX %startX.1 38 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 39 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_101_44_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_101_44_4_stop" ]
+        %startY.2 = local;
+        symbol [ startY %startY.2 39 12 18 ];
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 39 22 24 ];
+        symbol [ getHeight %tmp.9 39 25 34 ];
+        %tmp.9 = getv function %tmp.8 :getHeight;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = lgetv %gridHeight;
+        symbol [ gridHeight %tmp.11 39 39 49 ];
+        %tmp.12 = sub %tmp.10 %tmp.11;
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        lputv %startY.2 %tmp.14;
+        symbol [ startY %startY.2 39 12 18 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 40 8 ]
+        %tmp.15 = newd 2;
+        %tmp.17 = const :x;
+        symbol [ x %tmp.17 41 13 14 const ];
+        %tmp.18 = lgetv %startX.1;
+        symbol [ startX %tmp.18 41 18 24 ];
+        %tmp.19 = dup %tmp.15;
+        %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+        %tmp.22 = const :y;
+        symbol [ y %tmp.22 42 13 14 const ];
+        %tmp.23 = lgetv %startY.2;
+        symbol [ startY %tmp.23 42 18 24 ];
+        %tmp.24 = dup %tmp.20;
+        %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+        ret %tmp.25;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_101_44_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 21; @symbol_functiondef = [workingHeight,21,13,26]; @symbol_param<0> = [dc,21,27,29]; @symbol_param<0>_type<0> = [Dc,21,33,35]; @symbol_return<0> = [Number,21,40,46]; ]
-    function workingHeight(dc as Dc) as Number {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_21_47_23_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 22 8 ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 49; @symbol_functiondef = [getPixelSize,49,13,25]; @symbol_param<0> = [dc,49,26,28]; @symbol_param<1> = [n,49,30,31]; @symbol_param<1>_type<0> = [Number,49,35,41]; @symbol_param<1>_type<1> = [Float,49,45,50]; @symbol_return<0> = [Number,49,55,61]; ]
+    function getPixelSize(dc, n as Number or Float) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_49_62_56_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 50 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_8_52_8_if_stmt:
+        %tmp.1 = lgetv %n;
+        symbol [ n %tmp.1 50 12 13 ];
+        symbol [ Number %tmp.3 50 25 31 ];
+        %tmp.3 = getv ? :Number;
+        %tmp.4 = isa %tmp.1 %tmp.3;
+        bf %tmp.4 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_8_52_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_8_52_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_33_52_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 51 12 ]
+        symbol [ Math %tmp.5 51 19 23 ];
+        %tmp.5 = getm $.Toybox.Math;
+        symbol [ round %tmp.6 51 24 29 ];
+        %tmp.6 = getv function %tmp.5 :round;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 51 30 32 ];
+        symbol [ getWidth %tmp.8 51 33 41 ];
+        %tmp.8 = getv function %tmp.7 :getWidth;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = 0.015;
+        %tmp.11 = mul %tmp.9 %tmp.10;
+        %tmp.12 = invoke %tmp.5 %tmp.6(%tmp.11);
+        %tmp.13 = lgetv %n;
+        symbol [ n %tmp.13 51 55 56 ];
+        %tmp.14 = as %tmp.13 { (Number) };
+        %tmp.15 = mul %tmp.12 %tmp.14;
+        ret %tmp.15;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_33_52_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_8_52_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_50_8_52_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 53 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_8_55_8_if_stmt:
+        %tmp.16 = lgetv %n;
+        symbol [ n %tmp.16 53 12 13 ];
+        symbol [ Float %tmp.18 53 25 30 ];
+        %tmp.18 = getv ? :Float;
+        %tmp.19 = isa %tmp.16 %tmp.18;
+        bf %tmp.19 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_8_55_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_8_55_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_32_55_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 54 12 ]
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 54 20 22 ];
+        symbol [ getWidth %tmp.21 54 23 31 ];
+        %tmp.21 = getv function %tmp.20 :getWidth;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.23 = 0.015;
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        %tmp.25 = lgetv %n;
+        symbol [ n %tmp.25 54 45 46 ];
+        %tmp.26 = as %tmp.25 { (Float) };
+        %tmp.27 = mul %tmp.24 %tmp.26;
+        ret %tmp.27;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_32_55_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_8_55_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_53_8_55_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_49_62_56_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 58; @symbol_functiondef = [getArtSize,58,13,23]; @symbol_param<0> = [dc,58,24,26]; @symbol_return<0> = [Number,58,31,37]; ]
+    function getArtSize(dc) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_58_38_60_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 59 8 ]
+        symbol [ Math %tmp.1 59 15 19 ];
+        %tmp.1 = getm $.Toybox.Math;
+        symbol [ round %tmp.2 59 20 25 ];
+        %tmp.2 = getv function %tmp.1 :round;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 59 26 28 ];
+        symbol [ getWidth %tmp.4 59 29 37 ];
+        %tmp.4 = getv function %tmp.3 :getWidth;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = 0.019;
+        %tmp.7 = mul %tmp.5 %tmp.6;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.7);
+        ret %tmp.8;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_58_38_60_4_stop:
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 65; @position = 8; @symbol_vardef = [leftX,65,8,13]; ]
+    var leftX;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 66; @position = 8; @symbol_vardef = [rightX,66,8,14]; ]
+    var rightX;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 67; @position = 8; @symbol_vardef = [topY,67,8,12]; ]
+    var topY;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 68; @position = 8; @symbol_vardef = [bottomY,68,8,15]; ]
+    var bottomY;
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 70; @symbol_functiondef = [setInputRegions,70,13,28]; @symbol_param<0> = [dc,70,29,31]; @symbol_param<0>_type<0> = [Dc,70,35,37]; ]
+    function setInputRegions(dc as Dc) {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_70_39_75_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 71 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 22 15 17 ];
-        symbol [ getHeight %tmp.2 22 18 27 ];
-        %tmp.2 = getv function %tmp.1 :getHeight;
+        symbol [ dc %tmp.1 71 16 18 ];
+        symbol [ getWidth %tmp.2 71 19 27 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ workingBufferY %tmp.5 22 33 47 ];
-        %tmp.5 = getv ? :workingBufferY;
-        %tmp.6 = 2;
-        %tmp.7 = mul %tmp.5 %tmp.6;
-        %tmp.8 = sub %tmp.3 %tmp.7;
-        ret %tmp.8;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_21_47_23_4_stop:
+        %tmp.4 = 0.25;
+        %tmp.5 = mul %tmp.3 %tmp.4;
+        symbol [ leftX ? 71 8 13 ];
+        putv self :leftX %tmp.5;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 72 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 72 17 19 ];
+        symbol [ getWidth %tmp.7 72 20 28 ];
+        %tmp.7 = getv function %tmp.6 :getWidth;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 0.75;
+        %tmp.10 = mul %tmp.8 %tmp.9;
+        symbol [ rightX ? 72 8 14 ];
+        putv self :rightX %tmp.10;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 73 8 ]
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 73 15 17 ];
+        symbol [ getHeight %tmp.12 73 18 27 ];
+        %tmp.12 = getv function %tmp.11 :getHeight;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = 0.25;
+        %tmp.15 = mul %tmp.13 %tmp.14;
+        symbol [ topY ? 73 8 12 ];
+        putv self :topY %tmp.15;
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 74 8 ]
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 74 18 20 ];
+        symbol [ getHeight %tmp.17 74 21 30 ];
+        %tmp.17 = getv function %tmp.16 :getHeight;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        %tmp.19 = 0.75;
+        %tmp.20 = mul %tmp.18 %tmp.19;
+        symbol [ bottomY ? 74 8 15 ];
+        putv self :bottomY %tmp.20;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_70_39_75_4_stop:
     }
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 26; @position = 8; @symbol_vardef = [leftX,26,8,13]; ]
-    var leftX = 90;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 27; @position = 8; @symbol_vardef = [rightX,27,8,14]; ]
-    var rightX = 320;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 28; @position = 8; @symbol_vardef = [topY,28,8,12]; ]
-    var topY = 95;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 29; @position = 8; @symbol_vardef = [bottomY,29,8,15]; ]
-    var bottomY = 315;
-    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 31; @symbol_functiondef = [determineRegion,31,13,28]; @symbol_param<0> = [x,31,29,30]; @symbol_param<1> = [y,31,32,33]; @symbol_return<0> = [String,31,38,44]; ]
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 77; @symbol_functiondef = [determineRegion,77,13,28]; @symbol_param<0> = [x,77,29,30]; @symbol_param<1> = [y,77,32,33]; @symbol_return<0> = [String,77,38,44]; ]
     function determineRegion(x, y) as String {
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_31_44_48_4_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 32 8 ]
-        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_31_44_48_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_31_44_48_4_stop" ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_77_44_94_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 78 8 ]
+        [ "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_77_44_94_4_start" "C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_77_44_94_4_stop" ]
         %direction.1 = local;
-        symbol [ direction %direction.1 32 12 21 ];
+        symbol [ direction %direction.1 78 12 21 ];
         %tmp.1 = "center";
         lputv %direction.1 %tmp.1;
-        symbol [ direction %direction.1 32 12 21 ];
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 34 8 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_12_34_66_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_12_34_44_begin:
+        symbol [ direction %direction.1 78 12 21 ];
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 80 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_12_80_45_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_12_80_30_begin:
         %tmp.2 = lgetv %x;
-        symbol [ x %tmp.2 34 12 13 ];
-        symbol [ Layout %tmp.4 34 17 23 ];
-        %tmp.4 = getv ? :Layout;
-        symbol [ leftX %tmp.5 34 24 29 ];
-        %tmp.5 = getv %tmp.4 :leftX;
-        %tmp.6 = lte %tmp.2 %tmp.5;
-        bf %tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_33_34_44_true:
-        %tmp.7 = lgetv %y;
-        symbol [ y %tmp.7 34 33 34 ];
-        symbol [ Layout %tmp.9 34 37 43 ];
-        %tmp.9 = getv ? :Layout;
-        symbol [ bottomY %tmp.10 34 44 51 ];
-        %tmp.10 = getv %tmp.9 :bottomY;
-        %tmp.11 = lt %tmp.7 %tmp.10;
-        push %tmp.11;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_33_34_44_end:
-        %tmp.12 = phi [%tmp.6 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_12_34_44_begin] [%tmp.11 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_33_34_44_true] [%tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_33_34_44_end];
-        bf %tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_55_34_66_true:
-        %tmp.13 = lgetv %y;
-        symbol [ y %tmp.13 34 55 56 ];
-        symbol [ Layout %tmp.15 34 59 65 ];
-        %tmp.15 = getv ? :Layout;
-        symbol [ topY %tmp.16 34 66 70 ];
-        %tmp.16 = getv %tmp.15 :topY;
-        %tmp.17 = gt %tmp.13 %tmp.16;
-        push %tmp.17;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_55_34_66_end:
-        %tmp.18 = phi [%tmp.12 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_12_34_66_begin] [%tmp.17 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_55_34_66_true] [%tmp.18 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_55_34_66_end];
-        bf %tmp.18 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_72_36_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 35 12 ]
-        %tmp.19 = "left";
-        lputv %direction.1 %tmp.19;
-        symbol [ direction %direction.1 35 12 21 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_72_36_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 37 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_17_37_72_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_17_37_50_begin:
-        %tmp.20 = lgetv %x;
-        symbol [ x %tmp.20 37 17 18 ];
-        symbol [ Layout %tmp.22 37 22 28 ];
-        %tmp.22 = getv ? :Layout;
-        symbol [ rightX %tmp.23 37 29 35 ];
-        %tmp.23 = getv %tmp.22 :rightX;
-        %tmp.24 = gte %tmp.20 %tmp.23;
-        bf %tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_39_37_50_true:
-        %tmp.25 = lgetv %y;
-        symbol [ y %tmp.25 37 39 40 ];
-        symbol [ Layout %tmp.27 37 43 49 ];
-        %tmp.27 = getv ? :Layout;
-        symbol [ bottomY %tmp.28 37 50 57 ];
-        %tmp.28 = getv %tmp.27 :bottomY;
-        %tmp.29 = lt %tmp.25 %tmp.28;
+        symbol [ x %tmp.2 80 12 13 ];
+        symbol [ leftX %tmp.4 80 17 22 ];
+        %tmp.4 = getv ? :leftX;
+        %tmp.5 = lte %tmp.2 %tmp.4;
+        bf %tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_26_80_30_true:
+        %tmp.6 = lgetv %y;
+        symbol [ y %tmp.6 80 26 27 ];
+        symbol [ bottomY %tmp.8 80 30 37 ];
+        %tmp.8 = getv ? :bottomY;
+        %tmp.9 = lt %tmp.6 %tmp.8;
+        push %tmp.9;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_26_80_30_end:
+        %tmp.10 = phi [%tmp.5 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_12_80_30_begin] [%tmp.9 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_26_80_30_true] [%tmp.10 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_26_80_30_end];
+        bf %tmp.10 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_41_80_45_true:
+        %tmp.11 = lgetv %y;
+        symbol [ y %tmp.11 80 41 42 ];
+        symbol [ topY %tmp.13 80 45 49 ];
+        %tmp.13 = getv ? :topY;
+        %tmp.14 = gt %tmp.11 %tmp.13;
+        push %tmp.14;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_41_80_45_end:
+        %tmp.15 = phi [%tmp.10 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_12_80_45_begin] [%tmp.14 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_41_80_45_true] [%tmp.15 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_41_80_45_end];
+        bf %tmp.15 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_51_82_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 81 12 ]
+        %tmp.16 = "left";
+        lputv %direction.1 %tmp.16;
+        symbol [ direction %direction.1 81 12 21 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_51_82_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 83 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_17_83_51_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_17_83_36_begin:
+        %tmp.17 = lgetv %x;
+        symbol [ x %tmp.17 83 17 18 ];
+        symbol [ rightX %tmp.19 83 22 28 ];
+        %tmp.19 = getv ? :rightX;
+        %tmp.20 = gte %tmp.17 %tmp.19;
+        bf %tmp.20 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_32_83_36_true:
+        %tmp.21 = lgetv %y;
+        symbol [ y %tmp.21 83 32 33 ];
+        symbol [ bottomY %tmp.23 83 36 43 ];
+        %tmp.23 = getv ? :bottomY;
+        %tmp.24 = lt %tmp.21 %tmp.23;
+        push %tmp.24;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_32_83_36_end:
+        %tmp.25 = phi [%tmp.20 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_17_83_36_begin] [%tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_32_83_36_true] [%tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_32_83_36_end];
+        bf %tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_47_83_51_true:
+        %tmp.26 = lgetv %y;
+        symbol [ y %tmp.26 83 47 48 ];
+        symbol [ topY %tmp.28 83 51 55 ];
+        %tmp.28 = getv ? :topY;
+        %tmp.29 = gt %tmp.26 %tmp.28;
         push %tmp.29;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_39_37_50_end:
-        %tmp.30 = phi [%tmp.24 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_17_37_50_begin] [%tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_39_37_50_true] [%tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_39_37_50_end];
-        bf %tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_61_37_72_true:
-        %tmp.31 = lgetv %y;
-        symbol [ y %tmp.31 37 61 62 ];
-        symbol [ Layout %tmp.33 37 65 71 ];
-        %tmp.33 = getv ? :Layout;
-        symbol [ topY %tmp.34 37 72 76 ];
-        %tmp.34 = getv %tmp.33 :topY;
-        %tmp.35 = gt %tmp.31 %tmp.34;
-        push %tmp.35;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_61_37_72_end:
-        %tmp.36 = phi [%tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_17_37_72_begin] [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_61_37_72_true] [%tmp.36 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_61_37_72_end];
-        bf %tmp.36 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_78_39_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 38 12 ]
-        %tmp.37 = "right";
-        lputv %direction.1 %tmp.37;
-        symbol [ direction %direction.1 38 12 21 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_78_39_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 40 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_17_40_68_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_17_40_48_begin:
-        %tmp.38 = lgetv %y;
-        symbol [ y %tmp.38 40 17 18 ];
-        symbol [ Layout %tmp.40 40 22 28 ];
-        %tmp.40 = getv ? :Layout;
-        symbol [ topY %tmp.41 40 29 33 ];
-        %tmp.41 = getv %tmp.40 :topY;
-        %tmp.42 = lte %tmp.38 %tmp.41;
-        bf %tmp.42 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_37_40_48_true:
-        %tmp.43 = lgetv %x;
-        symbol [ x %tmp.43 40 37 38 ];
-        symbol [ Layout %tmp.45 40 41 47 ];
-        %tmp.45 = getv ? :Layout;
-        symbol [ leftX %tmp.46 40 48 53 ];
-        %tmp.46 = getv %tmp.45 :leftX;
-        %tmp.47 = gt %tmp.43 %tmp.46;
-        push %tmp.47;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_37_40_48_end:
-        %tmp.48 = phi [%tmp.42 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_17_40_48_begin] [%tmp.47 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_37_40_48_true] [%tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_37_40_48_end];
-        bf %tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_57_40_68_true:
-        %tmp.49 = lgetv %x;
-        symbol [ x %tmp.49 40 57 58 ];
-        symbol [ Layout %tmp.51 40 61 67 ];
-        %tmp.51 = getv ? :Layout;
-        symbol [ rightX %tmp.52 40 68 74 ];
-        %tmp.52 = getv %tmp.51 :rightX;
-        %tmp.53 = lt %tmp.49 %tmp.52;
-        push %tmp.53;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_57_40_68_end:
-        %tmp.54 = phi [%tmp.48 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_17_40_68_begin] [%tmp.53 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_57_40_68_true] [%tmp.54 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_57_40_68_end];
-        bf %tmp.54 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_false;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_76_42_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 41 12 ]
-        %tmp.55 = "up";
-        lputv %direction.1 %tmp.55;
-        symbol [ direction %direction.1 41 12 21 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_76_42_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_false:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 43 13 ]
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_stmt:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_17_43_71_begin:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_17_43_51_begin:
-        %tmp.56 = lgetv %y;
-        symbol [ y %tmp.56 43 17 18 ];
-        symbol [ Layout %tmp.58 43 22 28 ];
-        %tmp.58 = getv ? :Layout;
-        symbol [ bottomY %tmp.59 43 29 36 ];
-        %tmp.59 = getv %tmp.58 :bottomY;
-        %tmp.60 = gte %tmp.56 %tmp.59;
-        bf %tmp.60 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_40_43_51_true:
-        %tmp.61 = lgetv %x;
-        symbol [ x %tmp.61 43 40 41 ];
-        symbol [ Layout %tmp.63 43 44 50 ];
-        %tmp.63 = getv ? :Layout;
-        symbol [ leftX %tmp.64 43 51 56 ];
-        %tmp.64 = getv %tmp.63 :leftX;
-        %tmp.65 = gt %tmp.61 %tmp.64;
-        push %tmp.65;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_40_43_51_end:
-        %tmp.66 = phi [%tmp.60 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_17_43_51_begin] [%tmp.65 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_40_43_51_true] [%tmp.66 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_40_43_51_end];
-        bf %tmp.66 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_60_43_71_true:
-        %tmp.67 = lgetv %x;
-        symbol [ x %tmp.67 43 60 61 ];
-        symbol [ Layout %tmp.69 43 64 70 ];
-        %tmp.69 = getv ? :Layout;
-        symbol [ rightX %tmp.70 43 71 77 ];
-        %tmp.70 = getv %tmp.69 :rightX;
-        %tmp.71 = lt %tmp.67 %tmp.70;
-        push %tmp.71;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_60_43_71_end:
-        %tmp.72 = phi [%tmp.66 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_17_43_71_begin] [%tmp.71 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_60_43_71_true] [%tmp.72 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_60_43_71_end];
-        bf %tmp.72 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_true:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_79_45_8_start:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 44 12 ]
-        %tmp.73 = "down";
-        lputv %direction.1 %tmp.73;
-        symbol [ direction %direction.1 44 12 21 ];
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_79_45_8_stop:
-        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_end;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_43_13_45_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_40_13_45_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_37_13_45_8_if_end:
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_34_8_45_8_if_end:
-[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 47 8 ]
-        %tmp.74 = lgetv %direction.1;
-        symbol [ direction %tmp.74 47 15 24 ];
-        ret %tmp.74;
-C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_31_44_48_4_stop:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_47_83_51_end:
+        %tmp.30 = phi [%tmp.25 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_17_83_51_begin] [%tmp.29 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_47_83_51_true] [%tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_47_83_51_end];
+        bf %tmp.30 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_57_85_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 84 12 ]
+        %tmp.31 = "right";
+        lputv %direction.1 %tmp.31;
+        symbol [ direction %direction.1 84 12 21 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_57_85_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 86 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_17_86_47_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_17_86_34_begin:
+        %tmp.32 = lgetv %y;
+        symbol [ y %tmp.32 86 17 18 ];
+        symbol [ topY %tmp.34 86 22 26 ];
+        %tmp.34 = getv ? :topY;
+        %tmp.35 = lte %tmp.32 %tmp.34;
+        bf %tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_30_86_34_true:
+        %tmp.36 = lgetv %x;
+        symbol [ x %tmp.36 86 30 31 ];
+        symbol [ leftX %tmp.38 86 34 39 ];
+        %tmp.38 = getv ? :leftX;
+        %tmp.39 = gt %tmp.36 %tmp.38;
+        push %tmp.39;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_30_86_34_end:
+        %tmp.40 = phi [%tmp.35 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_17_86_34_begin] [%tmp.39 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_30_86_34_true] [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_30_86_34_end];
+        bf %tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_43_86_47_true:
+        %tmp.41 = lgetv %x;
+        symbol [ x %tmp.41 86 43 44 ];
+        symbol [ rightX %tmp.43 86 47 53 ];
+        %tmp.43 = getv ? :rightX;
+        %tmp.44 = lt %tmp.41 %tmp.43;
+        push %tmp.44;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_43_86_47_end:
+        %tmp.45 = phi [%tmp.40 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_17_86_47_begin] [%tmp.44 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_43_86_47_true] [%tmp.45 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_43_86_47_end];
+        bf %tmp.45 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_false;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_55_88_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 87 12 ]
+        %tmp.46 = "up";
+        lputv %direction.1 %tmp.46;
+        symbol [ direction %direction.1 87 12 21 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_55_88_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_false:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 89 13 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_stmt:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_17_89_50_begin:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_17_89_37_begin:
+        %tmp.47 = lgetv %y;
+        symbol [ y %tmp.47 89 17 18 ];
+        symbol [ bottomY %tmp.49 89 22 29 ];
+        %tmp.49 = getv ? :bottomY;
+        %tmp.50 = gte %tmp.47 %tmp.49;
+        bf %tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_33_89_37_true:
+        %tmp.51 = lgetv %x;
+        symbol [ x %tmp.51 89 33 34 ];
+        symbol [ leftX %tmp.53 89 37 42 ];
+        %tmp.53 = getv ? :leftX;
+        %tmp.54 = gt %tmp.51 %tmp.53;
+        push %tmp.54;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_33_89_37_end:
+        %tmp.55 = phi [%tmp.50 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_17_89_37_begin] [%tmp.54 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_33_89_37_true] [%tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_33_89_37_end];
+        bf %tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_46_89_50_true:
+        %tmp.56 = lgetv %x;
+        symbol [ x %tmp.56 89 46 47 ];
+        symbol [ rightX %tmp.58 89 50 56 ];
+        %tmp.58 = getv ? :rightX;
+        %tmp.59 = lt %tmp.56 %tmp.58;
+        push %tmp.59;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_46_89_50_end:
+        %tmp.60 = phi [%tmp.55 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_17_89_50_begin] [%tmp.59 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_46_89_50_true] [%tmp.60 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_46_89_50_end];
+        bf %tmp.60 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_58_91_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 90 12 ]
+        %tmp.61 = "down";
+        lputv %direction.1 %tmp.61;
+        symbol [ direction %direction.1 90 12 21 ];
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_58_91_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_89_13_91_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_86_13_91_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_83_13_91_8_if_end:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_80_8_91_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc" 93 8 ]
+        %tmp.62 = lgetv %direction.1;
+        symbol [ direction %tmp.62 93 15 24 ];
+        ret %tmp.62;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_Layout_mc_77_44_94_4_stop:
     }
 }
 [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\Layout.mc"; @line = 1; ]

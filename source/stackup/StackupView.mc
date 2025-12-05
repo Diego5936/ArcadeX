@@ -7,7 +7,7 @@ import Stackup;
 
 class StackupView extends WatchUi.View {
     var tickTimer as Timer.Timer or Null;
-    var tileSize = 18;
+    var tileSize;
     
     function initialize() {
         View.initialize();
@@ -38,35 +38,37 @@ class StackupView extends WatchUi.View {
         }
     }
 
-    // --- Draw Funcs ---
+    // ---------- Draw Funcs ----------
+
+    // Main
     function drawState(dc as Dc) as Void {
         // Background
         dc.setColor(Color.none, Graphics.COLOR_BLACK);
         dc.clear();
 
+        // Calculate dynamic tile size for rectangular grid
+        tileSize = Layout.getRectGridTileSize(dc, Stackup.colsN, Stackup.rowsN);
+
         drawGrid(dc);
-        drawPieceGrid(dc, 315, "NEXT", Stackup.nextPiece);
-        drawPieceGrid(dc, 20, "SAVED", Stackup.savedPiece);
+        drawPieceGrid(dc, dc.getWidth() * 0.75, "NEXT", Stackup.nextPiece);
+        drawPieceGrid(dc, dc.getWidth() * 0.08, "SAVE", Stackup.savedPiece);
 
         drawPiece(dc, Stackup.curPiece, Stackup.posX, Stackup.posY, tileSize, true);
     }
+
+    // --- Sub-sections ---
 
     function drawGrid(dc as Dc) {
         // Grid setup
         var rowsN = Stackup.rowsN;
         var colsN = Stackup.colsN;
 
-        // Working area
-        var workX = Layout.workingBufferX;
-        var workY = Layout.workingBufferY;
-        var workW = Layout.workingWidth(dc);
-        var workH = Layout.workingHeight(dc);
-
         // Grid dimensions and center
         var gridW = colsN * tileSize;
         var gridH = rowsN * tileSize;
-        var startX = workX + ((workW - gridW) / 2);
-        var startY = workY + ((workH - gridH) / 2);       
+        var gridPos = Layout.getGridStartPosition(dc, gridW, gridH);
+        var startX = gridPos[:x];
+        var startY = gridPos[:y];
         Stackup.originX = startX;
         Stackup.originY = startY;
 
@@ -98,12 +100,13 @@ class StackupView extends WatchUi.View {
     }
 
     function drawPieceGrid(dc as Dc, x, title, piece){
-        var rectSize = 75;
+        var pieceSize = Math.round(tileSize * 0.75);
+        var rectSize = 4 * pieceSize + pieceSize;
         var y = Layout.centerY(dc) - (rectSize / 2);
         
         // Draw Title
         dc.setColor(Graphics.COLOR_WHITE, Color.none);
-        dc.drawText(x, y - 40, Graphics.FONT_XTINY, title, Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x, y - (rectSize / 2), Graphics.FONT_XTINY, title, Graphics.TEXT_JUSTIFY_LEFT);
 
         // Draw container
         dc.setColor(Graphics.COLOR_DK_GRAY, Color.none);
@@ -118,7 +121,6 @@ class StackupView extends WatchUi.View {
 
         var rows = matrix.size();
         var cols = matrix[0].size();
-        var pieceSize = 20;
 
         var pieceW = cols * pieceSize;
         var pieceH = rows * pieceSize;
@@ -131,6 +133,8 @@ class StackupView extends WatchUi.View {
         
         drawPiece(dc, piece, startX, startY, pieceSize, false);
     }
+
+    // ---------- Helper Draw ----------
 
     // If useGrid == true: x,y are grid coords, so convert to pixels
     // If useGrid == false: x,y are pixel coords, use as is

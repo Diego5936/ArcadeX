@@ -1,0 +1,37 @@
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc"; @line = 3; @symbol_moduledef = [MathX,3,7,12]; ]
+module MathX {
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc"; @line = 5; @symbol_functiondef = [min,5,13,16]; @symbol_param<0> = [a,5,17,18]; @symbol_param<0>_type<0> = [Number,5,22,28]; @symbol_param<1> = [b,5,30,31]; @symbol_param<1>_type<0> = [Number,5,35,41]; @symbol_return<0> = [Number,5,46,52]; ]
+    function min(a as Number, b as Number) as Number {
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_5_53_10_4_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc" 6 8 ]
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_8_8_8_if_stmt:
+        %tmp.1 = lgetv %a;
+        symbol [ a %tmp.1 6 12 13 ];
+        %tmp.2 = lgetv %b;
+        symbol [ b %tmp.2 6 16 17 ];
+        %tmp.3 = lt %tmp.1 %tmp.2;
+        bf %tmp.3 @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_8_8_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_8_8_8_if_true:
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_19_8_8_start:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc" 7 12 ]
+        %tmp.4 = lgetv %a;
+        symbol [ a %tmp.4 7 19 20 ];
+        ret %tmp.4;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_19_8_8_stop:
+        goto @C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_8_8_8_if_end;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_6_8_8_8_if_end:
+[ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc" 9 8 ]
+        %tmp.5 = lgetv %b;
+        symbol [ b %tmp.5 9 15 16 ];
+        ret %tmp.5;
+C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_helper_MathX_mc_5_53_10_4_stop:
+    }
+}
+[ @file = "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\helper\MathX.mc"; @line = 1; ]
+<init> {
+}

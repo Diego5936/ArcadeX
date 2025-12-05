@@ -44,33 +44,36 @@ class SnakeView extends WatchUi.View {
 
         // Draw score
         dc.setColor(Graphics.COLOR_GREEN, Color.none);
-        dc.drawText(Layout.centerX(dc), 15, Graphics.FONT_TINY, "Score: " + Snake.score, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(Layout.centerX(dc), dc.getHeight() * 0.03, 
+                    Graphics.FONT_TINY, "Score: " + Snake.score, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Grid
         var gridSize = Snake.gridSize;
-        var marginX = Layout.workingBufferX;
-        var marginY = Layout.workingBufferY;
-        var tileWidth = (Layout.workingWidth(dc) - gridSize) / gridSize + 1;
-        var tileHeight = (Layout.workingHeight(dc) - gridSize) / gridSize + 2;
+        var tileSize = Layout.getSquareGridTileSize(dc, gridSize);
+        var gridWidth = tileSize * gridSize;
+        var gridHeight = tileSize * gridSize;
+        var gridPos = Layout.getGridStartPosition(dc, gridWidth, gridHeight);
+        var marginX = gridPos[:x];
+        var marginY = gridPos[:y];
 
         dc.setColor(Graphics.COLOR_WHITE, Color.none);
-        dc.drawRectangle(marginX, marginY, tileWidth * gridSize, tileHeight * gridSize);
+        dc.drawRectangle(marginX, marginY, gridWidth, gridHeight);
 
         // Snake's head
         var head = Snake.headPos as Dictionary;
         dc.setColor(Graphics.COLOR_GREEN, Color.none);
-        dc.fillRectangle(marginX + (head[:x] * tileWidth), marginY + (head[:y] * tileHeight), tileWidth, tileHeight);
+        dc.fillRectangle(marginX + (head[:x] * tileSize), marginY + (head[:y] * tileSize), tileSize, tileSize);
 
         // Snake's body
         for (var i = 0; i < Snake.snakeSegments.size(); i++) {
             var segment = (Snake.snakeSegments as Array)[i];
-            dc.fillRectangle(marginX + ((segment as Dictionary)[:x] * tileWidth), marginY + 
-                            ((segment as Dictionary)[:y] * tileHeight), tileWidth, tileHeight);
+            dc.fillRectangle(marginX + ((segment as Dictionary)[:x] * tileSize), marginY + 
+                            ((segment as Dictionary)[:y] * tileSize), tileSize, tileSize);
         }
 
         // Food
         var food = Snake.foodPos as Dictionary;
         dc.setColor(Graphics.COLOR_RED, Color.none);
-        dc.fillRectangle(marginX + (food[:x] * tileWidth), marginY + (food[:y] * tileHeight), tileWidth, tileHeight);
+        dc.fillRectangle(marginX + (food[:x] * tileSize), marginY + (food[:y] * tileSize), tileSize, tileSize);
     }
 }

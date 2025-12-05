@@ -58,16 +58,16 @@ C__Users_Owner_OneDrive_Documents_PROJECTS_Garmin_ArcadeX_source_snake_MenuSnake
         symbol [ dc %tmp.13 19 26 28 ];
         invoke %tmp.11 %tmp.12(%tmp.13);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc" 20 8 ]
-        symbol [ Components %tmp.15 20 8 18 ];
-        %tmp.15 = getv ? :Components;
-        symbol [ drawHighScore %tmp.16 20 19 32 ];
+        symbol [ Titles %tmp.15 20 8 14 ];
+        %tmp.15 = getv ? :Titles;
+        symbol [ drawHighScore %tmp.16 20 15 28 ];
         %tmp.16 = getv function %tmp.15 :drawHighScore;
         %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 20 33 35 ];
+        symbol [ dc %tmp.17 20 29 31 ];
         %tmp.18 = "snake";
-        symbol [ Graphics %tmp.19 20 46 54 ];
+        symbol [ Graphics %tmp.19 20 42 50 ];
         %tmp.19 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.20 20 55 66 ];
+        symbol [ COLOR_GREEN %tmp.20 20 51 62 ];
         %tmp.20 = getv %tmp.19 :COLOR_GREEN;
         invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18, %tmp.20);
 [ "C:\Users\Owner\OneDrive\Documents\PROJECTS\Garmin\ArcadeX\source\snake\MenuSnakeView.mc" 23 8 ]

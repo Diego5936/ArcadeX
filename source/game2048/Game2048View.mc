@@ -24,15 +24,25 @@ class Game2048View extends WatchUi.View {
 
         // Draw score
         dc.setColor(Graphics.COLOR_WHITE, Color.none);
-        dc.drawText(Layout.centerX(dc), 15, Graphics.FONT_TINY, "Score: " + Game2048.score, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(Layout.centerX(dc), dc.getHeight() * 0.03, 
+                    Graphics.FONT_TINY, "Score: " + Game2048.score, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Grid
-        var margin = Layout.workingBufferX;
+        var gridSize = 4;
         var spacing = 5;
-        var x = margin;
-        var y = margin + 10;
-        var tileWidth = (Layout.workingWidth(dc) - (4 * spacing)) / 4;
-        var tileHeight = (Layout.workingHeight(dc) - (4 * spacing)) / 4;
+        var baseTileSize = Layout.getSquareGridTileSize(dc, gridSize);
+        // Account for spacing between tiles: (gridSize - 1) spaces
+        var totalSpacing = (gridSize - 1) * spacing;
+        var availableSize = (baseTileSize * gridSize) - totalSpacing;
+        var tileSize = Math.round(availableSize / gridSize);
+        var gridWidth = (tileSize * gridSize) + totalSpacing;
+        var gridHeight = gridWidth;
+        var gridPos = Layout.getGridStartPosition(dc, gridWidth, gridHeight);
+        var startX = gridPos[:x];
+        var startY = gridPos[:y];
+
+        var x = startX;
+        var y = startY;
 
         for (var row = 0; row < 4; row++) {
             var curRow = (Game2048.grid as Array)[row] as Array;
@@ -43,22 +53,22 @@ class Game2048View extends WatchUi.View {
                 // Draw Tile
                 var tileColor = getTileColor(curTile);
                 dc.setColor(tileColor, Color.none);
-                dc.fillRectangle(x, y, tileWidth, tileHeight);
+                dc.fillRectangle(x, y, tileSize, tileSize);
                 dc.setColor(Graphics.COLOR_WHITE, Color.none);
-                dc.drawRectangle(x, y, tileWidth, tileHeight);
+                dc.drawRectangle(x, y, tileSize, tileSize);
 
                 // Draw Number
                 if (curTile != 0) {
                     dc.setColor(Graphics.COLOR_BLACK, Color.none);
                     var fontSize = curTile > 512 ? Graphics.FONT_SYSTEM_TINY : Graphics.FONT_SYSTEM_SMALL;
-                    dc.drawText(x + (tileWidth/2), y + (tileHeight/6), fontSize, curTile, Graphics.TEXT_JUSTIFY_CENTER);
+                    dc.drawText(x + (tileSize/2), y + (tileSize/6), fontSize, curTile, Graphics.TEXT_JUSTIFY_CENTER);
                 }
                 
-                x += tileWidth + spacing;
+                x += tileSize + spacing;
             }
 
-            x = margin;
-            y += tileHeight + spacing;
+            x = startX;
+            y += tileSize + spacing;
         }
     }
 
